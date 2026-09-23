@@ -1,0 +1,5 @@
+# pd-genomad: plasmid/virus identification
+name: pd-genomad
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - genomad=1.12.0

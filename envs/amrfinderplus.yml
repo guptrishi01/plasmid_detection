@@ -1,0 +1,5 @@
+# pd-amrfinderplus: NCBI AMRFinderPlus
+name: pd-amrfinderplus
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - ncbi-amrfinderplus=4.2.7

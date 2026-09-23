@@ -1,0 +1,30 @@
+# Written by scripts/00_setup.sbatch -- do not edit by hand
+date: 2026-09-22T23:54:11-04:00
+host: str-c70.charlotte.edu
+conda: 23.11.0  mamba: 1.5.6
+
+## Tools (full solved envs in envs/lock/)
+python: 3.12.3  (pd-core)
+pyyaml: 6.0.3  (pd-core)
+sra-tools: 3.4.1  (pd-data)
+pigz: 2.8  (pd-data)
+ncbi-datasets-cli: 18.37.0  (pd-host)
+bowtie2: 2.5.5  (pd-host)
+samtools: 1.24  (pd-host)
+genomad: 1.12.0  (pd-genomad)
+checkv: 1.1.1  (pd-checkv)
+checkm2: 1.1.0  (pd-checkm2)
+rgi: 6.0.8  (pd-rgi)
+ncbi-amrfinderplus: 4.2.7  (pd-amrfinderplus)
+mob_suite: 3.1.9  (pd-mobsuite)
+gtdbtk: 2.6.1  (pd-gtdbtk)
+
+## Reference / databases
+human: GRCh38.p14 GCF_000001405.40  fasta_md5=689762f267eafe361b6ee4b21638eb51
+genomad_db: 1.9
+checkv_db: checkv-db-v1.5
+checkm2_db: uniref100.KO.1.dmnd
+card: 4.0.2
+amrfinderplus_db: 2026-08-07.1
+mob_suite_db: Download date: 2026-09-22  ncbi_plasmid_full_seqs_md5=9115d132f9f85ab7e2858538c05174ac
+gtdb: r226  tarball_md5=24b476ea5a4ef30519d461e56cc4a27f  VERSION_DATA=r226

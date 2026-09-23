@@ -1,0 +1,7 @@
+# pd-host: human reference download (NCBI Datasets CLI) + Bowtie2 index/host-read removal
+name: pd-host
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - ncbi-datasets-cli=18.37.0
+  - bowtie2=2.5.5
+  - samtools=1.24

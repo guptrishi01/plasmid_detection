@@ -1,0 +1,37 @@
+# Raw WGS reads (SRP121672) -- kept locally as pipeline input, never pushed.
+# data/raw is a symlink to /scratch/rgupta25/plasmid_detection/raw
+data/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+
+# Built by scripts/00_setup.sbatch (rebuildable; versions recorded in versions.txt + envs/lock/)
+conda/
+db/
+
+# Large sequence/alignment intermediates (live on scratch; ignore defensively)
+*.fna
+*.fasta
+*.fa
+*.bam
+*.sam
+*.bt2
+*.bt2l
+*.tar.gz
+
+# Slurm logs
+logs/
+*.out
+*.err
+
+# Reference papers
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
