@@ -1,0 +1,8 @@
+# Runtime: the config loader (src/plasmid_detection/config.py), run from the pd-core env.
+# Keep in sync with envs/core.yml. Bioinformatics tools are NOT pip-installed: each stage
+# has its own pinned conda env in envs/<stage>.yml (solved versions in envs/lock/).
+pyyaml==6.0.3
+
+# Dev tooling only:
+pytest>=8
+ruff>=0.6

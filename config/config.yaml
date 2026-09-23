@@ -1,0 +1,79 @@
+# Single source of paths and parameters for every stage.
+# Read by src/plasmid_detection/config.py; scripts/lib/common.sh exports every key as
+# an env var (never SLURM_*), e.g. paths.raw_reads -> PATHS_RAW_READS, db.gtdb.release -> DB_GTDB_RELEASE.
+# ${dotted.key} references are resolved against this file.
+
+project:
+  name: plasmid_detection
+  sra_study: SRP121672
+  bioproject: PRJNA415974
+  paper_doi: 10.3390/w10111539
+
+paths:
+  repo: /users/rgupta25/gibas/plasmid_detection
+  # Software root (home, 500G, not purged): conda envs, package cache, databases
+  sw_root: ${paths.repo}
+  conda_envs: ${paths.sw_root}/conda/envs
+  conda_pkgs: ${paths.sw_root}/conda/pkgs
+  db_root: ${paths.sw_root}/db
+  # Data root (scratch, 5T, purgeable): reads, intermediates, outputs
+  data_root: /scratch/rgupta25/plasmid_detection
+  raw_reads: ${paths.data_root}/raw
+  work: ${paths.data_root}/work
+  results: ${paths.data_root}/results
+  logs: ${paths.repo}/logs
+  metadata: ${paths.repo}/metadata
+  samples: ${paths.metadata}/srp121672_wgs_samples.tsv
+  run_accessions: ${paths.metadata}/srp121672_wgs_run_accessions.txt
+  sra_runinfo: ${paths.metadata}/srp121672_wgs_sra_runinfo.csv   # NCBI SRA spot counts
+  sra_cache: ${paths.work}/sra              # prefetch .sra + fasterq-dump temp; removed per run
+  manifest_dir: ${paths.data_root}/manifest # one manifest TSV per run
+  raw_manifest: ${paths.metadata}/raw_manifest.tsv  # all 92 runs combined (tracked)
+  versions: ${paths.repo}/versions.txt
+  env_locks: ${paths.repo}/envs/lock
+
+cluster:
+  partition: Orion
+
+# One conda env per stage; specs (pinned) in envs/<key>.yml
+envs:
+  core: ${paths.conda_envs}/pd-core
+  data: ${paths.conda_envs}/pd-data
+  host: ${paths.conda_envs}/pd-host
+  genomad: ${paths.conda_envs}/pd-genomad
+  checkv: ${paths.conda_envs}/pd-checkv
+  checkm2: ${paths.conda_envs}/pd-checkm2
+  rgi: ${paths.conda_envs}/pd-rgi
+  amrfinderplus: ${paths.conda_envs}/pd-amrfinderplus
+  mobsuite: ${paths.conda_envs}/pd-mobsuite
+  gtdbtk: ${paths.conda_envs}/pd-gtdbtk
+
+reference:
+  human:
+    name: GRCh38.p14
+    accession: GCF_000001405.40
+    dir: ${paths.db_root}/human/GRCh38.p14
+    fasta: ${reference.human.dir}/GCF_000001405.40_GRCh38.p14_genomic.fna
+    bowtie2_index: ${reference.human.dir}/bowtie2/GRCh38.p14
+
+# Each path is what the tool is pointed at; scripts/00_setup.sbatch downloads into it
+db:
+  genomad: ${paths.db_root}/genomad/genomad_db
+  checkv: ${paths.db_root}/checkv/current          # symlink to checkv-db-vX.Y
+  checkm2: ${paths.db_root}/checkm2               # CHECKM2DB in pd-checkm2 = the .dmnd in here
+  card:
+    dir: ${paths.db_root}/card                    # rgi --local reads ./localDB: run rgi from here
+    url: https://card.mcmaster.ca/latest/data
+  amrfinderplus: ${paths.db_root}/amrfinderplus/latest
+  mob_suite: ${paths.db_root}/mob_suite
+  gtdb:
+    release: r226
+    dir: ${paths.db_root}/gtdb/r226                # also set as GTDBTK_DATA_PATH in pd-gtdbtk
+    url: https://data.gtdb.ecogenomic.org/releases/release226/226.0/auxillary_files/gtdbtk_package/full_package/gtdbtk_r226_data.tar.gz
+    md5: 24b476ea5a4ef30519d461e56cc4a27f
+
+params:
+  data:
+    threads: 8          # fasterq-dump + pigz
+  setup:
+    threads: 16

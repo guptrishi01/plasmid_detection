@@ -1,0 +1,6 @@
+# pd-core: config loader (src/plasmid_detection) used by every scripts/*.sbatch
+name: pd-core
+channels: [conda-forge, nodefaults]
+dependencies:
+  - python=3.12.3
+  - pyyaml=6.0.3

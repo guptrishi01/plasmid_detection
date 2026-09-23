@@ -1,0 +1,6 @@
+# pd-gtdbtk: GTDB taxonomy. 2.6.1 is the newest GTDB-Tk that supports R226
+# (R226 = 2.4.1-2.6.1; 2.7.x requires R232). Do not bump without changing the GTDB release.
+name: pd-gtdbtk
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - gtdbtk=2.6.1

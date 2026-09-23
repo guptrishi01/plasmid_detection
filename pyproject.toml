@@ -1,0 +1,24 @@
+[project]
+name = "plasmid_detection"
+version = "0.1.0"
+description = "Plasmid detection and host association in SRP121672 urban wastewater metagenomes (Gibas Lab)"
+requires-python = ">=3.9"
+dependencies = ["pyyaml>=6.0"]
+
+# Only the config loader lives here. Pipeline stages are scripts/*.sbatch, each running
+# its tool from a dedicated conda env pinned in envs/<stage>.yml -- not managed by this file.
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

@@ -1,0 +1,5 @@
+# pd-checkm2: MAG completeness/contamination
+name: pd-checkm2
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - checkm2=1.1.0
