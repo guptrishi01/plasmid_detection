@@ -1,0 +1,61 @@
+/users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/quast.py /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/SRR6231184.contigs.fa -o /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast -t 16 --min-contig 1000 --labels SRR6231184
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-570.49.1.el9_6.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.11.16
+  CPUs number: 96
+
+Started: 2026-09-29 11:59:27
+
+Logging to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/quast.log
+
+CWD: /users/rgupta25/gibas/plasmid_detection
+Main parameters: 
+  MODE: default, threads: 16, min contig length: 1000, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/SRR6231184.contigs.fa ==> SRR6231184
+
+2026-09-29 11:59:42
+Running Basic statistics processor...
+  Contig files: 
+    SRR6231184
+  Calculating N50 and L50...
+    SRR6231184, N50 = 2134, L50 = 17917, auN = 3945.4, Total length = 146469542, GC % = 50.24, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/basic_stats/GC_content_plot.pdf
+  Drawing SRR6231184 GC content plot...
+    saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/basic_stats/SRR6231184_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-09-29 11:59:47
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-09-29 11:59:48
+RESULTS:
+  Text versions of total report are saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/report.html
+  PDF version (tables and plots) is saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/report.pdf
+  Icarus (contig browser) is saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/icarus.html
+  Log is saved to /scratch/rgupta25/plasmid_detection/results/04_assembly/SRR6231184/quast/quast.log
+
+Finished: 2026-09-29 11:59:48
+Elapsed time: 0:00:21.150372
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

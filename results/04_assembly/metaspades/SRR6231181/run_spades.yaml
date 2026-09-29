@@ -1,0 +1,170 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_NCS1TDH6LDX1BUHW4252S762766L0IX5
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_J5MYL1RKUPHBW9TBKCJF9S76PPCE070D
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_7rb14xko
+  job_uuid: SPAdes_Read_error_correction_ZR3BEER8DTPDC6V10REV06H24Y4JQXSJ
+  mpi_support: false
+  output_files:
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/corrected.yaml
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/share/spades/spades_pipeline/supplemetary/compress_all.py
+  - --input_file
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/share/spades
+  - --max_threads
+  - '32'
+  - --output_dir
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_corrected_reads_compression_N8RN1QQ2T6OEQ2D2NFDQGTDEKBLUYGDD
+  mpi_support: false
+  output_files: []
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_O7JOL42N4625PJ7OICDYYGRJS5B3C2WY
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_OCZ7K9ENEI48OBVNMZSLEAFHI3FJCTQW
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K21/configs/config.info
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K21/configs/mda_mode.info
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K21/configs/meta_mode.info
+  config_dir: K21
+  del_after: []
+  job_uuid: SPAdes_K21_7PQLYG10QTC3RZBUD5TBYPR4ECQBYY45
+  mpi_support: false
+  output_files: []
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K33/configs/config.info
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K33/configs/mda_mode.info
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K33/configs/meta_mode.info
+  config_dir: K33
+  del_after: []
+  job_uuid: SPAdes_K33_P8NVKJ5JQPAOMOB1TYDTP7P1DGEX6I6Z
+  mpi_support: false
+  output_files: []
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/configs/config.info
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/configs/mda_mode.info
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/configs/meta_mode.info
+  config_dir: K55
+  del_after: []
+  job_uuid: SPAdes_K55_EWJ0SB76TRAXKTYWHN6NW82E0AN4W76E
+  mpi_support: false
+  output_files: []
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/spades-core
+  short_name: k55
+- STAGE: Copy files
+  args:
+  - /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/share/spades/spades_pipeline/supplemetary/copy_files.py
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/before_rr.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/before_rr.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/assembly_graph_after_simplification.gfa
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/assembly_graph_after_simplification.gfa
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/final_contigs.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/contigs.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/first_pe_contigs.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/first_pe_contigs.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/strain_graph.gfa
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/strain_graph.gfa
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/scaffolds.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/scaffolds.fasta
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/scaffolds.paths
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/scaffolds.paths
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/assembly_graph_with_scaffolds.gfa
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/assembly_graph_with_scaffolds.gfa
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/assembly_graph.fastg
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/assembly_graph.fastg
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/K55/final_contigs.paths
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_6yfzbaf4
+  job_uuid: SPAdes_Copy_files_5RQHRHY4W5CT3D16L8NY3Y7PA5FWGR6S
+  mpi_support: false
+  output_files: []
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_H0Y5QFJMXIBXZ0UTLPOIDQ2TOTBK4OQK
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/share/spades/spades_pipeline/supplemetary/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/scaffolds.fasta
+  - --misc_dir
+  - /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_IDAR94FCZIH41IGF5EH7N0CZ471SYKHH
+  mpi_support: false
+  output_files: []
+  path: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_MQ9EAXL11Q35FGFOS1B25R8NBOUAKGFO
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate
