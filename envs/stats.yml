@@ -1,0 +1,9 @@
+# pd-stats: stage 9 statistics (CLR, ALDEx2 / ANCOM-BC2, PERMANOVA) and plots
+name: pd-stats
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - r-base=4.5.3
+  - bioconductor-aldex2=1.42.0
+  - bioconductor-ancombc=2.14.0
+  - r-vegan=2.7_5
+  - r-ggplot2=4.0.3

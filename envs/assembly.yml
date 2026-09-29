@@ -1,0 +1,14 @@
+# pd-assembly: stage 4 assembly, back/cross-mapping, assembly QC; seqkit for the stage 9 depth experiment
+name: pd-assembly
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  # QUAST 5.3.0 imports distutils, removed in Python 3.12: without this pin the env solves
+  # to 3.13 and quast.py dies on import (found in the stage 4 test, 2026-09-28)
+  - python=3.11
+  - megahit=1.2.9
+  - spades=4.3.0
+  - bowtie2=2.5.5
+  - samtools=1.24
+  - quast=5.3.0
+  - nonpareil=3.5.5
+  - seqkit=2.14.0

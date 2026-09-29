@@ -1,0 +1,5 @@
+# pd-scapp: stage 4 SCAPP (circular plasmids from the assembly graph). Own env: SCAPP pins python 3.7.
+name: pd-scapp
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - scapp=0.1.4

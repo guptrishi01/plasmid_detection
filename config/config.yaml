@@ -1,7 +1,7 @@
 # Single source of paths and parameters for every stage.
 # Read by src/plasmid_detection/config.py; scripts/lib/common.sh exports every key as
 # an env var (never SLURM_*), e.g. paths.raw_reads -> PATHS_RAW_READS, db.gtdb.release -> DB_GTDB_RELEASE.
-# ${dotted.key} references are resolved against this file.
+# ${dotted.key} references are resolved against this file (quote them inside [..] lists).
 
 project:
   name: plasmid_detection
@@ -29,6 +29,23 @@ paths:
   sra_cache: ${paths.work}/sra              # prefetch .sra + fasterq-dump temp; removed per run
   manifest_dir: ${paths.data_root}/manifest # one manifest TSV per run
   raw_manifest: ${paths.metadata}/raw_manifest.tsv  # all 92 runs combined (tracked)
+  # Runs processed by stages 2-9, one SRR per line. Pilot (T4): SC_UPB (SRR6231181),
+  # SC_INF (SRR6231184), MC_UPB (SRR6231217), MC_INF (SRR6231191) -- two per system, so
+  # within-system cross-mapping is exercised in both systems.
+  # For the full run point this at ${paths.run_accessions}.
+  run_samples: ${paths.metadata}/pilot_samples.txt
+  # Per-stage outputs (scratch). Reads that feed later stages live under work/.
+  trimmed: ${paths.work}/02_trimmed
+  hostfree: ${paths.work}/03_hostfree
+  qc: ${paths.results}/02_qc
+  host: ${paths.results}/03_host
+  assembly: ${paths.results}/04_assembly
+  contigs: ${paths.results}/05_contigs
+  binning: ${paths.results}/06_binning
+  mags: ${paths.results}/07_mags
+  mag_links: ${paths.results}/08_mag_links
+  rollup: ${paths.results}/09_rollup
+  tables: ${paths.results}/tables
   versions: ${paths.repo}/versions.txt
   env_locks: ${paths.repo}/envs/lock
 
@@ -39,14 +56,21 @@ cluster:
 envs:
   core: ${paths.conda_envs}/pd-core
   data: ${paths.conda_envs}/pd-data
+  qc: ${paths.conda_envs}/pd-qc
   host: ${paths.conda_envs}/pd-host
+  assembly: ${paths.conda_envs}/pd-assembly
+  scapp: ${paths.conda_envs}/pd-scapp
   genomad: ${paths.conda_envs}/pd-genomad
   checkv: ${paths.conda_envs}/pd-checkv
   checkm2: ${paths.conda_envs}/pd-checkm2
   rgi: ${paths.conda_envs}/pd-rgi
   amrfinderplus: ${paths.conda_envs}/pd-amrfinderplus
   mobsuite: ${paths.conda_envs}/pd-mobsuite
+  coverm: ${paths.conda_envs}/pd-coverm
+  binning: ${paths.conda_envs}/pd-binning
+  drep: ${paths.conda_envs}/pd-drep
   gtdbtk: ${paths.conda_envs}/pd-gtdbtk
+  stats: ${paths.conda_envs}/pd-stats
 
 reference:
   human:
@@ -75,5 +99,71 @@ db:
 params:
   data:
     threads: 8          # fasterq-dump + pigz
+  qc:
+    threads: 8
+    # fastp: mirrors the paper's Trimmomatic intent (adapters, quality-trim both ends, min
+    # length 50) + overlap base correction + low-complexity filter (added 2026-09-28 after
+    # the first pilot QC). No --dedup: duplication is reported, not removed.
+    fastp_args: "--detect_adapter_for_pe --cut_front --cut_front_window_size 4 --cut_front_mean_quality 20 --cut_right --cut_right_window_size 4 --cut_right_mean_quality 20 --correction --low_complexity_filter --length_required 50"
+  host:
+    threads: 16
+    bowtie2_args: "--very-sensitive"
+  assembly:
+    threads: 32
+    megahit_args: "--presets meta-large"
+    min_contig_len: 1000
+    # metaSPAdes: one attempt. "" = smallest run in paths.run_samples by SRA spots (pilot:
+    # SRR6231181). The smallest of all 92 is SRR6231137 (MC UP_A T3, 15.05 M pairs); set it
+    # here to follow the spec literally -- it then needs stages 2-3 first.
+    metaspades_run: ""
+    metaspades_memory_gb: 480
+    map_threads: 16
+    qc_threads: 16              # QUAST + Nonpareil
+    bowtie2_args: ""            # back/cross-mapping; bowtie2 defaults (--sensitive, end-to-end)
+    nonpareil_args: "-T kmer"
+    scapp_threads: 16
+    scapp_args: ""
+  contigs:
+    threads: 16
+    genomad_args: "--cleanup --splits 8"
+    amrfinder_args: "--plus"
+    coverm_methods: "mean tpm count"
+  binning:
+    threads: 16
+    metabat2_min_contig: 1500
+    metabat2_seed: 1
+    # MIMAG (Bowers et al. 2017) completeness/contamination thresholds, % (CheckM2)
+    mimag_high_completeness: 90
+    mimag_high_contamination: 5
+    mimag_medium_completeness: 50
+    mimag_medium_contamination: 10
+  mags:
+    threads: 32
+    drep_ani: 0.95
+    gtdbtk_args: ""
+    coverm_genome_methods: "relative_abundance mean"
+  mag_links:
+    threads: 16
+    # Coverage correlation needs enough samples to mean anything; below this it is NA
+    min_samples_for_correlation: 5
+  rollup:
+    threads: 32
+    depth_samples: ["SRR6231181", "SRR6231184"]
+    depth_levels_million_pairs: [5, 10, 15, 20]
+    depth_seed: 11
+  stats:
+    # Controls are a reference: reported, never subtracted, never in a test group
+    site_groups: ["creek_upstream:UP_A,UP_B", "creek_downstream:DS_A,DS_B", "influent:INF",
+                  "plant:PCI,PCE,ATE,FCE,UV", "sewer:HOSP,RES", "control:MNT_A,MNT_B,UW_A,UW_B"]
+    # group_a:group_b, each tested within every system (time points as replicates) and
+    # within every time point (systems as replicates). PROPOSAL -- confirm before the full run.
+    comparisons: ["creek_upstream:creek_downstream", "influent:plant"]
+    method: "aldex2"          # aldex2 | ancombc2
+    min_group_size: 3
+    alpha: 0.05
+    # BioSample antibiotic values: "ND" (not detected) and "<LOQ" (below quantification)
+    # -> na | zero | half_min (half the smallest detected value of that antibiotic)
+    nd_encoding: "na"
+    loq_encoding: "na"
   setup:
     threads: 16
