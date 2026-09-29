@@ -1,0 +1,5 @@
+# pd-drep: stage 7 dereplication at 95% ANI
+name: pd-drep
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - drep=3.7.1

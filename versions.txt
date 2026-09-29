@@ -1,6 +1,6 @@
 # Written by scripts/00_setup.sbatch -- do not edit by hand
-date: 2026-09-22T23:54:11-04:00
-host: str-c70.charlotte.edu
+date: 2026-09-28T23:55:40-04:00
+host: str-c7.charlotte.edu
 conda: 23.11.0  mamba: 1.5.6
 
 ## Tools (full solved envs in envs/lock/)
@@ -8,16 +8,34 @@ python: 3.12.3  (pd-core)
 pyyaml: 6.0.3  (pd-core)
 sra-tools: 3.4.1  (pd-data)
 pigz: 2.8  (pd-data)
+fastqc: 0.12.1  (pd-qc)
+fastp: 1.3.7  (pd-qc)
+multiqc: 1.35  (pd-qc)
 ncbi-datasets-cli: 18.37.0  (pd-host)
 bowtie2: 2.5.5  (pd-host)
 samtools: 1.24  (pd-host)
+megahit: 1.2.9  (pd-assembly)
+spades: 4.3.0  (pd-assembly)
+bowtie2: 2.5.5  (pd-assembly)
+samtools: 1.24  (pd-assembly)
+quast: 5.3.0  (pd-assembly)
+nonpareil: 3.5.5  (pd-assembly)
+seqkit: 2.14.0  (pd-assembly)
+scapp: 0.1.4  (pd-scapp)
 genomad: 1.12.0  (pd-genomad)
 checkv: 1.1.1  (pd-checkv)
 checkm2: 1.1.0  (pd-checkm2)
 rgi: 6.0.8  (pd-rgi)
 ncbi-amrfinderplus: 4.2.7  (pd-amrfinderplus)
 mob_suite: 3.1.9  (pd-mobsuite)
+coverm: 0.8.0  (pd-coverm)
+metabat2: 2.18_23_gc869c52  (pd-binning)
+drep: 3.7.1  (pd-drep)
 gtdbtk: 2.6.1  (pd-gtdbtk)
+r-base: 4.5.3  (pd-stats)
+bioconductor-aldex2: 1.42.0  (pd-stats)
+bioconductor-ancombc: 2.14.0  (pd-stats)
+r-vegan: 2.7_5  (pd-stats)
 
 ## Reference / databases
 human: GRCh38.p14 GCF_000001405.40  fasta_md5=689762f267eafe361b6ee4b21638eb51

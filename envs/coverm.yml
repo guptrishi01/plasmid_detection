@@ -1,0 +1,5 @@
+# pd-coverm: stage 5 contig coverage/TPM, stage 7 MAG abundance
+name: pd-coverm
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - coverm=0.8.0

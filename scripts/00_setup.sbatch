@@ -46,7 +46,8 @@ echo "  sw_root: $PATHS_SW_ROOT"
 echo "  data:    $PATHS_DATA_ROOT"
 
 sec "2. Stage envs"
-for spec in data host genomad checkv checkm2 rgi amrfinderplus mobsuite gtdbtk; do
+for spec in data qc host assembly scapp genomad checkv checkm2 rgi amrfinderplus mobsuite \
+            coverm binning drep gtdbtk stats; do
     make_env "$spec" "$PATHS_CONDA_ENVS/pd-$spec"
 done
 
@@ -157,9 +158,14 @@ done
     echo "conda: $(conda --version | awk '{print $2}')  mamba: $(mamba --version | head -1 | awk '{print $2}')"
     echo
     echo "## Tools (full solved envs in envs/lock/)"
-    for pair in core:python core:pyyaml data:sra-tools data:pigz host:ncbi-datasets-cli host:bowtie2 host:samtools \
+    for pair in core:python core:pyyaml data:sra-tools data:pigz \
+                qc:fastqc qc:fastp qc:multiqc host:ncbi-datasets-cli host:bowtie2 host:samtools \
+                assembly:megahit assembly:spades assembly:bowtie2 assembly:samtools assembly:quast \
+                assembly:nonpareil assembly:seqkit scapp:scapp \
                 genomad:genomad checkv:checkv checkm2:checkm2 rgi:rgi \
-                amrfinderplus:ncbi-amrfinderplus mobsuite:mob_suite gtdbtk:gtdbtk; do
+                amrfinderplus:ncbi-amrfinderplus mobsuite:mob_suite coverm:coverm \
+                binning:metabat2 drep:drep gtdbtk:gtdbtk \
+                stats:r-base stats:bioconductor-aldex2 stats:bioconductor-ancombc stats:r-vegan; do
         env=${pair%%:*} pkg=${pair#*:}
         echo "$pkg: $(pkgver "$PATHS_CONDA_ENVS/pd-$env" "$pkg")  (pd-$env)"
     done

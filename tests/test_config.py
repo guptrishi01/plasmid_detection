@@ -28,6 +28,12 @@ def test_unknown_reference_is_an_error(tmp_path):
         config.load(write(tmp_path, "a: ${nope}\n"))
 
 
+def test_lists_resolve_and_flatten_space_separated(tmp_path):
+    cfg = config.load(write(tmp_path, 'a: /x\nb: [5, "${a}/y"]\n'))
+    assert cfg["b"] == [5, "/x/y"]
+    assert dict(config.flatten(cfg))["B"] == "5 /x/y"
+
+
 def test_flatten_names():
     assert dict(config.flatten({"db": {"gtdb": {"dir": "/g"}}, "x": 1})) == {
         "DB_GTDB_DIR": "/g",

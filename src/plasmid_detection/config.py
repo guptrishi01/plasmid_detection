@@ -28,6 +28,8 @@ def _lookup(tree, dotted):
 def _resolve(tree, value, seen=()):
     if isinstance(value, dict):
         return {k: _resolve(tree, v, seen) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_resolve(tree, v, seen) for v in value]
     if not isinstance(value, str):
         return value
 
@@ -54,6 +56,9 @@ def flatten(tree, prefix=""):
         name = f"{prefix}_{key}" if prefix else key
         if isinstance(value, dict):
             yield from flatten(value, name)
+        elif isinstance(value, list):
+            # Lists become space-separated strings: iterate with `for x in $VAR` in bash
+            yield name.upper(), " ".join(str(v) for v in value)
         else:
             yield name.upper(), value
 
