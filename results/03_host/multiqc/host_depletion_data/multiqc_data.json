@@ -1,0 +1,1119 @@
+{
+    "report_multiqc_command": "/users/rgupta25/gibas/plasmid_detection/conda/envs/pd-qc/bin/multiqc --force --outdir /scratch/rgupta25/plasmid_detection/results/03_host/multiqc --filename host_depletion /scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs",
+    "report_data_sources": {
+        "Bowtie 2 / HiSAT2": {
+            "all_sections": {
+                "SRR6231181": "/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231181.bowtie2.log",
+                "SRR6231184": "/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231184.bowtie2.log",
+                "SRR6231191": "/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231191.bowtie2.log",
+                "SRR6231217": "/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231217.bowtie2.log"
+            }
+        }
+    },
+    "report_general_stats_data": {
+        "bowtie2": {
+            "SRR6231181": {
+                "total_reads": 14673925,
+                "paired_total": 14673925,
+                "paired_aligned_none": 14671647,
+                "paired_aligned_one": 276,
+                "paired_aligned_multi": 2002,
+                "paired_aligned_discord_one": 17,
+                "paired_aligned_mate_none": 29340353,
+                "paired_aligned_mate_one": 410,
+                "paired_aligned_mate_multi": 2497,
+                "overall_alignment_rate": 0.03,
+                "paired_aligned_mate_multi_halved": 1248.5,
+                "paired_aligned_mate_none_halved": 14670176.5,
+                "paired_aligned_mate_one_halved": 205.0
+            },
+            "SRR6231184": {
+                "total_reads": 20237685,
+                "paired_total": 20237685,
+                "paired_aligned_none": 20235099,
+                "paired_aligned_one": 1818,
+                "paired_aligned_multi": 768,
+                "paired_aligned_discord_one": 1,
+                "paired_aligned_mate_none": 40469699,
+                "paired_aligned_mate_one": 56,
+                "paired_aligned_mate_multi": 441,
+                "overall_alignment_rate": 0.01,
+                "paired_aligned_mate_multi_halved": 220.5,
+                "paired_aligned_mate_none_halved": 20234849.5,
+                "paired_aligned_mate_one_halved": 28.0
+            },
+            "SRR6231191": {
+                "total_reads": 26815410,
+                "paired_total": 26815410,
+                "paired_aligned_none": 26810281,
+                "paired_aligned_one": 3832,
+                "paired_aligned_multi": 1297,
+                "paired_aligned_discord_one": 17,
+                "paired_aligned_mate_none": 53620264,
+                "paired_aligned_mate_one": 67,
+                "paired_aligned_mate_multi": 197,
+                "overall_alignment_rate": 0.02,
+                "paired_aligned_mate_multi_halved": 98.5,
+                "paired_aligned_mate_none_halved": 26810132.0,
+                "paired_aligned_mate_one_halved": 33.5
+            },
+            "SRR6231217": {
+                "total_reads": 24936856,
+                "paired_total": 24936856,
+                "paired_aligned_none": 24933224,
+                "paired_aligned_one": 351,
+                "paired_aligned_multi": 3281,
+                "paired_aligned_discord_one": 23,
+                "paired_aligned_mate_none": 49861999,
+                "paired_aligned_mate_one": 675,
+                "paired_aligned_mate_multi": 3728,
+                "overall_alignment_rate": 0.02,
+                "paired_aligned_mate_multi_halved": 1864.0,
+                "paired_aligned_mate_none_halved": 24930999.5,
+                "paired_aligned_mate_one_halved": 337.5
+            }
+        }
+    },
+    "report_general_stats_headers": {
+        "bowtie2": {
+            "overall_alignment_rate": {
+                "title": "% Aligned",
+                "description": "overall alignment rate",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "YlGn",
+                "namespace": "Bowtie 2 / HiSAT2",
+                "clean_rid": "bowtie_2_hisat2-overall_alignment_rate",
+                "rid": "bowtie_2_hisat2-overall_alignment_rate",
+                "placement": 1000
+            }
+        }
+    },
+    "report_creation_date": "2026-09-28, 23:23 EDT",
+    "report_plot_data": {
+        "bowtie2_pe_plot": {
+            "id": "bowtie2_pe_plot",
+            "anchor": "bowtie2_pe_plot",
+            "plot_type": "bar plot",
+            "layout": {
+                "autosize": true,
+                "height": 300,
+                "hoverlabel": {
+                    "namelength": -1,
+                    "bgcolor": "white",
+                    "font": {
+                        "color": "rgba(60,60,60,1)"
+                    }
+                },
+                "margin": {
+                    "b": 65,
+                    "l": 60,
+                    "pad": 5,
+                    "r": 15,
+                    "t": 50
+                },
+                "showlegend": true,
+                "template": {
+                    "layout": {
+                        "colorway": [
+                            "#7cb5ec",
+                            "#434348",
+                            "#90ed7d",
+                            "#f7a35c",
+                            "#8085e9",
+                            "#f15c80",
+                            "#e4d354",
+                            "#2b908f",
+                            "#f45b5b",
+                            "#91e8e1"
+                        ],
+                        "font": {
+                            "color": "rgba(60,60,60,1)",
+                            "family": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+                        },
+                        "legend": {
+                            "font": {
+                                "color": "rgba(60,60,60,1)"
+                            }
+                        },
+                        "modebar": {
+                            "activecolor": "rgba(80, 80, 80, 1)",
+                            "bgcolor": "rgba(0, 0, 0, 0)",
+                            "color": "rgba(100, 100, 100, 0.5)"
+                        },
+                        "paper_bgcolor": "rgba(0,0,0,0)",
+                        "plot_bgcolor": "rgba(0,0,0,0)",
+                        "title": {
+                            "font": {
+                                "color": "rgba(60,60,60,1)",
+                                "size": 20
+                            }
+                        },
+                        "xaxis": {
+                            "color": "rgba(100,100,100,1)",
+                            "gridcolor": "rgba(128,128,128,0.15)",
+                            "spikecolor": "rgba(60,60,60,1)",
+                            "spikethickness": -3,
+                            "tickfont": {
+                                "color": "rgba(80,80,80,1)",
+                                "size": 10
+                            },
+                            "zerolinecolor": "rgba(128,128,128,0.2)"
+                        },
+                        "yaxis": {
+                            "color": "rgba(100,100,100,1)",
+                            "gridcolor": "rgba(128,128,128,0.15)",
+                            "spikecolor": "rgba(60,60,60,1)",
+                            "spikethickness": -3,
+                            "tickfont": {
+                                "color": "rgba(80,80,80,1)",
+                                "size": 10
+                            },
+                            "zerolinecolor": "rgba(128,128,128,0.2)"
+                        }
+                    }
+                },
+                "title": {
+                    "text": "Bowtie 2: PE Alignment Scores",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": true
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "showgrid": false,
+                    "categoryorder": "trace",
+                    "type": "category"
+                },
+                "barmode": "relative",
+                "bargroupgap": 0,
+                "bargap": 0.2,
+                "legend": {
+                    "tracegroupgap": 0,
+                    "traceorder": "normal"
+                },
+                "hovermode": "y unified"
+            },
+            "datasets": [
+                {
+                    "plot_id": "bowtie2_pe_plot",
+                    "label": "1",
+                    "uid": "bowtie2_pe_plot",
+                    "dconfig": {
+                        "title": "Bowtie 2: PE Alignment Scores",
+                        "subtitle": "4 bars"
+                    },
+                    "layout": {
+                        "title": {
+                            "text": "Bowtie 2: PE Alignment Scores<br><sup>4 bars</sup>"
+                        },
+                        "xaxis": {
+                            "title": {
+                                "text": "# Reads"
+                            },
+                            "hoverformat": ",.2f",
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": 0,
+                                "maxallowed": 26815410.0
+                            }
+                        },
+                        "yaxis": {
+                            "title": null,
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "showlegend": true
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b></b>%{meta}: <b>%{x}</b><extra></extra>",
+                        "orientation": "h",
+                        "marker": {
+                            "line": {
+                                "width": 0
+                            }
+                        },
+                        "textposition": "inside",
+                        "insidetextanchor": "start"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "n_series": 4,
+                    "cats": [
+                        {
+                            "name": "PE mapped uniquely",
+                            "color": "rgb(32,86,143)",
+                            "data": [
+                                351.0,
+                                3832.0,
+                                1818.0,
+                                276.0
+                            ],
+                            "data_pct": [
+                                0.0014075551464867904,
+                                0.014290290545622834,
+                                0.008983240919107101,
+                                0.0018808873563140058
+                            ]
+                        },
+                        {
+                            "name": "PE mapped discordantly uniquely",
+                            "color": "rgb(92,148,202)",
+                            "data": [
+                                23.0,
+                                17.0,
+                                1.0,
+                                17.0
+                            ],
+                            "data_pct": [
+                                9.223295831679824e-05,
+                                6.33963829007276e-05,
+                                4.941276633172223e-06,
+                                0.00011585175745412357
+                            ]
+                        },
+                        {
+                            "name": "PE one mate mapped uniquely",
+                            "color": "rgb(149,206,256)",
+                            "data": [
+                                337.5,
+                                33.5,
+                                28.0,
+                                205.0
+                            ],
+                            "data_pct": [
+                                0.0013534184100834523,
+                                0.00012492816630437498,
+                                0.00013835574572882223,
+                                0.00139703589871149
+                            ]
+                        },
+                        {
+                            "name": "PE multimapped",
+                            "color": "rgb(247,163,92)",
+                            "data": [
+                                3281.0,
+                                1297.0,
+                                768.0,
+                                2002.0
+                            ],
+                            "data_pct": [
+                                0.013157232010322392,
+                                0.0048367710954261,
+                                0.003794900454276267,
+                                0.01364324814253855
+                            ]
+                        },
+                        {
+                            "name": "PE one mate multimapped",
+                            "color": "rgb(256,235,117)",
+                            "data": [
+                                1864.0,
+                                98.5,
+                                220.5,
+                                1248.5
+                            ],
+                            "data_pct": [
+                                0.007474879752283126,
+                                0.00036732610092480406,
+                                0.0010895514976144753,
+                                0.008508289363616073
+                            ]
+                        },
+                        {
+                            "name": "PE neither mate aligned",
+                            "color": "rgb(152,25,25)",
+                            "data": [
+                                24930999.5,
+                                26810132.0,
+                                20234849.5,
+                                14670176.5
+                            ],
+                            "data_pct": [
+                                99.9765146817225,
+                                99.98031728770881,
+                                99.98598901010664,
+                                99.97445468748137
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "SRR6231217",
+                        "SRR6231191",
+                        "SRR6231184",
+                        "SRR6231181"
+                    ],
+                    "cats_clustered": null,
+                    "samples_clustered": null,
+                    "group_labels": null,
+                    "offset_groups": null
+                }
+            ],
+            "pconfig": {
+                "id": "bowtie2_pe_plot",
+                "title": "Bowtie 2: PE Alignment Scores",
+                "subtitle": null,
+                "anchor": null,
+                "table_title": null,
+                "height": null,
+                "width": null,
+                "square": false,
+                "logswitch": false,
+                "logswitch_active": false,
+                "logswitch_label": "Log10",
+                "cpswitch": true,
+                "cpswitch_c_active": true,
+                "cpswitch_counts_label": "Number of Reads",
+                "cpswitch_percent_label": "Percentages",
+                "xLog": null,
+                "yLog": null,
+                "xlog": false,
+                "ylog": false,
+                "data_labels": [],
+                "xTitle": null,
+                "yTitle": null,
+                "xlab": null,
+                "ylab": "# Reads",
+                "xsuffix": null,
+                "ysuffix": null,
+                "tt_suffix": null,
+                "xLabFormat": null,
+                "yLabFormat": null,
+                "xLabelFormat": null,
+                "yLabelFormat": null,
+                "xlab_format": null,
+                "ylab_format": null,
+                "tt_label": null,
+                "xDecimals": null,
+                "yDecimals": null,
+                "decimalPlaces": null,
+                "x_decimals": null,
+                "y_decimals": null,
+                "tt_decimals": null,
+                "xmin": null,
+                "xmax": null,
+                "ymin": null,
+                "ymax": null,
+                "xFloor": null,
+                "xCeiling": null,
+                "yFloor": null,
+                "yCeiling": null,
+                "x_clipmin": null,
+                "x_clipmax": null,
+                "y_clipmin": null,
+                "y_clipmax": null,
+                "save_data_file": true,
+                "showlegend": null,
+                "xMinRange": null,
+                "yMinRange": null,
+                "x_minrange": null,
+                "y_minrange": null,
+                "xPlotBands": null,
+                "yPlotBands": null,
+                "xPlotLines": null,
+                "yPlotLines": null,
+                "x_bands": null,
+                "y_bands": null,
+                "x_lines": null,
+                "y_lines": null,
+                "series_label": "samples",
+                "flat_if_very_large": true,
+                "stacking": "relative",
+                "hide_empty": null,
+                "hide_zero_cats": true,
+                "sort_samples": true,
+                "cluster_samples": false,
+                "cluster_method": "complete",
+                "cluster_switch_clustered_active": true,
+                "use_legend": null,
+                "suffix": null,
+                "lab_format": null,
+                "sample_groups": null
+            },
+            "add_log_tab": false,
+            "add_pct_tab": true,
+            "l_active": false,
+            "p_active": false,
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [
+                "xaxis"
+            ],
+            "square": false,
+            "flat": false,
+            "defer_render": false,
+            "section_anchor": null,
+            "module_anchor": null,
+            "sort_switch_sorted_active": false,
+            "cluster_switch_clustered_active": true
+        },
+        "general_stats_table": {
+            "id": "general_stats_table",
+            "anchor": "general_stats_table",
+            "plot_type": "violin plot",
+            "layout": {
+                "autosize": true,
+                "height": 500,
+                "hoverlabel": {
+                    "namelength": -1
+                },
+                "margin": {
+                    "b": 40,
+                    "l": 60,
+                    "pad": 0,
+                    "r": 15,
+                    "t": 50
+                },
+                "showlegend": false,
+                "template": {
+                    "layout": {
+                        "colorway": [
+                            "#7cb5ec",
+                            "#434348",
+                            "#90ed7d",
+                            "#f7a35c",
+                            "#8085e9",
+                            "#f15c80",
+                            "#e4d354",
+                            "#2b908f",
+                            "#f45b5b",
+                            "#91e8e1"
+                        ],
+                        "font": {
+                            "color": "rgba(60,60,60,1)",
+                            "family": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+                        },
+                        "legend": {
+                            "font": {
+                                "color": "rgba(60,60,60,1)"
+                            }
+                        },
+                        "modebar": {
+                            "activecolor": "rgba(80, 80, 80, 1)",
+                            "bgcolor": "rgba(0, 0, 0, 0)",
+                            "color": "rgba(100, 100, 100, 0.5)"
+                        },
+                        "paper_bgcolor": "rgba(0,0,0,0)",
+                        "plot_bgcolor": "rgba(0,0,0,0)",
+                        "title": {
+                            "font": {
+                                "color": "rgba(60,60,60,1)",
+                                "size": 20
+                            }
+                        },
+                        "xaxis": {
+                            "color": "rgba(100,100,100,1)",
+                            "gridcolor": "rgba(128,128,128,0.15)",
+                            "spikecolor": "rgba(60,60,60,1)",
+                            "spikethickness": -3,
+                            "tickfont": {
+                                "color": "rgba(80,80,80,1)",
+                                "size": 10
+                            },
+                            "zerolinecolor": "rgba(128,128,128,0.2)"
+                        },
+                        "yaxis": {
+                            "color": "rgba(100,100,100,1)",
+                            "gridcolor": "rgba(128,128,128,0.15)",
+                            "spikecolor": "rgba(60,60,60,1)",
+                            "spikethickness": -3,
+                            "tickfont": {
+                                "color": "rgba(80,80,80,1)",
+                                "size": 10
+                            },
+                            "zerolinecolor": "rgba(128,128,128,0.2)"
+                        }
+                    }
+                },
+                "title": {
+                    "text": "General Statistics",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": false,
+                    "tickfont": {
+                        "size": 9,
+                        "color": "rgba(0,0,0,0.5)"
+                    },
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "tickfont": {
+                        "size": 9,
+                        "color": "rgba(0,0,0,0.5)"
+                    },
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "violingap": 0,
+                "grid": {
+                    "columns": 1,
+                    "roworder": "top to bottom",
+                    "ygap": 0.4
+                }
+            },
+            "datasets": [
+                {
+                    "plot_id": "general_stats_table",
+                    "label": "1",
+                    "uid": "general_stats_table",
+                    "dconfig": {
+                        "ylab": "",
+                        "title": "General Statistics",
+                        "subtitle": "4 samples"
+                    },
+                    "layout": {
+                        "title": {
+                            "text": "General Statistics<br><sup>4 samples</sup>"
+                        },
+                        "xaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": null
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "yaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": ""
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        }
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "orientation": "h",
+                        "box": {
+                            "visible": true
+                        },
+                        "meanline": {
+                            "visible": true
+                        },
+                        "fillcolor": "#999999",
+                        "line": {
+                            "width": 0
+                        },
+                        "opacity": 1,
+                        "points": false,
+                        "hoveron": "points"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "n_series": 4,
+                    "metrics": [
+                        "bowtie_2_hisat2-overall_alignment_rate"
+                    ],
+                    "header_by_metric": {
+                        "bowtie_2_hisat2-overall_alignment_rate": {
+                            "title": "% Aligned",
+                            "description": "overall alignment rate",
+                            "suffix": "%",
+                            "dmin": 0.0,
+                            "dmax": 100.0,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.5,
+                                    100.5025
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "Bowtie 2 / HiSAT2",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        }
+                    },
+                    "violin_value_by_sample_by_metric": {
+                        "bowtie_2_hisat2-overall_alignment_rate": {
+                            "SRR6231181": 0.03,
+                            "SRR6231184": 0.01,
+                            "SRR6231191": 0.02,
+                            "SRR6231217": 0.02
+                        }
+                    },
+                    "scatter_value_by_sample_by_metric": {
+                        "bowtie_2_hisat2-overall_alignment_rate": {}
+                    },
+                    "all_samples": [
+                        "SRR6231181",
+                        "SRR6231184",
+                        "SRR6231191",
+                        "SRR6231217"
+                    ],
+                    "scatter_trace_params": {
+                        "mode": "markers",
+                        "marker": {
+                            "size": 4,
+                            "color": "#0b79e6",
+                            "opacity": 1
+                        },
+                        "showlegend": false,
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "hoverlabel": {
+                            "bgcolor": "white",
+                            "font": {
+                                "color": "rgba(60,60,60,1)"
+                            }
+                        }
+                    },
+                    "dt": {
+                        "id": "general_stats_table",
+                        "anchor": "general_stats_table_table",
+                        "pconfig": {
+                            "id": "general_stats_table",
+                            "title": "General Statistics",
+                            "subtitle": null,
+                            "anchor": null,
+                            "table_title": null,
+                            "height": null,
+                            "width": null,
+                            "square": false,
+                            "logswitch": false,
+                            "logswitch_active": false,
+                            "logswitch_label": "Log10",
+                            "cpswitch": true,
+                            "cpswitch_c_active": true,
+                            "cpswitch_counts_label": "Counts",
+                            "cpswitch_percent_label": "Percentages",
+                            "xLog": null,
+                            "yLog": null,
+                            "xlog": false,
+                            "ylog": false,
+                            "data_labels": [],
+                            "xTitle": null,
+                            "yTitle": null,
+                            "xlab": null,
+                            "ylab": null,
+                            "xsuffix": null,
+                            "ysuffix": null,
+                            "tt_suffix": null,
+                            "xLabFormat": null,
+                            "yLabFormat": null,
+                            "xLabelFormat": null,
+                            "yLabelFormat": null,
+                            "xlab_format": null,
+                            "ylab_format": null,
+                            "tt_label": null,
+                            "xDecimals": null,
+                            "yDecimals": null,
+                            "decimalPlaces": null,
+                            "x_decimals": null,
+                            "y_decimals": null,
+                            "tt_decimals": null,
+                            "xmin": null,
+                            "xmax": null,
+                            "ymin": null,
+                            "ymax": null,
+                            "xFloor": null,
+                            "xCeiling": null,
+                            "yFloor": null,
+                            "yCeiling": null,
+                            "x_clipmin": null,
+                            "x_clipmax": null,
+                            "y_clipmin": null,
+                            "y_clipmax": null,
+                            "save_data_file": true,
+                            "showlegend": null,
+                            "xMinRange": null,
+                            "yMinRange": null,
+                            "x_minrange": null,
+                            "y_minrange": null,
+                            "xPlotBands": null,
+                            "yPlotBands": null,
+                            "xPlotLines": null,
+                            "yPlotLines": null,
+                            "x_bands": null,
+                            "y_bands": null,
+                            "x_lines": null,
+                            "y_lines": null,
+                            "series_label": "samples",
+                            "flat_if_very_large": false,
+                            "namespace": "",
+                            "save_file": true,
+                            "raw_data_fn": "multiqc_general_stats",
+                            "defaultsort": null,
+                            "sortRows": true,
+                            "sort_rows": true,
+                            "only_defined_headers": true,
+                            "col1_header": "Sample Name",
+                            "no_beeswarm": false,
+                            "no_violin": false,
+                            "scale": "GnBu",
+                            "min": null,
+                            "parse_numeric": true,
+                            "rows_are_samples": true
+                        },
+                        "section_by_id": {
+                            "bowtie2": {
+                                "column_by_key": {
+                                    "overall_alignment_rate": {
+                                        "rid": "bowtie_2_hisat2-overall_alignment_rate",
+                                        "clean_rid": "bowtie_2_hisat2-overall_alignment_rate",
+                                        "title": "% Aligned",
+                                        "description": "overall alignment rate",
+                                        "scale": "YlGn",
+                                        "hidden": false,
+                                        "placement": 1000.0,
+                                        "namespace": "Bowtie 2 / HiSAT2",
+                                        "colour": null,
+                                        "color": null,
+                                        "max": 100.0,
+                                        "dmax": 100.0,
+                                        "min": 0.0,
+                                        "dmin": 0.0,
+                                        "ceiling": null,
+                                        "floor": null,
+                                        "minRange": null,
+                                        "minrange": null,
+                                        "shared_key": null,
+                                        "tt_decimals": null,
+                                        "suffix": "%",
+                                        "cond_formatting_colours": [
+                                            {
+                                                "blue": "#337ab7"
+                                            },
+                                            {
+                                                "lbue": "#5bc0de"
+                                            },
+                                            {
+                                                "pass": "#5cb85c"
+                                            },
+                                            {
+                                                "warn": "#f0ad4e"
+                                            },
+                                            {
+                                                "fail": "#d9534f"
+                                            },
+                                            {
+                                                "male": "#5bc0de"
+                                            },
+                                            {
+                                                "female": "#d9534f"
+                                            }
+                                        ],
+                                        "cond_formatting_rules": {},
+                                        "bgcols": {},
+                                        "bars_zero_centrepoint": false,
+                                        "modify": null,
+                                        "format": null
+                                    }
+                                },
+                                "rows_by_sgroup": {
+                                    "SRR6231181": [
+                                        {
+                                            "sample": "SRR6231181",
+                                            "data": {
+                                                "overall_alignment_rate": {
+                                                    "raw": 0.03,
+                                                    "mod": 0.03,
+                                                    "fmt": "0.0"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "SRR6231184": [
+                                        {
+                                            "sample": "SRR6231184",
+                                            "data": {
+                                                "overall_alignment_rate": {
+                                                    "raw": 0.01,
+                                                    "mod": 0.01,
+                                                    "fmt": "0.0"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "SRR6231191": [
+                                        {
+                                            "sample": "SRR6231191",
+                                            "data": {
+                                                "overall_alignment_rate": {
+                                                    "raw": 0.02,
+                                                    "mod": 0.02,
+                                                    "fmt": "0.0"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "SRR6231217": [
+                                        {
+                                            "sample": "SRR6231217",
+                                            "data": {
+                                                "overall_alignment_rate": {
+                                                    "raw": 0.02,
+                                                    "mod": 0.02,
+                                                    "fmt": "0.0"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "headers_in_order": {
+                            "1000.0": [
+                                [
+                                    0,
+                                    "overall_alignment_rate"
+                                ]
+                            ]
+                        }
+                    },
+                    "show_table_by_default": true,
+                    "is_downsampled": false
+                }
+            ],
+            "pconfig": {
+                "id": "general_stats_table",
+                "title": "General Statistics",
+                "subtitle": null,
+                "anchor": null,
+                "table_title": null,
+                "height": null,
+                "width": null,
+                "square": false,
+                "logswitch": false,
+                "logswitch_active": false,
+                "logswitch_label": "Log10",
+                "cpswitch": true,
+                "cpswitch_c_active": true,
+                "cpswitch_counts_label": "Counts",
+                "cpswitch_percent_label": "Percentages",
+                "xLog": null,
+                "yLog": null,
+                "xlog": false,
+                "ylog": false,
+                "data_labels": [],
+                "xTitle": null,
+                "yTitle": null,
+                "xlab": null,
+                "ylab": null,
+                "xsuffix": null,
+                "ysuffix": null,
+                "tt_suffix": null,
+                "xLabFormat": null,
+                "yLabFormat": null,
+                "xLabelFormat": null,
+                "yLabelFormat": null,
+                "xlab_format": null,
+                "ylab_format": null,
+                "tt_label": null,
+                "xDecimals": null,
+                "yDecimals": null,
+                "decimalPlaces": null,
+                "x_decimals": null,
+                "y_decimals": null,
+                "tt_decimals": null,
+                "xmin": null,
+                "xmax": null,
+                "ymin": null,
+                "ymax": null,
+                "xFloor": null,
+                "xCeiling": null,
+                "yFloor": null,
+                "yCeiling": null,
+                "x_clipmin": null,
+                "x_clipmax": null,
+                "y_clipmin": null,
+                "y_clipmax": null,
+                "save_data_file": true,
+                "showlegend": null,
+                "xMinRange": null,
+                "yMinRange": null,
+                "x_minrange": null,
+                "y_minrange": null,
+                "xPlotBands": null,
+                "yPlotBands": null,
+                "xPlotLines": null,
+                "yPlotLines": null,
+                "x_bands": null,
+                "y_bands": null,
+                "x_lines": null,
+                "y_lines": null,
+                "series_label": "samples",
+                "flat_if_very_large": false,
+                "namespace": "",
+                "save_file": true,
+                "raw_data_fn": "multiqc_general_stats",
+                "defaultsort": null,
+                "sortRows": true,
+                "sort_rows": true,
+                "only_defined_headers": true,
+                "col1_header": "Sample Name",
+                "no_beeswarm": false,
+                "no_violin": false,
+                "scale": "GnBu",
+                "min": null,
+                "parse_numeric": true,
+                "rows_are_samples": true
+            },
+            "add_log_tab": false,
+            "add_pct_tab": false,
+            "l_active": false,
+            "p_active": false,
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [],
+            "square": false,
+            "flat": false,
+            "defer_render": false,
+            "section_anchor": null,
+            "module_anchor": null,
+            "violin_height": 70,
+            "extra_height": 63,
+            "no_violin": false,
+            "show_table": true,
+            "show_table_by_default": true,
+            "n_samples": 4,
+            "table_anchor": "general_stats_table_table"
+        }
+    },
+    "config_analysis_dir": [
+        "/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs"
+    ],
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": null,
+    "config_report_header_info": null,
+    "config_script_path": "/users/rgupta25/gibas/plasmid_detection/conda/envs/pd-qc/lib/python3.14/site-packages/multiqc",
+    "config_short_version": "1.35",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.35",
+    "config_output_dir": "/scratch/rgupta25/plasmid_detection/results/03_host/multiqc",
+    "config_sample_names_rename": [],
+    "config_sample_names_rename_buttons": [],
+    "config_analysis_dir_abs": [
+        "/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs"
+    ],
+    "report_saved_raw_data": {
+        "multiqc_bowtie2": {
+            "SRR6231181": {
+                "total_reads": 14673925,
+                "paired_total": 14673925,
+                "paired_aligned_none": 14671647,
+                "paired_aligned_one": 276,
+                "paired_aligned_multi": 2002,
+                "paired_aligned_discord_one": 17,
+                "paired_aligned_mate_none": 29340353,
+                "paired_aligned_mate_one": 410,
+                "paired_aligned_mate_multi": 2497,
+                "overall_alignment_rate": 0.03,
+                "paired_aligned_mate_multi_halved": 1248.5,
+                "paired_aligned_mate_none_halved": 14670176.5,
+                "paired_aligned_mate_one_halved": 205.0
+            },
+            "SRR6231184": {
+                "total_reads": 20237685,
+                "paired_total": 20237685,
+                "paired_aligned_none": 20235099,
+                "paired_aligned_one": 1818,
+                "paired_aligned_multi": 768,
+                "paired_aligned_discord_one": 1,
+                "paired_aligned_mate_none": 40469699,
+                "paired_aligned_mate_one": 56,
+                "paired_aligned_mate_multi": 441,
+                "overall_alignment_rate": 0.01,
+                "paired_aligned_mate_multi_halved": 220.5,
+                "paired_aligned_mate_none_halved": 20234849.5,
+                "paired_aligned_mate_one_halved": 28.0
+            },
+            "SRR6231191": {
+                "total_reads": 26815410,
+                "paired_total": 26815410,
+                "paired_aligned_none": 26810281,
+                "paired_aligned_one": 3832,
+                "paired_aligned_multi": 1297,
+                "paired_aligned_discord_one": 17,
+                "paired_aligned_mate_none": 53620264,
+                "paired_aligned_mate_one": 67,
+                "paired_aligned_mate_multi": 197,
+                "overall_alignment_rate": 0.02,
+                "paired_aligned_mate_multi_halved": 98.5,
+                "paired_aligned_mate_none_halved": 26810132.0,
+                "paired_aligned_mate_one_halved": 33.5
+            },
+            "SRR6231217": {
+                "total_reads": 24936856,
+                "paired_total": 24936856,
+                "paired_aligned_none": 24933224,
+                "paired_aligned_one": 351,
+                "paired_aligned_multi": 3281,
+                "paired_aligned_discord_one": 23,
+                "paired_aligned_mate_none": 49861999,
+                "paired_aligned_mate_one": 675,
+                "paired_aligned_mate_multi": 3728,
+                "overall_alignment_rate": 0.02,
+                "paired_aligned_mate_multi_halved": 1864.0,
+                "paired_aligned_mate_none_halved": 24930999.5,
+                "paired_aligned_mate_one_halved": 337.5
+            }
+        },
+        "multiqc_general_stats": {
+            "SRR6231181": {
+                "bowtie_2_hisat2-overall_alignment_rate": 0.03
+            },
+            "SRR6231184": {
+                "bowtie_2_hisat2-overall_alignment_rate": 0.01
+            },
+            "SRR6231191": {
+                "bowtie_2_hisat2-overall_alignment_rate": 0.02
+            },
+            "SRR6231217": {
+                "bowtie_2_hisat2-overall_alignment_rate": 0.02
+            }
+        }
+    }
+}

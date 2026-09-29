@@ -1,0 +1,57 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 26183846
+total bases: 3272980750
+Q20 bases: 3173522526(96.9612%)
+Q30 bases: 3083106236(94.1987%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 26183846
+total bases: 3272980750
+Q20 bases: 3195179880(97.6229%)
+Q30 bases: 3126614520(95.528%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 24936856
+total bases: 3017880357
+Q20 bases: 2986244033(98.9517%)
+Q30 bases: 2928248203(97.03%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 24936856
+total bases: 3052932437
+Q20 bases: 3032555357(99.3325%)
+Q30 bases: 2993831003(98.0641%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 49873712
+reads failed due to low quality: 30850
+reads failed due to too many N: 124
+reads failed due to too short: 2439336
+reads failed due to low complexity: 1112
+reads failed due to adapter dimer: 22558
+reads with adapter trimmed: 3991680
+bases trimmed due to adapters: 65326969
+reads corrected by overlap analysis: 328811
+bases corrected by overlap analysis: 358042
+
+Duplication rate: 0.425457%
+
+Insert size peak (evaluated by paired-end reads): 125
+
+JSON report: /scratch/rgupta25/plasmid_detection/results/02_qc/fastp/SRR6231217.fastp.json
+HTML report: /scratch/rgupta25/plasmid_detection/results/02_qc/fastp/SRR6231217.fastp.html
+
+fastp -i /scratch/rgupta25/plasmid_detection/raw/SRR6231217_1.fastq.gz -I /scratch/rgupta25/plasmid_detection/raw/SRR6231217_2.fastq.gz -o /scratch/rgupta25/plasmid_detection/work/02_trimmed/SRR6231217_1.fastq.gz.tmp.gz -O /scratch/rgupta25/plasmid_detection/work/02_trimmed/SRR6231217_2.fastq.gz.tmp.gz --thread 8 --detect_adapter_for_pe --cut_front --cut_front_window_size 4 --cut_front_mean_quality 20 --cut_right --cut_right_window_size 4 --cut_right_mean_quality 20 --correction --low_complexity_filter --length_required 50 --json /scratch/rgupta25/plasmid_detection/results/02_qc/fastp/SRR6231217.fastp.json --html /scratch/rgupta25/plasmid_detection/results/02_qc/fastp/SRR6231217.fastp.html --report_title SRR6231217 
+fastp v1.3.7, time used: 134 seconds
