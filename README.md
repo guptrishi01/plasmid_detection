@@ -96,6 +96,11 @@ Not tracked in git: `conda/` (envs + package cache), `db/` (reference + database
 `data/`, `logs/`, sequence/index files, `*.pdf`. Stage outputs go to scratch under
 `/scratch/rgupta25/plasmid_detection/{work,results}`; summary tables to `results/tables/`.
 
+**`results/` in the repo** is a copy of the shareable part of the scratch results (reports,
+logs, QC summaries, tables) for lab meetings, made with `bash scripts/sync_results.sh
+[stage ...]`. It never copies reads, contigs, graphs, or BAMs, and skips files over 20 MB;
+those stay on scratch.
+
 **Storage split.** `paths.sw_root` = this repo in home (500G, not purged) holds `conda/`
 and `db/`. `paths.data_root` = `/scratch/rgupta25/plasmid_detection` (5T, purgeable) holds
 raw reads, intermediates, and results. **Config.** Every stage sources

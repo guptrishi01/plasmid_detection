@@ -177,6 +177,12 @@ by removing the extracted package dirs, keeping the archives). Clean `src/ tests
 
 ## Git scope
 
+`results/` in the repo is tracked on purpose (user decision 2026-09-29: shown in lab
+meetings). It is filled only by `scripts/sync_results.sh`, which copies reports/logs/tables
+from scratch and excludes sequence/alignment files and anything > 20 MB. Never copy
+assemblies, BAMs, or reads into it by hand.
+
+
 Remote: `git@github.com:guptrishi01/plasmid_detection.git` (SSH key `~/.ssh/id_rsa`).
 **Don't push unless asked.** `.gitignore` excludes `data/`, `conda/`, `db/`, `logs/`,
 FASTQ/FASTA/BAM/index files, and `*.pdf`. Never force-add from those — anything rebuildable
