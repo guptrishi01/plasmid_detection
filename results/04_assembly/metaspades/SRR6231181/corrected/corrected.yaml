@@ -1,0 +1,9 @@
+- "left reads":
+  - "/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/SRR6231181_1.fastq00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/SRR6231181_2.fastq00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/SRR6231181__unpaired00.0_0.cor.fastq.gz"
+  "type": "paired-end"

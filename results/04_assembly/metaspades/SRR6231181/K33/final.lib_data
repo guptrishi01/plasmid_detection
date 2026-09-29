@@ -1,0 +1,40 @@
+ä---
+max read length: 125
+nomerge max read length: 125
+average read length: 122.803
+average coverage: 2.56425
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/SRR6231181_1.fastq00.0_0.cor.fastq.gz'
+    right reads:
+      - '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/SRR6231181_2.fastq00.0_0.cor.fastq.gz'
+    single reads:
+      - '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/corrected/SRR6231181__unpaired00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 125
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/.bin_reads/INFO_0'
+        paired read prefix: '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/.bin_reads/paired_0'
+        merged read prefix: '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/.bin_reads/merged_0'
+        single read prefix: '/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/.bin_reads/single_0'
+        chunk num:       32
+      single reads mapped: false
+      library index:   0
+      number of reads: 26167353
+      total nucleotides: 3213416768
+      read cloud info:
+        fragment length distribution: {  }
+...

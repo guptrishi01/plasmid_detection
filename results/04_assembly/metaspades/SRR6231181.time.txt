@@ -1,0 +1,23 @@
+	Command being timed: "spades.py --meta -1 /scratch/rgupta25/plasmid_detection/work/03_hostfree/SRR6231181_1.fastq.gz -2 /scratch/rgupta25/plasmid_detection/work/03_hostfree/SRR6231181_2.fastq.gz -o /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181 -t 32 -m 480"
+	User time (seconds): 74313.72
+	System time (seconds): 1213.52
+	Percent of CPU this job got: 1676%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:15:05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 51066060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3790669
+	Minor (reclaiming a frame) page faults: 18995454
+	Voluntary context switches: 202331004
+	Involuntary context switches: 1818980
+	Swaps: 0
+	File system inputs: 861515080
+	File system outputs: 758195792
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

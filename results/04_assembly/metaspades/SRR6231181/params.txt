@@ -1,0 +1,37 @@
+Command line: /users/rgupta25/gibas/plasmid_detection/conda/envs/pd-assembly/bin/spades.py	--meta	-1	/scratch/rgupta25/plasmid_detection/work/03_hostfree/SRR6231181_1.fastq.gz	-2	/scratch/rgupta25/plasmid_detection/work/03_hostfree/SRR6231181_2.fastq.gz	-o	/scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181	-t	32	-m	480	
+
+System information:
+  SPAdes version: 4.3.0
+  Python version: 3.11.16
+  OS: Linux-5.14.0-570.49.1.el9_6.x86_64-x86_64-with-glibc2.34
+
+Output dir: /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/scratch/rgupta25/plasmid_detection/work/03_hostfree/SRR6231181_1.fastq.gz']
+      right reads: ['/scratch/rgupta25/plasmid_detection/work/03_hostfree/SRR6231181_2.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [21, 33, 55]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /scratch/rgupta25/plasmid_detection/results/04_assembly/metaspades/SRR6231181/tmp
+  Threads: 32
+  Memory limit (in Gb): 480
+

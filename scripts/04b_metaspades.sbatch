@@ -38,12 +38,17 @@ elapsed=$(( $(date +%s) - start ))
 maxrss_gb=$(awk -F': ' '/Maximum resident set size/{printf "%.1f", $2/1024/1024}' "$OUT/${SRR}.time.txt")
 contigs=NA
 [[ -s "$OUT/$SRR/contigs.fasta" ]] && contigs=$(grep -c '^>' "$OUT/$SRR/contigs.fasta")
-last_error=$(grep -iE "error|exception|killed|not enough memory" "$OUT/$SRR/spades.log" 2>/dev/null | tail -1)
+# Real failures only: plain "error" also matches SPAdes' "Read error correction" steps
+last_error=$(grep -E "== Error|ERROR|Exception|Killed|not enough memory|finished abnormally" \
+    "$OUT/$SRR/spades.log" 2>/dev/null | tail -1)
+contigs_1kb=NA
+[[ -s "$OUT/$SRR/contigs.fasta" ]] && contigs_1kb=$(awk -v m="$PARAMS_ASSEMBLY_MIN_CONTIG_LEN" \
+    '/^>/{if(l>=m)n++; l=0; next}{l+=length($0)} END{if(l>=m)n++; print n+0}' "$OUT/$SRR/contigs.fasta")
 
-printf 'run\tspots\texit_code\telapsed_h\tmax_rss_gb\tcontigs\tlast_error_line\n' > "$OUT/attempt.tsv"
-printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$SRR" "$(sample_field "$SRR" spots)" "$rc" \
-    "$(awk -v e="$elapsed" 'BEGIN{printf "%.2f", e/3600}')" "$maxrss_gb" "$contigs" "${last_error:-none}" \
-    >> "$OUT/attempt.tsv"
+printf 'run\tspots\texit_code\telapsed_h\tmax_rss_gb\tcontigs\tcontigs_ge_min_len\tlast_error_line\n' > "$OUT/attempt.tsv"
+printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$SRR" "$(sample_field "$SRR" spots)" "$rc" \
+    "$(awk -v e="$elapsed" 'BEGIN{printf "%.2f", e/3600}')" "$maxrss_gb" "$contigs" "$contigs_1kb" \
+    "${last_error:-none}" >> "$OUT/attempt.tsv"
 cat "$OUT/attempt.tsv"
 echo "[$(date)] metaSPAdes attempt recorded (exit $rc)"
 exit 0
