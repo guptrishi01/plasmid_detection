@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+Bowtie 2 / HiSAT2	all_sections	bowtie2_logs | SRR6231181	/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231181.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	bowtie2_logs | SRR6231184	/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231184.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	bowtie2_logs | SRR6231191	/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231191.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	bowtie2_logs | SRR6231217	/scratch/rgupta25/plasmid_detection/results/03_host/bowtie2_logs/SRR6231217.bowtie2.log
+FastQC	all_sections	fastqc_hostfree | SRR6231181_1	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231181_1_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231181_2	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231181_2_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231184_1	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231184_1_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231184_2	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231184_2_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231191_1	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231191_1_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231191_2	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231191_2_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231217_1	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231217_1_fastqc.zip
+FastQC	all_sections	fastqc_hostfree | SRR6231217_2	/scratch/rgupta25/plasmid_detection/results/03_host/fastqc_hostfree/SRR6231217_2_fastqc.zip
