@@ -16,7 +16,9 @@ source "${PD_REPO:-$HOME/gibas/plasmid_detection}/scripts/lib/common.sh"
 activate "$ENVS_QC"
 mkdir -p "$PATHS_TABLES"
 
-multiqc --force --outdir "$PATHS_QC/multiqc" --filename read_qc \
+# --dirs: raw and trimmed FastQC reports share sample names (SRR..._1); without the folder
+# prefix MultiQC keeps only one of each pair and the trimmed FastQC silently disappears
+multiqc --force --dirs --dirs-depth 1 --outdir "$PATHS_QC/multiqc" --filename read_qc \
     "$PATHS_QC/fastqc_raw" "$PATHS_QC/fastp" "$PATHS_QC/fastqc_trimmed"
 
 pdpy plasmid_detection.tables qc --samples "$PATHS_RUN_SAMPLES" \
