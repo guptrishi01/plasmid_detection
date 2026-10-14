@@ -1,0 +1,51 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad marker-classification (v1.12.0). This will classify the   │
+│  input sequences into chromosome, plasmid, or virus based on the presence    │
+│  of geNomad markers and other gene-related features.                         │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231191/genoma  │
+│    d/SRR6231191.contigs_marker_classification                                │
+│    ├── SRR6231191.contigs_marker_classification.json (execution parameters)  │
+│    ├── SRR6231191.contigs_features.tsv (sequence feature data: tabular       │
+│    │   format)                                                               │
+│    ├── SRR6231191.contigs_features.npz (sequence feature data: binary        │
+│    │   format)                                                               │
+│    ├── SRR6231191.contigs_marker_classification.tsv (sequence                │
+│    │   classification: tabular format)                                       │
+│    ├── SRR6231191.contigs_marker_classification.npz (sequence                │
+│    │   classification: binary format)                                        │
+│    ├── SRR6231191.contigs_provirus_features.tsv (provirus feature data:      │
+│    │   tabular format)                                                       │
+│    ├── SRR6231191.contigs_provirus_features.npz (provirus feature data:      │
+│    │   binary format)                                                        │
+│    ├── SRR6231191.contigs_provirus_marker_classification.tsv (provirus       │
+│    │   classification: tabular format)                                       │
+│    └── SRR6231191.contigs_provirus_marker_classification.npz (provirus       │
+│        classification: binary format)                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[14:18:41] Executing genomad marker-classification.                             
+[14:18:41] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231191/gen
+           omad/SRR6231191.contigs_marker_classification directory.             
+[14:18:53] Sequence features computed.                                          
+[14:18:53] Sequence features in binary format written to                        
+           SRR6231191.contigs_features.npz.                                     
+[14:18:55] Sequence features in tabular format written to                       
+           SRR6231191.contigs_features.tsv.                                     
+[14:18:55] Provirus features computed.                                          
+[14:18:55] Provirus features in binary format written to                        
+           SRR6231191.contigs_provirus_features.npz.                            
+[14:18:55] Provirus features in tabular format written to                       
+           SRR6231191.contigs_provirus_features.tsv.                            
+[14:18:56] Sequences classified.                                                
+[14:18:56] Sequence classification in binary format written to                  
+           SRR6231191.contigs_marker_classification.npz.                        
+[14:18:56] Sequence classification in tabular format written to                 
+           SRR6231191.contigs_marker_classification.tsv.                        
+[14:18:56] Proviruses classified.                                               
+[14:18:56] Provirus classification in binary format written to                  
+           SRR6231191.contigs_provirus_marker_classification.npz.               
+[14:18:56] Provirus classification in tabular format written to                 
+           SRR6231191.contigs_provirus_marker_classification.tsv.               
+[14:18:56] geNomad marker-classification finished!                              

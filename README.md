@@ -112,6 +112,7 @@ Details in [CLAUDE.md](CLAUDE.md).
 ## Workflow
 
 Status legend: **implemented** = script exists and has produced its output;
+**run on pilot** = run on the 4 pilot samples and audited (see "Pilot results");
 **script written** = script exists, tools installed and pinned, not yet run on data.
 
 ### 0. Setup — implemented (`scripts/00_setup.sbatch`)
@@ -162,7 +163,7 @@ file MD5s, PASS/FAIL); `01b_collect_manifest.sbatch` combines them into
 |---|---|---|
 | sra-tools 3.4.1, pigz 2.8 | pd-data | implemented |
 
-### 2. Read QC — script written
+### 2. Read QC — run on pilot
 
 FastQC on raw reads. fastp. FastQC on trimmed reads. MultiQC over everything.
 Table: raw pairs, trimmed pairs, Q30, duplication, insert size, per sample.
@@ -176,7 +177,7 @@ fastp options (`params.qc.fastp_args`) mirror the paper's Trimmomatic intent: ad
 detection for PE, sliding window Q20, minimum length 50. No `--dedup`: duplication is
 reported, not removed. Tools: FastQC 0.12.1, fastp 1.3.7, MultiQC 1.35.
 
-### 3. Host depletion — script written
+### 3. Host depletion — run on pilot
 
 Bowtie2 against the human index. Keep pairs where neither mate maps.
 Table: raw, trimmed, human, retained pairs per sample. MultiQC of the Bowtie2 logs.
@@ -185,12 +186,13 @@ Table: raw, trimmed, human, retained pairs per sample. MultiQC of the Bowtie2 lo
 |---|---|---|
 | `03_host_depletion` | per run: Bowtie2 (`--very-sensitive`) vs GRCh38.p14; keep pairs with SAM flags 4 and 8 both set | pd-host |
 | `03b_host_summary` | MultiQC of the Bowtie2 logs + `tables/03_host_depletion.tsv` | pd-qc |
+| `03c_hostfree_qc` | FastQC on the host-depleted reads (the stage 4 input) + MultiQC with the Bowtie2 logs. Not in the spec; added so the reads that go into assembly are QC'd too | pd-qc |
 
 "Neither mate maps" is `samtools view -f 12`, not Bowtie2's `--un-conc` (which also keeps
 pairs where only one mate maps). The table step fails if Bowtie2's input pair count
 differs from fastp's output, so stage 3 can't silently run on stale reads.
 
-### 4. Assembly — script written
+### 4. Assembly — run on pilot
 
 MEGAHIT, per sample. Contig headers prefixed with the sample id. Keep the assembly graph.
 metaSPAdes: one attempt on the smallest sample. Record what happens.
@@ -221,7 +223,7 @@ converted with `megahit_toolkit contig2fastg` (`final.contigs.fa` merges contigs
 k, so it isn't a single graph). Tools: MEGAHIT 1.2.9, SPAdes 4.3.0, Bowtie2 2.5.5,
 samtools 1.24, QUAST 5.3.0, Nonpareil 3.5.5, SCAPP 0.1.4 (own env: it pins Python 3.7).
 
-### 5. Contig-level plasmids and AMR — script written (PlasLLM pending)
+### 5. Contig-level plasmids and AMR — run on pilot (PlasLLM pending)
 
 geNomad, end-to-end. Plasmid and virus contigs. CheckV on the viral contigs. MOB-suite
 `mob_typer` on the plasmid contigs. AMRFinderPlus with `--plus` on the whole assembly.
@@ -239,7 +241,7 @@ Tagging: a hit is **virus** if its contig is a geNomad virus or the hit overlaps
 provirus region, **plasmid** if its contig is a geNomad plasmid, otherwise
 **chromosome** (= not called plasmid or virus). Reads over each hit's own coordinates are
 the integer counts behind the stage 9 resistome and statistics. **PlasLLM** belongs next
-to geNomad here; it isn't installed until its source is confirmed (open items). Tools:
+to geNomad here; it is on hold until its identity is confirmed (open items). Tools:
 geNomad 1.12.0, CheckV 1.1.1, MOB-suite 3.1.9, AMRFinderPlus 4.2.7, RGI 6.0.8, CoverM 0.8.0.
 
 ### 6. Binning and MAG QC — script written
@@ -328,6 +330,7 @@ cd ~/gibas/plasmid_detection
 N=$(grep -c . metadata/pilot_samples.txt)
 sbatch --array=1-$N scripts/02_read_qc.sbatch;        sbatch scripts/02b_qc_summary.sbatch
 sbatch --array=1-$N scripts/03_host_depletion.sbatch; sbatch scripts/03b_host_summary.sbatch
+sbatch scripts/03c_hostfree_qc.sbatch
 sbatch --array=1-$N scripts/04a_megahit.sbatch
 sbatch scripts/04b_metaspades.sbatch                   # alongside the rest of stage 4
 sbatch --array=1-$N scripts/04c_map.sbatch             # needs 04a done for every run
@@ -375,22 +378,84 @@ stops with "missing input: … (run the earlier stage first)". Everything tunabl
 4. Depth experiment.
 5. Rollup.
 
+## Pilot results (stages 2–5)
+
+Four runs at time point 4: Sugar Creek (SC) and Mallard Creek (MC), upstream B (UP) and
+influent (INF). Every number below is in `results/` (tables in `results/tables/`, per-run
+outputs in `results/<stage>/<run>/`); reads, contigs, graphs and BAMs stay on scratch.
+
+**Stage 2–3: read QC and host depletion** (`tables/02_read_qc.tsv`, `tables/03_host_depletion.tsv`)
+
+| Run | Sample | Raw pairs | Trimmed pairs | Q30 raw → trimmed | Human pairs | Retained pairs (% raw) |
+|---|---|---|---|---|---|---|
+| SRR6231181 | SC UP_B | 15,375,933 | 14,673,925 | 96.0 → 98.1% | 5,093 | 14,668,832 (95.4%) |
+| SRR6231184 | SC INF | 21,031,655 | 20,237,685 | 95.7 → 97.8% | 3,076 | 20,234,609 (96.2%) |
+| SRR6231217 | MC UP_B | 26,183,846 | 24,936,856 | 94.9 → 97.6% | 7,827 | 24,929,029 (95.2%) |
+| SRR6231191 | MC INF | 28,073,637 | 26,815,410 | 96.0 → 98.1% | 5,397 | 26,810,013 (95.5%) |
+
+Duplication 0.4–0.7%. FastQC on the host-depleted reads (`03_host/multiqc/hostfree_qc.html`)
+matches the trimmed reads: same GC, length and duplication; only GC-content and
+length-distribution flags (expected for a mixed community after trimming).
+
+**Stage 4: assembly** (`tables/04_assembly.tsv`, `04_assembly/<run>/quast/`, `nonpareil/`)
+
+| Run | Contigs ≥ 1 kb | Contigs ≥ 10 kb | Largest | Total | N50 | Assembled | Nonpareil coverage | SCAPP circular plasmids |
+|---|---|---|---|---|---|---|---|---|
+| SRR6231181 SC UP_B | 47,604 | 496 | 164 kb | 95.2 Mb | 1,982 | 25.4% | 34% | 3 |
+| SRR6231184 SC INF | 71,052 | 740 | 80 kb | 146.5 Mb | 2,134 | 46.6% | 59% | 47 |
+| SRR6231217 MC UP_B | 81,609 | 918 | 246 kb | 166.2 Mb | 2,065 | 35.2% | 46% | 12 |
+| SRR6231191 MC INF | 92,591 | 1,210 | 117 kb | 198.1 Mb | 2,260 | 49.6% | 61% | 47 |
+
+Assembled = own reads mapped back to own assembly; cross-sample mapping 0.4–0.8%.
+Nonpareil coverage is the modelled value (R `Nonpareil`, `C`); reaching 95% would need
+144–307 Gbp per run, so rare taxa are under-sampled, more so upstream (higher diversity).
+metaSPAdes on SRR6231181: exit 0, 1.25 h, 48.7 GB peak RAM, 38,657 contigs ≥ 1 kb
+(MEGAHIT: 47,604), so MEGAHIT is used for all runs.
+
+**Stage 5: plasmids and AMR on contigs** (`05_contigs/<run>/`)
+
+| Run | geNomad plasmid contigs | Mobilizable / conjugative (MOB-typer) | geNomad virus contigs | AMRFinderPlus AMR-type hits | … on plasmid contigs | RGI hits (Perfect + Strict) |
+|---|---|---|---|---|---|---|
+| SRR6231181 SC UP_B | 124 | 0 / 0 | 648 | 0 | 0 | 24 |
+| SRR6231184 SC INF | 1,863 | 111 / 1 | 691 | 80 | 22 | 181 |
+| SRR6231217 MC UP_B | 159 | 0 / 0 | 2,441 | 0 | 0 | 51 |
+| SRR6231191 MC INF | 2,067 | 94 / 4 | 1,542 | 82 | 30 | 169 |
+
+Influent carries 13–15× more plasmid contigs than upstream, and every AMRFinderPlus
+AMR-type hit on a plasmid is in influent: tetracycline (tet(A), tet(C), tet(O), tet(X)),
+sulfonamide (sul1, sul2), quinolone (qnrS2, qnrB19), macrolide (mph(A), msr(E)),
+β-lactam (blaMCA). `--plus` adds stress (metal, biocide) and virulence hits (about half
+of all AMRFinderPlus hits), so resistome analyses filter `Type == AMR`. geNomad counts
+plasmid contigs (fragments), SCAPP counts complete circular plasmids. Most plasmid
+contigs type as non-mobilizable because fragments often lack the transfer genes.
+
+**Audits.** Stage 2: all FastQC/fastp reports present, trimmed = fastp output. Stage 3:
+retained = Bowtie2 input − human, R1 = R2, read ids paired. Stage 4: 18/18 jobs exit 0,
+contig FASTA = QUAST counts and lengths, mapping input = retained pairs, 8/8 BAMs pass
+`samtools quickcheck`. Stage 5: 16/16 jobs exit 0, every RGI contig is in the assembly,
+tagged hits = counted hits. RGI logs "Requested rname SRR…_k127 does not exist" a few
+times per influent run: its ORF-extension step cuts names at underscores; the hits are
+still reported with full contig names.
+
 ## Status
 
 - **Stage 0:** complete. `versions.txt` has no blank fields (every env, including stages 2–9).
 - **Stage 1:** complete. 92/92 runs PASS in `metadata/raw_manifest.tsv`: R1 pairs = R2
   pairs = SRA spots for every run, full-quality scores (6 distinct quality characters, HiSeq
   2500 binning), 184 FASTQ.gz read-only (252 GB), `.sra` temp files removed.
-- **Stages 2–9:** scripts written; envs built and pinned; tool flags checked against each
+- **Stages 2–5:** run on the 4-run pilot and audited (see "Pilot results").
+- **Stages 6–9:** scripts written; envs built and pinned; tool flags checked against each
   installed tool's `--help` or source; table and tagging logic unit-tested; R statistics
-  and plot checked on synthetic data. **Not yet run on real data**: the pilot is run step
-  by step by hand.
+  and plot checked on synthetic data. Not yet run on real data: the pilot continues step
+  by step by hand, starting with stage 6 (binning).
 
 ## Known discrepancies / open items
 
-1. **PlasLLM: source/version TBD.** No tool by that name was found (web, GitHub API,
-   conda-forge/bioconda, PyPI). Similarly named: PLASMe, PlasmidGPT, PlasRAG, PlasGO. Needs
-   the repo/paper link; it goes in stage 5 next to geNomad.
+1. **PlasLLM: on hold.** No tool by that name exists (searched web, GitHub, conda,
+   PyPI; confirmed by a colleague). The suggested "PlasGPT" is PlasmidGPT, a generative
+   model trained on engineered Addgene plasmids for design, not a plasmid detector. PLASMe
+   (transformer-based plasmid contig detector) is the closest fit for stage 5. Waiting on
+   confirmation; geNomad is the plasmid caller until then.
 2. **metaSPAdes sample.** The spec says the smallest sample: of all 92 that is SRR6231137
    (MC UP_A T3, 15.05 M pairs), which isn't in the pilot. `04b` defaults to the smallest
    pilot run (SRR6231181); set `params.assembly.metaspades_run: SRR6231137` (after running

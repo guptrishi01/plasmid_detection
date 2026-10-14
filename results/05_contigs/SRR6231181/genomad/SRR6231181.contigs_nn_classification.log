@@ -1,0 +1,33 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad nn-classification (v1.12.0). This will classify the       │
+│  input sequences into chromosome, plasmid, or virus based on the nucleotide  │
+│  sequence.                                                                   │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231181/genoma  │
+│    d/SRR6231181.contigs_nn_classification                                    │
+│    ├── SRR6231181.contigs_nn_classification.json (execution parameters)      │
+│    ├── SRR6231181.contigs_encoded_sequences (directory containing encoded    │
+│    │   sequence data)                                                        │
+│    ├── SRR6231181.contigs_nn_classification.tsv (contig classification:      │
+│    │   tabular format)                                                       │
+│    └── SRR6231181.contigs_nn_classification.npz (contig classification:      │
+│        binary format)                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[14:15:01] Executing genomad nn-classification.                                 
+[14:15:01] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231181/gen
+           omad/SRR6231181.contigs_nn_classification directory.                 
+[14:15:01] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231181/gen
+           omad/SRR6231181.contigs_nn_classification/SRR6231181.contigs_encoded_
+           sequences directory.                                                 
+[14:15:46] Encoded sequence data written to                                     
+           SRR6231181.contigs_encoded_sequences.                                
+[14:19:44] Sequences classified.                                                
+[14:19:44] Sequence classification in binary format written to                  
+           SRR6231181.contigs_nn_classification.npz.                            
+[14:19:44] Deleting encoded sequence data.                                      
+[14:20:15] Sequence classification in tabular format written to                 
+           SRR6231181.contigs_nn_classification.tsv.                            
+[14:20:15] geNomad nn-classification finished!                                  

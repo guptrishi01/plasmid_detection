@@ -5,7 +5,7 @@
 # e.g. bash scripts/sync_results.sh 02_qc 03_host tables
 #
 # Copies reports, logs, tables, QC summaries. Never copies reads, contigs, graphs,
-# alignments, or tool working dirs, and skips any file over 20 MB (GitHub rejects files
+# alignments, proteins, or tool working dirs (geNomad's per-step dirs, CheckV tmp/), and skips any file over 20 MB (GitHub rejects files
 # over 100 MB; the assembly outputs themselves stay on scratch). Skipped large files are
 # listed so nothing is dropped silently.
 
@@ -26,6 +26,9 @@ for stage in "${STAGES[@]}"; do
         --exclude '*.fa' --exclude '*.fna' --exclude '*.fasta' --exclude '*.fastg' \
         --exclude '*.fastq' --exclude '*.fastq.gz' --exclude '*.fq' --exclude '*.fq.gz' \
         --exclude '*.bt2' --exclude '*.bt2l' --exclude '*.npa' \
+        --exclude '*.faa' --exclude '*.npz' --exclude '*.rgi.json' --exclude 'tmp/' \
+        --exclude '*_annotate/' --exclude '*_marker_classification/' --exclude '*_nn_classification/' \
+        --exclude '*_aggregated_classification/' --exclude '*_find_proviruses/' \
         "$SRC/$stage/" "$DEST/$stage/"
     big=$(find "$SRC/$stage" -type f -size +"$MAX" ! -name '*.bam' ! -name '*.fa' ! -name '*.fasta' \
           ! -name '*.fastg' ! -name '*.fastq.gz' ! -path '*/megahit/*' ! -path '*/intermediate_files/*' | wc -l)
