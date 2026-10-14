@@ -1,0 +1,18 @@
+{
+    "module": "summary",
+    "input": "SRR6231181.contigs.fa",
+    "input_md5": "bbb9559300780d6b10e1723f3f355ad5",
+    "start_time": "2026-10-13T14:20:16.459416-04:00",
+    "parameters": {
+        "min_score": 0.7,
+        "max_fdr": 0.1,
+        "min_number_genes": 1,
+        "min_plasmid_hallmarks": 0,
+        "min_plasmid_hallmarks_short_seqs": 1,
+        "min_virus_hallmarks": 0,
+        "min_virus_hallmarks_short_seqs": 1,
+        "min_plasmid_marker_enrichment": 0.1,
+        "min_virus_marker_enrichment": 0.0,
+        "max_uscg": 4
+    }
+}

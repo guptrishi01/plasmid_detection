@@ -1,0 +1,26 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad aggregated-classification (v1.12.0). This will aggregate  │
+│  the results of the marker-classification and nn-classification modules to   │
+│  classify the input sequences into chromosome, plasmid, or virus.            │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231181/genoma  │
+│    d/SRR6231181.contigs_aggregated_classification                            │
+│    ├── SRR6231181.contigs_aggregated_classification.json (execution          │
+│    │   parameters)                                                           │
+│    ├── SRR6231181.contigs_aggregated_classification.tsv (sequence            │
+│    │   classification: tabular format)                                       │
+│    └── SRR6231181.contigs_aggregated_classification.npz (sequence            │
+│        classification: binary format)                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[14:20:15] Executing genomad aggregated-classification.                         
+[14:20:15] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/05_contigs/SRR6231181/gen
+           omad/SRR6231181.contigs_aggregated_classification directory.         
+[14:20:15] The total marker frequencies of the input sequences were computed.   
+[14:20:15] Sequences classified.                                                
+[14:20:15] Sequence classification in binary format written to                  
+           SRR6231181.contigs_aggregated_classification.npz.                    
+[14:20:16] Sequence classification in tabular format written to                 
+           SRR6231181.contigs_aggregated_classification.tsv.                    
+[14:20:16] geNomad aggregated-classification finished!                          
