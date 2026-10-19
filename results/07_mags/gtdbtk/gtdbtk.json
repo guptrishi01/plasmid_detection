@@ -1,0 +1,102 @@
+{
+    "version": "2.6.1",
+    "command_line": "gtdbtk classify_wf --genome_dir /scratch/rgupta25/plasmid_detection/results/07_mags/drep/dereplicated_genomes -x fa --out_dir /scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk --cpus 32",
+    "database_version": "r226",
+    "database_path": "/users/rgupta25/gibas/plasmid_detection/db/gtdb/r226",
+    "steps": [
+        {
+            "name": "ANI screen",
+            "output_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+            "starts_at": "2026-10-18T21:16:53.005652",
+            "ends_at": "2026-10-18T21:31:40.406632",
+            "duration": "0:14:47",
+            "status": "completed",
+            "genome_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/drep/dereplicated_genomes",
+            "batchfile": null,
+            "min_af": 0.5,
+            "output_files": {
+                "bac120": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/ani_screen/gtdbtk.bac120.ani_summary.tsv"
+            }
+        },
+        {
+            "name": "identify",
+            "output_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+            "starts_at": "2026-10-18T21:31:40.446961",
+            "ends_at": "2026-10-18T21:31:56.603433",
+            "duration": "0:00:16",
+            "status": "completed",
+            "genes": false,
+            "extension": "fa",
+            "write_single_copy_genes": false,
+            "genome_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/drep/dereplicated_genomes",
+            "batchfile": null,
+            "output_files": {
+                "all": [
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/identify/gtdbtk.failed_genomes.tsv",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/identify/gtdbtk.translation_table_summary.tsv"
+                ],
+                "ar53": [
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/identify/gtdbtk.ar53.markers_summary.tsv"
+                ],
+                "bac120": [
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/identify/gtdbtk.bac120.markers_summary.tsv"
+                ]
+            }
+        },
+        {
+            "name": "align",
+            "output_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+            "starts_at": "2026-10-18T21:31:56.603578",
+            "ends_at": "2026-10-18T21:36:31.025214",
+            "duration": "0:04:34",
+            "status": "completed",
+            "identify_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+            "skip_gtdb_refs": false,
+            "taxa_filter": null,
+            "min_perc_aa": 10,
+            "custom_msa_filters": false,
+            "skip_trimming": false,
+            "rnd_seed": null,
+            "cols_per_gene": null,
+            "min_consensus": null,
+            "max_consensus": null,
+            "min_perc_taxa": null,
+            "outgroup_taxon": null,
+            "output_files": {
+                "bac120": [
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/align/gtdbtk.bac120.filtered.tsv",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/align/gtdbtk.bac120.msa.fasta",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/align/gtdbtk.bac120.user_msa.fasta"
+                ]
+            }
+        },
+        {
+            "name": "classify",
+            "output_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+            "starts_at": "2026-10-18T21:36:31.025487",
+            "ends_at": "2026-10-18T22:18:43.495094",
+            "duration": "0:42:12",
+            "status": "completed",
+            "align_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+            "genome_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/drep/dereplicated_genomes",
+            "batchfile": null,
+            "scratch_dir": null,
+            "debug_option": false,
+            "full_tree": false,
+            "skip_ani_screen": true,
+            "output_files": {
+                "bac120": [
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.backbone.bac120.classify.tree",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.bac120.classify.tree.5.tree",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.bac120.classify.tree.1.tree",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.bac120.classify.tree.6.tree",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.bac120.classify.tree.2.tree",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.bac120.tree.mapping.tsv",
+                    "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/gtdbtk.bac120.summary.tsv"
+                ]
+            }
+        }
+    ],
+    "output_dir": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk",
+    "path": "/scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/gtdbtk.json"
+}

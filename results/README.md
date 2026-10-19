@@ -1,4 +1,4 @@
-# Pilot results (stages 2–6) and side analyses
+# Pilot results (stages 2–7) and side analyses
 
 Four runs at time point 4: Sugar Creek (SC) and Mallard Creek (MC), upstream B (UP) and
 influent (INF). Every number below comes from the files in this folder (tables in `tables/`, per-run
@@ -94,6 +94,25 @@ and tRNA requirement for "high" is not checked). 59 medium-or-better MAGs; dRep 
 reduces them to 45, as 14 are the same species in both runs of a creek pair. With only two
 BAMs per assembly in the pilot, coverage-based binning is weaker than it will be in the full run.
 
+## Stage 7: MAG taxonomy and abundance
+
+(`tables/07_mags.tsv`, `07_mags/drep/`, `07_mags/gtdbtk/`, `07_mags/coverm_genome.tsv`)
+
+45 dereplicated MAGs (7 high, 38 medium), all classified by GTDB-Tk 2.6.1 (GTDB r226),
+all bacterial: Gammaproteobacteria 16, Actinomycetes 13, Bacteroidia 6, Clostridia 5,
+Campylobacteria 2, Bacilli 2, Fusobacteriota 1. Influent MAGs include gut taxa (Prevotella
+copri, Agathobacter rectalis, Bifidobacterium adolescentis, Alistipes putredinis).
+
+| Run | Reads assigned to the 45 MAGs (CoverM relative abundance) |
+|---|---|
+| SRR6231181 SC UP_B | 15.5% |
+| SRR6231184 SC INF | 29.5% |
+| SRR6231217 MC UP_B | 16.2% |
+| SRR6231191 MC INF | 31.9% |
+
+The MAGs capture about twice as much of the influent community as of the creek water,
+consistent with the Nonpareil coverage and assembled fractions.
+
 ## Audits
 
  Stage 2: all FastQC/fastp reports present, trimmed = fastp output. Stage 3:
@@ -104,6 +123,8 @@ tagged hits = counted hits. RGI logs "Requested rname SRR…_k127 does not exist
 times per influent run: its ORF-extension step cuts names at underscores; the hits are
 still reported with full contig names. Stage 6: 8/8 jobs exit 0, CheckM2 rows = bins,
 `pass/` = 59 = high + medium; dRep kept all 59 through its filters (`Cdb.csv` = 59 rows).
+Stage 7: dRep and GTDB-Tk exit 0; 45/45 MAGs classified; `07_mags.tsv` has 45 rows. 07c
+exited 13 after writing its table (SIGPIPE from `column | head` in the display line; fixed).
 
 ## Side analysis: odds of under-sequencing (all 92 runs)
 
@@ -149,5 +170,6 @@ Reads, contigs, graphs, BAMs and tool working dirs stay on scratch.
 | `05_contigs/<run>/` | geNomad summaries, CheckV, MOB-typer, AMRFinderPlus, RGI, CoverM, `amr_tagged.tsv`, `amr_counts.tsv` |
 | `05_contigs/<run>/plasme*/` | PLASMe reports (balance, high-precision) |
 | `06_binning/<run>/` | MetaBAT2 bin lists, CheckM2 quality report, `mimag.tsv` |
+| `07_mags/` | dRep tables, GTDB-Tk summaries, CoverM genome abundance |
 | `side_undersequencing/` | Nonpareil curves (92 runs), model comparison, odds ratios, per-run predictions, plots |
 | `tables/` | one summary table per stage |

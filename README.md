@@ -267,7 +267,7 @@ Tiers from CheckM2 completeness/contamination (`params.binning.mimag_*`): high �
 medium ≥ 50 / < 10, else low. MIMAG's high-quality tier also requires rRNAs and ≥ 18 tRNAs,
 which CheckM2 doesn't report (open items). Tools: MetaBAT2 2.18, CheckM2 1.1.0.
 
-### 7. MAG taxonomy — script written
+### 7. MAG taxonomy — run on pilot
 
 dRep at 95 percent ANI. GTDB-Tk `classify_wf`, release 226. CoverM genome over all
 samples for MAG abundance. Table: quality, taxonomy, abundance per MAG.
@@ -411,12 +411,12 @@ stops with "missing input: … (run the earlier stage first)". Everything tunabl
 - **Stage 1:** complete. 92/92 runs PASS in `metadata/raw_manifest.tsv`: R1 pairs = R2
   pairs = SRA spots for every run, full-quality scores (6 distinct quality characters, HiSeq
   2500 binning), 184 FASTQ.gz read-only (252 GB), `.sra` temp files removed.
-- **Stages 2–6:** run on the 4-run pilot and audited; results in [results/](results/README.md).
+- **Stages 2–7:** run on the 4-run pilot and audited; results in [results/](results/README.md).
 - **Side analysis:** odds of under-sequencing across all 92 runs (`scripts/side/`).
-- **Stages 7–9:** scripts written; envs built and pinned; tool flags checked against each
+- **Stages 8–9:** scripts written; envs built and pinned; tool flags checked against each
   installed tool's `--help` or source; table and tagging logic unit-tested; R statistics
   and plot checked on synthetic data. Not yet run on real data: the pilot continues step
-  by step by hand; stage 7 is running.
+  by step by hand; stage 8 is next.
 
 ## Known discrepancies / open items
 

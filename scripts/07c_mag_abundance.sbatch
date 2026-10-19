@@ -36,5 +36,5 @@ deactivate
 
 pdpy plasmid_detection.tables mags --samples "$PATHS_RUN_SAMPLES" --binning-dir "$PATHS_BINNING" \
     --mags-dir "$PATHS_MAGS" --out "$PATHS_TABLES/07_mags.tsv"
-column -t "$PATHS_TABLES/07_mags.tsv" | head -30
+head -31 "$PATHS_TABLES/07_mags.tsv" | column -t   # head first: head closing a pipe under pipefail kills the job
 echo "[$(date)] done"
