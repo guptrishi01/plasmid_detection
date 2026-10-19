@@ -1,0 +1,25 @@
+model	term	odds_ratio	ci_low	ci_high	p	meaning
+logistic	(Intercept)	0.109445057705422	0.00213969549228429	5.59809594371559	0.270463034292487	odds of being under-sequenced (C < threshold)
+logistic	log2_effort	0.87971592258001	0.0679701045256689	11.3858895736807	0.921854898756902	odds of being under-sequenced (C < threshold)
+logistic	site_groupcontrol	11.4356892822033	0.895231953430659	146.07944774307	0.0608184202792331	odds of being under-sequenced (C < threshold)
+logistic	site_groupcreek_downstream	1.37131055335003	0.203751107621596	9.22936152681728	0.745483067445021	odds of being under-sequenced (C < threshold)
+logistic	site_groupcreek_upstream	16.0571447409082	3.30771927691404	77.9485426801456	0.000573171259012156	odds of being under-sequenced (C < threshold)
+logistic	site_groupinfluent	3.07980840954892e-08	0	Inf	0.996365516939794	odds of being under-sequenced (C < threshold)
+logistic	site_groupsewer	3.09318704068799e-08	0	Inf	0.994861474396738	odds of being under-sequenced (C < threshold)
+logistic	systemSugar_Creek	1.28310535358673	0.323668750806532	5.08655637685274	0.722786366091272	odds of being under-sequenced (C < threshold)
+firth	(Intercept)	0.134431052502669	0.00280046329970854	4.77010363308605	0.273089489217337	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	log2_effort	0.897940659404014	0.0783802381967145	9.96094707603128	0.929287741383456	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	site_groupcontrol	8.98184131131475	0.905636935481335	103.483517416746	0.0603627901861964	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	site_groupcreek_downstream	1.40733560709911	0.215713836761782	8.00180499021681	0.700956380349964	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	site_groupcreek_upstream	12.2627908947393	3.09652246074245	60.4471936443894	0.000240941854257826	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	site_groupinfluent	0.496401273121277	0.00358261214198482	5.77677414159848	0.626506865513022	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	site_groupsewer	0.25988876230799	0.00189670307495193	2.88312930107339	0.310854686531752	odds of being under-sequenced (C < threshold), Firth-penalised
+firth	systemSugar_Creek	1.23628487471525	0.342157871216811	4.64212318250399	0.744124833656563	odds of being under-sequenced (C < threshold), Firth-penalised
+beta	(Intercept)	0.912740518499822	0.531308690455976	1.56800607457851	0.740860915745394	odds of coverage C/(1-C); < 1 = less covered
+beta	log2_effort	1.4522894551433	1.02554155279343	2.05661550794836	0.0355495843867849	odds of coverage C/(1-C); < 1 = less covered
+beta	site_groupcontrol	0.31796478069431	0.196566579975331	0.514337695526212	3.01906714875402e-06	odds of coverage C/(1-C); < 1 = less covered
+beta	site_groupcreek_downstream	0.964744114570455	0.742111389673221	1.25416644933609	0.788598572669333	odds of coverage C/(1-C); < 1 = less covered
+beta	site_groupcreek_upstream	0.501910386499803	0.385935248622444	0.652736532813634	2.71837408150667e-07	odds of coverage C/(1-C); < 1 = less covered
+beta	site_groupinfluent	1.02069860236419	0.726903309425417	1.43323826341046	0.905835710618901	odds of coverage C/(1-C); < 1 = less covered
+beta	site_groupsewer	0.937332689495278	0.721278091137785	1.21810516857723	0.628308804645147	odds of coverage C/(1-C); < 1 = less covered
+beta	systemSugar_Creek	0.937752638800638	0.781545858244548	1.12518031066374	0.489371309468708	odds of coverage C/(1-C); < 1 = less covered

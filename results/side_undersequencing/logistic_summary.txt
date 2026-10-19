@@ -1,0 +1,72 @@
+
+Call:
+glm(formula = as.formula(paste("under ~", form_rhs)), family = binomial, 
+    data = df)
+
+Coefficients:
+                            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  -2.2123     2.0076  -1.102 0.270463    
+log2_effort                  -0.1282     1.3064  -0.098 0.921855    
+site_groupcontrol             2.4367     1.2997   1.875 0.060818 .  
+site_groupcreek_downstream    0.3158     0.9728   0.325 0.745483    
+site_groupcreek_upstream      2.7762     0.8061   3.444 0.000573 ***
+site_groupinfluent          -17.2958  3796.9677  -0.005 0.996366    
+site_groupsewer             -17.2915  2684.9158  -0.006 0.994861    
+systemSugar_Creek             0.2493     0.7027   0.355 0.722786    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 88.057  on 91  degrees of freedom
+Residual deviance: 58.553  on 84  degrees of freedom
+AIC: 74.553
+
+Number of Fisher Scoring iterations: 18
+
+
+converged: TRUE  fitted probabilities at 0/1: 24 
+
+==== Firth-penalised logistic (logistf) ====
+logistf(formula = as.formula(paste("under ~", form_rhs)), data = df)
+
+Model fitted by Penalized ML
+Coefficients:
+                                 coef  se(coef)  lower 0.95 upper 0.95
+(Intercept)                -2.0067038 1.7500364 -5.87797041   1.562368
+log2_effort                -0.1076513 1.1292642 -2.54618345   2.298672
+site_groupcontrol           2.1952049 1.1499888 -0.09911679   4.639412
+site_groupcreek_downstream  0.3416983 0.8625386 -1.53380258   2.079667
+site_groupcreek_upstream    2.5065695 0.7368962  1.13027969   4.101770
+site_groupinfluent         -0.7003707 1.4996929 -5.63166310   1.753845
+site_groupsewer            -1.3475016 1.4746975 -6.26763812   1.058876
+systemSugar_Creek           0.2121108 0.6081660 -1.07248304   1.535172
+                                  Chisq            p method
+(Intercept)                 1.201162332 0.2730894892      2
+log2_effort                 0.007874967 0.9292877414      2
+site_groupcontrol           3.527388585 0.0603627902      2
+site_groupcreek_downstream  0.147478867 0.7009563803      2
+site_groupcreek_upstream   13.481385265 0.0002409419      2
+site_groupinfluent          0.236827561 0.6265068655      2
+site_groupsewer             1.027040914 0.3108546865      2
+systemSugar_Creek           0.106534288 0.7441248337      2
+
+Method: 1-Wald, 2-Profile penalized log-likelihood, 3-None
+
+Likelihood ratio test=24.12082 on 7 df, p=0.00108495, n=92
+Wald test = 31.74066 on 7 df, p = 4.53673e-05logistf(formula = as.formula(paste("under ~", form_rhs)), data = df)
+Model fitted by Penalized ML
+Confidence intervals and p-values by Profile Likelihood 
+
+Coefficients:
+               (Intercept)                log2_effort 
+                -2.0067038                 -0.1076513 
+         site_groupcontrol site_groupcreek_downstream 
+                 2.1952049                  0.3416983 
+  site_groupcreek_upstream         site_groupinfluent 
+                 2.5065695                 -0.7003707 
+           site_groupsewer          systemSugar_Creek 
+                -1.3475016                  0.2121108 
+
+Likelihood ratio test=24.12082 on 7 df, p=0.00108495, n=92
+

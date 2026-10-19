@@ -120,7 +120,7 @@ Status legend: **implemented** = script exists and has produced its output;
 Git repository for all code. One config file for paths and parameters
 (`config/config.yaml`). One conda environment per stage, versions pinned in a yml.
 Human reference GRCh38.p14 (GCF_000001405.40) via NCBI Datasets CLI, with a Bowtie2
-index. Databases: geNomad, CheckV, CheckM2, CARD, AMRFinderPlus, MOB-suite, GTDB r226.
+index. Databases: geNomad, CheckV, CheckM2, CARD, AMRFinderPlus, MOB-suite, PLASMe, GTDB r226.
 Every version used is recorded in `versions.txt`.
 
 <!-- STAGE0_VERSIONS -->
@@ -137,6 +137,7 @@ Installed for stages 0–1 (from `versions.txt`; stage 2–9 tools are listed pe
 | RGI (CARD) | 6.0.8 (CARD 4.0.2) | pd-rgi |
 | AMRFinderPlus (db) | 4.2.7 (2026-08-07.1) | pd-amrfinderplus |
 | MOB-suite (db) | 3.1.9 (downloaded 2026-09-22) | pd-mobsuite |
+| PLASMe (db) | commit 4405d5a (Zenodo 8046934 DB, PLSDB Mar30); pytorch 1.11 CPU, BLAST 2.13.0, DIAMOND 2.0.15 | pd-plasme; code + DB in `db/plasme/` (setup step 9b) |
 | GTDB-Tk (GTDB) | 2.6.1 (r226, tarball MD5 verified) | pd-gtdbtk |
 | Human reference | GRCh38.p14, GCF_000001405.40 + Bowtie2 index | `db/human/GRCh38.p14` |
 <!-- /STAGE0_VERSIONS -->
@@ -223,7 +224,7 @@ converted with `megahit_toolkit contig2fastg` (`final.contigs.fa` merges contigs
 k, so it isn't a single graph). Tools: MEGAHIT 1.2.9, SPAdes 4.3.0, Bowtie2 2.5.5,
 samtools 1.24, QUAST 5.3.0, Nonpareil 3.5.5, SCAPP 0.1.4 (own env: it pins Python 3.7).
 
-### 5. Contig-level plasmids and AMR — run on pilot (PlasLLM pending)
+### 5. Contig-level plasmids and AMR — run on pilot
 
 geNomad, end-to-end. Plasmid and virus contigs. CheckV on the viral contigs. MOB-suite
 `mob_typer` on the plasmid contigs. AMRFinderPlus with `--plus` on the whole assembly.
@@ -236,15 +237,23 @@ its contig. CoverM contig for coverage and TPM.
 | `05b_checkv_mobtyper` | per run: CheckV on virus contigs; `mob_typer --multi` on plasmid contigs | pd-checkv, pd-mobsuite |
 | `05c_amr` | per run: AMRFinderPlus `--plus` and RGI (contig mode, DIAMOND) on the whole assembly | pd-amrfinderplus, pd-rgi |
 | `05d_coverage_tag` | per run: CoverM contig (mean, TPM, read count) over all stage-4 BAMs; tag AMR hits; reads per hit per BAM (`samtools bedcov -c`) | pd-coverm, pd-core, pd-assembly |
+| `05e_plasme` | per run: PLASMe on the whole assembly (`-m balance`, or `05e_plasme.sbatch high-precision` → `plasme_high-precision/`); comparison caller, reports overlap with geNomad | pd-plasme |
+| `05f_plasmid_callers` | `tables/05_plasmid_callers.tsv`: geNomad vs PLASMe balance / high-precision, each with and without the chromosome-shared filter (`params.contigs.plasme_max_ambiguous_fraction`): calls, overlap with geNomad, contigs with AMR genes, geNomad plasmid score | pd-core |
 
 Tagging: a hit is **virus** if its contig is a geNomad virus or the hit overlaps a geNomad
 provirus region, **plasmid** if its contig is a geNomad plasmid, otherwise
 **chromosome** (= not called plasmid or virus). Reads over each hit's own coordinates are
-the integer counts behind the stage 9 resistome and statistics. **PlasLLM** belongs next
-to geNomad here; it is on hold until its identity is confirmed (open items). Tools:
-geNomad 1.12.0, CheckV 1.1.1, MOB-suite 3.1.9, AMRFinderPlus 4.2.7, RGI 6.0.8, CoverM 0.8.0.
+the integer counts behind the stage 9 resistome and statistics. **geNomad is the main
+plasmid caller** (decided 2026-10-18): every downstream step (AMR tagging, stage 8 hosts, stage 9
+summaries) uses its calls. PLASMe (in place of the spec's "PlasLLM", which doesn't exist; see
+open items) is a comparison caller only: on the pilot it agreed with geNomad on under 11% of
+its calls in upstream creek water in every mode, which would bias the cross-location
+comparison. It isn't packaged, so setup clones it at a pinned commit and builds its database
+in `db/plasme/`. Tools:
+geNomad 1.12.0, CheckV 1.1.1, MOB-suite 3.1.9, AMRFinderPlus 4.2.7, RGI 6.0.8, CoverM 0.8.0,
+PLASMe (commit 4405d5a).
 
-### 6. Binning and MAG QC — script written
+### 6. Binning and MAG QC — run on pilot
 
 `jgi_summarize_bam_contig_depths` over all BAMs on each assembly. MetaBAT2. CheckM2.
 MIMAG tiers: high, medium, low. Medium and up go on.
@@ -258,7 +267,7 @@ Tiers from CheckM2 completeness/contamination (`params.binning.mimag_*`): high �
 medium ≥ 50 / < 10, else low. MIMAG's high-quality tier also requires rRNAs and ≥ 18 tRNAs,
 which CheckM2 doesn't report (open items). Tools: MetaBAT2 2.18, CheckM2 1.1.0.
 
-### 7. MAG taxonomy — script written
+### 7. MAG taxonomy — run on pilot
 
 dRep at 95 percent ANI. GTDB-Tk `classify_wf`, release 226. CoverM genome over all
 samples for MAG abundance. Table: quality, taxonomy, abundance per MAG.
@@ -315,6 +324,23 @@ of them: it exercises the code path without producing results. Both the ALDEx2 a
 ANCOM-BC2 paths were checked end to end on synthetic counts. Tools: seqkit 2.14.0,
 R 4.5.3, ALDEx2 1.42.0, ANCOMBC 2.14.0, vegan 2.7-5, ggplot2 4.0.3.
 
+## Side analyses
+
+Not in the workflow spec; run on request.
+
+**Odds of under-sequencing** (`scripts/side/`, env pd-model: R 4.5.3, betareg 3.2-6,
+logistf 1.26.1). `us01_nonpareil_all` runs Nonpareil (same mode as stage 4d) on the raw R1
+of all 92 runs (`paths.run_accessions`); `us02_model` summarises the curves
+(`scripts/R/nonpareil_summary.R`) and fits logistic, Firth-penalised logistic and beta
+regression of Nonpareil coverage on sequencing effort, site group and creek system,
+compared by leave-one-out CV (`scripts/R/undersequencing.R`). Parameters:
+`params.undersequencing`. Output: `$paths.undersequencing`.
+
+```bash
+sbatch --array=1-92 scripts/side/us01_nonpareil_all.sbatch
+sbatch scripts/side/us02_model.sbatch            # after us01
+```
+
 ## Running the pilot, one step at a time
 
 Runs: `metadata/pilot_samples.txt` = SC_UPB_T4 (SRR6231181), SC_INF_T4 (SRR6231184),
@@ -341,6 +367,7 @@ sbatch --array=1-$N scripts/05a_genomad.sbatch
 sbatch --array=1-$N scripts/05b_checkv_mobtyper.sbatch
 sbatch --array=1-$N scripts/05c_amr.sbatch
 sbatch --array=1-$N scripts/05d_coverage_tag.sbatch
+sbatch --array=1-$N scripts/05e_plasme.sbatch           # independent of 05a-05d
 sbatch --array=1-$N scripts/06a_binning.sbatch
 sbatch --array=1-$N scripts/06b_checkm2_mimag.sbatch
 sbatch scripts/07a_drep.sbatch
@@ -384,19 +411,21 @@ stops with "missing input: … (run the earlier stage first)". Everything tunabl
 - **Stage 1:** complete. 92/92 runs PASS in `metadata/raw_manifest.tsv`: R1 pairs = R2
   pairs = SRA spots for every run, full-quality scores (6 distinct quality characters, HiSeq
   2500 binning), 184 FASTQ.gz read-only (252 GB), `.sra` temp files removed.
-- **Stages 2–5:** run on the 4-run pilot and audited; results in [results/](results/README.md).
-- **Stages 6–9:** scripts written; envs built and pinned; tool flags checked against each
+- **Stages 2–7:** run on the 4-run pilot and audited; results in [results/](results/README.md).
+- **Side analysis:** odds of under-sequencing across all 92 runs (`scripts/side/`).
+- **Stages 8–9:** scripts written; envs built and pinned; tool flags checked against each
   installed tool's `--help` or source; table and tagging logic unit-tested; R statistics
   and plot checked on synthetic data. Not yet run on real data: the pilot continues step
-  by step by hand, starting with stage 6 (binning).
+  by step by hand; stage 8 is next.
 
 ## Known discrepancies / open items
 
-1. **PlasLLM: on hold.** No tool by that name exists (searched web, GitHub, conda,
-   PyPI; confirmed by a colleague). The suggested "PlasGPT" is PlasmidGPT, a generative
-   model trained on engineered Addgene plasmids for design, not a plasmid detector. PLASMe
-   (transformer-based plasmid contig detector) is the closest fit for stage 5. Waiting on
-   confirmation; geNomad is the plasmid caller until then.
+1. **PlasLLM → PLASMe; geNomad main caller (decided 2026-10-18).** No tool called PlasLLM
+   exists (searched web, GitHub, conda, PyPI; confirmed by a colleague); the suggested
+   "PlasGPT" is PlasmidGPT, a plasmid design model, not a detector. PLASMe (Tang et al. 2023,
+   NAR) was added (`05e`) and compared with geNomad (`05f`); geNomad stays the main caller
+   because PLASMe's calls in creek water barely overlap it, and the goal is comparing
+   plasmids across locations.
 2. **metaSPAdes sample.** The spec says the smallest sample: of all 92 that is SRR6231137
    (MC UP_A T3, 15.05 M pairs), which isn't in the pilot. `04b` defaults to the smallest
    pilot run (SRR6231181); set `params.assembly.metaspades_run: SRR6231137` (after running

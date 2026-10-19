@@ -1,0 +1,74 @@
+[2026-10-18 21:16:53] INFO: GTDB-Tk v2.6.1
+[2026-10-18 21:16:53] INFO: gtdbtk classify_wf --genome_dir /scratch/rgupta25/plasmid_detection/results/07_mags/drep/dereplicated_genomes -x fa --out_dir /scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk --cpus 32
+[2026-10-18 21:16:53] INFO: Using GTDB-Tk reference data version r226: /users/rgupta25/gibas/plasmid_detection/db/gtdb/r226
+[2026-10-18 21:16:53] INFO: Loading reference genomes.
+[2026-10-18 21:16:54] INFO: Calculating all vs all ANI with skani v0.3.2.
+[2026-10-18 21:16:54] INFO: Sketching refence genomes
+[2026-10-18 21:30:22] INFO: Done
+[2026-10-18 21:31:30] INFO: Capturing skani results.
+[2026-10-18 21:31:40] INFO: Summary of results saved to: /scratch/rgupta25/plasmid_detection/results/07_mags/gtdbtk/classify/ani_screen/gtdbtk.bac120.ani_summary.tsv
+[2026-10-18 21:31:40] INFO: 33 genome(s) have been classified using the ANI pre-screening step.
+[2026-10-18 21:31:40] INFO: Done.
+[2026-10-18 21:31:40] INFO: Identifying markers in 12 genomes with 32 threads.
+[2026-10-18 21:31:40] TASK: Running Prodigal V2.6.3 to identify genes.
+[2026-10-18 21:31:53] INFO: Completed 12 genomes in 11.89 seconds (1.01 genomes/second).
+[2026-10-18 21:31:53] TASK: Identifying TIGRFAM protein families.
+[2026-10-18 21:31:56] INFO: Completed 12 genomes in 2.92 seconds (4.11 genomes/second).
+[2026-10-18 21:31:56] TASK: Identifying Pfam protein families.
+[2026-10-18 21:31:56] INFO: Completed 12 genomes in 0.23 seconds (51.44 genomes/second).
+[2026-10-18 21:31:56] INFO: Annotations done using HMMER 3.4 (Aug 2023).
+[2026-10-18 21:31:56] TASK: Summarising identified marker genes.
+[2026-10-18 21:31:56] INFO: Completed 12 genomes in 0.11 seconds (106.03 genomes/second).
+[2026-10-18 21:31:56] INFO: Done.
+[2026-10-18 21:31:58] INFO: Aligning markers in 12 genomes with 32 CPUs.
+[2026-10-18 21:31:58] INFO: Processing 12 genomes identified as bacterial.
+[2026-10-18 21:32:23] INFO: Read concatenated alignment for 136,646 GTDB genomes.
+[2026-10-18 21:32:23] TASK: Generating concatenated alignment for each marker.
+[2026-10-18 21:32:26] INFO: Completed 12 genomes in 0.02 seconds (562.18 genomes/second).
+[2026-10-18 21:32:26] TASK: Aligning 120 identified markers using hmmalign 3.4 (Aug 2023).
+[2026-10-18 21:32:30] INFO: Completed 120 markers in 0.38 seconds (313.93 markers/second).
+[2026-10-18 21:32:30] TASK: Masking columns of bacterial multiple sequence alignment using canonical mask.
+[2026-10-18 21:35:48] INFO: Completed 136,658 sequences in 3.30 minutes (41,457.69 sequences/minute).
+[2026-10-18 21:35:48] INFO: Masked bacterial alignment from 41,084 to 5,036 AAs.
+[2026-10-18 21:35:48] INFO: 0 bacterial user genomes have amino acids in <10.0% of columns in filtered MSA.
+[2026-10-18 21:35:48] INFO: Creating concatenated alignment for 136,658 bacterial GTDB and user genomes.
+[2026-10-18 21:36:30] INFO: Creating concatenated alignment for 12 bacterial user genomes.
+[2026-10-18 21:36:31] INFO: Done.
+[2026-10-18 21:36:31] TASK: Placing 12 bacterial genomes into backbone reference tree with pplacer using 32 CPUs (be patient).
+[2026-10-18 21:36:32] INFO: pplacer version: v1.1.alpha19-0-g807f6f3
+[2026-10-18 21:39:26] INFO: Calculating RED values based on reference tree.
+[2026-10-18 21:39:26] INFO: 12 out of 12 have an class assignments. Those genomes will be reclassified.
+[2026-10-18 21:39:26] TASK: Placing 7 bacterial genomes into class-level reference tree 5 (1/4) with pplacer using 32 CPUs (be patient).
+[2026-10-18 21:50:41] INFO: Calculating RED values based on reference tree.
+[2026-10-18 21:50:43] TASK: Traversing tree to determine classification method.
+[2026-10-18 21:50:43] INFO: Completed 7 genomes in 0.01 seconds (1,331.22 genomes/second).
+[2026-10-18 21:50:43] TASK: Calculating average nucleotide identity using skani (v0.3.2).
+[2026-10-18 21:50:45] INFO: Completed 752 comparisons in 1.61 seconds (466.77 comparisons/second).
+[2026-10-18 21:50:45] INFO: 0 genome(s) have been classified using skani and pplacer.
+[2026-10-18 21:50:45] TASK: Placing 3 bacterial genomes into class-level reference tree 1 (2/4) with pplacer using 32 CPUs (be patient).
+[2026-10-18 22:01:50] INFO: Calculating RED values based on reference tree.
+[2026-10-18 22:01:52] TASK: Traversing tree to determine classification method.
+[2026-10-18 22:01:52] INFO: Completed 3 genomes in 0.00 seconds (5,123.34 genomes/second).
+[2026-10-18 22:01:52] TASK: Calculating average nucleotide identity using skani (v0.3.2).
+[2026-10-18 22:01:53] INFO: Completed 72 comparisons in 0.65 seconds (111.36 comparisons/second).
+[2026-10-18 22:01:53] INFO: 0 genome(s) have been classified using skani and pplacer.
+[2026-10-18 22:01:53] TASK: Placing 1 bacterial genomes into class-level reference tree 6 (3/4) with pplacer using 32 CPUs (be patient).
+[2026-10-18 22:10:19] INFO: Calculating RED values based on reference tree.
+[2026-10-18 22:10:21] TASK: Traversing tree to determine classification method.
+[2026-10-18 22:10:21] INFO: Completed 1 genome in 0.01 seconds (83.49 genomes/second).
+[2026-10-18 22:10:21] TASK: Calculating average nucleotide identity using skani (v0.3.2).
+[2026-10-18 22:10:24] INFO: Completed 693 comparisons in 2.61 seconds (265.73 comparisons/second).
+[2026-10-18 22:10:24] INFO: 0 genome(s) have been classified using skani and pplacer.
+[2026-10-18 22:10:24] TASK: Placing 1 bacterial genomes into class-level reference tree 2 (4/4) with pplacer using 32 CPUs (be patient).
+[2026-10-18 22:18:40] INFO: Calculating RED values based on reference tree.
+[2026-10-18 22:18:42] TASK: Traversing tree to determine classification method.
+[2026-10-18 22:18:42] INFO: Completed 1 genome in 0.00 seconds (2,473.06 genomes/second).
+[2026-10-18 22:18:42] TASK: Calculating average nucleotide identity using skani (v0.3.2).
+[2026-10-18 22:18:43] INFO: Completed 48 comparisons in 0.32 seconds (147.72 comparisons/second).
+[2026-10-18 22:18:43] INFO: 0 genome(s) have been classified using skani and pplacer.
+[2026-10-18 22:18:43] WARNING: 6 of 45 genomes have a warning (see summary file).
+[2026-10-18 22:18:43] INFO: Note that Tk classification mode is insufficient for publication of new taxonomic designations. New designations should be based on one or more de novo trees, an example of which can be produced by Tk in de novo mode.
+[2026-10-18 22:18:43] INFO: Done.
+[2026-10-18 22:18:43] INFO: Removing intermediate files.
+[2026-10-18 22:18:43] INFO: Intermediate files removed.
+[2026-10-18 22:18:43] INFO: Done.

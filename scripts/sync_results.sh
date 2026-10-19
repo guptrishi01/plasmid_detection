@@ -29,6 +29,7 @@ for stage in "${STAGES[@]}"; do
         --exclude '*.faa' --exclude '*.npz' --exclude '*.rgi.json' --exclude 'tmp/' \
         --exclude '*_annotate/' --exclude '*_marker_classification/' --exclude '*_nn_classification/' \
         --exclude '*_aggregated_classification/' --exclude '*_find_proviruses/' \
+        --exclude 'diamond_output/' --exclude 'depth.txt' \
         "$SRC/$stage/" "$DEST/$stage/"
     big=$(find "$SRC/$stage" -type f -size +"$MAX" ! -name '*.bam' ! -name '*.fa' ! -name '*.fasta' \
           ! -name '*.fastg' ! -name '*.fastq.gz' ! -path '*/megahit/*' ! -path '*/intermediate_files/*' | wc -l)

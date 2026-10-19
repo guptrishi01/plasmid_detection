@@ -62,3 +62,19 @@ def test_encode_censored_values():
     assert tables.encode_censored("<LOQ", "zero", 0.5) == 0
     assert tables.encode_censored("ND", "half_min", 0.5) == 0.5
     assert tables.encode_censored("2.5", "na", 0.5) == 2.5
+
+
+def test_resistance_hit_keeps_amr_type_and_all_rgi():
+    amr = {"source": "amrfinder", "detail": "AMR"}
+    stress = {"source": "amrfinder", "detail": "STRESS"}
+    rgi = {"source": "rgi", "detail": "Strict"}
+    assert tables.is_resistance_hit(amr, ["AMR"])
+    assert not tables.is_resistance_hit(stress, ["AMR"])
+    assert tables.is_resistance_hit(stress, ["AMR", "STRESS"])
+    assert tables.is_resistance_hit(rgi, ["AMR"])
+
+
+def test_ambiguous_fraction_sums_merged_ranges():
+    assert tables.ambiguous_fraction("", 1000) == 0
+    assert tables.ambiguous_fraction("1-100", 1000) == 0.1
+    assert tables.ambiguous_fraction("350-357,1642-3893", 4000) == (8 + 2252) / 4000

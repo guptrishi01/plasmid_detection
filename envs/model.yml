@@ -1,0 +1,8 @@
+# pd-model: side analysis -- undersequencing model (logistic + beta regression) and plots
+name: pd-model
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - r-base=4.5.3
+  - r-betareg=3.2_6
+  - r-ggplot2=4.0.3
+  - r-logistf=1.26.1          # Firth-penalised logistic (separation)

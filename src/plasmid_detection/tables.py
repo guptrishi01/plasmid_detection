@@ -243,6 +243,79 @@ def table_amr_counts(args):
     write_tsv(args.out, rows, ["hit_id"] + [f"reads_{r}" for r in runs])
 
 
+
+def ambiguous_fraction(amb_region, length):
+    """PLASMe amb_region: merged 1-based ranges "a-b,c-d" shared with chromosomes."""
+    covered = 0
+    for part in filter(None, amb_region.split(",")):
+        a, b = (int(x) for x in part.split("-"))
+        covered += b - a + 1
+    return covered / int(length)
+
+
+def plasme_calls(report, max_amb=None):
+    """contig -> length from a PLASMe report; with max_amb, drop contigs whose share of
+    chromosome-shared (ambiguous) sequence is >= max_amb"""
+    calls = {}
+    for r in read_tsv(report):
+        if max_amb is not None and ambiguous_fraction(r["amb_region"], r["length"]) >= max_amb:
+            continue
+        calls[r["contig"]] = int(r["length"])
+    return calls
+
+
+def table_plasmid_callers(args):
+    """Per run: geNomad vs PLASMe variants -- size of each call set, overlap with geNomad,
+    contigs carrying AMR-type AMRFinderPlus hits, geNomad's plasmid score of the calls."""
+    rows = []
+    for run in read_samples(args.samples):
+        d = Path(args.contigs_dir) / run
+        genomad = {
+            r["seq_name"]: int(r["length"])
+            for r in read_tsv(genomad_file(d / "genomad", "plasmid_summary.tsv"))
+        }
+        score = {}
+        agg = sorted((d / "genomad").glob("*_aggregated_classification/*_aggregated_classification.tsv"))
+        if agg:
+            score = {r["seq_name"]: float(r["plasmid_score"]) for r in read_tsv(agg[0])}
+        amr = {
+            h["contig"]
+            for h in read_tsv(d / "amr_tagged.tsv")
+            if h["source"] == "amrfinder" and h["detail"] == "AMR"
+        }
+        sets = {"genomad": genomad}
+        # balance = PLASMe's default preset (main run, plasme/); high_precision from
+        # `05e_plasme.sbatch high-precision`; chrom_filter = calls with >= max_amb of their
+        # length shared with chromosomes (PLASMe amb_region) removed
+        for mode, sub in (("balance", "plasme"), ("high_precision", "plasme_high-precision")):
+            report = d / sub / f"{run}.plasme.fna_report.csv"
+            if not report.exists():
+                continue
+            filtered = plasme_calls(report, args.max_amb)
+            if mode == "balance":
+                sets["plasme_balance"] = plasme_calls(report)
+                sets["plasme_chrom_filter_only"] = filtered
+            else:
+                sets["plasme_high_precision_only"] = plasme_calls(report)
+                sets["plasme_high_precision_plus_chrom_filter"] = filtered
+        for caller, calls in sets.items():
+            names = set(calls)
+            scores = sorted(score[c] for c in names if c in score)
+            rows.append(
+                {
+                    "run": run,
+                    "caller": caller,
+                    "contigs": len(names),
+                    "total_bp": sum(calls.values()),
+                    "also_genomad": len(names & set(genomad)),
+                    "pct_also_genomad": round(100 * len(names & set(genomad)) / len(names), 1) if names else "NA",
+                    "with_amr_genes": len(names & amr),
+                    "genomad_score_median": round(scores[len(scores) // 2], 3) if scores else "NA",
+                    "genomad_score_ge_0.7": sum(x >= 0.7 for x in scores) if scores else "NA",
+                }
+            )
+    write_tsv(args.out, rows, list(rows[0]))
+
 # ---- stage 6 / 7 ---------------------------------------------------------------------
 
 
@@ -504,6 +577,13 @@ def table_plasmid_hosts(args):
 # ---- stage 9 -------------------------------------------------------------------------
 
 
+def is_resistance_hit(hit, amrfinder_types):
+    """AMRFinderPlus --plus also reports STRESS (metal, biocide) and VIRULENCE genes; its
+    Type is kept in amr_tagged's `detail`. Only amrfinder_types count as resistance. RGI
+    (CARD) hits are all resistance models."""
+    return hit["source"] != "amrfinder" or hit["detail"] in amrfinder_types
+
+
 def table_plasmid_summary(args):
     rows = []
     for run in read_samples(args.samples):
@@ -513,7 +593,11 @@ def table_plasmid_summary(args):
         mob = read_tsv(d / "mob_typer.tsv") if (d / "mob_typer.tsv").exists() else []
         mobility = [r.get("predicted_mobility", "") for r in mob]
         tagged = read_tsv(d / "amr_tagged.tsv")
-        amr_plasmid_contigs = {r["contig"] for r in tagged if r["tag"] == "plasmid"}
+        amr_plasmid_contigs = {
+            r["contig"]
+            for r in tagged
+            if r["tag"] == "plasmid" and is_resistance_hit(r, args.amrfinder_types)
+        }
         scapp = sorted(Path(args.assembly_dir, run, "scapp").glob("*confident_cycs.fasta"))
         rows.append(
             {
@@ -543,7 +627,7 @@ def table_resistome(args):
         d = Path(args.contigs_dir) / run
         counts = {r["hit_id"]: r for r in read_tsv(d / "amr_counts.tsv")}
         for h in read_tsv(d / "amr_tagged.tsv"):
-            if h["source"] != args.source:
+            if h["source"] != args.source or not is_resistance_hit(h, args.amrfinder_types):
                 continue
             n = int(counts[h["hit_id"]][f"reads_{run}"])
             part = "mobile" if h["tag"] in ("plasmid", "virus") else "chromosome"
@@ -763,11 +847,23 @@ def main(argv=None):
     p.add_argument("--out-dir", required=True)
     p.set_defaults(func=table_plasmid_hosts)
 
+    p = sub.add_parser("plasmid-callers", help="stage 5: geNomad vs PLASMe call sets per run")
+    p.add_argument("--samples", required=True)
+    p.add_argument("--contigs-dir", required=True)
+    p.add_argument("--max-amb", type=float, default=0.5,
+                   help="drop PLASMe calls with this share or more of chromosome-shared sequence")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=table_plasmid_callers)
+
     p = sub.add_parser("plasmid-summary", help="stage 9: plasmid summary per sample")
     p.add_argument("--samples", required=True)
     p.add_argument("--contigs-dir", required=True)
     p.add_argument("--assembly-dir", required=True)
     p.add_argument("--out", required=True)
+    p.add_argument(
+        "--amrfinder-types", nargs="+", default=["AMR"],
+        help="AMRFinderPlus Type values counted as resistance (default: AMR; add STRESS VIRULENCE to keep them)",
+    )
     p.set_defaults(func=table_plasmid_summary)
 
     p = sub.add_parser("resistome", help="stage 9: gene x sample matrix, mobile subset separate")
@@ -775,6 +871,10 @@ def main(argv=None):
     p.add_argument("--contigs-dir", required=True)
     p.add_argument("--source", choices=["amrfinder", "rgi"], required=True)
     p.add_argument("--out-dir", required=True)
+    p.add_argument(
+        "--amrfinder-types", nargs="+", default=["AMR"],
+        help="AMRFinderPlus Type values counted as resistance (default: AMR; add STRESS VIRULENCE to keep them)",
+    )
     p.set_defaults(func=table_resistome)
 
     p = sub.add_parser("rgi-compare", help="stage 9: RGI read level (bwt) vs contig level")
