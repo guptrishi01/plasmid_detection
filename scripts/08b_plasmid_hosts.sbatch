@@ -25,5 +25,5 @@ pdpy plasmid_detection.tables plasmid-hosts --samples "$PATHS_RUN_SAMPLES" \
     --min-samples "$PARAMS_MAG_LINKS_MIN_SAMPLES_FOR_CORRELATION" --out-dir "$PATHS_MAG_LINKS"
 cp "$PATHS_MAG_LINKS/plasmids_in_mags.tsv" "$PATHS_TABLES/08_plasmids_in_mags.tsv"
 cp "$PATHS_MAG_LINKS/plasmid_host_inference.tsv" "$PATHS_TABLES/08_plasmid_host_inference.tsv"
-echo "plasmid contigs in medium+ MAGs: $(( $(wc -l < "$PATHS_TABLES/08_plasmids_in_mags.tsv") - 1 ))"
+echo "plasmid contigs in any bin: $(( $(wc -l < "$PATHS_TABLES/08_plasmids_in_mags.tsv") - 1 )), in a medium+ bin: $(awk -F'\t' 'NR>1 && ($5=="high" || $5=="medium")' "$PATHS_TABLES/08_plasmids_in_mags.tsv" | wc -l)"
 echo "plasmid contigs with any inference row: $(( $(wc -l < "$PATHS_TABLES/08_plasmid_host_inference.tsv") - 1 ))"

@@ -41,8 +41,11 @@ activate "$ENVS_ASSEMBLY"
 P=$(awk -v n="$N" -v t="$TOTAL" 'BEGIN{p=n*1.02/t; if(p>1)p=1; printf "%.6f", p}')
 for r in 1 2; do
     in="$PATHS_HOSTFREE/${SRR}_${r}.fastq.gz"
+    # seqkit head stops reading after N records, so seqkit sample dies of SIGPIPE (141):
+    # expected, and pipefail would kill the job on it. Counts and ids are checked below.
     seqkit sample -p "$P" -s "$PARAMS_ROLLUP_DEPTH_SEED" "$in" 2>/dev/null \
-        | seqkit head -n "$N" -o "$OUT/sub_${r}.fastq.gz"
+        | seqkit head -n "$N" -o "$OUT/sub_${r}.fastq.gz" \
+        || [[ ${PIPESTATUS[0]} == 141 && ${PIPESTATUS[1]} == 0 ]]
 done
 n1=$(seqkit stats -T "$OUT/sub_1.fastq.gz" | awk 'NR==2{print $4}')
 n2=$(seqkit stats -T "$OUT/sub_2.fastq.gz" | awk 'NR==2{print $4}')
