@@ -1,0 +1,16 @@
+# pd-plasme: PLASMe (plasmid contigs: BLASTn + order-specific Transformer). PLASMe itself is
+# not packaged: 00_setup clones it at db.plasme.commit. Versions follow its plasme.yaml
+# (python 3.9, pytorch 1.11, biopython 1.80, BLAST 2.13.0, DIAMOND 2.0.15, Prodigal 2.6.3),
+# CPU-only torch from conda-forge.
+name: pd-plasme
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - python=3.9
+  - pytorch=1.11.0=cpu*
+  - biopython=1.80
+  - numpy=1.23
+  - pandas=1.5
+  - blast=2.13.0
+  - diamond=2.0.15
+  - prodigal=2.6.3
+  - requests

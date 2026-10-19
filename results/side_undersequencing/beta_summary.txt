@@ -1,0 +1,30 @@
+
+Call:
+betareg(formula = as.formula(paste("coverage_b ~", form_rhs)), data = df, 
+    link = "logit")
+
+Quantile residuals:
+    Min      1Q  Median      3Q     Max 
+-2.6227 -0.4474 -0.0369  0.4069  3.2909 
+
+Coefficients (mean model with logit link):
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                -0.09130    0.27608  -0.331   0.7409    
+log2_effort                 0.37314    0.17751   2.102   0.0355 *  
+site_groupcontrol          -1.14581    0.24538  -4.670 3.02e-06 ***
+site_groupcreek_downstream -0.03589    0.13386  -0.268   0.7886    
+site_groupcreek_upstream   -0.68933    0.13406  -5.142 2.72e-07 ***
+site_groupinfluent          0.02049    0.17319   0.118   0.9058    
+site_groupsewer            -0.06472    0.13368  -0.484   0.6283    
+systemSugar_Creek          -0.06427    0.09297  -0.691   0.4894    
+
+Phi coefficients (precision model with identity link):
+      Estimate Std. Error z value Pr(>|z|)    
+(phi)   20.777      2.995   6.938 3.99e-12 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+Type of estimator: ML (maximum likelihood)
+Log-likelihood:  77.3 on 9 Df
+Pseudo R-squared: 0.3666
+Number of iterations: 16 (BFGS) + 2 (Fisher scoring) 

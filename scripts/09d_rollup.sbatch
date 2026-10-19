@@ -12,17 +12,22 @@
 #   resistome matrices: gene x sample read counts over AMR hits (own reads on own
 #     assembly), all / mobile (plasmid+virus) / chromosome -- for AMRFinderPlus and RGI
 #   comparison with the paper's read-level approach: RGI bwt (09a) vs RGI contig level
+# AMRFinderPlus hits count only if their Type is in params.rollup.amrfinder_types (AMR).
 # Output: $paths.tables/09_plasmid_summary.tsv, $paths.rollup/resistome_*.tsv,
 #         $paths.tables/09_rgi_read_vs_contig.tsv
 
 set -euo pipefail
 source "${PD_REPO:-$HOME/gibas/plasmid_detection}/scripts/lib/common.sh"
 mkdir -p "$PATHS_TABLES" "$PATHS_ROLLUP"
+# shellcheck disable=SC2086
 pdpy plasmid_detection.tables plasmid-summary --samples "$PATHS_RUN_SAMPLES" \
-    --contigs-dir "$PATHS_CONTIGS" --assembly-dir "$PATHS_ASSEMBLY" --out "$PATHS_TABLES/09_plasmid_summary.tsv"
+    --contigs-dir "$PATHS_CONTIGS" --assembly-dir "$PATHS_ASSEMBLY" --amrfinder-types $PARAMS_ROLLUP_AMRFINDER_TYPES \
+    --out "$PATHS_TABLES/09_plasmid_summary.tsv"
 for src in amrfinder rgi; do
+    # shellcheck disable=SC2086
     pdpy plasmid_detection.tables resistome --samples "$PATHS_RUN_SAMPLES" \
-        --contigs-dir "$PATHS_CONTIGS" --source "$src" --out-dir "$PATHS_ROLLUP"
+        --contigs-dir "$PATHS_CONTIGS" --source "$src" --amrfinder-types $PARAMS_ROLLUP_AMRFINDER_TYPES \
+        --out-dir "$PATHS_ROLLUP"
 done
 pdpy plasmid_detection.tables rgi-compare --samples "$PATHS_RUN_SAMPLES" \
     --contigs-dir "$PATHS_CONTIGS" --bwt-dir "$PATHS_ROLLUP/rgi_bwt" \

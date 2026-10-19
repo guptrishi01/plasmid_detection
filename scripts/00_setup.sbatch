@@ -47,7 +47,7 @@ echo "  data:    $PATHS_DATA_ROOT"
 
 sec "2. Stage envs"
 for spec in data qc host assembly scapp genomad checkv checkm2 rgi amrfinderplus mobsuite \
-            coverm binning drep gtdbtk stats; do
+            plasme coverm binning drep gtdbtk stats; do
     make_env "$spec" "$PATHS_CONDA_ENVS/pd-$spec"
 done
 
@@ -129,6 +129,33 @@ if done_marker "$DB_MOB_SUITE"; then echo "  exists, skipping"; else
       touch "$DB_MOB_SUITE/.done" ) || fail "MOB-suite db"
 fi
 
+sec "9b. PLASMe code (commit ${DB_PLASME_COMMIT:0:7}) + reference DB (~12 GB zip)"
+if done_marker "$DB_PLASME_DIR"; then echo "  exists, skipping"; else
+    (
+        set -e; activate "$ENVS_PLASME"     # helper: tolerates MKL activate.d under set -u
+        root=$(dirname "$DB_PLASME_DIR")
+        mkdir -p "$root"
+        [[ -d "$DB_PLASME_CODE/.git" ]] || git clone -q https://github.com/HubertTang/PLASMe.git "$DB_PLASME_CODE"
+        git -C "$DB_PLASME_CODE" checkout -q "$DB_PLASME_COMMIT"
+        # Same steps as PLASMe_db.py, which only prints (doesn't fail) on an md5 mismatch.
+        # The zip goes to scratch and is removed once the DB is built.
+        zip="$PATHS_WORK/downloads/plasme_DB.zip"
+        mkdir -p "$(dirname "$zip")"
+        wget -q -c -O "$zip" "$DB_PLASME_URL"
+        echo "$DB_PLASME_MD5  $zip" | md5sum -c -
+        rm -rf "$DB_PLASME_DIR"
+        python -m zipfile -e "$zip" "$root"                # -> $root/DB
+        python -m zipfile -e "$DB_PLASME_DIR/plsdb.zip" "$DB_PLASME_DIR"
+        rm "$DB_PLASME_DIR/plsdb.zip"
+        diamond makedb --in "$DB_PLASME_DIR/plsdb_Mar30.fna.aa" -d "$DB_PLASME_DIR/plsdb_Mar30" -p "$THREADS"
+        makeblastdb -in "$DB_PLASME_DIR/plsdb_Mar30.fna" -dbtype nucl -out "$DB_PLASME_DIR/plsdb_Mar30"
+        rm "$DB_PLASME_DIR/plsdb_Mar30.fna" "$DB_PLASME_DIR/plsdb_Mar30.fna.aa"
+        [[ -s "$DB_PLASME_DIR/plsdb_Mar30.dmnd" && -d "$DB_PLASME_DIR/trans_model" ]]
+        touch "$DB_PLASME_DIR/.done"
+        rm -f "$zip"
+    ) || fail "PLASMe"
+fi
+
 sec "10. GTDB $DB_GTDB_RELEASE (GTDB-Tk package, ~141 GB compressed)"
 if done_marker "$DB_GTDB_DIR"; then echo "  exists, skipping"; else
     (
@@ -163,7 +190,7 @@ done
                 assembly:megahit assembly:spades assembly:bowtie2 assembly:samtools assembly:quast \
                 assembly:nonpareil assembly:seqkit scapp:scapp \
                 genomad:genomad checkv:checkv checkm2:checkm2 rgi:rgi \
-                amrfinderplus:ncbi-amrfinderplus mobsuite:mob_suite coverm:coverm \
+                amrfinderplus:ncbi-amrfinderplus mobsuite:mob_suite plasme:pytorch plasme:blast plasme:diamond coverm:coverm \
                 binning:metabat2 drep:drep gtdbtk:gtdbtk \
                 stats:r-base stats:bioconductor-aldex2 stats:bioconductor-ancombc stats:r-vegan; do
         env=${pair%%:*} pkg=${pair#*:}
@@ -179,6 +206,7 @@ done
     echo "amrfinderplus_db: $(cat "$DB_AMRFINDERPLUS/version.txt" 2>/dev/null)"
     # mob_init writes no version file: record its download date + a checksum of the plasmid DB
     echo "mob_suite_db: $(grep -o 'Download date: [0-9-]*' "$DB_MOB_SUITE/status.txt" 2>/dev/null)  ncbi_plasmid_full_seqs_md5=$(md5sum "$DB_MOB_SUITE/ncbi_plasmid_full_seqs.fas" 2>/dev/null | cut -d' ' -f1)"
+    echo "plasme: commit=$(git -C "$DB_PLASME_CODE" rev-parse HEAD 2>/dev/null)  db_zip_md5=$DB_PLASME_MD5  $([[ -e "$DB_PLASME_DIR/.done" ]] && echo built)"
     echo "gtdb: $DB_GTDB_RELEASE  tarball_md5=$DB_GTDB_MD5  $(grep -h VERSION_DATA "$DB_GTDB_DIR"/metadata/metadata.txt 2>/dev/null)"
 } > "$PATHS_VERSIONS"
 cat "$PATHS_VERSIONS"

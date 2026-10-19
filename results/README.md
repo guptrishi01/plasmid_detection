@@ -1,4 +1,4 @@
-# Pilot results (stages 2–5)
+# Pilot results (stages 2–6) and side analyses
 
 Four runs at time point 4: Sugar Creek (SC) and Mallard Creek (MC), upstream B (UP) and
 influent (INF). Every number below comes from the files in this folder (tables in `tables/`, per-run
@@ -55,6 +55,45 @@ of all AMRFinderPlus hits), so resistome analyses filter `Type == AMR`. geNomad 
 plasmid contigs (fragments), SCAPP counts complete circular plasmids. Most plasmid
 contigs type as non-mobilizable because fragments often lack the transfer genes.
 
+### Plasmid callers: geNomad vs PLASMe
+
+(`tables/05_plasmid_callers.tsv`, `05_contigs/<run>/plasme*/`)
+
+**geNomad is the main caller** (decided 2026-10-18; the goal is comparing plasmids across
+locations). PLASMe was run in its default (balance) and high-precision modes, each with and
+without dropping calls that are ≥ 50% chromosome-shared (PLASMe `amb_region`).
+Cells: contigs called · also called by geNomad · contigs with AMR-type genes · geNomad's
+median plasmid score of the calls.
+
+| Caller | 181 SC UP | 217 MC UP | 184 SC INF | 191 MC INF |
+|---|---|---|---|---|
+| geNomad | 124 · 124 · 0 · 0.82 | 159 · 159 · 0 · 0.84 | 1,863 · 1,863 · 15 · 0.97 | 2,067 · 2,067 · 23 · 0.97 |
+| PLASMe balance | 154 · 7 · 0 · 0.20 | 317 · 9 · 0 · 0.24 | 5,395 · 904 · 46 · 0.58 | 4,503 · 823 · 46 · 0.61 |
+| chromosome filter only | 126 · 7 · 0 · 0.20 | 249 · 7 · 0 · 0.25 | 3,413 · 748 · 29 · 0.71 | 3,160 · 705 · 31 · 0.71 |
+| high precision only | 74 · 6 · 0 · 0.25 | 171 · 7 · 0 · 0.27 | 4,886 · 857 · 46 · 0.60 | 3,882 · 767 · 41 · 0.65 |
+| high precision + filter | 56 · 6 · 0 · 0.25 | 131 · 5 · 0 · 0.26 | 3,035 · 708 · 29 · 0.75 | 2,674 · 657 · 27 · 0.77 |
+
+In upstream creek water, under 11% of PLASMe's calls are geNomad calls in every mode, and
+geNomad scores them ~0.25 (chromosome-like); in influent ~20% overlap. The chromosome filter
+is the fix that matters; high precision adds a little. A caller whose false-positive rate
+differs by habitat would bias the cross-location comparison, hence geNomad.
+
+## Stage 6: binning and MAG quality
+
+(`06_binning/<run>/mimag.tsv`, `checkm2/quality_report.tsv`)
+
+| Run | Bins (MetaBAT2) | High | Medium | Low | Kept (medium+) |
+|---|---|---|---|---|---|
+| SRR6231181 SC UP_B | 28 | 2 | 6 | 20 | 8 |
+| SRR6231184 SC INF | 41 | 2 | 15 | 24 | 17 |
+| SRR6231217 MC UP_B | 38 | 1 | 9 | 28 | 10 |
+| SRR6231191 MC INF | 50 | 4 | 20 | 26 | 24 |
+
+High = ≥ 90% complete and < 5% contaminated, medium = ≥ 50% / < 10% (CheckM2; MIMAG's rRNA
+and tRNA requirement for "high" is not checked). 59 medium-or-better MAGs; dRep (95% ANI)
+reduces them to 45, as 14 are the same species in both runs of a creek pair. With only two
+BAMs per assembly in the pilot, coverage-based binning is weaker than it will be in the full run.
+
 ## Audits
 
  Stage 2: all FastQC/fastp reports present, trimmed = fastp output. Stage 3:
@@ -63,7 +102,38 @@ contig FASTA = QUAST counts and lengths, mapping input = retained pairs, 8/8 BAM
 `samtools quickcheck`. Stage 5: 16/16 jobs exit 0, every RGI contig is in the assembly,
 tagged hits = counted hits. RGI logs "Requested rname SRR…_k127 does not exist" a few
 times per influent run: its ORF-extension step cuts names at underscores; the hits are
-still reported with full contig names.
+still reported with full contig names. Stage 6: 8/8 jobs exit 0, CheckM2 rows = bins,
+`pass/` = 59 = high + medium; dRep kept all 59 through its filters (`Cdb.csv` = 59 rows).
+
+## Side analysis: odds of under-sequencing (all 92 runs)
+
+(`side_undersequencing/`; scripts `scripts/side/us01–us02`, `scripts/R/undersequencing.R`)
+
+Nonpareil coverage C (share of the community the reads sampled) for all 92 runs, on raw R1
+(only the pilot has been trimmed; on the 4 pilot runs raw and host-depleted C differ by
+≤ 0.013). Under-sequenced = C < 0.5 (`params.undersequencing.coverage_threshold`; refit at
+0.4–0.7). Predictors: log2 sequencing effort, site group, creek system.
+
+| Site group | Runs | Under-sequenced | Mean C |
+|---|---|---|---|
+| creek upstream | 16 | 10 | 0.43 |
+| remote controls | 4 | 2 | 0.39 |
+| plant | 32 | 3 | 0.61 |
+| creek downstream | 16 | 2 | 0.59 |
+| influent | 8 | 0 | 0.61 |
+| sewer | 16 | 0 | 0.60 |
+
+| Model | Upstream vs plant | Per doubling of effort | LOOCV AUC (C < 0.5) |
+|---|---|---|---|
+| Logistic | not estimable (separation: no influent/sewer run is under-sequenced) | — | 0.725 |
+| Firth logistic | odds of under-sequencing ×12.3 (3.1–60) | ×0.90 (0.08–10) | 0.712 |
+| Beta regression on C | odds of coverage ×0.50 (0.39–0.65) | ×1.45 (1.03–2.06) | **0.755** |
+
+Upstream creek water is the habitat most likely to be under-sequenced at these depths;
+influent and sewer never are. Beta regression uses C as a continuous value, ranks runs best
+and is the only model that detects the effect of depth (which varies only ~2-fold, 1.9–3.9
+Gbp R1). 17 events limit the logistic models (≈ 2 per term). On the pilot, C ranks the runs
+in the same order as the stage 4 assembled fraction.
 
 ## Layout
 
@@ -77,4 +147,7 @@ Reads, contigs, graphs, BAMs and tool working dirs stay on scratch.
 | `03_host/` | Bowtie2 logs, host-free FastQC, MultiQC `host_depletion.html` / `hostfree_qc.html` |
 | `04_assembly/<run>/` | QUAST, Nonpareil curves, mapping logs, SCAPP logs; `metaspades/attempt.tsv` |
 | `05_contigs/<run>/` | geNomad summaries, CheckV, MOB-typer, AMRFinderPlus, RGI, CoverM, `amr_tagged.tsv`, `amr_counts.tsv` |
+| `05_contigs/<run>/plasme*/` | PLASMe reports (balance, high-precision) |
+| `06_binning/<run>/` | MetaBAT2 bin lists, CheckM2 quality report, `mimag.tsv` |
+| `side_undersequencing/` | Nonpareil curves (92 runs), model comparison, odds ratios, per-run predictions, plots |
 | `tables/` | one summary table per stage |

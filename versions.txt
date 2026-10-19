@@ -1,6 +1,6 @@
 # Written by scripts/00_setup.sbatch -- do not edit by hand
-date: 2026-09-28T23:55:40-04:00
-host: str-c7.charlotte.edu
+date: 2026-10-18T21:35:11-04:00
+host: str-c60.charlotte.edu
 conda: 23.11.0  mamba: 1.5.6
 
 ## Tools (full solved envs in envs/lock/)
@@ -28,6 +28,9 @@ checkm2: 1.1.0  (pd-checkm2)
 rgi: 6.0.8  (pd-rgi)
 ncbi-amrfinderplus: 4.2.7  (pd-amrfinderplus)
 mob_suite: 3.1.9  (pd-mobsuite)
+pytorch: 1.11.0  (pd-plasme)
+blast: 2.13.0  (pd-plasme)
+diamond: 2.0.15  (pd-plasme)
 coverm: 0.8.0  (pd-coverm)
 metabat2: 2.18_23_gc869c52  (pd-binning)
 drep: 3.7.1  (pd-drep)
@@ -45,4 +48,5 @@ checkm2_db: uniref100.KO.1.dmnd
 card: 4.0.2
 amrfinderplus_db: 2026-08-07.1
 mob_suite_db: Download date: 2026-09-22  ncbi_plasmid_full_seqs_md5=9115d132f9f85ab7e2858538c05174ac
+plasme: commit=4405d5aa82065cf23a9d78de8b70ba261342ad40  db_zip_md5=b32263ad4fb20c04044700170b1609ef  built
 gtdb: r226  tarball_md5=24b476ea5a4ef30519d461e56cc4a27f  VERSION_DATA=r226

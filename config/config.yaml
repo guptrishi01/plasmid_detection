@@ -46,6 +46,8 @@ paths:
   mag_links: ${paths.results}/08_mag_links
   rollup: ${paths.results}/09_rollup
   tables: ${paths.results}/tables
+  # Side analysis (not in the spec): odds of under-sequencing across all 92 runs
+  undersequencing: ${paths.results}/side_undersequencing
   versions: ${paths.repo}/versions.txt
   env_locks: ${paths.repo}/envs/lock
 
@@ -66,11 +68,13 @@ envs:
   rgi: ${paths.conda_envs}/pd-rgi
   amrfinderplus: ${paths.conda_envs}/pd-amrfinderplus
   mobsuite: ${paths.conda_envs}/pd-mobsuite
+  plasme: ${paths.conda_envs}/pd-plasme
   coverm: ${paths.conda_envs}/pd-coverm
   binning: ${paths.conda_envs}/pd-binning
   drep: ${paths.conda_envs}/pd-drep
   gtdbtk: ${paths.conda_envs}/pd-gtdbtk
   stats: ${paths.conda_envs}/pd-stats
+  model: ${paths.conda_envs}/pd-model
 
 reference:
   human:
@@ -90,6 +94,12 @@ db:
     url: https://card.mcmaster.ca/latest/data
   amrfinderplus: ${paths.db_root}/amrfinderplus/latest
   mob_suite: ${paths.db_root}/mob_suite
+  plasme:                                         # PLASMe isn't packaged: code + DB both here
+    code: ${paths.db_root}/plasme/PLASMe          # git clone, checked out at commit
+    commit: 4405d5aa82065cf23a9d78de8b70ba261342ad40
+    dir: ${paths.db_root}/plasme/DB               # reference DB (PLSDB Mar30 + Transformer models)
+    url: https://zenodo.org/record/8046934/files/DB.zip?download=1
+    md5: b32263ad4fb20c04044700170b1609ef         # DB.zip, from PLASMe_db.py
   gtdb:
     release: r226
     dir: ${paths.db_root}/gtdb/r226                # also set as GTDBTK_DATA_PATH in pd-gtdbtk
@@ -126,6 +136,12 @@ params:
   contigs:
     threads: 16
     genomad_args: "--cleanup --splits 8"
+    # PLASMe preset: balance = BLASTn identity/coverage 0.9, Transformer probability 0.5
+    # (high-sensitivity: identity 0.7, coverage 0.1; high-precision: probability 0.9)
+    plasme_args: "-m balance"
+    # 05f caller comparison: PLASMe calls with this share or more of their length flagged
+    # as chromosome-shared (PLASMe amb_region) are dropped in the *_amb_lt_* call sets
+    plasme_max_ambiguous_fraction: 0.5
     amrfinder_args: "--plus"
     coverm_methods: "mean tpm count"
   binning:
@@ -151,6 +167,9 @@ params:
     depth_samples: ["SRR6231181", "SRR6231184"]
     depth_levels_million_pairs: [5, 10, 15, 20]
     depth_seed: 11
+    # AMRFinderPlus Type values that count as resistance in the plasmid summary, resistome
+    # matrices and statistics (--plus adds STRESS = metal/biocide and VIRULENCE)
+    amrfinder_types: "AMR"
   stats:
     # Controls are a reference: reported, never subtracted, never in a test group
     site_groups: ["creek_upstream:UP_A,UP_B", "creek_downstream:DS_A,DS_B", "influent:INF",
@@ -165,5 +184,11 @@ params:
     # -> na | zero | half_min (half the smallest detected value of that antibiotic)
     nd_encoding: "na"
     loq_encoding: "na"
+  undersequencing:
+    threads: 16
+    # Under-sequenced = Nonpareil modelled coverage C below this. No published cut-off
+    # fits every habitat, so the model is also refit at each threshold_sweep value.
+    coverage_threshold: 0.5
+    threshold_sweep: [0.4, 0.5, 0.6, 0.7]
   setup:
     threads: 16

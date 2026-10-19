@@ -116,12 +116,14 @@ the built env, re-run setup, commit spec + lock + `versions.txt` together.
 | pd-binning | MetaBAT2 + `jgi_summarize_bam_contig_depths` | — |
 | pd-drep | dRep | — |
 | pd-stats | R, ALDEx2, ANCOMBC, vegan, ggplot2 (stage 9) | — |
+| pd-model | R, betareg, logistf, ggplot2 (side analysis: under-sequencing model) | — |
 | pd-genomad | geNomad | `db/genomad/genomad_db` |
 | pd-checkv | CheckV | `db/checkv/current` → `checkv-db-vX.Y` |
 | pd-checkm2 | CheckM2 | `db/checkm2` (`CHECKM2DB` set in env) |
 | pd-rgi | RGI | CARD, `db/card/localDB` — rgi `--local` reads `./localDB`, so run rgi with cwd `db/card` or copy/link `localDB` into the work dir |
 | pd-amrfinderplus | AMRFinderPlus | `db/amrfinderplus/latest` |
 | pd-mobsuite | MOB-suite | `db/mob_suite` |
+| pd-plasme | PLASMe deps (CPU torch, BLAST, DIAMOND, Prodigal); PLASMe itself is a git clone at `db.plasme.commit` | `db/plasme/PLASMe` (code), `db/plasme/DB` |
 | pd-gtdbtk | GTDB-Tk **2.6.1** | GTDB **r226** (`GTDBTK_DATA_PATH` set in env) |
 
 **GTDB-Tk is pinned by the GTDB release, not by "latest".** R226 supports GTDB-Tk
