@@ -48,3 +48,18 @@ def test_repo_config_resolves_fully():
     assert not [k for k in flat if k.startswith("SLURM_")]
     assert flat["DB_GTDB_RELEASE"] == "r226"
     assert flat["REFERENCE_HUMAN_ACCESSION"] == "GCF_000001405.40"
+
+
+def test_nextflow_params_has_resolved_sections():
+    from plasmid_detection import config
+
+    p = config.nextflow_params(config.load())
+    assert set(p) == {"repo", "envs", "db", "reference", "cfg"}
+    assert "${" not in json_dump(p)
+    assert isinstance(p["cfg"]["rollup"]["depth_levels_million_pairs"], list)
+
+
+def json_dump(obj):
+    import json
+
+    return json.dumps(obj)

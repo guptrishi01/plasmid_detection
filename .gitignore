@@ -41,3 +41,7 @@ RUNNING.md
 
 # Lab-meeting deck + build script: kept local, not pushed
 docs/slides/
+
+# Nextflow run state (nextflow/run.sh runs from the repo root)
+.nextflow/
+.nextflow.log*

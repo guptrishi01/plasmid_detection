@@ -1,0 +1,5 @@
+# pd-nextflow: Nextflow (brings its own OpenJDK) to run nextflow/main.nf
+name: pd-nextflow
+channels: [conda-forge, bioconda, nodefaults]
+dependencies:
+  - nextflow=26.10.2
