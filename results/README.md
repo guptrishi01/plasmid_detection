@@ -201,7 +201,7 @@ Nonpareil coverage C (share of the community the reads sampled) for all 92 runs,
 
 | Model | Upstream vs plant | Per doubling of effort | LOOCV AUC (C < 0.5) |
 |---|---|---|---|
-| Logistic | not estimable (separation: no influent/sewer run is under-sequenced) | — | 0.725 |
+| Logistic | ×16.1 (3.3–78); influent and sewer not estimable (separation: none under-sequenced) | ×0.88 (0.07–11) | 0.725 |
 | Firth logistic | odds of under-sequencing ×12.3 (3.1–60) | ×0.90 (0.08–10) | 0.712 |
 | Beta regression on C | odds of coverage ×0.50 (0.39–0.65) | ×1.45 (1.03–2.06) | **0.755** |
 
