@@ -68,7 +68,7 @@ process METASPADES {
         contigs=\$(grep -c '^>' spades/contigs.fasta)
         ge=\$(awk -v m=${params.cfg.assembly.min_contig_len} '/^>/{if(l>=m)n++; l=0; next}{l+=length(\$0)} END{if(l>=m)n++; print n+0}' spades/contigs.fasta)
     fi
-    err=\$(grep -E "== Error|ERROR|Exception|Killed|not enough memory|finished abnormally" spades/spades.log 2>/dev/null | tail -1)
+    err=\$(grep -E "== Error|ERROR|Exception|Killed|not enough memory|finished abnormally" spades/spades.log 2>/dev/null | tail -1 || true)   # no match is the normal case
     printf 'run\\tspots\\texit_code\\telapsed_h\\tmax_rss_gb\\tcontigs\\tcontigs_ge_min_len\\tlast_error_line\\n' > attempt.tsv
     printf '%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\t%s\\n' ${id} ${meta.spots} \$rc \$(awk -v e=\$elapsed 'BEGIN{printf "%.2f", e/3600}') \\
         "\$rss" \$contigs \$ge "\${err:-none}" >> attempt.tsv
@@ -159,7 +159,7 @@ process SCAPP {
     k=\$(cat ${graph_k})
     if ! scapp -g ${fastg} -k \$k -r1 ${r1} -r2 ${r2} -o scapp -p ${task.cpus} ${params.cfg.assembly.scapp_args ?: ''}; then
         # SCAPP 0.1.4 crashes in makeblastdb on an empty *.cycs.fasta: no circular plasmids
-        cycs=\$(ls scapp/intermediate_files/*.cycs.fasta 2>/dev/null | head -1)
+        cycs=\$(ls scapp/intermediate_files/*.cycs.fasta 2>/dev/null | head -1 || true)
         [[ -n "\$cycs" && ! -s "\$cycs" ]] || { echo "SCAPP failed" >&2; exit 1; }
         echo "SCAPP: no candidate cycles in the graph -> 0 circular plasmids" > scapp/NO_CYCLES
     fi
