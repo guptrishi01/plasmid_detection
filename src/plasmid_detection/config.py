@@ -2,9 +2,11 @@
 
 python -m plasmid_detection.config shell         # export KEY='value' lines for eval
 python -m plasmid_detection.config get db.gtdb.dir
+python -m plasmid_detection.config nextflow      # JSON params-file for nextflow/main.nf
 """
 
 import argparse
+import json
 import re
 import shlex
 import sys
@@ -63,11 +65,24 @@ def flatten(tree, prefix=""):
             yield name.upper(), value
 
 
+def nextflow_params(cfg):
+    """The resolved config as a Nextflow -params-file: envs, db, reference and tool
+    parameters (config `params`, renamed `cfg` so it isn't params.params in Nextflow)."""
+    return {
+        "repo": cfg["paths"]["repo"],
+        "envs": cfg["envs"],
+        "db": cfg["db"],
+        "reference": cfg["reference"],
+        "cfg": cfg["params"],
+    }
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     sub = parser.add_subparsers(dest="cmd", required=True)
     sub.add_parser("shell", help="print export statements for every key")
+    sub.add_parser("nextflow", help="print the Nextflow params-file (JSON)")
     get = sub.add_parser("get", help="print one resolved value")
     get.add_argument("key")
     args = parser.parse_args(argv)
@@ -76,6 +91,8 @@ def main(argv=None):
     if args.cmd == "shell":
         for name, value in flatten(cfg):
             print(f"export {name}={shlex.quote(str(value))}")
+    elif args.cmd == "nextflow":
+        print(json.dumps(nextflow_params(cfg), indent=2))
     else:
         print(_lookup(cfg, args.key))
     return 0
