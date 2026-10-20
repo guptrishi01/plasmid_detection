@@ -1,4 +1,4 @@
-# Pilot results (stages 2–7) and side analyses
+# Pilot results (stages 2–9) and side analyses
 
 Four runs at time point 4: Sugar Creek (SC) and Mallard Creek (MC), upstream B (UP) and
 influent (INF). Every number below comes from the files in this folder (tables in `tables/`, per-run
@@ -113,6 +113,57 @@ copri, Agathobacter rectalis, Bifidobacterium adolescentis, Alistipes putredinis
 The MAGs capture about twice as much of the influent community as of the creek water,
 consistent with the Nonpareil coverage and assembled fractions.
 
+## Stage 8: MAG-level AMR and plasmid hosts
+
+(`tables/08_mag_amr.tsv`, `tables/08_plasmids_in_mags.tsv`, `tables/08_plasmid_host_inference.tsv`)
+
+AMRFinderPlus on the 45 MAGs: 21 hits, 8 AMR-type, all in influent MAGs (SRR6231184 bin.22
+blaMOX + blaOXA, bin.26 blaOXA, bins 4 and 36 icr-Mo; SRR6231191 bin.2 lnu(AN2), mef(En2),
+lnu(C)); 13 stress (metal/biocide).
+
+| geNomad plasmid contigs (4 runs) | In any MetaBAT2 bin | In a medium+ MAG (co-binning) | MOB-suite host range | Coverage correlation |
+|---|---|---|---|---|
+| 4,213 | 1,731 | 386 | 439 | blank (needs ≥ 5 samples; pilot has 2) |
+
+Most frequent co-binned host genera: Phocaeicola 46, Acinetobacter 42, Blautia_A 38,
+Propionivibrio 34, Rivihabitans 28. All three are inferences and can disagree (sul2 in
+SRR6231184: co-binned with Rivihabitans, MOB-suite range Enterobacteriaceae).
+
+## Stage 9: rollup, read vs contig, depth
+
+(`tables/09_plasmid_summary.tsv`, `09_rollup/resistome_*.tsv`, `tables/09_rgi_read_vs_contig.tsv`,
+`tables/09_depth_experiment.tsv`, `09_rollup/depth/plasmid_yield_vs_depth.png`, `09_rollup/stats/`)
+
+Resistome matrices count AMR-type AMRFinderPlus hits only (`params.rollup.amrfinder_types`):
+95 genes with reads (35 on mobile contigs, 74 on chromosomal ones).
+
+RGI read level (bwt) vs contig level, genes (ARO terms) per run:
+
+| Run | Both | Read only | Contig only |
+|---|---|---|---|
+| SRR6231181 SC UP_B | 0 | 130 | 7 |
+| SRR6231184 SC INF | 82 | 1,030 | 22 |
+| SRR6231217 MC UP_B | 0 | 140 | 10 |
+| SRR6231191 MC INF | 67 | 1,046 | 20 |
+
+Read-level counts include ARO terms with a single mapped read. The creek runs' contig-only
+genes are weak (Strict) hits to models absent from RGI's read reference (folP mutation,
+vanY/vanT/vanW).
+
+Depth experiment (subsample → MEGAHIT → geNomad, same parameters as stages 4–5):
+
+| Run | 5 M pairs | 10 M | 15 M | 20 M | Full |
+|---|---|---|---|---|---|
+| SRR6231181 plasmid contigs | 16 | 81 | — | — | 124 (14.7 M) |
+| SRR6231184 plasmid contigs | 466 | 904 | 1,358 | 1,835 | 1,863 (20.2 M) |
+
+No plateau: SRR6231184 gains ~450 plasmid contigs per 5 M pairs at every step, and its
+20 M subsample reproduces the full-depth count within 2%. SRR6231181 has 14.7 M pairs, so
+15 and 20 M were skipped.
+
+Statistics (`09_rollup/stats/`): every ALDEx2 comparison is skipped in the pilot (1–2 runs
+per group, minimum 3); the PERMANOVA on 4 runs is exploratory only (23 permutations).
+
 ## Audits
 
  Stage 2: all FastQC/fastp reports present, trimmed = fastp output. Stage 3:
@@ -125,6 +176,10 @@ still reported with full contig names. Stage 6: 8/8 jobs exit 0, CheckM2 rows = 
 `pass/` = 59 = high + medium; dRep kept all 59 through its filters (`Cdb.csv` = 59 rows).
 Stage 7: dRep and GTDB-Tk exit 0; 45/45 MAGs classified; `07_mags.tsv` has 45 rows. 07c
 exited 13 after writing its table (SIGPIPE from `column | head` in the display line; fixed).
+Stage 8: 08a table rows = per-MAG hits (21), 45/45 MAGs run; 08b inference rows = geNomad
+plasmid contigs (4,213), every co-binned MAG is in the dRep set. Stage 9: 4/4 RGI bwt
+outputs; no stress genes in the AMRFinderPlus resistome; plasmid summary = stage 5 counts;
+09b first failed on a SIGPIPE in subsampling (fixed, rerun); all depth points present.
 
 ## Side analysis: odds of under-sequencing (all 92 runs)
 
@@ -171,5 +226,7 @@ Reads, contigs, graphs, BAMs and tool working dirs stay on scratch.
 | `05_contigs/<run>/plasme*/` | PLASMe reports (balance, high-precision) |
 | `06_binning/<run>/` | MetaBAT2 bin lists, CheckM2 quality report, `mimag.tsv` |
 | `07_mags/` | dRep tables, GTDB-Tk summaries, CoverM genome abundance |
+| `08_mag_links/` | AMRFinderPlus per MAG, plasmid-in-MAG and host-inference tables |
+| `09_rollup/` | resistome matrices, RGI bwt summaries, depth experiment yields and plot, statistics |
 | `side_undersequencing/` | Nonpareil curves (92 runs), model comparison, odds ratios, per-run predictions, plots |
 | `tables/` | one summary table per stage |

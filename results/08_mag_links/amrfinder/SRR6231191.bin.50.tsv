@@ -1,0 +1,5 @@
+Name	Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+SRR6231191.bin.50	NA	SRR6231191_k127_228148	5214	5447	-	merE	broad-spectrum mercury transporter MerE	plus	STRESS	METAL	MERCURY	MERCURY	EXACTX	78	78	100.00	100.00	78	AAC38236.1	broad-spectrum mercury transporter MerE	NA	NA
+SRR6231191.bin.50	NA	SRR6231191_k127_228148	5447	5809	-	merD	mercury resistance co-regulator MerD	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	121	121	100.00	98.35	121	AAC38221.1	mercury resistance co-regulator MerD	NA	NA
+SRR6231191.bin.50	NA	SRR6231191_k127_524381	764	1126	+	merD	mercury resistance co-regulator MerD	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	121	121	100.00	90.08	121	AAC38221.1	mercury resistance co-regulator MerD	NA	NA
+SRR6231191.bin.50	NA	SRR6231191_k127_524381	1126	1359	+	merE	broad-spectrum mercury transporter MerE	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	78	78	100.00	94.87	78	AAC38236.1	broad-spectrum mercury transporter MerE	NA	NA

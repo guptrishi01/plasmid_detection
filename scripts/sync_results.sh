@@ -26,7 +26,7 @@ for stage in "${STAGES[@]}"; do
         --exclude '*.fa' --exclude '*.fna' --exclude '*.fasta' --exclude '*.fastg' \
         --exclude '*.fastq' --exclude '*.fastq.gz' --exclude '*.fq' --exclude '*.fq.gz' \
         --exclude '*.bt2' --exclude '*.bt2l' --exclude '*.npa' \
-        --exclude '*.faa' --exclude '*.npz' --exclude '*.rgi.json' --exclude 'tmp/' \
+        --exclude '*.faa' --exclude '*.npz' --exclude '*.rgi.json' --exclude '*.allele_mapping_data.json' --exclude 'tmp/' \
         --exclude '*_annotate/' --exclude '*_marker_classification/' --exclude '*_nn_classification/' \
         --exclude '*_aggregated_classification/' --exclude '*_find_proviruses/' \
         --exclude 'diamond_output/' --exclude 'depth.txt' \
