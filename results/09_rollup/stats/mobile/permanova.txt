@@ -1,0 +1,11 @@
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 23
+
+adonis2(formula = as.formula(paste("d ~", paste(terms, collapse = " + "))), data = test_meta, permutations = 9999, by = "margin")
+           Df SumOfSqs      R2      F Pr(>F)
+location    1   172.70 0.38722 1.0000 0.6667
+site_group  1   100.59 0.22555 0.5825 1.0000
+Residual    1   172.70 0.38722              
+Total       3   445.99 1.00000              

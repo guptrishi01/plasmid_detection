@@ -282,7 +282,7 @@ dRep's own quality filter is set to the MIMAG medium thresholds (its defaults, 7
 would silently drop MAGs stage 6 passed). CoverM genome maps reads itself (minimap2-sr);
 Bowtie2 is the stage-4 mapper only. Tools: dRep 3.7.1, GTDB-Tk 2.6.1, CoverM 0.8.0.
 
-### 8. MAG-level AMR and plasmids — script written
+### 8. MAG-level AMR and plasmids — run on pilot
 
 AMRFinderPlus per MAG. Which plasmid contigs sit in which MAG. Plasmid to host:
 co-binning, MOB-suite host range, coverage correlation across samples. All three are
@@ -298,7 +298,7 @@ medium+ bin's mean profile across the BAMs on that assembly; left blank below
 `params.mag_links.min_samples_for_correlation` (5) samples, so with the pilot (2 BAMs per
 assembly) it is always blank, by design.
 
-### 9. Rollup — script written
+### 9. Rollup — run on pilot
 
 Plasmid summary per sample. Resistome matrix with the mobile subset separated.
 Comparison with the paper: RGI at read level (`bwt` mode) vs at contig level.
@@ -411,12 +411,9 @@ stops with "missing input: … (run the earlier stage first)". Everything tunabl
 - **Stage 1:** complete. 92/92 runs PASS in `metadata/raw_manifest.tsv`: R1 pairs = R2
   pairs = SRA spots for every run, full-quality scores (6 distinct quality characters, HiSeq
   2500 binning), 184 FASTQ.gz read-only (252 GB), `.sra` temp files removed.
-- **Stages 2–7:** run on the 4-run pilot and audited; results in [results/](results/README.md).
+- **Stages 2–9:** run on the 4-run pilot and audited; results in [results/](results/README.md).
 - **Side analysis:** odds of under-sequencing across all 92 runs (`scripts/side/`).
-- **Stages 8–9:** scripts written; envs built and pinned; tool flags checked against each
-  installed tool's `--help` or source; table and tagging logic unit-tested; R statistics
-  and plot checked on synthetic data. Not yet run on real data: the pilot continues step
-  by step by hand; stage 8 is next.
+- **Next:** full run of all 92 runs (point `paths.run_samples` at `metadata/srp121672_wgs_run_accessions.txt`), then a Nextflow version of the pipeline.
 
 ## Known discrepancies / open items
 

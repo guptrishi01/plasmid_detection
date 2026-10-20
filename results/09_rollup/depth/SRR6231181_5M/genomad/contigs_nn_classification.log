@@ -1,0 +1,31 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad nn-classification (v1.12.0). This will classify the       │
+│  input sequences into chromosome, plasmid, or virus based on the nucleotide  │
+│  sequence.                                                                   │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR6231181_5  │
+│    M/genomad/contigs_nn_classification                                       │
+│    ├── contigs_nn_classification.json (execution parameters)                 │
+│    ├── contigs_encoded_sequences (directory containing encoded sequence      │
+│    │   data)                                                                 │
+│    ├── contigs_nn_classification.tsv (contig classification: tabular         │
+│    │   format)                                                               │
+│    └── contigs_nn_classification.npz (contig classification: binary format)  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[23:48:04] Executing genomad nn-classification.                                 
+[23:48:04] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR623118
+           1_5M/genomad/contigs_nn_classification directory.                    
+[23:48:04] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR623118
+           1_5M/genomad/contigs_nn_classification/contigs_encoded_sequences     
+           directory.                                                           
+[23:48:15] Encoded sequence data written to contigs_encoded_sequences.          
+[23:49:13] Sequences classified.                                                
+[23:49:13] Sequence classification in binary format written to                  
+           contigs_nn_classification.npz.                                       
+[23:49:13] Deleting encoded sequence data.                                      
+[23:49:21] Sequence classification in tabular format written to                 
+           contigs_nn_classification.tsv.                                       
+[23:49:21] geNomad nn-classification finished!                                  

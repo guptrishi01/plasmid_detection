@@ -1,0 +1,36 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad find-proviruses (v1.12.0). This will find putative        │
+│  proviral regions within the input sequences.                                │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR6231184_1  │
+│    5M/genomad/contigs_find_proviruses                                        │
+│    ├── contigs_find_proviruses.json (execution parameters)                   │
+│    ├── contigs_provirus.tsv (provirus data)                                  │
+│    ├── contigs_provirus.fna (provirus nucleotide sequences)                  │
+│    ├── contigs_provirus_proteins.faa (provirus protein sequences)            │
+│    ├── contigs_provirus_genes.tsv (provirus gene annotation data)            │
+│    ├── contigs_provirus_taxonomy.tsv (provirus taxonomic assignment)         │
+│    ├── contigs_provirus_mmseqs2.tsv (MMseqs2 output file)                    │
+│    └── contigs_provirus_aragorn.tsv (Aragorn output file)                    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[00:40:15] Executing genomad find-proviruses.                                   
+[00:40:15] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR623118
+           4_15M/genomad/contigs_find_proviruses directory.                     
+[00:40:19] Integrases identified with MMseqs2 and geNomad database (v1.9) were  
+           written to contigs_provirus_mmseqs2.tsv.                             
+[00:40:19] Deleting contigs_provirus_mmseqs2.                                   
+[00:40:20] Deleting contigs_provirus_mmseqs2_input.faa.                         
+[00:40:20] tRNAs identified with Aragorn were written to                        
+           contigs_provirus_aragorn.tsv.                                        
+[00:40:20] Deleting contigs_provirus_aragorn_input.fna.                         
+[00:40:22] Provirus regions identified.                                         
+[00:40:22] Provirus data was written to contigs_provirus.tsv.                   
+[00:40:22] Provirus nucleotide sequences were written to contigs_provirus.fna.  
+[00:40:22] Provirus protein sequences were written to                           
+           contigs_provirus_proteins.faa.                                       
+[00:40:22] Provirus gene data was written to contigs_provirus_genes.tsv.        
+[00:40:22] Taxonomic assignment data was written to                             
+           contigs_provirus_taxonomy.tsv.                                       
+[00:40:22] geNomad find-proviruses finished!                                    

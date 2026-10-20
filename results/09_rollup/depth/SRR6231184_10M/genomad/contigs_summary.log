@@ -1,0 +1,32 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad summary (v1.12.0). This will summarize the results        │
+│  across modules into a classification report.                                │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR6231184_1  │
+│    0M/genomad/contigs_summary                                                │
+│    ├── contigs_summary.json (execution parameters)                           │
+│    ├── contigs_virus_summary.tsv (virus classification summary)              │
+│    ├── contigs_plasmid_summary.tsv (plasmid classification summary)          │
+│    ├── contigs_virus.fna (virus nucleotide FASTA file)                       │
+│    ├── contigs_plasmid.fna (plasmid nucleotide FASTA file)                   │
+│    ├── contigs_virus_proteins.faa (virus protein FASTA file)                 │
+│    ├── contigs_plasmid_proteins.faa (plasmid protein FASTA file)             │
+│    ├── contigs_virus_genes.tsv (virus gene annotation data)                  │
+│    └── contigs_plasmid_genes.tsv (plasmid gene annotation data)              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[00:19:02] Executing genomad summary.                                           
+[00:19:02] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR623118
+           4_10M/genomad/contigs_summary directory.                             
+[00:19:02] Using scores from aggregated-classification.                         
+[00:19:02] 904 plasmid(s) and 194 virus(es) were identified.                    
+[00:19:03] Nucleotide sequences were written to contigs_plasmid.fna and         
+           contigs_virus.fna.                                                   
+[00:19:03] Protein sequences were written to contigs_plasmid_proteins.faa and   
+           contigs_virus_proteins.faa.                                          
+[00:19:03] Gene annotation data was written to contigs_plasmid_genes.tsv and    
+           contigs_virus_genes.tsv.                                             
+[00:19:03] Summary files were written to contigs_plasmid_summary.tsv and        
+           contigs_virus_summary.tsv.                                           
+[00:19:03] geNomad summary finished!                                            

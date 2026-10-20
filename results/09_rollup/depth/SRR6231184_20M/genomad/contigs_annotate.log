@@ -1,0 +1,26 @@
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad annotate (v1.12.0). This will perform gene calling in     │
+│  the input sequences and annotate the predicted proteins with geNomad's      │
+│  markers.                                                                    │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                    │
+│    /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR6231184_2  │
+│    0M/genomad/contigs_annotate                                               │
+│    ├── contigs_annotate.json (execution parameters)                          │
+│    ├── contigs_genes.tsv (gene annotation data)                              │
+│    ├── contigs_taxonomy.tsv (taxonomic assignment)                           │
+│    ├── contigs_mmseqs2.tsv (MMseqs2 output file)                             │
+│    └── contigs_proteins.faa (protein FASTA file)                             │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[00:52:33] Executing genomad annotate.                                          
+[00:52:33] Creating the                                                         
+           /scratch/rgupta25/plasmid_detection/results/09_rollup/depth/SRR623118
+           4_20M/genomad/contigs_annotate directory.                            
+[00:56:23] Proteins predicted with pyrodigal-gv were written to                 
+           contigs_proteins.faa.                                                
+[00:58:00] Proteins annotated with MMseqs2 and geNomad database (v1.9) were     
+           written to contigs_mmseqs2.tsv.                                      
+[00:58:00] Deleting contigs_mmseqs2.                                            
+[00:58:03] Gene data was written to contigs_genes.tsv.                          
+[00:58:03] Taxonomic assignment data was written to contigs_taxonomy.tsv.       
+[00:58:03] geNomad annotate finished!                                           
