@@ -47,7 +47,8 @@ process CHECKV_MOBTYPER {
         mkdir -p checkv; echo "no virus contigs" > checkv/EMPTY
     fi
     if [[ -s \$plasmid ]]; then
-        ${params.envs.mobsuite}/bin/mob_typer --multi --infile \$plasmid --out_file mob_typer.tsv \\
+        # mob_typer calls blastn/mash/etc. by name: its env's bin must lead PATH
+        PATH=${params.envs.mobsuite}/bin:\$PATH mob_typer --multi --infile \$plasmid --out_file mob_typer.tsv \\
             --database_directory ${params.db.mob_suite} --num_threads ${task.cpus}
     else
         echo "no plasmid contigs" > mob_typer.EMPTY
@@ -78,7 +79,9 @@ process AMR {
         --threads ${task.cpus} --name ${id} --output amrfinder.tsv
     # RGI --local reads ./localDB (CARD), linked in from db/card
     mkdir -p rgi && cd rgi && ln -sfn ${params.db.card.dir}/localDB localDB
-    ${params.envs.rgi}/bin/rgi main --input_sequence ../${contigs} --output_file ${id}.rgi --input_type contig \\
+    # RGI calls prodigal/diamond by name: its env's bin must lead PATH (else no ORFs ->
+    # FileNotFoundError on *.temp.draft)
+    PATH=${params.envs.rgi}/bin:\$PATH rgi main --input_sequence ../${contigs} --output_file ${id}.rgi --input_type contig \\
         --alignment_tool DIAMOND --threads ${task.cpus} --local --clean
     rm -f ${id}.rgi.json localDB
     """

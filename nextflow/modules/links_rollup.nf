@@ -231,7 +231,7 @@ process DEPTH_SUBSAMPLE {
     megahit -1 sub_1.fastq.gz -2 sub_2.fastq.gz -o megahit -t ${task.cpus} -m \$mem \\
         --min-contig-len ${params.cfg.assembly.min_contig_len} ${params.cfg.assembly.megahit_args}
     awk -v s=${id} '/^>/{sub(/^>/, ">" s "_")} {print}' megahit/final.contigs.fa > contigs.fa
-    ${params.envs.genomad}/bin/genomad end-to-end ${params.cfg.contigs.genomad_args} --threads ${task.cpus} \\
+    PATH=${params.envs.genomad}/bin:\$PATH genomad end-to-end ${params.cfg.contigs.genomad_args} --threads ${task.cpus} \\
         contigs.fa genomad ${params.db.genomad}
     ${PY()} depth-yield --run ${id} --level ${level}M --pairs ${n} --contigs contigs.fa \\
         --genomad-dir genomad --out yield.tsv
