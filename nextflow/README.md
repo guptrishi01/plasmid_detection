@@ -72,3 +72,20 @@ tasks are reused from the work dir (`/scratch/.../work_nf`).
   plasmid caller.
 - Checked with `nextflow lint` (no errors or warnings) and a `-stub` run of the full DAG
   on the pilot (86/86 tasks, including the depth experiment).
+
+## Validation against the sbatch pilot (2026-10-21)
+
+Pilot run (job 27394761, 0 failed) compared with the sbatch results on scratch:
+
+| Stage | Result |
+|---|---|
+| 2–3 | `02_read_qc.tsv`, `03_host_depletion.tsv` identical |
+| 4 | Same contig counts and N50 (±1 bp); 99.97–99.98% of contig sequences identical, but MEGAHIT numbers contigs differently between runs (`k127_<n>`) and 6–27 contigs per run differ |
+| 4 metaSPAdes | Identical (exit 0, 38,657 contigs ≥ 1 kb) |
+| 5 | geNomad plasmid/virus counts and AMR tags (source × plasmid/virus/chromosome) identical per run; SCAPP 3→2 (181), 47→46 (184) |
+| 6–8 | Bins and MAGs differ slightly (45 → 43 dereplicated MAGs; 7 high-quality both runs) |
+| 9 | Resistome matrices: same genes (95 AMRFinderPlus, 35 mobile, 127 RGI); statistics skipped as designed |
+
+The stage 4–8 differences come from MEGAHIT, which is not fully reproducible with
+multiple threads (same command, memory and 32 threads in both runs): contig order and
+names change, and MetaBAT2 bins depend on contig order. Not a pipeline difference.
