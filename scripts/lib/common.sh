@@ -41,14 +41,35 @@ sample_field(){
                                     $1==r{print $k}' "$PATHS_SAMPLES"
 }
 
-# System mates: runs in paths.run_samples from the same location (system) as $1, itself
-# included. Stage 4 maps every mate's reads to each assembly.
-system_mates(){
-    local loc
-    loc=$(sample_field "$1" location)
+# Binning group of a run: the params.binning.groups entry ("group:SITE,SITE") listing its
+# sample-sheet site; prints nothing if no group lists it
+run_group(){
+    local site spec
+    site=$(sample_field "$1" site)
+    for spec in $PARAMS_BINNING_GROUPS; do
+        if [[ ",${spec#*:}," == *",$site,"* ]]; then echo "${spec%%:*}"; return 0; fi
+    done
+}
+
+# Group mates: runs in paths.run_samples in the same binning group as $1, itself included.
+# Stage 4c maps every mate's reads to each assembly; 05d and 06a use exactly those BAMs.
+# Callers check run_group first: a failure here is lost inside mapfile < <(...).
+group_mates(){
+    local g
+    g=$(run_group "$1")
+    [[ -n "$g" ]] || return 1
     while read -r s; do
-        [[ "$(sample_field "$s" location)" == "$loc" ]] && echo "$s"
+        [[ "$(run_group "$s")" == "$g" ]] && echo "$s"
     done < <(run_samples)
+    return 0
+}
+
+# Stop unless $1's site is in params.binning.groups; prints the group
+require_group(){
+    local g
+    g=$(run_group "$1")
+    [[ -n "$g" ]] || { echo "run $1 (site $(sample_field "$1" site)) is in no params.binning.groups entry" >&2; exit 1; }
+    echo "$g"
 }
 
 # Fail early with a clear message if an input from an earlier stage is missing

@@ -199,10 +199,29 @@ MEGAHIT, per sample. Contig headers prefixed with the sample id. Keep the assemb
 metaSPAdes: one attempt on the smallest sample. Record what happens.
 
 Map each sample's reads back to its own assembly, and map every other sample of the same
-system to it too. One BAM gives one coverage number per contig, so two organisms at
-similar abundance and GC merge into one bin. With every system mate mapped, each contig
+**binning group** to it too. One BAM gives one coverage number per contig, so two organisms
+at similar abundance and GC merge into one bin. With every group mate mapped, each contig
 gets a coverage profile across samples, and contigs from the same genome rise and fall
-together across timepoints and plant stages while contigs from different genomes do not.
+together across samples while contigs from different genomes do not.
+
+Binning groups (`params.binning.groups`; lab meeting 2026-11-03, PI-confirmed) pool a site
+type across Sugar and Mallard Creek and all four time points:
+
+| Category | Group | Sites | Runs |
+|---|---|---|---|
+| Creek | upstream | UP_A, UP_B | 16 |
+| Creek | downstream | DS_A, DS_B | 16 |
+| Pre-treatment | HOSP | HOSP | 8 |
+| Pre-treatment | RES | RES | 8 |
+| Pre-treatment | influent | INF | 8 |
+| Pre-treatment | PCI | PCI (Mallard Creek only) | 4 |
+| Pre-treatment | PCE | PCE | 8 |
+| Plant steps | ATE | ATE | 8 |
+| Plant steps | FCE | FCE | 8 |
+| Plant steps | UV | UV (Sugar Creek only) | 4 |
+| Control | control | MNT_A, MNT_B, UW_A, UW_B (time point 4) | 4 |
+
+They are separate from the statistics groups (`params.stats.site_groups`).
 
 QUAST. Nonpareil. Table: contigs, total bp, N50, assembled fraction per sample.
 SCAPP on the graph for circular plasmids.
@@ -211,14 +230,16 @@ SCAPP on the graph for circular plasmids.
 |---|---|---|
 | `04a_megahit` | per run: MEGAHIT (`--presets meta-large`, contigs ≥ 1000 bp); headers `>SRR…_k127_n`; FASTG graph from the largest-k contig set | pd-assembly |
 | `04b_metaspades` | one metaSPAdes attempt; outcome (exit code, hours, peak RAM, contigs, last error) → `metaspades/attempt.tsv` whether it succeeds or not | pd-assembly |
-| `04c_map` | per assembly: Bowtie2 of its own reads + every system mate's reads → sorted, indexed BAMs | pd-assembly |
+| `04c_map` | per assembly: Bowtie2 of its own reads + every binning-group mate's reads → sorted, indexed BAMs (`map/` cleared first) | pd-assembly |
 | `04d_assembly_qc` | per run: QUAST + Nonpareil (host-depleted R1) | pd-assembly |
 | `04e_scapp` | per run: SCAPP on the k-max FASTG with the run's reads | pd-scapp |
 | `04f_assembly_summary` | `tables/04_assembly.tsv`; assembled fraction = own reads' Bowtie2 overall alignment rate to own assembly | pd-core |
 
-Mapper: **Bowtie2** (chosen for stage 4; the spec doesn't name one). "Same system" =
-same `location` in the sample sheet among `paths.run_samples` (Sugar Creek, Mallard Creek,
-Mountain_Control, Uwharrie_Control, so the controls cross-map only within their pair).
+Mapper: **Bowtie2** (chosen for stage 4; the spec doesn't name one). Group mates = runs in
+`paths.run_samples` whose sample-sheet `site` is in the same `params.binning.groups` entry; a
+run whose site is in no entry stops 04c. (Until 2026-11-03 the mapping set was the creek
+system, `location`; the pilot outputs from that design are kept in
+`$paths.data_root/results_pre_group/`.)
 The graph is `intermediate_contigs/k<K>.contigs.fa` for the largest K MEGAHIT reached,
 converted with `megahit_toolkit contig2fastg` (`final.contigs.fa` merges contigs from all
 k, so it isn't a single graph). Tools: MEGAHIT 1.2.9, SPAdes 4.3.0, Bowtie2 2.5.5,
@@ -236,7 +257,7 @@ its contig. CoverM contig for coverage and TPM.
 | `05a_genomad` | per run: geNomad end-to-end on all contigs | pd-genomad |
 | `05b_checkv_mobtyper` | per run: CheckV on virus contigs; `mob_typer --multi` on plasmid contigs | pd-checkv, pd-mobsuite |
 | `05c_amr` | per run: AMRFinderPlus `--plus` and RGI (contig mode, DIAMOND) on the whole assembly | pd-amrfinderplus, pd-rgi |
-| `05d_coverage_tag` | per run: CoverM contig (mean, TPM, read count) over all stage-4 BAMs; tag AMR hits; reads per hit per BAM (`samtools bedcov -c`) | pd-coverm, pd-core, pd-assembly |
+| `05d_coverage_tag` | per run: CoverM contig (mean, TPM, read count) over the group mates' stage-4 BAMs; tag AMR hits; reads per hit per BAM (`samtools bedcov -c`) | pd-coverm, pd-core, pd-assembly |
 | `05e_plasme` | per run: PLASMe on the whole assembly (`-m balance`, or `05e_plasme.sbatch high-precision` → `plasme_high-precision/`); comparison caller, reports overlap with geNomad | pd-plasme |
 | `05f_plasmid_callers` | `tables/05_plasmid_callers.tsv`: geNomad vs PLASMe balance / high-precision, each with and without the chromosome-shared filter (`params.contigs.plasme_max_ambiguous_fraction`): calls, overlap with geNomad, contigs with AMR genes, geNomad plasmid score | pd-core |
 
@@ -255,13 +276,18 @@ PLASMe (commit 4405d5a).
 
 ### 6. Binning and MAG QC — run on pilot
 
-`jgi_summarize_bam_contig_depths` over all BAMs on each assembly. MetaBAT2. CheckM2.
-MIMAG tiers: high, medium, low. Medium and up go on.
+`jgi_summarize_bam_contig_depths` over the group mates' BAMs on each assembly. MetaBAT2.
+CheckM2. MIMAG tiers: high, medium, low. Medium and up go on.
 
 | Script | What it does | Env |
 |---|---|---|
-| `06a_binning` | per assembly: depths over all its BAMs → MetaBAT2 (min contig 1500, fixed seed) | pd-binning |
+| `06a_binning` | per assembly: depths over its group mates' BAMs → MetaBAT2 (min contig 1500, fixed seed) | pd-binning |
 | `06b_checkm2_mimag` | per run: CheckM2 → MIMAG tier per bin → medium+ copied to `binning/pass/` | pd-checkm2, pd-core |
+| `06c_cleanup_bams` | after 05d and 06a: checks `coverm_contig.tsv` and `depth.txt` have a column per group mate, then deletes the cross-sample BAMs (own BAM and all Bowtie2 logs kept; list in `map/DELETED_BAMS.txt`) | — |
+
+With 16 mates per assembly the cross-sample BAMs would take ~1.5 TB for all 92 runs; nothing
+after 05d and 06a reads them (the stage 8 correlation uses `coverm_contig.tsv`). Re-running
+05d or 06a after 06c needs 04c again.
 
 Tiers from CheckM2 completeness/contamination (`params.binning.mimag_*`): high ≥ 90 / < 5,
 medium ≥ 50 / < 10, else low. MIMAG's high-quality tier also requires rRNAs and ≥ 18 tRNAs,
@@ -269,14 +295,17 @@ which CheckM2 doesn't report (open items). Tools: MetaBAT2 2.18, CheckM2 1.1.0.
 
 ### 7. MAG taxonomy — run on pilot
 
-dRep at 95 percent ANI. GTDB-Tk `classify_wf`, release 226. CoverM genome over all
-samples for MAG abundance. Table: quality, taxonomy, abundance per MAG.
+dRep at 95 percent ANI in two levels: within each binning group (the group MAG sets), then
+across groups (the MAG catalog, one genome per species). GTDB-Tk `classify_wf`, release 226,
+on the catalog. CoverM genome maps every sample to the catalog for MAG abundance. Tables:
+quality, group(s), taxonomy, abundance per catalog MAG; every medium+ MAG's group MAG and
+catalog MAG.
 
 | Script | What it does | Env |
 |---|---|---|
-| `07a_drep` | all medium+ MAGs → dRep `-sa 0.95`, CheckM2 values via `--genomeInfo` | pd-drep |
-| `07b_gtdbtk` | GTDB-Tk classify_wf on the dereplicated MAGs (r226) | pd-gtdbtk |
-| `07c_mag_abundance` | CoverM genome (all runs) + `tables/07_mags.tsv` | pd-coverm, pd-core |
+| `07a_drep` | medium+ MAGs → dRep `-sa 0.95` per binning group (`mags/groups/<group>/drep/`), then over all group MAGs (catalog, `mags/drep/`); CheckM2 values via `--genomeInfo` | pd-drep |
+| `07b_gtdbtk` | GTDB-Tk classify_wf on the catalog MAGs (r226) | pd-gtdbtk |
+| `07c_mag_abundance` | CoverM genome (all runs vs the catalog) + `tables/07_mags.tsv` (with `group`, `recovered_in_groups`, `genomes_in_cluster`) + `tables/07_group_mags.tsv` | pd-coverm, pd-core |
 
 dRep's own quality filter is set to the MIMAG medium thresholds (its defaults, 75/25,
 would silently drop MAGs stage 6 passed). CoverM genome maps reads itself (minimap2-sr);
@@ -290,13 +319,15 @@ inferences.
 
 | Script | What it does | Env |
 |---|---|---|
-| `08a_mag_amr` | AMRFinderPlus `--plus` per dereplicated MAG → `tables/08_mag_amr.tsv` | pd-amrfinderplus |
+| `08a_mag_amr` | AMRFinderPlus `--plus` per catalog MAG → `tables/08_mag_amr.tsv` | pd-amrfinderplus |
 | `08b_plasmid_hosts` | `tables/08_plasmids_in_mags.tsv` + `08_plasmid_host_inference.tsv` (the three inferences side by side) | pd-core |
 
-Coverage correlation = Spearman between a plasmid contig's coverage profile and each
-medium+ bin's mean profile across the BAMs on that assembly; left blank below
-`params.mag_links.min_samples_for_correlation` (5) samples, so with the pilot (2 BAMs per
-assembly) it is always blank, by design.
+A plasmid's host MAG is the catalog MAG its bin was dereplicated into (bin → group MAG →
+catalog MAG; `drep_representative` in `08_plasmids_in_mags.tsv`). Coverage correlation =
+Spearman between a plasmid contig's coverage profile and each medium+ bin's mean profile
+across the group mates' BAMs on that assembly; left blank below
+`params.mag_links.min_samples_for_correlation` (5) samples: always in the pilot (2 runs per
+group), and in the full run for the 4-run groups (PCI, UV, control).
 
 ### 9. Rollup — run on pilot
 
@@ -344,8 +375,8 @@ sbatch scripts/side/us02_model.sbatch            # after us01
 ## Running the pilot, one step at a time
 
 Runs: `metadata/pilot_samples.txt` = SC_UPB_T4 (SRR6231181), SC_INF_T4 (SRR6231184),
-MC_UPB_T4 (SRR6231217), MC_INF_T4 (SRR6231191): two per system at time point 4, so
-within-system cross-mapping is exercised in both systems. Every script
+MC_UPB_T4 (SRR6231217), MC_INF_T4 (SRR6231191): two per binning group (upstream,
+influent) at time point 4, so within-group cross-mapping is exercised in both groups. Every script
 reads `paths.run_samples`; for the full run, point it at
 `metadata/srp121672_wgs_run_accessions.txt` and use `--array=1-92`. Per-run scripts need
 `--array=1-N` (N = runs in the list); the rest are single jobs. Check each step's log in
@@ -370,6 +401,7 @@ sbatch --array=1-$N scripts/05d_coverage_tag.sbatch
 sbatch --array=1-$N scripts/05e_plasme.sbatch           # independent of 05a-05d
 sbatch --array=1-$N scripts/06a_binning.sbatch
 sbatch --array=1-$N scripts/06b_checkm2_mimag.sbatch
+sbatch scripts/06c_cleanup_bams.sbatch                # after 05d and 06a; deletes cross-sample BAMs
 sbatch scripts/07a_drep.sbatch
 sbatch scripts/07b_gtdbtk.sbatch
 sbatch scripts/07c_mag_abundance.sbatch

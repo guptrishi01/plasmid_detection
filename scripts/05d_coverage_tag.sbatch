@@ -8,8 +8,8 @@
 #SBATCH --error=/users/rgupta25/gibas/plasmid_detection/logs/%x_%A_%a.err
 
 # 05d_coverage_tag.sbatch -- stage 5, one run per array task:
-#   CoverM contig over every stage-4 BAM on this assembly (coverage + TPM per contig per
-#   reads-run), then tag each AMR hit (AMRFinderPlus and RGI) as plasmid, virus, or
+#   CoverM contig over the stage-4 BAMs on this assembly, one per binning-group mate
+#   (coverage + TPM per contig per reads-run), then tag each AMR hit (AMRFinderPlus and RGI) as plasmid, virus, or
 #   chromosome by the contig it sits on (geNomad calls; a hit inside a geNomad provirus
 #   region is "virus"; "chromosome" = neither plasmid nor virus), then count reads over
 #   each hit's coordinates in every BAM (samtools bedcov -c).
@@ -21,7 +21,12 @@ set -euo pipefail
 source "${PD_REPO:-$HOME/gibas/plasmid_detection}/scripts/lib/common.sh"
 SRR=$(task_sample)
 DIR="$PATHS_CONTIGS/$SRR"
-BAMS=("$PATHS_ASSEMBLY/$SRR"/map/*.bam)
+# Exactly the group mates' BAMs from 04c (06c deletes the cross-sample ones afterwards;
+# a re-run after 06c needs 04c again)
+require_group "$SRR" > /dev/null
+mapfile -t MATES < <(group_mates "$SRR")
+BAMS=()
+for R in "${MATES[@]}"; do BAMS+=("$PATHS_ASSEMBLY/$SRR/map/${R}.bam"); done
 require "${BAMS[@]}" "$DIR/amrfinder.tsv" "$DIR/rgi/$SRR.rgi.txt"
 echo "[$(date)] $SRR: CoverM contig over ${#BAMS[@]} BAMs + AMR tagging"
 

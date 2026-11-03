@@ -8,7 +8,7 @@
 #SBATCH --error=/users/rgupta25/gibas/plasmid_detection/logs/%x_%A_%a.err
 
 # 06a_binning.sbatch -- stage 6, one ASSEMBLY per array task: jgi_summarize_bam_contig_depths
-# over ALL stage-4 BAMs on the assembly (its own reads + every system mate), then MetaBAT2.
+# over the stage-4 BAMs on the assembly (its own reads + every binning-group mate), then MetaBAT2.
 # Output: $paths.binning/<run>/depth.txt, $paths.binning/<run>/bins/<run>.bin.<n>.fa
 # Submit:  sbatch --array=1-$(grep -c . metadata/pilot_samples.txt) scripts/06a_binning.sbatch
 # Tune:    params.binning.metabat2_min_contig (>= 1500), params.binning.metabat2_seed
@@ -18,7 +18,12 @@ source "${PD_REPO:-$HOME/gibas/plasmid_detection}/scripts/lib/common.sh"
 activate "$ENVS_BINNING"
 SRR=$(task_sample)
 CONTIGS="$PATHS_ASSEMBLY/$SRR/${SRR}.contigs.fa"
-BAMS=("$PATHS_ASSEMBLY/$SRR"/map/*.bam)
+# Exactly the group mates' BAMs from 04c (06c deletes the cross-sample ones afterwards;
+# a re-run after 06c needs 04c again)
+require_group "$SRR" > /dev/null
+mapfile -t MATES < <(group_mates "$SRR")
+BAMS=()
+for R in "${MATES[@]}"; do BAMS+=("$PATHS_ASSEMBLY/$SRR/map/${R}.bam"); done
 OUT="$PATHS_BINNING/$SRR"
 require "$CONTIGS" "${BAMS[@]}"
 rm -rf "$OUT"; mkdir -p "$OUT/bins"

@@ -378,14 +378,29 @@ def gtdbtk_taxonomy(mags_dir):
     return tax
 
 
-def drep_representatives(mags_dir):
+def drep_representatives(drep_dir):
     """genome file -> representative (winner) genome file of its secondary cluster"""
-    tables = Path(mags_dir, "drep", "data_tables")
-    cluster = {
-        r["genome"]: r["secondary_cluster"] for r in csv.DictReader(open(tables / "Cdb.csv"))
-    }
-    winner = {r["cluster"]: r["genome"] for r in csv.DictReader(open(tables / "Wdb.csv"))}
+    tables = Path(drep_dir, "data_tables")
+    with open(tables / "Cdb.csv", newline="") as fh:
+        cluster = {r["genome"]: r["secondary_cluster"] for r in csv.DictReader(fh)}
+    with open(tables / "Wdb.csv", newline="") as fh:
+        winner = {r["cluster"]: r["genome"] for r in csv.DictReader(fh)}
     return {g: winner.get(c, "") for g, c in cluster.items()}
+
+
+def catalog_links(mags_dir):
+    """medium+ genome file -> {group, group_rep, catalog_rep} through the two dRep levels
+    of 07a (groups/<group>/drep, then the catalog in drep/). Without groups/ (single-level
+    dRep), the group is "" and the group representative is the genome itself."""
+    catalog = drep_representatives(Path(mags_dir, "drep"))
+    group_dirs = sorted(Path(mags_dir, "groups").glob("*/drep"))
+    if not group_dirs:
+        return {g: {"group": "", "group_rep": g, "catalog_rep": rep} for g, rep in catalog.items()}
+    links = {}
+    for d in group_dirs:
+        for g, rep in drep_representatives(d).items():
+            links[g] = {"group": d.parent.name, "group_rep": rep, "catalog_rep": catalog.get(rep, "")}
+    return links
 
 
 def run_of(label, runs):
@@ -408,16 +423,21 @@ def table_mags(args):
                 continue
             kind = "relabund_pct" if "Relative Abundance" in col else "mean_cov"
             abund.setdefault(genome, {})[f"{kind}_{run}"] = value
+    links = catalog_links(args.mags_dir)
     rows = []
     genomes = sorted(
         p.stem for p in Path(args.mags_dir, "drep", "dereplicated_genomes").glob("*.fa")
     )
     for g in genomes:
         q = mimag.get(g, {})
+        members = [k for k, v in links.items() if v["catalog_rep"] == f"{g}.fa"]
         rows.append(
             {
                 "mag": g,
                 "source_run": run_of(g, runs),
+                "group": links.get(f"{g}.fa", {}).get("group", ""),
+                "recovered_in_groups": ",".join(sorted({links[m]["group"] for m in members})),
+                "genomes_in_cluster": len(members),
                 "completeness": q.get("completeness"),
                 "contamination": q.get("contamination"),
                 "tier": q.get("tier"),
@@ -429,9 +449,35 @@ def table_mags(args):
     write_tsv(
         args.out,
         rows,
-        ["mag", "source_run", "completeness", "contamination", "tier", "gtdb_classification"]
+        ["mag", "source_run", "group", "recovered_in_groups", "genomes_in_cluster"]
+        + ["completeness", "contamination", "tier", "gtdb_classification"]
         + ab_cols,
     )
+    if args.group_out:
+        # Every medium+ MAG: its group MAG (level 1) and catalog MAG (level 2)
+        group_rows = []
+        for g, v in sorted(links.items(), key=lambda kv: (kv[1]["group"], kv[0])):
+            name, rep = g.removesuffix(".fa"), v["catalog_rep"].removesuffix(".fa")
+            q = mimag.get(name, {})
+            group_rows.append(
+                {
+                    "group": v["group"],
+                    "genome": name,
+                    "run": run_of(name, runs),
+                    "completeness": q.get("completeness"),
+                    "contamination": q.get("contamination"),
+                    "tier": q.get("tier"),
+                    "group_mag": v["group_rep"].removesuffix(".fa"),
+                    "catalog_mag": rep,
+                    "gtdb_classification": tax.get(rep, "unclassified"),
+                }
+            )
+        write_tsv(
+            args.group_out,
+            group_rows,
+            ["group", "genome", "run", "completeness", "contamination", "tier"]
+            + ["group_mag", "catalog_mag", "gtdb_classification"],
+        )
 
 
 # ---- stage 8 -------------------------------------------------------------------------
@@ -479,7 +525,8 @@ def spearman(x, y):
 def table_plasmid_hosts(args):
     runs = read_samples(args.samples)
     mimag = all_mimag(args.binning_dir, args.samples)
-    reps = drep_representatives(args.mags_dir)
+    # bin -> its catalog MAG (through its group MAG when 07a ran per group)
+    reps = {g: v["catalog_rep"] for g, v in catalog_links(args.mags_dir).items()}
     tax = gtdbtk_taxonomy(args.mags_dir)
     in_mags, inference = [], []
     for run in runs:
@@ -836,6 +883,7 @@ def main(argv=None):
     p.add_argument("--binning-dir", required=True)
     p.add_argument("--mags-dir", required=True)
     p.add_argument("--out", required=True)
+    p.add_argument("--group-out", help="also write every medium+ MAG's group and catalog MAG")
     p.set_defaults(func=table_mags)
 
     p = sub.add_parser("plasmid-hosts", help="stage 8: plasmids in MAGs + host inference")
