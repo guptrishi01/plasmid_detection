@@ -1,6 +1,7 @@
-// Stages 6-7: MetaBAT2 binning, CheckM2 + MIMAG tiers, dRep, GTDB-Tk, MAG abundance
+// Stages 6-7: MetaBAT2 binning, CheckM2 + MIMAG tiers, dRep per binning group then across
+// groups (catalog), GTDB-Tk, MAG abundance
 
-include { linkLayout; runsFile } from './utils'
+include { linkLayout; runsFile; dereplicate } from './utils'
 
 process BINNING {
     tag "${meta.id}"
@@ -8,7 +9,7 @@ process BINNING {
     publishDir path: { "${params.outdir}/06_binning/${meta.id}" }, mode: 'copy', pattern: 'bins/*.txt'
 
     input:
-    tuple val(meta), path(contigs), path(bams), path(bais)
+    tuple val(meta), path(contigs), path(depth)    // depth.txt over the group BAMs (MAP_GROUP)
 
     output:
     tuple val(meta), path('bins'), emit: bins
@@ -17,9 +18,8 @@ process BINNING {
     script:
     def id = meta.id
     """
-    jgi_summarize_bam_contig_depths --outputDepth depth.txt ${bams}
     mkdir -p bins
-    metabat2 --inFile ${contigs} --abdFile depth.txt --outFile bins/${id}.bin \\
+    metabat2 --inFile ${contigs} --abdFile ${depth} --outFile bins/${id}.bin \\
         --minContig ${params.cfg.binning.metabat2_min_contig} --seed ${params.cfg.binning.metabat2_seed} \\
         --numThreads ${task.cpus}
     """
@@ -40,7 +40,7 @@ process CHECKM2_MIMAG {
 
     output:
     tuple val(meta), path('mimag.tsv'), emit: mimag
-    path 'pass/*.fa', optional: true, emit: pass
+    tuple val(meta), path('pass'), emit: pass       // medium+ bins; may be empty
     path 'checkm2/quality_report.tsv'
 
     script:
@@ -69,88 +69,140 @@ process CHECKM2_MIMAG {
     """
 }
 
-process DREP {
-    conda params.envs.drep
-    publishDir "${params.outdir}/07_mags", mode: 'copy', pattern: '{genome_info.csv,drep/data_tables,drep/log}'
+// dRep --genomeInfo from every run's MIMAG table (CheckM2 completeness / contamination)
+process GENOME_INFO {
+    conda params.envs.core
+    publishDir "${params.outdir}/07_mags", mode: 'copy'
 
     input:
     val mimag        // [[run, mimag.tsv], ...]
-    path genomes, stageAs: 'pass/*'
 
     output:
-    path 'drep', emit: drep
     path 'genome_info.csv'
 
     script:
-    def runs = mimag.collect { x -> x[0] }
     """
     ${linkLayout(mimag, 'binning/{run}/mimag.tsv')}
-    ${runsFile(runs)}
-    PYTHONPATH=${params.repo}/src ${params.envs.core}/bin/python -m plasmid_detection.tables drep-info \\
+    ${runsFile(mimag.collect { x -> x[0] })}
+    PYTHONPATH=${params.repo}/src python -m plasmid_detection.tables drep-info \\
         --binning-dir binning --samples runs.txt --out genome_info.csv
-    n=\$(ls pass/*.fa | wc -l)
-    if (( n == 1 )); then
-        # One MAG: nothing to dereplicate; lay out what dRep would have produced
-        mkdir -p drep/dereplicated_genomes drep/data_tables
-        cp pass/*.fa drep/dereplicated_genomes/
-        g=\$(basename pass/*.fa)
-        printf 'genome,secondary_cluster\\n%s,1_1\\n' \$g > drep/data_tables/Cdb.csv
-        printf 'genome,cluster\\n%s,1_1\\n' \$g > drep/data_tables/Wdb.csv
-    else
-        dRep dereplicate drep -g pass/*.fa -p ${task.cpus} -sa ${params.cfg.mags.drep_ani} \\
-            --genomeInfo genome_info.csv \\
-            -comp ${params.cfg.binning.mimag_medium_completeness} -con ${params.cfg.binning.mimag_medium_contamination}
-    fi
+    """
+
+    stub:
+    """
+    touch genome_info.csv
+    """
+}
+
+// Level 1: one MAG per species within a binning group (no output if the group has none)
+process DREP_GROUP {
+    tag "${group}"
+    conda params.envs.drep
+    // Patterns inside an emitted dir aren't published, so the tables are copied out first
+    publishDir path: { "${params.outdir}/07_mags/groups/${group}" }, mode: 'copy', pattern: 'drep_data_tables',
+        saveAs: { _f -> 'drep/data_tables' }
+
+    input:
+    tuple val(group), path(pass, stageAs: 'pass*')   // the group's runs' pass/ dirs
+    path genome_info
+
+    output:
+    tuple val(group), path('drep'), emit: drep, optional: true
+    path 'drep_data_tables', optional: true
+
+    script:
+    """
+    mkdir -p genomes
+    for d in pass*; do
+        for f in \$d/*.fa; do [[ -e \$f ]] && ln -s "\$(readlink -f \$f)" genomes/; done
+    done
+    if [[ -z "\$(ls genomes)" ]]; then echo "group ${group}: no medium+ MAGs"; exit 0; fi
+    ${dereplicate('drep', 'genomes/*.fa', task.cpus)}
+    cp -r drep/data_tables drep_data_tables
     """
 
     stub:
     """
     mkdir -p drep/dereplicated_genomes drep/data_tables
-    cp pass/*.fa drep/dereplicated_genomes/
+    for d in pass*; do cp \$d/*.fa drep/dereplicated_genomes/ 2>/dev/null || true; done
     printf 'genome,secondary_cluster\\n' > drep/data_tables/Cdb.csv
     printf 'genome,cluster\\n' > drep/data_tables/Wdb.csv
-    touch genome_info.csv
+    cp -r drep/data_tables drep_data_tables
+    """
+}
+
+// Level 2: the catalog, one MAG per species across all groups (GTDB-Tk, CoverM, stage 8)
+process DREP_CATALOG {
+    conda params.envs.drep
+    publishDir "${params.outdir}/07_mags", mode: 'copy', pattern: 'drep_data_tables', saveAs: { _f -> 'drep/data_tables' }
+
+    input:
+    val groups       // [[group, drep/], ...]
+    path genome_info
+
+    output:
+    path 'drep', emit: drep
+    path 'drep_data_tables'
+
+    script:
+    """
+    ${linkLayout(groups, 'groups/{run}/drep')}
+    ${dereplicate('drep', 'groups/*/drep/dereplicated_genomes/*.fa', task.cpus)}
+    cp -r drep/data_tables drep_data_tables
+    """
+
+    stub:
+    """
+    mkdir -p drep/dereplicated_genomes drep/data_tables
+    cp -L ${groups.collect { g -> "${g[1]}/dereplicated_genomes/*.fa" }.join(' ')} drep/dereplicated_genomes/ 2>/dev/null || true
+    printf 'genome,secondary_cluster\\n' > drep/data_tables/Cdb.csv
+    printf 'genome,cluster\\n' > drep/data_tables/Wdb.csv
+    cp -r drep/data_tables drep_data_tables
     """
 }
 
 process GTDBTK {
     conda params.envs.gtdbtk
-    publishDir "${params.outdir}/07_mags", mode: 'copy', pattern: 'gtdbtk/*.summary.tsv'
+    publishDir "${params.outdir}/07_mags/gtdbtk", mode: 'copy', pattern: 'gtdbtk.*.summary.tsv'
 
     input:
     path drep
 
     output:
     path 'gtdbtk', emit: gtdbtk
-    path 'gtdbtk/*.summary.tsv'
+    path 'gtdbtk.*.summary.tsv'      // copies: a pattern inside an emitted dir isn't published
 
     script:
     """
     gtdbtk classify_wf --genome_dir ${drep}/dereplicated_genomes -x fa --out_dir gtdbtk \\
         --cpus ${task.cpus} ${params.cfg.mags.gtdbtk_args}
     rm -rf gtdbtk/align gtdbtk/identify
+    cp gtdbtk/gtdbtk.*.summary.tsv .
     """
 
     stub:
     """
     mkdir -p gtdbtk; printf 'user_genome\\tclassification\\n' > gtdbtk/gtdbtk.bac120.summary.tsv
+    cp gtdbtk/gtdbtk.*.summary.tsv .
     """
 }
 
 process MAG_ABUNDANCE {
     conda params.envs.coverm
     publishDir "${params.outdir}/07_mags", mode: 'copy', pattern: 'coverm_genome.tsv'
-    publishDir "${params.outdir}/tables", mode: 'copy', pattern: '07_mags.tsv'
+    publishDir "${params.outdir}/tables", mode: 'copy', pattern: '07_*mags.tsv'
 
     input:
     path drep
     path gtdbtk
     val mimag        // [[run, mimag.tsv], ...]
+    val groups       // [[group, drep/], ...] (level 1)
     path reads, stageAs: 'reads/*'
 
     output:
     path 'coverm_genome.tsv'
     path '07_mags.tsv'
+    path '07_group_mags.tsv'
 
     script:
     def runs = mimag.collect { x -> x[0] }
@@ -160,13 +212,14 @@ process MAG_ABUNDANCE {
         --methods ${params.cfg.mags.coverm_genome_methods} --threads ${task.cpus} --output-file coverm_genome.tsv
     ${linkLayout(mimag, 'binning/{run}/mimag.tsv')}
     mkdir -p mags && ln -s ../${drep} mags/drep && ln -s ../${gtdbtk} mags/gtdbtk && ln -s ../coverm_genome.tsv mags/
+    ${linkLayout(groups, 'mags/groups/{run}/drep')}
     ${runsFile(runs)}
     PYTHONPATH=${params.repo}/src ${params.envs.core}/bin/python -m plasmid_detection.tables mags \\
-        --samples runs.txt --binning-dir binning --mags-dir mags --out 07_mags.tsv
+        --samples runs.txt --binning-dir binning --mags-dir mags --out 07_mags.tsv --group-out 07_group_mags.tsv
     """
 
     stub:
     """
-    touch coverm_genome.tsv 07_mags.tsv
+    touch coverm_genome.tsv 07_mags.tsv 07_group_mags.tsv
     """
 }

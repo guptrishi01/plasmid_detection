@@ -1,5 +1,6 @@
-// Stage 5: geNomad (main plasmid caller), CheckV + MOB-typer, AMRFinderPlus + RGI,
-// CoverM contig coverage and AMR tagging (plasmid / virus / chromosome)
+// Stage 5: geNomad (main plasmid caller), CheckV + MOB-typer, AMRFinderPlus + RGI, AMR
+// tagging (plasmid / virus / chromosome). CoverM contig coverage and reads per AMR hit
+// are computed in MAP_GROUP (assembly.nf), where the group BAMs are.
 
 process GENOMAD {
     tag "${meta.id}"
@@ -92,33 +93,27 @@ process AMR {
     """
 }
 
-process COVERAGE_TAG {
+// Tag each AMR hit plasmid / virus / chromosome by its contig (geNomad calls). The hit
+// BED feeds MAP_GROUP, which counts reads over each hit in every group BAM (amr_counts.tsv).
+process TAG_AMR {
     tag "${meta.id}"
-    conda params.envs.coverm
-    publishDir path: { "${params.outdir}/05_contigs/${meta.id}" }, mode: 'copy'
+    conda params.envs.core
+    publishDir path: { "${params.outdir}/05_contigs/${meta.id}" }, mode: 'copy', pattern: '{amr_tagged.tsv,amr_hits.bed}'
 
     input:
-    tuple val(meta), path(bams), path(bais), path(genomad), path(amrfinder), path(rgi)
+    tuple val(meta), path(genomad), path(amrfinder), path(rgi)
 
     output:
-    tuple val(meta), path('amr_tagged.tsv'), path('amr_counts.tsv'), path('coverm_contig.tsv'), emit: tagged
-    path 'amr_hits.bed'
-    path 'amr_bedcov.txt'
+    tuple val(meta), path('amr_tagged.tsv'), path('amr_hits.bed'), emit: tagged
 
     script:
-    def id = meta.id
-    def py = "PYTHONPATH=${params.repo}/src ${params.envs.core}/bin/python -m plasmid_detection.tables"
     """
-    coverm contig --bam-files ${bams} --methods ${params.cfg.contigs.coverm_methods} \\
-        --threads ${task.cpus} --output-file coverm_contig.tsv
-    ${py} tag-amr --run ${id} --genomad-dir ${genomad} --amrfinder ${amrfinder} --rgi ${rgi} \\
-        --out amr_tagged.tsv --bed amr_hits.bed
-    ${params.envs.assembly}/bin/samtools bedcov -c amr_hits.bed ${bams} > amr_bedcov.txt
-    ${py} amr-counts --bedcov amr_bedcov.txt --bams ${bams} --out amr_counts.tsv
+    PYTHONPATH=${params.repo}/src python -m plasmid_detection.tables tag-amr --run ${meta.id} \
+        --genomad-dir ${genomad} --amrfinder ${amrfinder} --rgi ${rgi} --out amr_tagged.tsv --bed amr_hits.bed
     """
 
     stub:
     """
-    touch amr_tagged.tsv amr_counts.tsv coverm_contig.tsv amr_hits.bed amr_bedcov.txt
+    touch amr_tagged.tsv amr_hits.bed
     """
 }

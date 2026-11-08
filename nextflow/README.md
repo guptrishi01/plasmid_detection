@@ -19,9 +19,10 @@ strategy (`--library_strategy`, default `WGS`):
 
 `--runs` (comma list or file) narrows the set; the `pilot` profile sets it to
 `metadata/pilot_samples.txt`. Location, site and timepoint come from the SRA SampleName
-(`--sample_name_regex`, default `Sample_<Location>_<Site>_<TP>`); for a study where it
-doesn't match, every run goes into one group, which only affects within-system
-cross-mapping and the site statistics.
+(`--sample_name_regex`, default `Sample_<Location>_<Site>_<TP>`). Each run's binning group
+is the `params.binning.groups` entry listing its site (`config/config.yaml`, the same 11
+groups as the sbatch version); a parsed site in no group stops the run. For a study where
+the regex doesn't match, every run goes into one group, `all`.
 
 Reads are downloaded with sra-tools only (prefetch → vdb-validate → fasterq-dump → pigz,
 full-quality `.sra`, pair counts checked against SRA spots), into `--raw_dir`
@@ -60,6 +61,27 @@ tasks are reused from the work dir (`/scratch/.../work_nf`).
 (reads, contigs, BAMs) stay in the work dir. `pipeline_info/` has Nextflow's HTML report
 (time, CPU, memory per task), timeline and trace.
 
+## Binning groups and dRep (2026-11-03 design)
+
+Same as the sbatch version: each assembly is mapped with the reads of every run in its
+binning group, dRep runs per group and then across groups (the catalog), and GTDB-Tk,
+CoverM genome and stage 8 use the catalog. Two Nextflow-specific choices:
+
+- `MAP_GROUP` does everything that reads the cross-sample BAMs in one task (Bowtie2 of
+  the group's reads, `jgi_summarize_bam_contig_depths`, CoverM contig, `samtools bedcov`
+  over the AMR hits) and keeps only the run's own BAM. A later task can't delete another
+  task's outputs without breaking `-resume`, so this replaces the sbatch `06c` cleanup.
+  It waits for `TAG_AMR` (the hits' BED), which is the tagging half of the sbatch `05d`.
+- `DREP_GROUP` (one task per group with medium+ MAGs) → `DREP_CATALOG`; `07_mags/groups/
+  <group>/drep/data_tables/` and `07_mags/drep/data_tables/` as in the sbatch layout.
+
+| sbatch | Nextflow |
+|---|---|
+| `04c_map` + `05d` (CoverM, bedcov) + `06a` (depth) + `06c` | `MAP_GROUP` |
+| `05d` (tagging) | `TAG_AMR` |
+| `06a` (MetaBAT2) | `BINNING` |
+| `07a` (two levels) | `GENOME_INFO` → `DREP_GROUP` → `DREP_CATALOG` |
+
 ## Notes
 
 - Shared filesystem assumed: summary steps rebuild the per-run layout `tables.py` expects
@@ -71,9 +93,16 @@ tasks are reused from the work dir (`/scratch/.../work_nf`).
   (`scripts/side/`). Both were supplementary analyses for this study; geNomad is the
   plasmid caller.
 - Checked with `nextflow lint` (no errors or warnings) and a `-stub` run of the full DAG
-  on the pilot (86/86 tasks, including the depth experiment).
+  on the pilot (89/89 tasks, including the depth experiment; group binning: 4 `MAP_GROUP`
+  tasks with the right group runs, 2 `DREP_GROUP`, 1 `DREP_CATALOG`).
+- Publishing: a `publishDir` pattern that points inside an emitted directory (e.g.
+  `gtdbtk/*.summary.tsv` when `gtdbtk/` is also emitted) publishes nothing, so the run of
+  2026-10-21 never wrote `07_mags/gtdbtk/` or the dRep tables to `--outdir`. GTDB-Tk and
+  dRep now copy those files out as their own outputs.
 
-## Validation against the sbatch pilot (2026-10-21)
+## Validation against the sbatch pilot (2026-10-21, creek-pair design)
+
+This run predates group binning; the group-binning version still needs its own pilot run.
 
 Pilot run (job 27394761, 0 failed) compared with the sbatch results on scratch:
 

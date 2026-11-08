@@ -17,3 +17,22 @@ def linkLayout(pairs, String dest) {
         "mkdir -p '${parent}' && ln -sfn '${p.toAbsolutePath()}' '${target}'"
     }.join('\n')
 }
+
+// dRep at params.cfg.mags.drep_ani over the genomes matching `glob` into `out`, CheckM2
+// values from genome_info.csv; one genome skips dRep and gets the same layout by hand
+def dereplicate(String out, String glob, cpus) {
+    """
+    n=\$(ls ${glob} | wc -l)
+    if (( n == 1 )); then
+        mkdir -p ${out}/dereplicated_genomes ${out}/data_tables
+        cp -L ${glob} ${out}/dereplicated_genomes/
+        g=\$(basename ${glob})
+        printf 'genome,secondary_cluster\\n%s,1_1\\n' \$g > ${out}/data_tables/Cdb.csv
+        printf 'genome,cluster\\n%s,1_1\\n' \$g > ${out}/data_tables/Wdb.csv
+    else
+        dRep dereplicate ${out} -g ${glob} -p ${cpus} -sa ${params.cfg.mags.drep_ani} \\
+            --genomeInfo genome_info.csv \\
+            -comp ${params.cfg.binning.mimag_medium_completeness} -con ${params.cfg.binning.mimag_medium_contamination}
+    fi
+    """
+}
