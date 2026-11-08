@@ -17,6 +17,9 @@ source "${PD_REPO:-$HOME/gibas/plasmid_detection}/scripts/lib/common.sh"
 activate "$ENVS_AMRFINDERPLUS"
 GENOMES=("$PATHS_MAGS"/drep/dereplicated_genomes/*.fa)
 [[ -e "${GENOMES[0]}" ]] || { echo "no dereplicated MAGs (run 07a)" >&2; exit 1; }
+# Cleared first: the table below concatenates every file here, so per-MAG files from an
+# earlier MAG set (e.g. before re-binning) would otherwise leak into it
+rm -rf "$PATHS_MAG_LINKS/amrfinder"
 mkdir -p "$PATHS_MAG_LINKS/amrfinder" "$PATHS_TABLES"
 echo "[$(date)] AMRFinderPlus on ${#GENOMES[@]} MAGs"
 
