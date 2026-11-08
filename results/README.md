@@ -30,7 +30,10 @@ length-distribution flags (expected for a mixed community after trimming).
 | SRR6231217 MC UP_B | 81,609 | 918 | 246 kb | 166.2 Mb | 2,065 | 35.2% | 46% | 12 |
 | SRR6231191 MC INF | 92,591 | 1,210 | 117 kb | 198.1 Mb | 2,260 | 49.6% | 61% | 47 |
 
-Assembled = own reads mapped back to own assembly; cross-sample mapping 0.4–0.8%.
+Assembled = own reads mapped back to own assembly. Cross-sample mapping within a binning
+group: upstream ↔ upstream 18.5–20.6%, influent ↔ influent 40.7–44.6% (the earlier creek
+pairs, upstream ↔ influent of the same creek, mapped only 0.4–0.8%): the same site type
+shares far more of its community across creeks than different site types within a creek.
 Nonpareil coverage is the modelled value (R `Nonpareil`, `C`); reaching 95% would need
 144–307 Gbp per run, so rare taxa are under-sampled, more so upstream (higher diversity).
 metaSPAdes on SRR6231181: exit 0, 1.25 h, 48.7 GB peak RAM, 38,657 contigs ≥ 1 kb
@@ -82,33 +85,50 @@ differs by habitat would bias the cross-location comparison, hence geNomad.
 
 (`06_binning/<run>/mimag.tsv`, `checkm2/quality_report.tsv`)
 
-| Run | Bins (MetaBAT2) | High | Medium | Low | Kept (medium+) |
-|---|---|---|---|---|---|
-| SRR6231181 SC UP_B | 28 | 2 | 6 | 20 | 8 |
-| SRR6231184 SC INF | 41 | 2 | 15 | 24 | 17 |
-| SRR6231217 MC UP_B | 38 | 1 | 9 | 28 | 10 |
-| SRR6231191 MC INF | 50 | 4 | 20 | 26 | 24 |
+**Group binning (2026-11-03).** Each assembly is binned with the coverage of every run in
+its binning group (`params.binning.groups`: site types pooled across both creeks and all
+time points). In the pilot the groups are upstream (SRR6231181 + SRR6231217) and influent
+(SRR6231184 + SRR6231191); before, each assembly was paired with the other run of its creek.
+The earlier outputs are kept on scratch in `results_pre_group/`.
+
+| Run | Bins (MetaBAT2) | High | Medium | Low | Kept (medium+) | Before (creek pairs) |
+|---|---|---|---|---|---|---|
+| SRR6231181 SC UP_B | 36 | 2 | 11 | 23 | 13 | 28 bins → 8 |
+| SRR6231184 SC INF | 44 | 1 | 15 | 28 | 16 | 41 → 17 |
+| SRR6231217 MC UP_B | 53 | 1 | 16 | 36 | 17 | 38 → 10 |
+| SRR6231191 MC INF | 60 | 3 | 24 | 33 | 27 | 50 → 24 |
 
 High = ≥ 90% complete and < 5% contaminated, medium = ≥ 50% / < 10% (CheckM2; MIMAG's rRNA
-and tRNA requirement for "high" is not checked). 59 medium-or-better MAGs; dRep (95% ANI)
-reduces them to 45, as 14 are the same species in both runs of a creek pair. With only two
-BAMs per assembly in the pilot, coverage-based binning is weaker than it will be in the full run.
+and tRNA requirement for "high" is not checked). 73 medium-or-better MAGs (was 59). The
+assemblies are unchanged, so MAGs match across the two designs by shared contigs: 51 of the
+73 are the earlier MAGs (contig Jaccard ≥ 0.5), 22 are new (mostly upstream), and 8 earlier
+medium MAGs dropped to low. Mean contamination of kept MAGs 3.9% (was 4.2%); mean
+completeness 74.9% (was 78.4%; the new MAGs are more partial). Each group still has only
+two runs in the pilot; the full run gives 4–16 per group.
 
 ## Stage 7: MAG taxonomy and abundance
 
-(`tables/07_mags.tsv`, `07_mags/drep/`, `07_mags/gtdbtk/`, `07_mags/coverm_genome.tsv`)
+(`tables/07_mags.tsv`, `tables/07_group_mags.tsv`, `07_mags/groups/<group>/drep/`,
+`07_mags/drep/`, `07_mags/gtdbtk/`, `07_mags/coverm_genome.tsv`)
 
-45 dereplicated MAGs (7 high, 38 medium), all classified by GTDB-Tk 2.6.1 (GTDB r226),
-all bacterial: Gammaproteobacteria 16, Actinomycetes 13, Bacteroidia 6, Clostridia 5,
-Campylobacteria 2, Bacilli 2, Fusobacteriota 1. Influent MAGs include gut taxa (Prevotella
-copri, Agathobacter rectalis, Bifidobacterium adolescentis, Alistipes putredinis).
+dRep (95% ANI) in two levels: per group, upstream 30 → 26 and influent 43 → 31; then the
+catalog over the 57 group MAGs → 57 (no species shared between upstream and influent;
+the closest pair across groups is 94.7% ANI). The 57 catalog MAGs (7 high, 50 medium; was
+45) are all classified by GTDB-Tk 2.6.1 (GTDB r226), all bacterial: Gammaproteobacteria 21,
+Actinomycetes 19, Bacteroidia 7, Clostridia 5, Bacilli 2, Campylobacteria 2, Fusobacteriia
+1; 17 have no GTDB species name. Influent MAGs include gut taxa (Prevotella copri_B,
+Agathobacter rectalis, Bifidobacterium adolescentis, Alistipes putredinis, Phocaeicola
+vulgatus, Bacteroides uniformis). Two influent MAGs (SRR6231184.bin.38, SRR6231191.bin.45)
+are both Acinetobacter johnsonii by GTDB (96.5/97.0% ANI to the reference) but 94.0% ANI
+to each other over 36% of their length, so dRep keeps both; sum them for species-level
+abundance.
 
-| Run | Reads assigned to the 45 MAGs (CoverM relative abundance) |
-|---|---|
-| SRR6231181 SC UP_B | 15.5% |
-| SRR6231184 SC INF | 29.5% |
-| SRR6231217 MC UP_B | 16.2% |
-| SRR6231191 MC INF | 31.9% |
+| Run | Reads assigned to the 57 MAGs (CoverM relative abundance) | Before (45 MAGs) |
+|---|---|---|
+| SRR6231181 SC UP_B | 17.8% | 15.5% |
+| SRR6231184 SC INF | 32.1% | 29.5% |
+| SRR6231217 MC UP_B | 20.0% | 16.2% |
+| SRR6231191 MC INF | 33.5% | 31.9% |
 
 The MAGs capture about twice as much of the influent community as of the creek water,
 consistent with the Nonpareil coverage and assembled fractions.
@@ -117,17 +137,24 @@ consistent with the Nonpareil coverage and assembled fractions.
 
 (`tables/08_mag_amr.tsv`, `tables/08_plasmids_in_mags.tsv`, `tables/08_plasmid_host_inference.tsv`)
 
-AMRFinderPlus on the 45 MAGs: 21 hits, 8 AMR-type, all in influent MAGs (SRR6231184 bin.22
-blaMOX + blaOXA, bin.26 blaOXA, bins 4 and 36 icr-Mo; SRR6231191 bin.2 lnu(AN2), mef(En2),
-lnu(C)); 13 stress (metal/biocide).
+AMRFinderPlus on the 57 catalog MAGs: 22 hits, 10 AMR-type in 5 influent MAGs: Aeromonas
+caviae (SRR6231191.bin.51: blaMOX, blaOXA ×2), Phocaeicola vulgatus (SRR6231191.bin.13:
+lnu(AN2), lnu(C), mef(En2)), Bacteroides uniformis (SRR6231191.bin.56: blaMUN-1, cblA),
+Acinetobacter johnsonii (SRR6231184.bin.38: blaOXA), Moraxella_A (SRR6231184.bin.23:
+icr-Mo); 12 stress (metal/biocide). No upstream MAG carries an AMR gene.
 
 | geNomad plasmid contigs (4 runs) | In any MetaBAT2 bin | In a medium+ MAG (co-binning) | MOB-suite host range | Coverage correlation |
 |---|---|---|---|---|
-| 4,213 | 1,731 | 386 | 439 | blank (needs ≥ 5 samples; pilot has 2) |
+| 4,213 | 1,462 (was 1,731) | 487 (was 386) | 439 | blank (needs ≥ 5 samples; pilot groups have 2) |
 
-Most frequent co-binned host genera: Phocaeicola 46, Acinetobacter 42, Blautia_A 38,
-Propionivibrio 34, Rivihabitans 28. All three are inferences and can disagree (sul2 in
-SRR6231184: co-binned with Rivihabitans, MOB-suite range Enterobacteriaceae).
+Co-binned plasmid contigs per run: 11, 194, 8, 274 (SRR6231181, 184, 217, 191). A plasmid's
+host MAG is the catalog MAG its bin was dereplicated into (bin → group MAG → catalog MAG).
+Most frequent co-binned host genera: Acinetobacter 98, Blautia_A 48, Tolumonas 38,
+Phocaeicola 35, Paenacidovorax 30, Moraxella_A 30. Of the 38 influent plasmid contigs with
+AMR-type genes, 3 are co-binned: lnu(AN2)/mef(En2) with Phocaeicola vulgatus in both
+influent runs (as before) and blaMUN-1 with Bacteroides uniformis (new); the earlier mph(A)
+→ Bifidobacterium and sul2 → Rivihabitans links are gone. All three inferences can disagree
+and none is proof.
 
 ## Stage 9: rollup, read vs contig, depth
 
@@ -172,12 +199,16 @@ contig FASTA = QUAST counts and lengths, mapping input = retained pairs, 8/8 BAM
 `samtools quickcheck`. Stage 5: 16/16 jobs exit 0, every RGI contig is in the assembly,
 tagged hits = counted hits. RGI logs "Requested rname SRR…_k127 does not exist" a few
 times per influent run: its ORF-extension step cuts names at underscores; the hits are
-still reported with full contig names. Stage 6: 8/8 jobs exit 0, CheckM2 rows = bins,
-`pass/` = 59 = high + medium; dRep kept all 59 through its filters (`Cdb.csv` = 59 rows).
-Stage 7: dRep and GTDB-Tk exit 0; 45/45 MAGs classified; `07_mags.tsv` has 45 rows. 07c
-exited 13 after writing its table (SIGPIPE from `column | head` in the display line; fixed).
-Stage 8: 08a table rows = per-MAG hits (21), 45/45 MAGs run; 08b inference rows = geNomad
-plasmid contigs (4,213), every co-binned MAG is in the dRep set. Stage 9: 4/4 RGI bwt
+still reported with full contig names. Stage 6 (group binning, chain 27651454–65, all exit 0): CheckM2 rows = bins, `pass/` =
+73 = high + medium; CoverM and `depth.txt` columns = the run's group mates; `map/` keeps the
+own BAM only (06c; deleted BAMs listed in `map/DELETED_BAMS.txt`). Stage 7: each group's
+`Cdb.csv` = its runs' medium+ MAGs; catalog `Cdb.csv` = all group MAGs (57); 57/57
+classified; `07_group_mags.tsv` = all 73 medium+ MAGs. Stage 8: one AMRFinderPlus file per
+catalog MAG and no others (08a first kept 31 files from the earlier MAG set; fixed to clear
+its folder, rerun 27707596), table rows = per-MAG hits (22); 08b inference rows = geNomad
+plasmid contigs (4,213). Stages 4–5 and 9 outputs that don't depend on binning (assembly
+table, own-read mapping logs, AMR tagging, plasmid summary, resistome, RGI read vs contig)
+are byte-identical to the earlier design. Full check: `docs/slides/final_audit.py`, ALL PASS. Stage 9: 4/4 RGI bwt
 outputs; no stress genes in the AMRFinderPlus resistome; plasmid summary = stage 5 counts;
 09b first failed on a SIGPIPE in subsampling (fixed, rerun); all depth points present.
 
