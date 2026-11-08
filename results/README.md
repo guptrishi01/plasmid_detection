@@ -113,7 +113,7 @@ two runs in the pilot; the full run gives 4–16 per group.
 
 dRep (95% ANI) in two levels: per group, upstream 30 → 26 and influent 43 → 31; then the
 catalog over the 57 group MAGs → 57 (no species shared between upstream and influent;
-the closest pair across groups is 94.7% ANI). The 57 catalog MAGs (7 high, 50 medium; was
+no cross-group pair passes dRep's 90% Mash pre-screen; the most similar is ~76%). The 57 catalog MAGs (7 high, 50 medium; was
 45) are all classified by GTDB-Tk 2.6.1 (GTDB r226), all bacterial: Gammaproteobacteria 21,
 Actinomycetes 19, Bacteroidia 7, Clostridia 5, Bacilli 2, Campylobacteria 2, Fusobacteriia
 1; 17 have no GTDB species name. Influent MAGs include gut taxa (Prevotella copri_B,
