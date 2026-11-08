@@ -100,9 +100,29 @@ CoverM genome and stage 8 use the catalog. Two Nextflow-specific choices:
   2026-10-21 never wrote `07_mags/gtdbtk/` or the dRep tables to `--outdir`. GTDB-Tk and
   dRep now copy those files out as their own outputs.
 
-## Validation against the sbatch pilot (2026-10-21, creek-pair design)
+## Validation of group binning (2026-11-08)
 
-This run predates group binning; the group-binning version still needs its own pilot run.
+Pilot run (head job 27707762, `-resume 8001ba9b-…` = the 2026-10-20 session: 53 tasks
+cached, 27 run, 0 failed, 70 min) against the sbatch group-binning results:
+
+| Check | Result |
+|---|---|
+| Mapping sets | CoverM and `depth.txt` columns = the run's group mates (upstream 181+217, influent 184+191); Bowtie2 log per mate; counted = tagged AMR hits |
+| Stage 7 layout | each group's `Cdb.csv` = its runs' medium+ MAGs; catalog = the group MAGs' representatives; GTDB-Tk summary published (57/57 bacteria); one AMRFinderPlus file per catalog MAG |
+| Medium+ MAGs → per group → catalog | 73 → upstream 30 → 26, influent 43 → 31 → 57 (sbatch: identical counts) |
+| Per run high/medium | 2/11, 1/16, 2/15, 4/22 (sbatch 2/11, 1/16, 1/15, 3/24) |
+| Reads in MAGs | 17.1 / 19.3 / 33.3 / 33.2% (sbatch 17.8 / 20.0 / 32.1 / 33.5%) |
+| Plasmid contigs in a medium+ MAG | 549 (sbatch 487) |
+| AMR-type hits in MAGs | 13 in 8 MAGs (sbatch 10 in 5); all 10 sbatch genes present, same hosts (Aeromonas caviae, Phocaeicola vulgatus, Bacteroides uniformis, Acinetobacter johnsonii, Moraxella_A); extra: erm(B) in Acinetobacter sp., tet(Q) in Streptococcus suis, tet(32) in P. vulgatus |
+
+The differences come from the assemblies, as in the run below: these MEGAHIT assemblies are
+the 2026-10-20 ones, not the sbatch ones, so bins and MAGs differ slightly.
+
+Launch notes: keep the binning group out of `meta` (it is part of every task's cache key;
+adding it re-runs everything), and resume a specific session (`-resume <session id>` from
+`nextflow log`) when other runs, e.g. a `-stub` test, came after the one to resume.
+
+## Validation against the sbatch pilot (2026-10-21, creek-pair design)
 
 Pilot run (job 27394761, 0 failed) compared with the sbatch results on scratch:
 
