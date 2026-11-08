@@ -23,8 +23,12 @@
 
 set -euo pipefail
 source "${PD_REPO:-$HOME/gibas/plasmid_detection}/scripts/lib/common.sh"
-PASS=("$PATHS_BINNING"/pass/*.fa)
-[[ -e "${PASS[0]}" ]] || { echo "no medium+ MAGs in $PATHS_BINNING/pass (run 06b)" >&2; exit 1; }
+# Medium+ MAGs of the runs in paths.run_samples (pass/ can hold runs from an earlier run list)
+PASS=()
+while read -r run; do
+    for f in "$PATHS_BINNING/pass/${run}".bin.*.fa; do [[ -e "$f" ]] && PASS+=("$f"); done
+done < <(run_samples)
+(( ${#PASS[@]} )) || { echo "no medium+ MAGs in $PATHS_BINNING/pass (run 06b)" >&2; exit 1; }
 mkdir -p "$PATHS_MAGS"
 pdpy plasmid_detection.tables drep-info --binning-dir "$PATHS_BINNING" --samples "$PATHS_RUN_SAMPLES" \
     --out "$PATHS_MAGS/genome_info.csv"
@@ -49,11 +53,8 @@ dereplicate(){
     deactivate
 }
 
-# Every passing MAG's run must be in a group, or it would silently miss both levels
-for f in "${PASS[@]}"; do
-    run=$(basename "$f"); run=${run%%.bin.*}
-    require_group "$run" > /dev/null
-done
+# Every run must be in a group, or its MAGs would silently miss both levels
+while read -r run; do require_group "$run" > /dev/null; done < <(run_samples)
 
 # 1. per group
 rm -rf "$PATHS_MAGS/groups"

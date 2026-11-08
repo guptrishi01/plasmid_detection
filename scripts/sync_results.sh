@@ -20,7 +20,9 @@ if (( $# )); then STAGES=("$@"); else mapfile -t STAGES < <(ls "$SRC"); fi
 mkdir -p "$DEST"
 for stage in "${STAGES[@]}"; do
     [[ -d "$SRC/$stage" ]] || { echo "no $SRC/$stage" >&2; exit 1; }
-    rsync -a --prune-empty-dirs --max-size="$MAX" \
+    # --delete: each stage dir mirrors scratch, so outputs a re-run no longer makes (e.g. bins
+    # and per-MAG files from before re-binning) don't linger; excluded files are never deleted
+    rsync -a --delete --prune-empty-dirs --max-size="$MAX" \
         --exclude 'megahit/' --exclude 'bt2_index/' --exclude 'intermediate_files/' \
         --exclude '*.bam' --exclude '*.bai' --exclude '*.sam' \
         --exclude '*.fa' --exclude '*.fna' --exclude '*.fasta' --exclude '*.fastg' \
