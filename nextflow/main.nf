@@ -16,7 +16,9 @@ def pairs(ch) {
     ch.map { t -> [t[0].id, t[1]] }.toSortedList { a, b -> a[0] <=> b[0] }
 }
 
-// Binning group of a site (params.binning.groups, "group:SITE,SITE"). A SampleName the regex
+// Binning group of a site (params.binning.groups, "group:SITE,SITE"), looked up where needed
+// rather than stored in meta: meta is part of every task's cache key, so adding a field would
+// re-run every finished task on -resume. A SampleName the regex
 // doesn't parse (site NA, another study) puts every run in one group, "all"; a parsed site
 // missing from the groups is an error, as in the sbatch version.
 def binningGroup(site) {
@@ -50,7 +52,7 @@ workflow {
     metas = sheet
         .splitCsv(sep: '\t', header: true)
         .map { r -> [id: r.run, biosample: r.biosample, location: r.location, site: r.site,
-                     timepoint: r.timepoint, spots: r.spots as long, group: binningGroup(r.site)] }
+                     timepoint: r.timepoint, spots: r.spots as long] }
     raw = DOWNLOAD_READS(metas)
 
     // ---- stages 2-3 ------------------------------------------------------------------------
@@ -90,11 +92,11 @@ workflow {
     // ---- stage 4c + 5 coverage: map each assembly with every run of its binning group ------
     // Reads grouped as soon as all of a group's runs are host-depleted (groupKey carries the
     // expected count); MAP_GROUP also needs the run's AMR hits (TAG_AMR) for the read counts
-    nPerGroup = metas.map { m -> m.group }.toList().map { l -> l.countBy { x -> x } }
-    groupReads = groupByKey(hostfree.map { meta, r1, r2 -> [meta.group, [meta.id, r1, r2]] }, nPerGroup)
+    nPerGroup = metas.map { m -> binningGroup(m.site) }.toList().map { l -> l.countBy { x -> x } }
+    groupReads = groupByKey(hostfree.map { meta, r1, r2 -> [binningGroup(meta.site), [meta.id, r1, r2]] }, nPerGroup)
         .map { g, xs -> [g, xs.collect { x -> x[0] }, xs.collect { x -> x[1] }, xs.collect { x -> x[2] }] }
     MAP_GROUP(contigs.join(TAG_AMR.out.tagged.map { meta, _t, bed -> [meta, bed] })
-                     .map { meta, c, bed -> [meta.group, meta, c, bed] }
+                     .map { meta, c, bed -> [binningGroup(meta.site), meta, c, bed] }
                      .combine(groupReads, by: 0)
                      .map { _g, meta, c, bed, ids, r1s, r2s -> [meta, c, bed, ids, r1s, r2s] })
 
@@ -108,7 +110,7 @@ workflow {
 
     // ---- stage 7: dRep per binning group, then across groups (catalog) ---------------------
     GENOME_INFO(mimag)
-    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [meta.group, p] }, nPerGroup),
+    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [binningGroup(meta.site), p] }, nPerGroup),
                GENOME_INFO.out)
     groupDreps = DREP_GROUP.out.drep.toSortedList { a, b -> a[0] <=> b[0] }
     DREP_CATALOG(groupDreps, GENOME_INFO.out)
