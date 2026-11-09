@@ -5,15 +5,40 @@
 include { FETCH_RUNINFO; SAMPLE_SHEET; DOWNLOAD_READS } from './modules/fetch'
 include { FASTQC_RAW; FASTP; FASTQC_TRIMMED; QC_SUMMARY;
           HOST_DEPLETION; FASTQC_HOSTFREE; HOST_SUMMARY } from './modules/qc_host'
-include { MEGAHIT; METASPADES; MAP_SYSTEM; ASSEMBLY_QC; SCAPP; ASSEMBLY_TABLE } from './modules/assembly'
-include { GENOMAD; CHECKV_MOBTYPER; AMR; COVERAGE_TAG } from './modules/contigs'
-include { BINNING; CHECKM2_MIMAG; DREP; GTDBTK; MAG_ABUNDANCE } from './modules/binning_mags'
+include { MEGAHIT; METASPADES; MAP_GROUP; ASSEMBLY_QC; SCAPP; ASSEMBLY_TABLE } from './modules/assembly'
+include { GENOMAD; CHECKV_MOBTYPER; AMR; TAG_AMR } from './modules/contigs'
+include { BINNING; CHECKM2_MIMAG; GENOME_INFO; DREP_GROUP; DREP_CATALOG; GTDBTK; MAG_ABUNDANCE } from './modules/binning_mags'
 include { MAG_AMR; PLASMID_HOSTS; RGI_BWT; ROLLUP; STATS;
           DEPTH_SUBSAMPLE; DEPTH_SUMMARY } from './modules/links_rollup'
 
 // [meta, x, ...] channel -> one sorted list [[run, x], ...] for summary processes
 def pairs(ch) {
     ch.map { t -> [t[0].id, t[1]] }.toSortedList { a, b -> a[0] <=> b[0] }
+}
+
+// Binning group of a site (params.binning.groups, "group:SITE,SITE"), looked up where needed
+// rather than stored in meta: meta is part of every task's cache key, so adding a field would
+// re-run every finished task on -resume. A SampleName the regex
+// doesn't parse (site NA, another study) puts every run in one group, "all"; a parsed site
+// missing from the groups is an error, as in the sbatch version.
+def binningGroup(site) {
+    def g = [params.cfg.binning.groups].flatten().find { spec -> site in spec.tokenize(':')[1].tokenize(',') }
+    if (g) {
+        return g.tokenize(':')[0]
+    }
+    if (site == 'NA') {
+        return 'all'
+    }
+    error "site ${site} is in no params.binning.groups entry (config/config.yaml)"
+}
+
+// [key, x] channel -> [key, [x, ...]] once every run of that key has arrived; nByKey is a
+// value channel with {key: expected count}
+def groupByKey(ch, nByKey) {
+    ch.combine(nByKey)
+        .map { k, x, n -> [groupKey(k, n[k]), x] }
+        .groupTuple()
+        .map { k, xs -> [k.toString(), xs] }
 }
 
 workflow {
@@ -55,52 +80,56 @@ workflow {
         METASPADES(one)
     }
 
-    // Reads of every run in the same system (location), grouped as soon as that system's
-    // runs are all host-depleted (groupKey carries the expected count)
-    perLoc = metas.map { m -> m.location }.toList().map { l -> l.countBy { x -> x } }
-    byLoc = hostfree
-        .combine(perLoc)
-        .map { meta, r1, r2, n -> [groupKey(meta.location, n[meta.location]), meta.id, r1, r2] }
-        .groupTuple()
-        .map { loc, ids, r1s, r2s -> [loc.toString(), ids, r1s, r2s] }
-    MAP_SYSTEM(contigs.map { meta, c -> [meta.location, meta, c] }
-                      .combine(byLoc, by: 0)
-                      .map { _loc, meta, c, ids, r1s, r2s -> [meta, c, ids, r1s, r2s] })
-    bams = MAP_SYSTEM.out.bams
-
     ASSEMBLY_QC(contigs.join(hostfree))
     SCAPP(MEGAHIT.out.graph.join(hostfree))
-    ASSEMBLY_TABLE(pairs(ASSEMBLY_QC.out.report), pairs(MAP_SYSTEM.out.own_log),
-                   pairs(MEGAHIT.out.graph.map { meta, _g, k -> [meta, k] }))
 
     // ---- stage 5 ---------------------------------------------------------------------------
     GENOMAD(contigs)
     CHECKV_MOBTYPER(GENOMAD.out.genomad)
     AMR(contigs)
-    COVERAGE_TAG(bams.join(GENOMAD.out.genomad).join(AMR.out.amr))
+    TAG_AMR(GENOMAD.out.genomad.join(AMR.out.amr))
+
+    // ---- stage 4c + 5 coverage: map each assembly with every run of its binning group ------
+    // Reads grouped as soon as all of a group's runs are host-depleted (groupKey carries the
+    // expected count); MAP_GROUP also needs the run's AMR hits (TAG_AMR) for the read counts
+    nPerGroup = metas.map { m -> binningGroup(m.site) }.toList().map { l -> l.countBy { x -> x } }
+    groupReads = groupByKey(hostfree.map { meta, r1, r2 -> [binningGroup(meta.site), [meta.id, r1, r2]] }, nPerGroup)
+        .map { g, xs -> [g, xs.collect { x -> x[0] }, xs.collect { x -> x[1] }, xs.collect { x -> x[2] }] }
+    MAP_GROUP(contigs.join(TAG_AMR.out.tagged.map { meta, _t, bed -> [meta, bed] })
+                     .map { meta, c, bed -> [binningGroup(meta.site), meta, c, bed] }
+                     .combine(groupReads, by: 0)
+                     .map { _g, meta, c, bed, ids, r1s, r2s -> [meta, c, bed, ids, r1s, r2s] })
+
+    ASSEMBLY_TABLE(pairs(ASSEMBLY_QC.out.report), pairs(MAP_GROUP.out.own_log),
+                   pairs(MEGAHIT.out.graph.map { meta, _g, k -> [meta, k] }))
 
     // ---- stage 6 ---------------------------------------------------------------------------
-    BINNING(contigs.join(bams))
+    BINNING(contigs.join(MAP_GROUP.out.depth))
     CHECKM2_MIMAG(BINNING.out.bins)
     mimag = pairs(CHECKM2_MIMAG.out.mimag)
 
-    // ---- stage 7 ---------------------------------------------------------------------------
-    DREP(mimag, CHECKM2_MIMAG.out.pass.flatten().collect())
-    GTDBTK(DREP.out.drep)
-    MAG_ABUNDANCE(DREP.out.drep, GTDBTK.out.gtdbtk, mimag,
+    // ---- stage 7: dRep per binning group, then across groups (catalog) ---------------------
+    GENOME_INFO(mimag)
+    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [binningGroup(meta.site), p] }, nPerGroup),
+               GENOME_INFO.out)
+    groupDreps = DREP_GROUP.out.drep.toSortedList { a, b -> a[0] <=> b[0] }
+    DREP_CATALOG(groupDreps, GENOME_INFO.out)
+    catalog = DREP_CATALOG.out.drep
+    GTDBTK(catalog)
+    MAG_ABUNDANCE(catalog, GTDBTK.out.gtdbtk, mimag, groupDreps,
                   hostfree.flatMap { _meta, r1, r2 -> [r1, r2] }.collect())
 
     // ---- stage 8 ---------------------------------------------------------------------------
-    MAG_AMR(DREP.out.drep)
-    coverm = COVERAGE_TAG.out.tagged.map { meta, _t, _c, cov -> [meta, cov] }
+    MAG_AMR(catalog)
     PLASMID_HOSTS(pairs(BINNING.out.bins), mimag, pairs(GENOMAD.out.genomad),
-                  pairs(CHECKV_MOBTYPER.out.mob), pairs(coverm), DREP.out.drep, GTDBTK.out.gtdbtk)
+                  pairs(CHECKV_MOBTYPER.out.mob), pairs(MAP_GROUP.out.coverm), catalog, GTDBTK.out.gtdbtk,
+                  groupDreps)
 
     // ---- stage 9 ---------------------------------------------------------------------------
     RGI_BWT(hostfree)
     ROLLUP(pairs(GENOMAD.out.genomad), pairs(CHECKV_MOBTYPER.out.mob),
-           pairs(COVERAGE_TAG.out.tagged.map { meta, t, _c, _cov -> [meta, t] }),
-           pairs(COVERAGE_TAG.out.tagged.map { meta, _t, c, _cov -> [meta, c] }),
+           pairs(TAG_AMR.out.tagged.map { meta, t, _bed -> [meta, t] }),
+           pairs(MAP_GROUP.out.counts),
            pairs(SCAPP.out.scapp), pairs(RGI_BWT.out.genes))
     STATS(sheet, runs, ROLLUP.out.resistome)
 

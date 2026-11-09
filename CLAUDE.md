@@ -159,8 +159,10 @@ Conventions every stage script follows (keep them when adding or editing one):
   it at `srp121672_wgs_run_accessions.txt` for all 92). Per-run scripts have **no**
   `#SBATCH --array`; they're submitted as `sbatch --array=1-N` and read their run with
   `task_sample`. Cross-sample steps are single jobs.
-- "System mates" (stage 4 cross-mapping) = runs in `paths.run_samples` sharing the sample
-  sheet's `location` (`system_mates` in `common.sh`).
+- "Group mates" (stage 4 cross-mapping) = runs in `paths.run_samples` whose sample-sheet
+  `site` is in the same `params.binning.groups` entry (`run_group`/`group_mates`/`require_group`
+  in `common.sh`; decided 2026-11-03, replacing creek-system mates). 05d and 06a use exactly
+  those BAMs; `06c_cleanup_bams` then deletes the cross-sample ones.
 - Inputs from earlier stages are checked with `require` (fails with "run the earlier stage
   first"). Trimmed/host-depleted reads and BAMs are written to a temp name and moved into
   place, so a killed job doesn't leave a complete-looking read file; tool output dirs

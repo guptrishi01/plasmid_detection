@@ -1,4 +1,4 @@
-// Stage 4: MEGAHIT per run, one metaSPAdes attempt, within-system mapping, QUAST +
+// Stage 4: MEGAHIT per run, one metaSPAdes attempt, within-group mapping, QUAST +
 // Nonpareil, SCAPP, assembly table
 
 include { linkLayout; runsFile } from './utils'
@@ -81,36 +81,56 @@ process METASPADES {
     """
 }
 
-// One assembly + the host-free reads of every run in the same system (sample sheet location)
-process MAP_SYSTEM {
+// One assembly + the host-free reads of every run in its binning group (params.binning.groups).
+// Everything that reads the cross-sample BAMs runs here (jgi depth for MetaBAT2, CoverM
+// contig, reads per AMR hit), so only the run's own BAM leaves the task: the sbatch
+// version's 05d + 06a depth + 06c cleanup in one step. Waits for TAG_AMR (amr_hits.bed).
+process MAP_GROUP {
     tag "${meta.id}"
     conda params.envs.assembly
     publishDir path: { "${params.outdir}/04_assembly/${meta.id}/map" }, mode: 'copy', pattern: '*.bowtie2.log'
+    publishDir path: { "${params.outdir}/05_contigs/${meta.id}" }, mode: 'copy', pattern: '{coverm_contig.tsv,amr_bedcov.txt,amr_counts.tsv}'
+    publishDir path: { "${params.outdir}/06_binning/${meta.id}" }, mode: 'copy', pattern: 'depth.txt'
 
     input:
-    tuple val(meta), path(contigs), val(mate_ids), path(r1s, stageAs: 'r1/*'), path(r2s, stageAs: 'r2/*')
+    tuple val(meta), path(contigs), path(bed), val(mate_ids), path(r1s, stageAs: 'r1/*'), path(r2s, stageAs: 'r2/*')
 
     output:
-    tuple val(meta), path('*.bam'), path('*.bam.bai'), emit: bams
+    tuple val(meta), path("${meta.id}.bam"), path("${meta.id}.bam.bai"), emit: own_bam
     tuple val(meta), path("${meta.id}.bowtie2.log"), emit: own_log
+    tuple val(meta), path('depth.txt'), emit: depth
+    tuple val(meta), path('coverm_contig.tsv'), emit: coverm
+    tuple val(meta), path('amr_counts.tsv'), emit: counts
     path '*.bowtie2.log'
+    path 'amr_bedcov.txt'
 
     script:
+    def mates = mate_ids.sort(false).join(' ')    // fixed order: same depth/CoverM columns on -resume
     """
-    mkdir -p idx
+    mkdir -p idx bam
     bowtie2-build --threads ${task.cpus} ${contigs} idx/asm > build.log 2>&1
-    for r in ${mate_ids.join(' ')}; do
-        bowtie2 -p ${task.cpus} ${params.cfg.assembly.bowtie2_args} -x idx/asm -1 r1/\${r}_1.fastq.gz -2 r2/\${r}_2.fastq.gz \\
-                2> \$r.bowtie2.log \\
-            | samtools sort -@ 4 -m 2G -o \$r.bam -
-        samtools index \$r.bam
+    for r in ${mates}; do
+        bowtie2 -p ${task.cpus} ${params.cfg.assembly.bowtie2_args} -x idx/asm -1 r1/\${r}_1.fastq.gz -2 r2/\${r}_2.fastq.gz \
+                2> \$r.bowtie2.log \
+            | samtools sort -@ 4 -m 2G -o bam/\$r.bam -
+        samtools index bam/\$r.bam
     done
     rm -rf idx
+    bams=\$(for r in ${mates}; do printf 'bam/%s.bam ' \$r; done)
+    PATH=${params.envs.binning}/bin:\$PATH jgi_summarize_bam_contig_depths --outputDepth depth.txt \$bams
+    PATH=${params.envs.coverm}/bin:\$PATH coverm contig --bam-files \$bams --methods ${params.cfg.contigs.coverm_methods} \
+        --threads ${task.cpus} --output-file coverm_contig.tsv
+    samtools bedcov -c ${bed} \$bams > amr_bedcov.txt
+    PYTHONPATH=${params.repo}/src ${params.envs.core}/bin/python -m plasmid_detection.tables amr-counts \
+        --bedcov amr_bedcov.txt --bams \$bams --out amr_counts.tsv
+    mv bam/${meta.id}.bam bam/${meta.id}.bam.bai .
+    rm -rf bam
     """
 
     stub:
     """
-    for r in ${mate_ids.join(" ")}; do touch \$r.bam \$r.bam.bai \$r.bowtie2.log; done
+    for r in ${mate_ids.join(" ")}; do touch \$r.bowtie2.log; done
+    touch ${meta.id}.bam ${meta.id}.bam.bai depth.txt coverm_contig.tsv amr_counts.tsv amr_bedcov.txt
     """
 }
 

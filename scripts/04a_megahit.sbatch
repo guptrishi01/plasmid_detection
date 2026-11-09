@@ -11,7 +11,7 @@
 # pairs. Contig headers are prefixed with the run id (">SRR6231181_k127_42"). The assembly
 # graph is kept: intermediate_contigs/k<K>.contigs.fa for the largest K MEGAHIT reached,
 # converted with megahit_toolkit contig2fastg (final.contigs.fa merges contigs from all k,
-# so it is not one graph). SCAPP (04e) reads that FASTG.
+# so it is not one graph). SCAPP (04e) reads that FASTG; intermediate_contigs/ is then removed.
 # Submit:  sbatch --array=1-$(grep -c . metadata/pilot_samples.txt) scripts/04a_megahit.sbatch
 # Tune:    params.assembly.megahit_args, params.assembly.min_contig_len
 
@@ -46,6 +46,10 @@ K=$(ls "$OUT/megahit/intermediate_contigs" | sed -n 's/^k\([0-9]*\)\.contigs\.fa
 megahit_toolkit contig2fastg "$K" "$OUT/megahit/intermediate_contigs/k${K}.contigs.fa" \
     > "$OUT/${SRR}.k${K}.fastg"
 echo "$K" > "$OUT/graph_k.txt"
+# The FASTG is the kept graph; the per-k contig sets (~14 GB per run) aren't read again
+# (same as the Nextflow MEGAHIT process and 09b)
+[[ -s "$OUT/${SRR}.k${K}.fastg" ]] || { echo "empty graph $OUT/${SRR}.k${K}.fastg" >&2; exit 1; }
+rm -rf "$OUT/megahit/intermediate_contigs"
 
 grep -c '^>' "$OUT/${SRR}.contigs.fa" | xargs echo "contigs >= $PARAMS_ASSEMBLY_MIN_CONTIG_LEN bp:"
 echo "graph: $OUT/${SRR}.k${K}.fastg"

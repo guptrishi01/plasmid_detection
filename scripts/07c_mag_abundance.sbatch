@@ -8,11 +8,12 @@
 #SBATCH --error=/users/rgupta25/gibas/plasmid_detection/logs/%x_%j.err
 
 # 07c_mag_abundance.sbatch -- stage 7: CoverM genome over ALL runs in paths.run_samples
-# (host-depleted pairs) against the dereplicated MAGs, then the per-MAG table: quality
-# (CheckM2 + MIMAG tier), taxonomy (GTDB-Tk), abundance per sample.
+# (host-depleted pairs) against the MAG catalog (07a level 2), then the per-MAG table:
+# quality (CheckM2 + MIMAG tier), binning group(s) it was recovered in, taxonomy (GTDB-Tk),
+# abundance per sample; and the per-group table (every medium+ MAG -> group MAG -> catalog MAG).
 # CoverM genome does its own read mapping (default minimap2-sr); Bowtie2 is the stage-4
 # mapper only.
-# Output: $paths.mags/coverm_genome.tsv, $paths.tables/07_mags.tsv
+# Output: $paths.mags/coverm_genome.tsv, $paths.tables/07_mags.tsv, 07_group_mags.tsv
 # Submit:  sbatch scripts/07c_mag_abundance.sbatch     (not an array)
 # Tune:    params.mags.coverm_genome_methods
 
@@ -35,6 +36,6 @@ coverm genome --coupled "${COUPLED[@]}" --genome-fasta-directory "$GENOMES" -x f
 deactivate
 
 pdpy plasmid_detection.tables mags --samples "$PATHS_RUN_SAMPLES" --binning-dir "$PATHS_BINNING" \
-    --mags-dir "$PATHS_MAGS" --out "$PATHS_TABLES/07_mags.tsv"
+    --mags-dir "$PATHS_MAGS" --out "$PATHS_TABLES/07_mags.tsv" --group-out "$PATHS_TABLES/07_group_mags.tsv"
 head -31 "$PATHS_TABLES/07_mags.tsv" | column -t   # head first: head closing a pipe under pipefail kills the job
 echo "[$(date)] done"

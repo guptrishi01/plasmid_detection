@@ -78,3 +78,33 @@ def test_ambiguous_fraction_sums_merged_ranges():
     assert tables.ambiguous_fraction("", 1000) == 0
     assert tables.ambiguous_fraction("1-100", 1000) == 0.1
     assert tables.ambiguous_fraction("350-357,1642-3893", 4000) == (8 + 2252) / 4000
+
+
+def _drep_tables(d, clusters):
+    """clusters: {secondary_cluster: [winner, other, ...]} -> dRep Cdb.csv + Wdb.csv"""
+    t = d / "data_tables"
+    t.mkdir(parents=True)
+    cdb = ["genome,secondary_cluster"] + [f"{g},{c}" for c, gs in clusters.items() for g in gs]
+    wdb = ["genome,cluster"] + [f"{gs[0]},{c}" for c, gs in clusters.items()]
+    (t / "Cdb.csv").write_text("\n".join(cdb) + "\n")
+    (t / "Wdb.csv").write_text("\n".join(wdb) + "\n")
+
+
+def test_catalog_links_chain_group_then_catalog(tmp_path):
+    # upstream: a1 + b1 are one species (a1 wins); influent: c1 alone, d1 alone.
+    # catalog: a1 and c1 are one species (c1 wins); d1 alone.
+    _drep_tables(tmp_path / "groups/upstream/drep", {"1_1": ["a1.fa", "b1.fa"]})
+    _drep_tables(tmp_path / "groups/influent/drep", {"1_1": ["c1.fa"], "2_1": ["d1.fa"]})
+    _drep_tables(tmp_path / "drep", {"1_1": ["c1.fa", "a1.fa"], "2_1": ["d1.fa"]})
+    links = tables.catalog_links(tmp_path)
+    assert links["b1.fa"] == {"group": "upstream", "group_rep": "a1.fa", "catalog_rep": "c1.fa"}
+    assert links["a1.fa"]["catalog_rep"] == "c1.fa"
+    assert links["c1.fa"] == {"group": "influent", "group_rep": "c1.fa", "catalog_rep": "c1.fa"}
+    assert links["d1.fa"]["catalog_rep"] == "d1.fa"
+    assert len(links) == 4
+
+
+def test_catalog_links_single_level_layout(tmp_path):
+    _drep_tables(tmp_path / "drep", {"1_1": ["a1.fa", "b1.fa"]})
+    links = tables.catalog_links(tmp_path)
+    assert links["b1.fa"] == {"group": "", "group_rep": "b1.fa", "catalog_rep": "a1.fa"}

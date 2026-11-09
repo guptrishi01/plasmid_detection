@@ -49,9 +49,10 @@ process PLASMID_HOSTS {
     val mimag        // [[run, mimag.tsv], ...]
     val genomad      // [[run, genomad/], ...]
     val mob          // [[run, mob_typer.tsv], ...] (runs with plasmid contigs only)
-    val coverm       // [[run, coverm_contig.tsv], ...]
-    path drep
+    val coverm       // [[run, coverm_contig.tsv], ...] (group BAMs, from MAP_GROUP)
+    path drep        // catalog (level 2)
     path gtdbtk
+    val groups       // [[group, drep/], ...] (level 1): bin -> group MAG -> catalog MAG
 
     output:
     path '*.tsv'
@@ -65,6 +66,7 @@ process PLASMID_HOSTS {
     ${linkLayout(mob, 'contigs/{run}/mob_typer.tsv')}
     ${linkLayout(coverm, 'contigs/{run}/coverm_contig.tsv')}
     mkdir -p mags && ln -s ../${drep} mags/drep && ln -s ../${gtdbtk} mags/gtdbtk
+    ${linkLayout(groups, 'mags/groups/{run}/drep')}
     ${runsFile(runs)}
     ${PY()} plasmid-hosts --samples runs.txt --binning-dir binning --mags-dir mags --contigs-dir contigs \\
         --min-samples ${params.cfg.mag_links.min_samples_for_correlation} --out-dir .

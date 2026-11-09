@@ -30,8 +30,8 @@ paths:
   manifest_dir: ${paths.data_root}/manifest # one manifest TSV per run
   raw_manifest: ${paths.metadata}/raw_manifest.tsv  # all 92 runs combined (tracked)
   # Runs processed by stages 2-9, one SRR per line. Pilot (T4): SC_UPB (SRR6231181),
-  # SC_INF (SRR6231184), MC_UPB (SRR6231217), MC_INF (SRR6231191) -- two per system, so
-  # within-system cross-mapping is exercised in both systems.
+  # SC_INF (SRR6231184), MC_UPB (SRR6231217), MC_INF (SRR6231191) -- two per binning group
+  # (upstream, influent), so within-group cross-mapping is exercised in both groups.
   # For the full run point this at ${paths.run_accessions}.
   run_samples: ${paths.metadata}/pilot_samples.txt
   # Per-stage outputs (scratch). Reads that feed later stages live under work/.
@@ -146,6 +146,16 @@ params:
     coverm_methods: "mean tpm count"
   binning:
     threads: 16
+    # Binning groups (lab meeting 2026-11-03; PI-confirmed): sites pooled across Sugar and
+    # Mallard Creek and all time points, "group:SITE,SITE". Stage 4c maps every run of a
+    # group to each group member's assembly, so MetaBAT2 (6a) and the stage 8 coverage
+    # correlation see the whole group; stage 7 dereplicates within each group, then across
+    # groups (the MAG catalog). Separate from stats.site_groups. A run whose site is in no
+    # group stops 04c.
+    groups: ["upstream:UP_A,UP_B", "downstream:DS_A,DS_B",
+             "HOSP:HOSP", "RES:RES", "influent:INF", "PCI:PCI", "PCE:PCE",
+             "ATE:ATE", "FCE:FCE", "UV:UV",
+             "control:MNT_A,MNT_B,UW_A,UW_B"]
     metabat2_min_contig: 1500
     metabat2_seed: 1
     # MIMAG (Bowers et al. 2017) completeness/contamination thresholds, % (CheckM2)
