@@ -16,6 +16,12 @@ def pairs(ch) {
     ch.map { t -> [t[0].id, t[1]] }.toSortedList { a, b -> a[0] <=> b[0] }
 }
 
+// On/off options: a command-line value arrives as a string ("--metaspades false" is the
+// non-empty, so truthy, String "false"); only true / "true" switch an option on
+def flag(v) {
+    v in [true, 'true']
+}
+
 // Binning group of a site (params.binning.groups, "group:SITE,SITE"), looked up where needed
 // rather than stored in meta: meta is part of every task's cache key, so adding a field would
 // re-run every finished task on -resume. A SampleName the regex
@@ -73,7 +79,7 @@ workflow {
     MEGAHIT(hostfree)
     contigs = MEGAHIT.out.contigs
 
-    if (params.metaspades) {
+    if (flag(params.metaspades)) {
         pick = params.cfg.assembly.metaspades_run
         one = pick ? hostfree.filter { t -> t[0].id == pick }
                    : hostfree.toSortedList { a, b -> a[0].spots <=> b[0].spots }.map { l -> l[0] }
@@ -133,7 +139,7 @@ workflow {
            pairs(SCAPP.out.scapp), pairs(RGI_BWT.out.genes))
     STATS(sheet, runs, ROLLUP.out.resistome)
 
-    if (params.depth_experiment) {
+    if (flag(params.depth_experiment)) {
         dRuns = [params.cfg.rollup.depth_samples].flatten()
         levels = channel.fromList([params.cfg.rollup.depth_levels_million_pairs].flatten())
         subs = hostfree

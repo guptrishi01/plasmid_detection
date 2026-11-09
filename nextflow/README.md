@@ -47,7 +47,7 @@ live in `nextflow/nextflow.config`:
 | Option | Default |
 |---|---|
 | `--outdir` | `/scratch/rgupta25/plasmid_detection/results_nf` (`results_nf_pilot` with `pilot`) |
-| `--metaspades` | `true`: one metaSPAdes attempt on the smallest run (or `params.assembly.metaspades_run`) |
+| `--metaspades` | `true`: one metaSPAdes attempt on the smallest run (or `params.assembly.metaspades_run`); `--metaspades false` skips it (the 92-run run does) |
 | `--depth_experiment` | `false`: opt-in stage 9 depth experiment (`params.rollup.depth_*`) |
 
 After a failure, fix the cause and resubmit the same command with `-resume`: finished
