@@ -1,0 +1,516 @@
+mag	phylum	class	genus	species	tier	binning_group	resistance_genes	present_in	travels	wastewater_specific	runs_present_pre_treatment	runs_present_plant	runs_present_creek_downstream	runs_present_creek_upstream	runs_present_control	mean_relabund_pre_treatment	mean_relabund_plant	mean_relabund_creek_downstream	mean_relabund_creek_upstream	mean_relabund_control
+SRR6231130.bin.22	Actinomycetota	Actinomycetes	Bifidobacterium	Bifidobacterium adolescentis	medium	influent		pre_treatment,plant			36	1	0	0	0	0.4767	0.0424	0.0059	0.0066	0.0314
+SRR6231131.bin.12	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	15	14	3	0.0	0.0052	0.3834	0.3657	0.2835
+SRR6231131.bin.17	Bacteroidota	Bacteroidia	Aquirufa		medium	upstream		creek_downstream,creek_upstream,control			0	0	9	7	1	0.0	0.0	0.1829	0.1994	0.0143
+SRR6231131.bin.27	Bacteroidota	Bacteroidia	Sediminibacterium	Sediminibacterium sp017856545	medium	upstream		creek_downstream,creek_upstream,control			0	0	6	9	2	0.0	0.0029	0.0706	0.131	0.1968
+SRR6231131.bin.29	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	7	3	2	0.0	0.0	0.1197	0.1185	0.0751
+SRR6231131.bin.30	Bacteroidota	Bacteroidia	Flavobacterium		medium	upstream		plant,creek_downstream,creek_upstream,control			0	1	6	4	1	0.0072	0.0189	0.0827	0.0679	0.0202
+SRR6231131.bin.35	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp041168965	medium	upstream		creek_downstream,creek_upstream,control			0	0	9	6	1	0.0	0.0024	0.0881	0.0907	0.2366
+SRR6231131.bin.37	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter yangtzensis	medium	upstream		creek_downstream,creek_upstream,control			0	0	16	16	2	0.0	0.0107	0.397	0.4751	0.1586
+SRR6231131.bin.40	Bacteroidota	Bacteroidia	UBA955	UBA955 sp024643755	high	upstream		creek_downstream,creek_upstream,control			0	0	5	7	1	0.0	0.0	0.0886	0.2045	0.0668
+SRR6231131.bin.43	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	12	13	3	0.0	0.0	0.4103	0.4087	0.1288
+SRR6231131.bin.56	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		plant,creek_downstream,creek_upstream,control			0	1	15	15	3	0.0	0.0127	0.8415	0.8143	1.1008
+SRR6231131.bin.57	Actinomycetota	Actinomycetes	Aurantimicrobium		medium	upstream		creek_downstream,creek_upstream			0	0	12	11	0	0.0	0.0013	0.28	0.2664	0.006
+SRR6231131.bin.58	Pseudomonadota	Gammaproteobacteria	Methylotenera	Methylotenera sp937957775	medium	upstream		creek_downstream,creek_upstream			0	0	3	6	0	0.0	0.0	0.0484	0.0994	0.009
+SRR6231132.bin.12	Chlamydiota	Chlamydiia	CALBHK01	CALBHK01 sp937894565	medium	ATE		plant			0	2	0	0	0	0.0014	0.0534	0.0011	0.0	0.0
+SRR6231132.bin.14	Pseudomonadota	Alphaproteobacteria	Sphingopyxis	Sphingopyxis sp937957805	medium	ATE		plant			0	4	0	0	0	0.0032	0.0927	0.0129	0.0107	0.0386
+SRR6231132.bin.9	Pseudomonadota	Gammaproteobacteria	Aquella	Aquella sp003538525	high	ATE		pre_treatment,plant,creek_downstream	yes	yes	2	5	4	0	0	0.0463	1.3667	0.0371	0.0	0.0
+SRR6231133.bin.16	Pseudomonadota	Gammaproteobacteria	Rhodoferax_C		medium	ATE		pre_treatment,plant,creek_downstream,creek_upstream,control			18	3	3	5	2	0.0573	0.1136	0.0613	0.0525	0.0996
+SRR6231133.bin.25	Bacteroidota	Bacteroidia	UBA6183		medium	ATE		plant,creek_downstream			0	7	6	0	0	0.0006	0.193	0.0766	0.004	0.0
+SRR6231133.bin.26	Bacteroidota_A	Kapaibacteriia	PH2015	PH2015 sp937899715	high	ATE		plant			0	8	0	0	0	0.0	0.1766	0.0	0.0	0.0
+SRR6231133.bin.8	Pseudomonadota	Gammaproteobacteria	Aquabacterium_A		medium	ATE		plant,creek_downstream,creek_upstream,control			0	15	12	10	3	0.0263	0.329	0.1513	0.0908	0.1291
+SRR6231133.bin.9	Pseudomonadota	Gammaproteobacteria	Aquella		medium	ATE		plant,creek_downstream			0	5	1	0	0	0.0	0.2174	0.0104	0.0009	0.0
+SRR6231134.bin.11	Actinomycetota	Actinomycetes	Rhodoluna		medium	downstream		creek_downstream,creek_upstream,control			0	0	11	12	1	0.0	0.0	0.1667	0.158	0.0346
+SRR6231134.bin.35	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	downstream		creek_downstream,creek_upstream,control			0	0	15	14	3	0.0	0.0076	0.4718	0.4576	0.429
+SRR6231135.bin.18	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	downstream		creek_downstream,creek_upstream,control			0	0	11	12	2	0.0	0.0106	0.4259	0.5253	0.1861
+SRR6231135.bin.33	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp937996825	medium	downstream		creek_downstream,creek_upstream			0	0	6	6	0	0.0	0.0	0.143	0.1934	0.0104
+SRR6231136.bin.15	Pseudomonadota	Gammaproteobacteria	Fluviibacter		medium	upstream		creek_downstream,creek_upstream			0	0	6	9	0	0.0017	0.0056	0.0841	0.1336	0.0227
+SRR6231136.bin.19	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	6	7	1	0.0	0.0	0.0682	0.1363	0.0326
+SRR6231136.bin.20	Pseudomonadota	Gammaproteobacteria	Perlucidibaca		medium	upstream		creek_downstream,creek_upstream			0	0	1	5	0	0.0046	0.0134	0.0993	0.2072	0.035
+SRR6231136.bin.22	Pseudomonadota	Alphaproteobacteria	Polymorphobacter_A	Polymorphobacter_A sp937894055	medium	upstream		plant,creek_downstream,creek_upstream,control			0	5	1	2	2	0.0089	0.0605	0.0742	0.1071	0.1253
+SRR6231136.bin.3	Pseudomonadota	Gammaproteobacteria	Zwartia	Zwartia sp937897265	medium	upstream		creek_downstream,creek_upstream,control			0	0	2	6	1	0.0	0.0	0.06	0.1695	0.0121
+SRR6231136.bin.6	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sp963513255	medium	upstream		creek_downstream,creek_upstream,control			0	0	13	12	1	0.0035	0.0027	0.2932	0.3577	0.0557
+SRR6231137.bin.21	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	6	6	1	0.0	0.0	0.1103	0.1072	0.0345
+SRR6231137.bin.22	Actinomycetota	Actinomycetes	Aquiluna		medium	upstream		creek_downstream,creek_upstream			0	0	6	6	0	0.0	0.0	0.0598	0.066	0.0073
+SRR6231137.bin.25	Actinomycetota	Actinomycetes	Aurantimicrobium		medium	upstream		plant,creek_downstream,creek_upstream			0	1	12	10	0	0.0	0.0054	0.1443	0.1656	0.0044
+SRR6231137.bin.28	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp937898095	high	upstream		creek_downstream,creek_upstream,control			0	0	6	7	1	0.0	0.0	0.1717	0.2494	0.0394
+SRR6231137.bin.40	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	12	1	0.0	0.0	0.235	0.389	0.0116
+SRR6231137.bin.50	Bacteroidota	Bacteroidia	Aquirufa		medium	upstream		creek_downstream,creek_upstream			0	0	10	9	0	0.0	0.0	0.1366	0.1379	0.006
+SRR6231137.bin.71	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	16	15	3	0.0	0.003	0.3861	0.4651	0.2287
+SRR6231137.bin.75	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream			0	0	7	3	0	0.0	0.0	0.1165	0.1696	0.0203
+SRR6231138.bin.21	Patescibacteriota	Minisyncoccia	UBA4124	UBA4124 sp937903035	high	downstream		plant,creek_downstream			0	4	4	0	0	0.0018	0.0695	0.7267	0.0052	0.0081
+SRR6231139.bin.19	Pseudomonadota	Gammaproteobacteria	Aquella	Aquella sp035438765	high	downstream		pre_treatment,plant,creek_downstream	yes	yes	1	16	9	0	0	0.0093	1.4351	0.2437	0.001	0.0
+SRR6231139.bin.28	Bdellovibrionota	UBA1018	JBDSKY01		medium	downstream		plant,creek_downstream			0	1	2	0	0	0.0	0.0198	0.0534	0.0	0.0
+SRR6231140.bin.14	Actinomycetota	Acidimicrobiia	RAAP-2	RAAP-2 sp937894805	high	control		control			0	0	0	0	1	0.0	0.0	0.0	0.0	0.107
+SRR6231140.bin.17	Pseudomonadota	Gammaproteobacteria	Methylopumilus	Methylopumilus sp036745495	medium	control		creek_downstream,creek_upstream,control			0	0	6	11	1	0.0	0.0	0.0633	0.1322	0.1131
+SRR6231140.bin.20	Pseudomonadota	Alphaproteobacteria	CAIUPE01	CAIUPE01 sp009921785	high	control		creek_downstream,creek_upstream,control			0	0	2	2	1	0.0	0.0	0.0085	0.0094	0.1116
+SRR6231140.bin.23	Actinomycetota	Actinomycetes	PALSA-747		medium	control		creek_downstream,creek_upstream,control			0	0	12	13	2	0.0	0.0	0.0893	0.1255	0.494
+SRR6231140.bin.24	Pseudomonadota	Alphaproteobacteria	CAIYPH01		medium	control		plant,control			0	1	0	0	2	0.0068	0.0346	0.0132	0.0238	0.1453
+SRR6231140.bin.28	Pseudomonadota	Gammaproteobacteria	Rhodoferax_C		medium	control		control			0	0	0	0	1	0.0	0.0	0.0098	0.0224	0.1938
+SRR6231140.bin.31	Actinomycetota	Acidimicrobiia	RAAP-2	RAAP-2 sp937975915	high	control		control			0	0	0	0	1	0.0	0.0	0.0	0.0	0.3053
+SRR6231140.bin.33	Actinomycetota	Actinomycetes	Rhodoluna		high	control		control			0	0	0	0	1	0.0	0.0	0.0025	0.0039	0.359
+SRR6231140.bin.34	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_upstream,control			0	0	0	1	1	0.0	0.0	0.0174	0.0164	0.0915
+SRR6231140.bin.38	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		control			0	0	0	0	1	0.0	0.0	0.0146	0.0136	0.1402
+SRR6231140.bin.40	Pseudomonadota	Alphaproteobacteria	Phenylobacterium	Phenylobacterium sp937920085	high	control		control			0	0	0	0	1	0.0	0.0017	0.0043	0.0151	0.3159
+SRR6231140.bin.45	Actinomycetota	Actinomycetes	Planktophila		medium	control		creek_downstream,creek_upstream,control			0	0	10	12	1	0.0	0.0	0.0805	0.1642	0.2773
+SRR6231140.bin.49	Pseudomonadota	Gammaproteobacteria	CAILZL01	CAILZL01 sp903838705	medium	control		control			0	0	0	0	1	0.0	0.0	0.0	0.0	0.0928
+SRR6231140.bin.50	Bacteroidota	Bacteroidia	Emticicia	Emticicia sp937903345	medium	control		control			0	0	0	0	1	0.0	0.0005	0.0074	0.0196	0.1684
+SRR6231140.bin.57	Pseudomonadota	Gammaproteobacteria	Zwartia	Zwartia sp937952975	high	control		creek_downstream,creek_upstream,control			0	0	1	4	1	0.0	0.0	0.0189	0.0656	0.1086
+SRR6231140.bin.59	Pseudomonadota	Alphaproteobacteria	Aquisediminimonas	Aquisediminimonas sp937996655	medium	control		creek_downstream,creek_upstream,control			0	0	3	3	1	0.0	0.0247	0.0269	0.0406	0.2406
+SRR6231140.bin.62	Actinomycetota	Actinomycetes	Planktophila		high	control		creek_downstream,creek_upstream,control			0	0	1	5	1	0.0	0.0	0.024	0.0496	0.2521
+SRR6231140.bin.66	Actinomycetota	Acidimicrobiia	F1-20-MAGs160	F1-20-MAGs160 sp937927725	high	control		control			0	0	0	0	1	0.0	0.0	0.0013	0.0155	0.2717
+SRR6231140.bin.7	Verrucomicrobiota	Verrucomicrobiia	UBA953	UBA953 sp009924535	medium	control		creek_downstream,creek_upstream,control			0	0	5	10	1	0.0028	0.0256	0.0561	0.5716	0.3351
+SRR6231140.bin.74	Actinomycetota	Thermoleophilia	WLNJ01	WLNJ01 sp937973575	medium	control		control			0	0	0	0	1	0.0	0.0	0.0	0.0006	0.1049
+SRR6231140.bin.77	Actinomycetota	Acidimicrobiia	UBA2093	UBA2093 sp937927625	high	control		control			0	0	0	0	1	0.0	0.0	0.0061	0.0202	0.317
+SRR6231140.bin.8	Pseudomonadota	Gammaproteobacteria	SYFN01	SYFN01 sp041173845	medium	control		creek_upstream,control			0	0	0	3	1	0.0	0.0	0.0109	0.0348	0.1102
+SRR6231140.bin.80	Actinomycetota	Actinomycetes	CAIKZY01	CAIKZY01 sp937876275	medium	control		creek_downstream,creek_upstream,control			0	0	1	2	1	0.0003	0.0059	0.0137	0.029	0.1395
+SRR6231140.bin.83	Actinomycetota	Actinomycetes	AAA044-D11		medium	control		creek_upstream,control			0	0	0	2	1	0.0	0.0	0.012	0.0297	0.1081
+SRR6231140.bin.9	Chloroflexota	Chloroflexia	UBA965	UBA965 sp937876225	medium	control		control			0	0	0	0	1	0.0	0.0	0.0004	0.0054	0.1075
+SRR6231141.bin.2	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_downstream,creek_upstream,control			0	0	10	11	3	0.0	0.0	0.276	0.2562	0.508
+SRR6231141.bin.5	Patescibacteriota	Doudnabacteria	UBA920		medium	control		control			0	0	0	0	1	0.0	0.0	0.0	0.0011	0.1855
+SRR6231141.bin.9	Actinomycetota	Actinomycetes	Rhodoluna		high	control		creek_downstream,creek_upstream,control			0	0	7	6	2	0.0	0.0	0.0462	0.0558	0.4277
+SRR6231142.bin.18	Campylobacterota	Campylobacteria	Aliarcobacter		medium	influent		pre_treatment,plant			27	1	0	0	0	0.241	0.0384	0.0049	0.0058	0.0
+SRR6231142.bin.8	Campylobacterota	Campylobacteria	Aliarcobacter		medium	influent		pre_treatment,plant			31	1	0	0	0	0.4153	0.0761	0.0042	0.0048	0.0
+SRR6231143.bin.37	Bacteroidota	Bacteroidia	Alistipes	Alistipes onderdonkii	medium	influent		pre_treatment,plant			35	1	0	0	0	0.2483	0.0249	0.0021	0.006	0.0223
+SRR6231144.bin.13	Bacteroidota	Bacteroidia	Alistipes	Alistipes putredinis	high	HOSP		pre_treatment,plant			36	1	0	0	0	0.3626	0.029	0.0015	0.0041	0.0154
+SRR6231144.bin.19	Bacteroidota	Bacteroidia	Parabacteroides	Parabacteroides distasonis	medium	HOSP		pre_treatment,plant			36	1	0	0	0	0.234	0.0118	0.0	0.002	0.0
+SRR6231144.bin.23	Bacillota	Bacilli	Lactococcus_A	Lactococcus_A raffinolactis	high	HOSP		pre_treatment,plant			30	1	0	0	0	0.5562	0.0204	0.0019	0.0005	0.0
+SRR6231144.bin.34	Fusobacteriota	Fusobacteriia	JAGOYM01	JAGOYM01 sp018059165	high	HOSP		pre_treatment,plant			36	1	0	0	0	0.8571	0.0516	0.0027	0.0022	0.0
+SRR6231145.bin.18	Fusobacteriota	Fusobacteriia	JAFGUR01	JAFGUR01 sp017988045	medium	HOSP		pre_treatment,plant			29	3	0	0	0	0.2399	0.0389	0.0005	0.0021	0.0
+SRR6231145.bin.37	Bacteroidota	Bacteroidia	Prevotella	Prevotella copri_B	medium	HOSP		pre_treatment,plant			36	2	0	0	0	1.2272	0.0543	0.0058	0.0043	0.0
+SRR6231146.bin.11	Bacteroidota	Bacteroidia	UBA7236		medium	FCE		plant			0	8	0	0	0	0.0007	0.1594	0.0	0.0	0.0
+SRR6231146.bin.16	Patescibacteriota	Saccharimonadia	AWTP1-31	AWTP1-31 sp937903325	high	FCE		plant,creek_downstream			0	6	2	0	0	0.0	0.4888	0.0766	0.0	0.0
+SRR6231146.bin.26	Pseudomonadota	Gammaproteobacteria	Undibacterium	Undibacterium sp937996605	medium	FCE		plant			0	10	0	0	0	0.0004	0.1704	0.0121	0.0011	0.0095
+SRR6231146.bin.29	Pseudomonadota	Gammaproteobacteria	Thiolinea	Thiolinea sp937876535	high	FCE		pre_treatment,plant			1	6	0	0	0	0.0083	1.7389	0.004	0.0	0.0
+SRR6231146.bin.30	Pseudomonadota	Gammaproteobacteria	CALFYA01	CALFYA01 sp937952925	medium	FCE		plant,creek_downstream			0	10	4	0	0	0.0013	0.3506	0.042	0.0005	0.0099
+SRR6231147.bin.1	Pseudomonadota	Alphaproteobacteria			medium	FCE		plant,creek_downstream			0	4	2	0	0	0.0048	0.0808	0.0326	0.0072	0.0325
+SRR6231147.bin.11	Pseudomonadota	Gammaproteobacteria	Legionella		medium	FCE		plant,creek_downstream			0	2	2	0	0	0.0028	0.0506	0.0164	0.0	0.0
+SRR6231147.bin.15	Pseudomonadota	Gammaproteobacteria	Acidovorax	Acidovorax defluvii	medium	FCE		pre_treatment,plant,creek_downstream,creek_upstream,control			36	15	4	1	2	0.4452	0.2125	0.061	0.0459	0.0859
+SRR6231147.bin.19	Bdellovibrionota	Bdellovibrionia	Pseudobdellovibrio		medium	FCE		plant,creek_downstream			0	5	2	0	0	0.0034	0.102	0.0263	0.001	0.0
+SRR6231147.bin.4	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium croceum	high	FCE		pre_treatment,plant,creek_downstream	yes	yes	2	10	2	0	0	0.031	0.2469	0.0341	0.0104	0.0153
+SRR6231147.bin.8	Pseudomonadota	Gammaproteobacteria	Aquabacterium		medium	FCE		plant,control			0	2	0	0	1	0.0182	0.1029	0.0291	0.0304	0.102
+SRR6231148.bin.13	Pseudomonadota	Gammaproteobacteria	Aquella		high	downstream		pre_treatment,plant,creek_downstream	yes	yes	1	7	4	0	0	0.0056	0.7927	0.2345	0.0	0.0
+SRR6231148.bin.17	Patescibacteriota	Minisyncoccia	UBA11704		medium	downstream		plant,creek_downstream			0	5	2	0	0	0.0	0.0561	0.0583	0.0039	0.0
+SRR6231148.bin.23	Patescibacteriota	Saccharimonadia	CALKUN01	CALKUN01 sp937996675	high	downstream		plant,creek_downstream			0	4	2	0	0	0.0	0.0966	0.1296	0.0	0.0
+SRR6231148.bin.26	Patescibacteriota	Minisyncoccia	JAGOTH01	JAGOTH01 sp937895685	medium	downstream		plant,creek_downstream			0	4	3	0	0	0.0	0.055	0.0784	0.004	0.0093
+SRR6231149.bin.4	Patescibacteriota	Microgenomatia			high	downstream		pre_treatment,plant,creek_downstream	yes	yes	1	2	2	0	0	0.0044	0.0628	0.1047	0.0	0.0
+SRR6231149.bin.8	Patescibacteriota	Minisyncoccia	VEQN01		medium	downstream		plant,creek_downstream			0	3	2	0	0	0.0015	0.0432	0.0763	0.0026	0.0
+SRR6231150.bin.25	Bacteroidota	Bacteroidia	Bacteroides	Bacteroides uniformis	high	PCE	blaMUN-1,cblA	pre_treatment,plant			36	1	0	0	0	0.6647	0.0417	0.0024	0.0065	0.0
+SRR6231151.bin.16	Pseudomonadota	Gammaproteobacteria	Rivihabitans	Rivihabitans sp937871815	high	PCE		pre_treatment,plant			32	6	0	0	0	0.6599	0.1035	0.0111	0.0033	0.0161
+SRR6231151.bin.25	Bacteroidota	Bacteroidia	Cloacibacterium	Cloacibacterium caeni_B	medium	PCE	ere(D),mef(C),mph(G)	pre_treatment,plant			36	5	0	0	0	0.7161	0.1168	0.0028	0.0013	0.0
+SRR6231152.bin.1	Bacteroidota	Bacteroidia	Aquirufa	Aquirufa sp027491195	medium	upstream		creek_downstream,creek_upstream,control			0	0	13	9	1	0.0	0.0	0.3777	0.3114	0.0485
+SRR6231152.bin.11	Pseudomonadota	Gammaproteobacteria	Limnohabitans	Limnohabitans sp031539175	medium	upstream		creek_downstream,creek_upstream,control			0	0	15	13	3	0.0	0.0016	0.2263	0.3338	0.177
+SRR6231152.bin.12	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp000342265	high	upstream		creek_downstream,creek_upstream,control			0	0	12	12	2	0.0	0.0	0.2297	0.3324	0.0445
+SRR6231152.bin.14	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	11	2	0.0	0.0027	0.1085	0.1499	0.0596
+SRR6231152.bin.15	Pseudomonadota	Gammaproteobacteria	JAAFJR01		medium	upstream		creek_downstream,creek_upstream			0	0	2	1	0	0.0	0.0	0.0242	0.1403	0.0335
+SRR6231152.bin.18	Bacteroidota	Bacteroidia	Flavobacterium		medium	upstream		creek_downstream,creek_upstream			0	0	9	9	0	0.0132	0.0087	0.1189	0.2146	0.0225
+SRR6231152.bin.19	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	15	15	3	0.0	0.007	0.4745	0.7014	0.3847
+SRR6231152.bin.2	Pseudomonadota	Gammaproteobacteria	Limnohabitans	Limnohabitans curvus	medium	upstream		creek_downstream,creek_upstream,control			0	0	16	16	3	0.0	0.0094	1.0994	1.3014	0.4962
+SRR6231152.bin.20	Patescibacteriota	Minisyncoccia	UBA1568		medium	upstream		creek_downstream,creek_upstream			0	0	2	3	0	0.0	0.0	0.0193	0.0675	0.0082
+SRR6231152.bin.5	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	16	16	4	0.0	0.0098	1.2645	1.6403	0.7336
+SRR6231153.bin.41	Bacillota	Bacilli	Lactococcus_A	Lactococcus_A chungangensis	medium	RES		pre_treatment			19	0	0	0	0	0.0919	0.0026	0.0	0.0	0.0
+SRR6231156.bin.11	Bdellovibrionota_B	Oligoflexia	CALBMD01	CALBMD01 sp937896265	medium	UV		plant			0	3	0	0	0	0.0	0.0765	0.0	0.0	0.0
+SRR6231156.bin.14	Patescibacteriota	JAEDAM01	JAGOOR01	JAGOOR01 sp937920005	high	UV		plant,creek_downstream			0	10	6	0	0	0.0034	0.2647	0.0618	0.0009	0.0
+SRR6231156.bin.16	Pseudomonadota	Alphaproteobacteria	UBA2645	UBA2645 sp937927795	medium	UV		plant,creek_downstream			0	8	12	0	0	0.0005	0.235	0.2171	0.0038	0.0048
+SRR6231156.bin.20	Pseudomonadota	Gammaproteobacteria	Aquella		medium	UV		plant,creek_downstream			0	5	2	0	0	0.001	0.1175	0.0648	0.0021	0.0
+SRR6231156.bin.21	Patescibacteriota	Minisyncoccia	CALMMZ01	CALMMZ01 sp937898165	medium	UV		pre_treatment,plant,creek_downstream	yes	yes	36	12	14	0	0	0.2584	0.2175	0.6754	0.006	0.0155
+SRR6231156.bin.22	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium celericrescens	high	UV		pre_treatment,plant,creek_downstream,creek_upstream,control			8	12	6	1	1	0.0739	0.7164	0.1186	0.0288	0.0263
+SRR6231156.bin.25	Bdellovibrionota	FAC87	CALCZU01	CALCZU01 sp937903155	high	UV		plant			0	4	0	0	0	0.0	0.0939	0.0025	0.0	0.0
+SRR6231156.bin.4					medium	UV		plant			0	2	0	0	0	0.0094	0.0679	0.0067	0.0098	0.0115
+SRR6231156.bin.6	Patescibacteriota	Minisyncoccia	2-01-FULL-33-17	2-01-FULL-33-17 sp937895515	high	UV		plant,creek_downstream			0	6	2	0	0	0.0011	0.2136	0.0826	0.0065	0.0159
+SRR6231156.bin.8	Pseudomonadota	Gammaproteobacteria	CAMCUU01		medium	UV		plant			0	3	0	0	0	0.0	0.0666	0.0052	0.001	0.0
+SRR6231157.bin.13	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp947468785	medium	upstream		creek_downstream,creek_upstream,control			0	0	8	10	2	0.0	0.0	0.0839	0.1455	0.105
+SRR6231157.bin.17	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		creek_downstream,creek_upstream,control			0	0	14	14	1	0.0	0.0	0.3039	0.386	1.0602
+SRR6231157.bin.18	Actinomycetota	Actinomycetes	Planktophila	Planktophila sp000372185	medium	upstream		creek_downstream,creek_upstream,control			0	0	6	8	1	0.0	0.0	0.074	0.1837	0.18
+SRR6231157.bin.2	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	10	13	1	0.0	0.0	0.1565	0.3289	0.067
+SRR6231157.bin.30	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter meluiroseus_E	medium	upstream		creek_downstream,creek_upstream,control			0	0	7	9	1	0.0	0.0	0.0749	0.1685	0.0848
+SRR6231157.bin.31	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	13	15	1	0.0	0.0	0.2122	0.52	0.0136
+SRR6231157.bin.32	Verrucomicrobiota	Verrucomicrobiia	Luteolibacter	Luteolibacter sp913063525	medium	upstream		creek_upstream			0	0	0	4	0	0.0	0.0025	0.0086	0.2502	0.0291
+SRR6231157.bin.7	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A	Limnohabitans_A sp947447245	medium	upstream		creek_downstream,creek_upstream,control			0	0	6	11	1	0.0	0.0	0.0592	0.1485	0.2206
+SRR6231158.bin.16	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	8	7	2	0.0	0.0	0.1043	0.1431	0.0323
+SRR6231158.bin.17	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp903843315	medium	upstream		creek_downstream,creek_upstream,control			0	0	9	12	2	0.0	0.0	0.0902	0.1414	0.0743
+SRR6231159.bin.12	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	13	13	1	0.0	0.0	0.2	0.3995	0.0401
+SRR6231159.bin.13	Pseudomonadota	Alphaproteobacteria	CAISGS01	CAISGS01 sp937952995	medium	upstream		creek_upstream			0	0	0	4	0	0.0	0.0071	0.0108	0.1133	0.0402
+SRR6231159.bin.17	Actinomycetota	Actinomycetes	Planktophila	Planktophila sp010032875	medium	upstream		creek_downstream,creek_upstream,control			0	0	10	12	1	0.0	0.0	0.1018	0.262	0.0152
+SRR6231159.bin.19	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	9	6	1	0.0	0.0	0.097	0.0897	0.0622
+SRR6231159.bin.24	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	3	9	1	0.0	0.0	0.0528	0.1258	0.0194
+SRR6231159.bin.26	Verrucomicrobiota	Verrucomicrobiia	Luteolibacter		medium	upstream		creek_downstream,creek_upstream			0	0	1	5	0	0.0	0.009	0.0154	0.1287	0.0441
+SRR6231160.bin.24	Bacteroidota	Bacteroidia	Bacteroides	Bacteroides graminisolvens	medium	FCE		pre_treatment,plant			36	1	0	0	0	0.201	0.0441	0.0	0.0	0.0
+SRR6231160.bin.30	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas media	medium	FCE	blaMOX,blaOXA	pre_treatment,plant			36	2	0	0	0	0.3826	0.062	0.0026	0.0017	0.0143
+SRR6231161.bin.12	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	9	8	3	0.0	0.0	0.1496	0.1442	0.1827
+SRR6231161.bin.23	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	5	13	1	0.0	0.0	0.0601	0.1621	0.0126
+SRR6231161.bin.26	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	16	16	3	0.0	0.0049	0.4635	0.5504	0.143
+SRR6231161.bin.38	Pseudomonadota	Alphaproteobacteria	Fonsibacter	Fonsibacter sp018882565	medium	upstream		creek_upstream			0	0	0	2	0	0.0025	0.0018	0.0189	0.0434	0.0046
+SRR6231161.bin.39	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	15	15	3	0.0	0.0073	0.466	0.4849	0.3604
+SRR6231161.bin.46	Bacteroidota	Bacteroidia	Aquirufa	Aquirufa sp938008575	medium	upstream		creek_downstream,creek_upstream,control			0	0	13	13	1	0.0	0.0	0.3223	0.2461	0.1098
+SRR6231161.bin.49	Cyanobacteriota	Cyanobacteriia	Vulcanococcus	Vulcanococcus sp937975655	medium	upstream		creek_upstream			0	0	0	3	0	0.0004	0.0085	0.0138	0.0381	0.0298
+SRR6231161.bin.53	Bacteroidota	Bacteroidia	Flavobacterium		medium	upstream		creek_downstream,creek_upstream,control			0	0	14	13	1	0.0036	0.0025	0.2121	0.2787	0.0369
+SRR6231161.bin.67	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	11	2	0.0	0.0	0.1111	0.1486	0.0551
+SRR6231161.bin.8	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	15	16	3	0.0	0.0064	0.5352	0.6458	0.3519
+SRR6231163.bin.2	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sp017997335	high	PCE		pre_treatment,plant,creek_upstream			31	5	0	5	0	0.6642	0.0781	0.0268	0.0396	0.0216
+SRR6231163.bin.27	Pseudomonadota	Gammaproteobacteria	Tolumonas	Tolumonas sp937866945	medium	PCE		pre_treatment,plant			36	11	0	0	0	1.322	0.1852	0.0119	0.0047	0.0
+SRR6231164.bin.1	Bacteroidota	Bacteroidia	Flavobacterium		medium	downstream		plant,creek_downstream,creek_upstream,control			0	1	7	4	1	0.0012	0.0068	0.09	0.0526	0.0243
+SRR6231164.bin.12	Bacteroidota	Bacteroidia	Sediminibacterium		high	downstream		plant,creek_downstream,creek_upstream,control			0	2	7	10	2	0.0	0.0693	0.1145	0.0733	0.0614
+SRR6231164.bin.17	Actinomycetota	Actinomycetes	Rhodoluna		medium	downstream		creek_downstream,creek_upstream,control			0	0	11	11	2	0.0	0.0	0.5762	0.4229	0.0678
+SRR6231164.bin.20	Chlamydiota	Chlamydiia	VGMD01	VGMD01 sp937996705	high	downstream		pre_treatment,plant,creek_downstream	yes	yes	1	2	2	0	0	0.0016	0.5492	0.0874	0.0	0.0
+SRR6231164.bin.32	Bacteroidota	Bacteroidia	Aquirufa	Aquirufa antheringensis	medium	downstream		creek_downstream,creek_upstream			0	0	6	6	0	0.0	0.0	0.1106	0.0772	0.0056
+SRR6231164.bin.5	Pseudomonadota	Gammaproteobacteria	Limnohabitans	Limnohabitans sp947451565	medium	downstream		creek_downstream,creek_upstream,control			0	0	16	16	3	0.0	0.0033	0.4343	0.4428	0.2235
+SRR6231165.bin.10	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		creek_downstream,creek_upstream,control			0	0	14	16	2	0.0132	0.0213	0.2364	0.262	0.3805
+SRR6231165.bin.16	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	11	1	0.0	0.0	0.097	0.1255	0.017
+SRR6231165.bin.43	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	3	2	2	0.0	0.0	0.0327	0.0386	0.1965
+SRR6231165.bin.47	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	6	4	2	0.0	0.0	0.062	0.0763	0.0633
+SRR6231165.bin.5	Actinomycetota	Actinomycetes	Rhodoluna		high	upstream		creek_downstream,creek_upstream,control			0	0	9	7	1	0.0	0.0	0.1461	0.1776	0.1019
+SRR6231165.bin.57	Actinomycetota	Actinomycetes	Rhodoluna		high	upstream		creek_downstream,creek_upstream,control			0	0	11	8	2	0.0	0.0	0.1423	0.139	0.0601
+SRR6231165.bin.58	Bacteroidota	Bacteroidia	Fluviicola	Fluviicola sp937973685	high	upstream		creek_downstream,creek_upstream			0	0	6	5	0	0.0	0.0	0.4168	0.3058	0.0
+SRR6231165.bin.64	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	7	10	1	0.0	0.0	0.1774	0.1929	0.0192
+SRR6231165.bin.66	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp041190885	high	upstream		creek_downstream,creek_upstream,control			0	0	13	12	1	0.0	0.0	0.3974	0.2776	0.0564
+SRR6231165.bin.81	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	9	10	1	0.0	0.0	0.1372	0.1468	0.0197
+SRR6231165.bin.9	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream			0	0	6	3	0	0.0	0.0	0.0567	0.0692	0.0137
+SRR6231166.bin.34	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	downstream		creek_downstream,creek_upstream,control			0	0	16	16	3	0.0	0.0063	0.4349	0.509	0.1419
+SRR6231167.bin.25	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter parvus	medium	influent		pre_treatment,plant			36	1	0	0	0	0.4733	0.0556	0.0007	0.0	0.0
+SRR6231167.bin.9	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sasangense	medium	influent		pre_treatment,plant			29	8	0	0	0	0.1652	0.0939	0.0182	0.0172	0.015
+SRR6231168.bin.11	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas media	medium	PCE	blaOXA	pre_treatment,plant			36	1	0	0	0	0.2386	0.0403	0.0014	0.0008	0.0132
+SRR6231168.bin.18	Campylobacterota	Campylobacteria	Aliarcobacter		medium	PCE		pre_treatment,plant			30	1	0	0	0	0.272	0.0606	0.008	0.0076	0.0051
+SRR6231168.bin.24	Campylobacterota	Campylobacteria	Aliarcobacter		medium	PCE		pre_treatment,plant			31	2	0	0	0	0.4818	0.0866	0.0098	0.0107	0.0042
+SRR6231168.bin.4	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter sp002165255	medium	PCE		pre_treatment,plant			36	7	0	0	0	0.6367	0.1041	0.0029	0.0007	0.008
+SRR6231168.bin.40	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter sp002296655	medium	PCE		pre_treatment,plant			36	1	0	0	0	0.7155	0.0781	0.0022	0.0004	0.0
+SRR6231169.bin.25	Pseudomonadota	Gammaproteobacteria	Alicycliphilus	Alicycliphilus limosus	medium	influent		pre_treatment,plant,creek_downstream,creek_upstream,control			36	13	2	3	2	0.2264	0.1075	0.0399	0.0445	0.0887
+SRR6231169.bin.30	Campylobacterota	Campylobacteria	Aliarcobacter		medium	influent		pre_treatment,plant			30	1	0	0	0	0.3477	0.0665	0.0031	0.0045	0.0
+SRR6231169.bin.38	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas media	medium	influent	blaMOX-9,blaOXA	pre_treatment,plant			36	1	0	0	0	0.2376	0.0389	0.0013	0.0008	0.0131
+SRR6231169.bin.4	Pseudomonadota	Gammaproteobacteria	Sphaerotilus	Sphaerotilus sulfidivorans	medium	influent		pre_treatment,plant,creek_downstream,creek_upstream,control			35	17	1	6	2	0.1242	0.1245	0.0468	0.0527	0.1048
+SRR6231169.bin.7	Pseudomonadota	Gammaproteobacteria	Neisseria	Neisseria suis	medium	influent		pre_treatment,plant			36	1	0	0	0	0.2912	0.0258	0.002	0.0	0.0167
+SRR6231170.bin.14	Patescibacteriota	Minisyncoccia	CAIOGI01		medium	UV		plant,creek_downstream			0	4	6	0	0	0.0	0.0831	0.0465	0.0036	0.0
+SRR6231170.bin.16	Pseudomonadota	Gammaproteobacteria	JAGOUU01		medium	UV		plant,creek_downstream			0	2	1	0	0	0.0003	0.033	0.007	0.0	0.0
+SRR6231170.bin.17	Patescibacteriota	Patescibacteriia	CALKUP01	CALKUP01 sp937996685	high	UV		plant,creek_downstream			0	2	2	0	0	0.0003	0.049	0.0158	0.0	0.007
+SRR6231170.bin.27	Patescibacteriota	JAEDAM01			medium	UV		plant,creek_downstream			0	10	7	0	0	0.0028	0.1894	0.1153	0.0	0.0
+SRR6231170.bin.34	Patescibacteriota	Minisyncoccia	CALMMZ01		high	UV		plant,creek_downstream			0	2	2	0	0	0.0004	0.0603	0.0209	0.0038	0.0
+SRR6231170.bin.35	Bacteroidota	Bacteroidia	Cloacibacterium		high	UV		pre_treatment,plant,creek_downstream	yes	yes	22	4	2	0	0	0.0711	0.1591	0.0187	0.001	0.0
+SRR6231170.bin.36	Chlamydiota	Chlamydiia	JAGROB01		medium	UV		plant,creek_downstream			0	2	2	0	0	0.0003	0.042	0.0169	0.0	0.0
+SRR6231170.bin.38	Pseudomonadota	Gammaproteobacteria	Fluviibacter	Fluviibacter phosphoraccumulans	medium	UV		pre_treatment,plant,creek_downstream,creek_upstream			1	11	12	5	0	0.0181	0.1509	0.1617	0.0893	0.0204
+SRR6231170.bin.40	Pseudomonadota	Gammaproteobacteria	Aquella	Aquella sp035438765	medium	UV		pre_treatment,plant,creek_downstream	yes	yes	1	16	4	0	0	0.0064	0.8634	0.0862	0.0009	0.0
+SRR6231170.bin.43	Pseudomonadota	Gammaproteobacteria	Aquella	Aquella sp937952895	high	UV		plant,creek_downstream			0	1	2	0	0	0.0003	0.0369	0.0089	0.0	0.0
+SRR6231170.bin.50	Pseudomonadota	Gammaproteobacteria	JAOAUB01		high	UV		plant,creek_downstream			0	2	2	0	0	0.0002	0.0479	0.0082	0.0	0.0
+SRR6231170.bin.52	Patescibacteriota	JAEDAM01	JAGOOR01	JAGOOR01 sp937924685	high	UV		plant,creek_downstream			0	4	2	0	0	0.0003	0.0671	0.0185	0.0029	0.0
+SRR6231171.bin.11	Bacteroidota	Bacteroidia	JADKJB01		medium	ATE		plant			0	12	0	0	0	0.0015	0.1814	0.0	0.0	0.0
+SRR6231171.bin.16	Myxococcota	Polyangia	JAEUKA01	JAEUKA01 sp937868485	medium	ATE		plant			0	9	0	0	0	0.0	0.2023	0.0024	0.0005	0.018
+SRR6231171.bin.17	Pseudomonadota	Gammaproteobacteria	Agitococcus		medium	ATE		plant,creek_downstream			0	12	2	0	0	0.001	0.2889	0.0203	0.0028	0.0
+SRR6231171.bin.19	Bacteroidota	Bacteroidia	CALAGJ01	CALAGJ01 sp937892395	high	ATE		plant			0	5	0	0	0	0.0003	0.1643	0.0	0.0	0.0078
+SRR6231171.bin.25	Myxococcota	Polyangia			medium	ATE		plant,control			0	6	0	0	2	0.0036	0.1336	0.0251	0.0198	0.0764
+SRR6231171.bin.28	Bacteroidota	Bacteroidia	JADJSS01	JADJSS01 sp039797705	medium	ATE		plant,creek_downstream			0	9	4	0	0	0.0009	0.1467	0.0658	0.002	0.007
+SRR6231171.bin.31	Patescibacteriota	Minisyncoccia	JAMIGE01		medium	ATE		plant,creek_downstream			0	2	2	0	0	0.0004	0.0561	0.0118	0.0	0.0
+SRR6231171.bin.37	Bacteroidota	Bacteroidia	JADJSS01	JADJSS01 sp016721245	medium	ATE		plant,creek_downstream			0	6	1	0	0	0.0012	0.1497	0.0068	0.0022	0.0
+SRR6231171.bin.47	Pseudomonadota	Gammaproteobacteria	Aquabacterium_A		medium	ATE		plant,creek_downstream,creek_upstream,control			0	13	3	8	2	0.0244	0.2219	0.0528	0.0673	0.1339
+SRR6231171.bin.9	Pseudomonadota	Alphaproteobacteria	JAWKYA01		medium	ATE		plant,creek_downstream			0	14	2	0	0	0.0039	0.1774	0.0199	0.0	0.0106
+SRR6231172.bin.11	Myxococcota	Polyangia	CALFML01	CALFML01 sp035437965	medium	ATE		plant			0	10	0	0	0	0.0035	0.2089	0.0108	0.0158	0.0638
+SRR6231172.bin.15	Bacteroidota	Bacteroidia	M3007		medium	ATE		plant			0	2	0	0	0	0.0	0.0499	0.0005	0.003	0.0197
+SRR6231172.bin.17	Actinomycetota	Acidimicrobiia	JAGQSI01		medium	ATE		plant,creek_upstream,control			0	9	0	1	2	0.0086	0.1592	0.032	0.0327	0.1696
+SRR6231172.bin.18	Bacteroidota_A	UBA10030	CALETH01	CALETH01 sp937920105	high	ATE		plant			0	3	0	0	0	0.0	0.0674	0.0	0.0018	0.0
+SRR6231172.bin.19	Pseudomonadota	Gammaproteobacteria	Rubrivivax	Rubrivivax sp019635285	medium	ATE		plant,creek_downstream,creek_upstream,control			0	14	5	9	2	0.028	0.2619	0.0596	0.078	0.1698
+SRR6231172.bin.2	Myxococcota	Polyangia	Polyangium		medium	ATE		plant			0	4	0	0	0	0.0	0.0526	0.0	0.0	0.0129
+SRR6231172.bin.31	Myxococcota	Polyangia	JABFXX01		medium	ATE		plant,control			0	3	0	0	2	0.0026	0.0987	0.019	0.0199	0.0877
+SRR6231172.bin.45	Bacteroidota	Bacteroidia	UBA2336	UBA2336 sp016786585	medium	ATE		plant			0	6	0	0	0	0.0003	0.0954	0.0	0.0	0.0
+SRR6231172.bin.47	Nitrospirota	Nitrospiria	Nitrospira_A		medium	ATE		plant			0	13	0	0	0	0.002	0.2937	0.0088	0.0	0.0156
+SRR6231172.bin.49	Pseudomonadota	Alphaproteobacteria	Aquisediminimonas		high	ATE		plant			0	14	0	0	0	0.0025	0.2899	0.0097	0.0115	0.0422
+SRR6231172.bin.51	Bacteroidota	Bacteroidia	JAJTFW01		high	ATE		plant			0	2	0	0	0	0.0	0.0892	0.0	0.0	0.0
+SRR6231172.bin.53	Actinomycetota	Actinomycetes	Gordonia	Gordonia sp002477755	high	ATE		pre_treatment,plant,creek_downstream	yes	yes	4	16	1	0	0	0.039	1.6319	0.0311	0.0154	0.067
+SRR6231172.bin.54	Actinomycetota	Acidimicrobiia	JADJBW01	JADJBW01 sp016703525	medium	ATE		plant,control			0	8	0	0	2	0.0036	0.1609	0.0099	0.0165	0.0898
+SRR6231172.bin.56	Pseudomonadota	Gammaproteobacteria	Arenimonas		medium	ATE		plant,control			0	5	0	0	2	0.0234	0.1013	0.0266	0.0288	0.0841
+SRR6231172.bin.6	Bacteroidota	Bacteroidia	M3007		high	ATE		plant			0	2	0	0	0	0.0	0.0719	0.0	0.0	0.0132
+SRR6231173.bin.13	Pseudomonadota	Gammaproteobacteria	Aquella	Aquella sp008017155	high	FCE		plant,creek_downstream			0	4	1	0	0	0.0	0.8632	0.0089	0.0	0.0
+SRR6231173.bin.16	Pseudomonadota	Alphaproteobacteria	Blastomonas	Blastomonas delafieldii_A	medium	FCE		plant,creek_downstream,control			0	5	7	0	1	0.0167	0.1112	0.0644	0.0276	0.0873
+SRR6231173.bin.19	Patescibacteriota	Minisyncoccia	CAIOGI01		medium	FCE		plant,creek_downstream			0	6	6	0	0	0.0	0.1135	0.0516	0.0037	0.0067
+SRR6231173.bin.2	Bacteroidota	Bacteroidia	CALFIE01	CALFIE01 sp937876095	high	FCE		pre_treatment,plant			12	4	0	0	0	0.0438	0.1094	0.0	0.0018	0.0
+SRR6231173.bin.23	Actinomycetota	Acidimicrobiia	SSF14	SSF14 sp037045585	medium	FCE		plant,creek_downstream,control			0	15	2	0	2	0.0061	0.301	0.0288	0.0189	0.1016
+SRR6231173.bin.28	Pseudomonadota	Gammaproteobacteria	Xenophilus	Xenophilus sp903864295	high	FCE		pre_treatment,plant,creek_downstream,creek_upstream,control			9	9	4	6	4	0.0507	0.2743	0.0492	0.0602	0.1167
+SRR6231173.bin.37	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sp937876455	high	FCE		plant,creek_downstream			0	5	1	0	0	0.0048	0.1354	0.0261	0.0199	0.0149
+SRR6231173.bin.43	Bacteroidota	Bacteroidia	Flavobacterium		medium	FCE		plant,control			0	1	0	0	1	0.0059	0.1836	0.0243	0.0253	0.0543
+SRR6231173.bin.52	Pseudomonadota	Gammaproteobacteria	Ideonella		medium	FCE		pre_treatment,plant,creek_downstream,creek_upstream,control			1	8	4	4	2	0.0289	0.1139	0.0461	0.0476	0.0901
+SRR6231174.bin.16	Bacteroidota	Bacteroidia	M0103	M0103 sp024639405	high	downstream		creek_downstream,creek_upstream			0	0	4	4	0	0.0	0.0	0.137	0.1347	0.0
+SRR6231174.bin.2	Bacteroidota	Bacteroidia	UBA952	UBA952 sp937975705	high	downstream		creek_downstream,creek_upstream			0	0	7	2	0	0.0	0.0	0.0974	0.0941	0.0
+SRR6231174.bin.25	Bacteroidota	Bacteroidia	Aquirufa		high	downstream		creek_downstream,creek_upstream,control			0	0	5	5	2	0.0	0.0	0.105	0.1581	0.0234
+SRR6231174.bin.41	Actinomycetota	Actinomycetes	MWH-TA3	MWH-TA3 sp937896185	medium	downstream		creek_downstream,creek_upstream			0	0	6	4	0	0.0	0.0	0.0595	0.0521	0.0232
+SRR6231174.bin.47	Bacteroidota	Bacteroidia	Flavobacterium		medium	downstream		creek_downstream,creek_upstream			0	0	11	8	0	0.0025	0.0014	0.3275	0.2467	0.0183
+SRR6231174.bin.50	Actinomycetota	Actinomycetes	Planktophila		medium	downstream		creek_downstream,creek_upstream,control			0	0	8	11	1	0.0	0.0	0.0947	0.1235	0.0163
+SRR6231174.bin.53	Bacteroidota	Bacteroidia	Aquirufa	Aquirufa sp039798865	medium	downstream		creek_downstream,creek_upstream			0	0	7	6	0	0.0	0.0	0.1417	0.1534	0.0113
+SRR6231174.bin.63	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp024645175	medium	downstream		creek_downstream,creek_upstream,control			0	0	8	8	2	0.0	0.0	0.1233	0.1094	0.0279
+SRR6231175.bin.13	Pseudomonadota	Gammaproteobacteria	Roseateles		medium	FCE		plant,creek_downstream,creek_upstream,control			0	8	2	3	2	0.0282	0.1326	0.0456	0.0489	0.0937
+SRR6231175.bin.2	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sp031973615	medium	FCE		plant,creek_downstream,creek_upstream			0	1	5	1	0	0.0029	0.0507	0.0444	0.0227	0.0126
+SRR6231176.bin.22	Pseudomonadota	Gammaproteobacteria	Enterobacter	Enterobacter asburiae_B	medium	HOSP	blaACT,oqxB	pre_treatment,plant			36	1	0	0	0	0.6515	0.0645	0.0047	0.0039	0.0233
+SRR6231176.bin.25	Campylobacterota	Campylobacteria	Aliarcobacter	Aliarcobacter ellisii	medium	HOSP		pre_treatment,plant			24	1	0	0	0	0.1268	0.0373	0.0032	0.0039	0.0
+SRR6231176.bin.26	Bacillota	Bacilli	Streptococcus	Streptococcus suis_AA	high	HOSP	msr(D)	pre_treatment,plant			36	1	0	0	0	0.9052	0.0414	0.004	0.0004	0.0059
+SRR6231176.bin.29	Pseudomonadota	Gammaproteobacteria	Comamonas	Comamonas denitrificans	high	HOSP		pre_treatment,plant,control			36	1	0	0	1	0.2881	0.0473	0.0211	0.0252	0.0536
+SRR6231176.bin.34	Bacillota	Clostridia	Agathobacter	Agathobacter rectalis	medium	HOSP		pre_treatment,plant			36	1	0	0	0	0.7219	0.0247	0.0027	0.0031	0.0
+SRR6231177.bin.24	Bacillota	Clostridia	Blautia_A	Blautia_A wexlerae	high	PCI		pre_treatment,plant			36	1	0	0	0	0.7904	0.0455	0.0029	0.002	0.0
+SRR6231178.bin.25	Bacteroidota	Bacteroidia	Bacteroides	Bacteroides stercoris	high	RES		pre_treatment,plant			36	1	0	0	0	0.4363	0.0218	0.0013	0.0025	0.0
+SRR6231178.bin.28	Bacillota	Negativicutes	Veillonella_A	Veillonella_A sp900765165	high	RES		pre_treatment,plant			32	1	0	0	0	0.2722	0.0103	0.0006	0.0	0.0
+SRR6231178.bin.40	Bacteroidota	Bacteroidia	Bacteroides	Bacteroides ovatus	medium	RES		pre_treatment,plant			36	1	0	0	0	0.3667	0.0299	0.0006	0.0023	0.0
+SRR6231178.bin.43	Campylobacterota	Campylobacteria	UBA6016	UBA6016 sp937973585	high	RES		pre_treatment,plant			36	1	0	0	0	0.3104	0.0387	0.0	0.0	0.0
+SRR6231178.bin.56	Bacteroidota	Bacteroidia	Prevotella	Prevotella sp018054505	medium	RES		pre_treatment,plant			33	1	0	0	0	0.2008	0.0232	0.0004	0.0	0.0
+SRR6231179.bin.13	Bacteroidota	Bacteroidia	Phocaeicola	Phocaeicola vulgatus	high	RES	aadS,erm(G),lnu(AN2),mef(En2)	pre_treatment,plant			36	4	0	0	0	1.1341	0.0802	0.0047	0.0069	0.0
+SRR6231179.bin.17	Pseudomonadota	Gammaproteobacteria	Acidovorax	Acidovorax temperans	medium	RES		pre_treatment,plant,creek_downstream,creek_upstream,control			36	19	10	5	3	3.0462	0.4099	0.0744	0.0514	0.0888
+SRR6231179.bin.40	Bacteroidota	Bacteroidia	Cloacibacterium		medium	RES		pre_treatment,plant			36	9	0	0	0	1.4589	0.1984	0.0075	0.0049	0.0065
+SRR6231180.bin.10	Babelota	Babeliae			high	UV		plant,creek_downstream			0	2	2	0	0	0.0	0.0671	0.0091	0.0	0.0
+SRR6231180.bin.14	Bacteroidota	Bacteroidia	Cloacibacterium	Cloacibacterium sp937973555	high	UV		pre_treatment,plant,creek_downstream	yes	yes	12	8	1	0	0	0.043	0.2896	0.0106	0.0	0.0
+SRR6231180.bin.16	Patescibacteriota	Microgenomatia	GWF		medium	UV		plant			0	3	0	0	0	0.0	0.0428	0.0049	0.0	0.0
+SRR6231180.bin.17	Pseudomonadota	Alphaproteobacteria			medium	UV		plant			0	1	0	0	0	0.0	0.0273	0.0016	0.0	0.0
+SRR6231180.bin.18	Patescibacteriota	JAEDAM01	JAGOOR01		medium	UV		plant,creek_downstream			0	9	16	0	0	0.0	0.1445	0.1793	0.0054	0.0238
+SRR6231180.bin.20	Patescibacteriota	Patescibacteriia	XYD2-FULL-39-9		medium	UV		plant			0	2	0	0	0	0.0	0.034	0.0041	0.0009	0.0065
+SRR6231180.bin.23	Pseudomonadota	Alphaproteobacteria	Novosphingobium		high	UV		plant,creek_downstream,creek_upstream,control			0	2	4	5	1	0.002	0.175	0.1837	0.0861	0.0776
+SRR6231180.bin.27	Pseudomonadota	Gammaproteobacteria	JAJNBD01		medium	UV		plant			0	2	0	0	0	0.0	0.0301	0.0035	0.0009	0.0
+SRR6231180.bin.28	Actinomycetota	Actinomycetes	Planktophila	Planktophila sp937975715	high	UV		plant,creek_downstream,creek_upstream,control			0	2	13	14	1	0.0	0.1586	0.3806	0.5066	0.0541
+SRR6231180.bin.36	Actinomycetota	Actinomycetes	ZLKRG08		medium	UV		plant,creek_downstream,creek_upstream			0	2	4	3	0	0.0	0.0871	0.049	0.0661	0.0187
+SRR6231180.bin.40	Chlamydiota	Chlamydiia	SZAS-15		medium	UV		plant			0	2	0	0	0	0.0	0.0235	0.0035	0.0	0.0
+SRR6231180.bin.42	Patescibacteriota	Minisyncoccia			medium	UV		plant			0	2	0	0	0	0.0	0.0287	0.0056	0.0034	0.0082
+SRR6231180.bin.46	Patescibacteriota	Minisyncoccia	JAGOVB01		high	UV		plant,creek_downstream			0	3	2	0	0	0.0	0.0782	0.0314	0.004	0.0093
+SRR6231180.bin.49	Patescibacteriota	Minisyncoccia	JAZKDJ01		medium	UV		plant			0	2	0	0	0	0.0	0.0296	0.0069	0.001	0.0
+SRR6231180.bin.53	Chlamydiota	Chlamydiia			medium	UV		plant			0	3	0	0	0	0.0	0.033	0.0034	0.0	0.0
+SRR6231180.bin.54	Patescibacteriota	Saccharimonadia	UBA7683		medium	UV		plant			0	3	0	0	0	0.0	0.0383	0.0026	0.0	0.0
+SRR6231180.bin.55	Patescibacteriota	Minisyncoccia	UBA4124		high	UV		plant,creek_downstream			0	2	2	0	0	0.0	0.0425	0.0094	0.0047	0.0082
+SRR6231180.bin.57	Patescibacteriota	Minisyncoccia	CAIZLB01		high	UV		plant,creek_downstream			0	5	3	0	0	0.0	0.0792	0.0247	0.0057	0.0
+SRR6231180.bin.62	Pseudomonadota	Alphaproteobacteria	UBA9655	UBA9655 sp937967795	high	UV		plant			0	3	0	0	0	0.0	0.0617	0.0029	0.0	0.0
+SRR6231180.bin.63	Patescibacteriota	Patescibacteriia	JAGOUA01	JAGOUA01 sp937968025	medium	UV		plant,creek_downstream			0	2	2	0	0	0.0	0.0304	0.0123	0.0	0.0062
+SRR6231180.bin.64	Actinomycetota	Actinomycetes	JADKAV01	JADKAV01 sp937952095	medium	UV		pre_treatment,plant,creek_downstream	yes	yes	2	5	4	0	0	0.0065	0.2657	0.0307	0.0135	0.0625
+SRR6231180.bin.7	Patescibacteriota	Patescibacteriia	JBAZWV01		high	UV		plant,creek_downstream			0	4	4	0	0	0.0011	0.0818	0.033	0.0	0.0153
+SRR6231180.bin.9	Patescibacteriota	Minisyncoccia	JAGOQQ01		medium	UV		plant			0	2	0	0	0	0.0	0.0464	0.0095	0.008	0.0102
+SRR6231181.bin.16	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	5	10	2	0.0	0.0	0.0767	0.113	0.0653
+SRR6231181.bin.18	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp018687515	medium	upstream		creek_downstream,creek_upstream,control			0	0	8	8	1	0.0	0.0022	0.0845	0.1226	0.1078
+SRR6231181.bin.21	Pseudomonadota	Alphaproteobacteria	Novosphingobium	Novosphingobium sp041169825	medium	upstream		plant,creek_downstream,creek_upstream			0	2	4	4	0	0.0003	0.0389	0.1911	0.0979	0.0662
+SRR6231181.bin.27	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		plant,creek_downstream,creek_upstream,control			0	2	13	14	1	0.0	0.0084	0.2391	0.3025	0.0423
+SRR6231181.bin.28	Pseudomonadota	Gammaproteobacteria	Fluviibacter	Fluviibacter sp937996725	medium	upstream		creek_downstream,creek_upstream,control			0	0	3	3	1	0.0029	0.0072	0.0472	0.0802	0.0752
+SRR6231181.bin.31	Bacteroidota	Bacteroidia	Aquirufa		medium	upstream		creek_downstream,creek_upstream,control			0	0	10	8	1	0.0	0.0	0.199	0.1887	0.0122
+SRR6231181.bin.34	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	5	9	1	0.0	0.0	0.093	0.1524	0.0288
+SRR6231181.bin.35	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	15	15	2	0.0	0.0	0.1281	0.1761	0.1035
+SRR6231181.bin.38	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		plant,creek_downstream,creek_upstream,control			0	1	4	9	3	0.028	0.0516	0.2078	0.2167	0.2272
+SRR6231181.bin.5	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	7	6	1	0.0	0.0	0.1939	0.1833	0.0417
+SRR6231182.bin.12	Pseudomonadota	Gammaproteobacteria	Rubrivivax	Rubrivivax sp035372275	medium	ATE		pre_treatment,plant,creek_downstream,creek_upstream,control			1	14	4	6	2	0.0313	0.2236	0.05	0.062	0.145
+SRR6231182.bin.14	Myxococcota	Polyangia	JAEUJZ01	JAEUJZ01 sp937952145	high	ATE		plant,creek_downstream			0	4	1	0	0	0.0003	0.11	0.006	0.0059	0.03
+SRR6231182.bin.17	Myxococcota	Polyangia	JABFXX01		medium	ATE		plant,control			0	5	0	0	2	0.0045	0.1111	0.027	0.0248	0.1025
+SRR6231182.bin.21	Pseudomonadota	Alphaproteobacteria			medium	ATE		plant,creek_downstream,control			0	8	2	0	2	0.0109	0.1538	0.0299	0.0281	0.1217
+SRR6231182.bin.26	Myxococcota	Polyangia	Nannocystis		medium	ATE		plant			0	10	0	0	0	0.0037	0.174	0.0178	0.0165	0.0606
+SRR6231182.bin.3	Myxococcota	Polyangia	CALFML01	CALFML01 sp937879845	medium	ATE		plant			0	6	0	0	0	0.0006	0.1558	0.0051	0.009	0.0387
+SRR6231182.bin.30	Actinomycetota	Acidimicrobiia	Dermatobacter	Dermatobacter sp003962875	high	ATE		plant,creek_downstream,control			0	5	2	0	2	0.0046	0.1313	0.0243	0.0234	0.1251
+SRR6231182.bin.31	Myxococcota	Polyangia	Nannocystis		medium	ATE		plant,control			0	5	0	0	1	0.0029	0.1751	0.0191	0.0188	0.0717
+SRR6231182.bin.34	Bacteroidota	Bacteroidia	Ferruginibacter	Ferruginibacter sp017303335	high	ATE		plant			0	8	0	0	0	0.0013	0.2279	0.0016	0.0026	0.0218
+SRR6231182.bin.42	Pseudomonadota	Gammaproteobacteria	Simplicispira	Simplicispira sedimenti	medium	ATE		pre_treatment,plant,creek_downstream,creek_upstream,control			36	17	8	6	3	0.2276	0.4281	0.0576	0.0551	0.099
+SRR6231182.bin.44	Pseudomonadota	Alphaproteobacteria	Reyranella		medium	ATE		plant,creek_downstream,creek_upstream,control			0	11	1	3	2	0.0117	0.2082	0.0319	0.0442	0.1769
+SRR6231182.bin.45	Pseudomonadota	Gammaproteobacteria	CADEFQ01	CADEFQ01 sp963204835	medium	ATE		plant,creek_downstream,control			0	4	2	0	2	0.0079	0.1116	0.0353	0.0292	0.1258
+SRR6231182.bin.53	Acidobacteriota	Blastocatellia	RBC074	RBC074 sp016789605	medium	ATE		plant			0	4	0	0	0	0.0	0.0876	0.0	0.0005	0.0186
+SRR6231182.bin.54	Pseudomonadota	Gammaproteobacteria	Piscinibacter	Piscinibacter sp017983795	medium	ATE		plant,creek_downstream,creek_upstream,control			0	17	7	10	2	0.0273	0.3908	0.0632	0.081	0.1668
+SRR6231182.bin.9	Pseudomonadota	Gammaproteobacteria	CALKUS01	CALKUS01 sp937996755	high	ATE		plant,control			0	9	0	0	2	0.013	0.2541	0.0292	0.0263	0.1065
+SRR6231183.bin.33	Pseudomonadota	Gammaproteobacteria	Zoogloea		medium	PCI		pre_treatment,plant,creek_downstream	yes	yes	29	14	3	0	0	0.1484	0.1231	0.0381	0.0209	0.0592
+SRR6231184.bin.12	Pseudomonadota	Gammaproteobacteria	Moraxella_A	Moraxella_A sp937889485	high	influent		pre_treatment,plant			29	1	0	0	0	0.1761	0.005	0.0	0.0	0.0
+SRR6231184.bin.33	Pseudomonadota	Gammaproteobacteria	Paenacidovorax	Paenacidovorax caeni	medium	influent		pre_treatment,plant			36	2	0	0	0	0.1698	0.0627	0.026	0.0308	0.0589
+SRR6231185.bin.10	Pseudomonadota	Gammaproteobacteria	Tolumonas	Tolumonas sp008015085	high	RES		pre_treatment,plant			35	1	0	0	0	0.2145	0.0285	0.0	0.0	0.0
+SRR6231185.bin.13	Bacillota	Clostridia	Mediterraneibacter	Mediterraneibacter faecis	medium	RES		pre_treatment,plant			36	1	0	0	0	0.3639	0.0228	0.0014	0.0006	0.0
+SRR6231185.bin.18	Desulfobacterota_I	Desulfovibrionia	Desulfovibrio		medium	RES		pre_treatment,plant			34	1	0	0	0	0.207	0.0244	0.0006	0.0	0.0149
+SRR6231185.bin.19	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter johnsonii	medium	RES		pre_treatment,plant,creek_downstream	yes	yes	36	13	2	0	0	3.9508	0.4289	0.0173	0.006	0.0063
+SRR6231185.bin.20	Bacillota	Bacilli	Streptococcus	Streptococcus infantarius	high	RES		pre_treatment			17	0	0	0	0	0.0802	0.0014	0.0	0.0	0.0
+SRR6231185.bin.25	Bacillota	Bacilli	Lactobacillus	Lactobacillus delbrueckii	high	RES		pre_treatment			28	0	0	0	0	0.1178	0.0019	0.0	0.0	0.0
+SRR6231185.bin.29	Pseudomonadota	Gammaproteobacteria	Neisseria	Neisseria sp937919795	high	RES		pre_treatment			19	0	0	0	0	0.0988	0.0027	0.0	0.0	0.0156
+SRR6231185.bin.32	Bacillota	Negativicutes	Selenomonas_C	Selenomonas_C bovis	medium	RES		pre_treatment			20	0	0	0	0	0.096	0.0172	0.0028	0.0083	0.0401
+SRR6231185.bin.36	Pseudomonadota	Gammaproteobacteria	Paenacidovorax	Paenacidovorax caeni	medium	RES		pre_treatment,plant			36	2	0	0	0	0.1587	0.0616	0.0246	0.0293	0.0578
+SRR6231185.bin.38	Bacillota	Clostridia	Gemmiger	Gemmiger formicilis	medium	RES		pre_treatment,plant			36	1	0	0	0	0.3945	0.026	0.0045	0.0081	0.0292
+SRR6231185.bin.42	Pseudomonadota	Gammaproteobacteria	Brachymonas	Brachymonas sp018054915	medium	RES	ere(A)	pre_treatment,plant			36	1	0	0	0	0.1939	0.0304	0.0103	0.0161	0.0374
+SRR6231185.bin.45	Bacillota	Negativicutes	JAGPMH01	JAGPMH01 sp018052945	medium	RES	msr(D)	pre_treatment,plant			36	1	0	0	0	0.2237	0.0207	0.0	0.0018	0.0
+SRR6231185.bin.48	Bacillota	Clostridia	Blautia_A	Blautia_A fusiformis	medium	RES		pre_treatment,plant			36	1	0	0	0	0.3152	0.0099	0.0012	0.0	0.0
+SRR6231185.bin.56	Pseudomonadota	Gammaproteobacteria	Paenacidovorax		high	RES		pre_treatment,plant,control			36	1	0	0	1	0.3226	0.0627	0.0241	0.0276	0.0562
+SRR6231185.bin.65	Bacillota	Bacilli	Streptococcus	Streptococcus ferus	high	RES		pre_treatment			11	0	0	0	0	0.0896	0.0024	0.0	0.0	0.0
+SRR6231185.bin.66	Actinomycetota	Actinomycetes	Brooklawnia	Brooklawnia sp937867175	medium	RES		pre_treatment			12	0	0	0	0	0.0607	0.0324	0.0052	0.0114	0.0451
+SRR6231186.bin.1	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	16	16	3	0.0	0.0182	2.5113	2.6361	1.0842
+SRR6231186.bin.13	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	4	8	3	0.0286	0.0471	0.0724	0.0911	0.124
+SRR6231186.bin.17	Bacteroidota	Bacteroidia	Sediminibacterium	Sediminibacterium sp030158665	high	upstream		plant,creek_downstream,creek_upstream,control			0	1	14	13	1	0.0	0.0056	0.358	0.2311	0.0666
+SRR6231186.bin.18	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp040409795	medium	upstream		creek_downstream,creek_upstream,control			0	0	6	10	2	0.0	0.0035	0.1227	0.203	0.0952
+SRR6231186.bin.20	Pseudomonadota	Gammaproteobacteria	Limnohabitans		high	upstream		creek_downstream,creek_upstream,control			0	0	4	4	2	0.0022	0.0111	0.0731	0.1046	0.0677
+SRR6231186.bin.24	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	4	4	1	0.0003	0.0029	0.2142	0.1288	0.0613
+SRR6231186.bin.28	Pseudomonadota	Alphaproteobacteria	Tabrizicola_A		medium	upstream		creek_downstream,creek_upstream			0	0	2	2	0	0.0064	0.0204	0.0308	0.0688	0.0536
+SRR6231186.bin.3	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	4	4	2	0.0158	0.0261	0.0902	0.0981	0.1046
+SRR6231186.bin.34	Pseudomonadota	Alphaproteobacteria	Tabrizicola_A	Tabrizicola_A sp937927675	high	upstream		plant,creek_downstream,creek_upstream			0	1	7	7	0	0.006	0.0228	0.0589	0.1281	0.0518
+SRR6231186.bin.36	Pseudomonadota	Gammaproteobacteria	Fluviibacter		medium	upstream		creek_downstream,creek_upstream			0	0	2	2	0	0.0009	0.0047	0.0254	0.0508	0.0215
+SRR6231186.bin.39	Pseudomonadota	Gammaproteobacteria	Sheuella		high	upstream		creek_downstream,creek_upstream			0	0	4	4	0	0.0	0.0	0.0659	0.0623	0.0091
+SRR6231186.bin.41	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A	Limnohabitans_A sp964230145	medium	upstream		plant,creek_downstream,creek_upstream,control			0	2	4	6	2	0.0285	0.0491	0.2016	0.2654	0.2375
+SRR6231186.bin.45	Pseudomonadota	Alphaproteobacteria	Gemmobacter_B		medium	upstream		plant,creek_downstream,creek_upstream,control			0	3	7	7	2	0.0212	0.0481	0.0767	0.1207	0.0964
+SRR6231186.bin.50	Pseudomonadota	Alphaproteobacteria	Novosphingobium	Novosphingobium arvoryzae	medium	upstream		plant,creek_downstream,creek_upstream,control			0	1	3	2	3	0.0098	0.0447	0.0442	0.0639	0.0983
+SRR6231186.bin.52	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A	Limnohabitans_A sp003063665	high	upstream		creek_downstream,creek_upstream,control			0	0	14	16	2	0.0215	0.0303	0.1901	0.2662	0.2405
+SRR6231186.bin.56	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	15	15	2	0.0	0.0	0.259	0.3379	0.115
+SRR6231186.bin.58	Actinomycetota	Actinomycetes	Aurantimicrobium	Aurantimicrobium minutum	medium	upstream		creek_downstream,creek_upstream			0	0	4	6	0	0.0	0.0	0.0401	0.1888	0.0055
+SRR6231186.bin.7	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp041176265	medium	upstream		creek_downstream,creek_upstream,control			0	0	6	6	1	0.0	0.0024	0.1204	0.1069	0.0538
+SRR6231186.bin.8	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A	Limnohabitans_A sp937928195	high	upstream		creek_downstream,creek_upstream,control			0	0	13	15	2	0.0	0.0014	0.2728	0.2675	0.3695
+SRR6231187.bin.19	Bacteroidota	Bacteroidia	Macellibacteroides	Macellibacteroides fermentans	medium	PCE		pre_treatment,plant			36	1	0	0	0	0.1693	0.0305	0.0	0.0	0.0
+SRR6231187.bin.28	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas caviae	high	PCE	blaMOX,blaOXA	pre_treatment,plant			36	5	0	0	0	0.6893	0.126	0.01	0.0094	0.0261
+SRR6231187.bin.32	Pseudomonadota	Gammaproteobacteria	Paenacidovorax	Paenacidovorax caeni	medium	PCE		pre_treatment,plant			36	2	0	0	0	0.1605	0.0588	0.0232	0.028	0.0553
+SRR6231188.bin.1	Patescibacteriota	Minisyncoccia	C7867-001	C7867-001 sp937879955	high	FCE		plant			0	1	0	0	0	0.0006	0.0789	0.01	0.0176	0.0577
+SRR6231188.bin.11	Pseudomonadota	Alphaproteobacteria	UBA6145	UBA6145 sp937896295	high	FCE		plant			0	1	0	0	0	0.002	0.0402	0.0024	0.0068	0.0334
+SRR6231188.bin.17	Pseudomonadota	Gammaproteobacteria	Zoogloea		high	FCE		pre_treatment,plant,creek_downstream	yes	yes	36	17	6	0	0	0.2091	0.3	0.0883	0.0215	0.0567
+SRR6231188.bin.19	Pseudomonadota	Gammaproteobacteria	Azonexus	Azonexus sp016790885	high	FCE		pre_treatment,plant,creek_downstream,control	yes		36	13	4	0	1	0.2458	0.1923	0.0519	0.0363	0.0702
+SRR6231188.bin.21	Pseudomonadota	Gammaproteobacteria	Pseudomonas	Pseudomonas aeruginosa	medium	FCE	aph(3')-IIb,blaPDC,catB7,mexA	pre_treatment,plant,creek_downstream	yes	yes	16	5	4	0	0	0.0576	0.0812	0.0558	0.022	0.0591
+SRR6231188.bin.27	Pseudomonadota	Alphaproteobacteria	Sphingobium		medium	FCE		plant,creek_downstream			0	1	2	0	0	0.0118	0.0656	0.0154	0.0176	0.0598
+SRR6231188.bin.3	Pseudomonadota	Gammaproteobacteria	Pseudoxanthomonas		high	FCE		pre_treatment,plant,creek_downstream,control	yes		14	6	2	0	2	0.0566	0.1385	0.0368	0.0318	0.0893
+SRR6231188.bin.35	Pseudomonadota	Gammaproteobacteria	Tatlockia		high	FCE		plant			0	1	0	0	0	0.0	0.0268	0.0018	0.0	0.0
+SRR6231188.bin.44	Actinomycetota	Actinomycetes	Rhodoglobus		medium	FCE		plant,creek_downstream			0	1	2	0	0	0.0037	0.0513	0.0159	0.0121	0.0514
+SRR6231188.bin.45	Patescibacteriota	Saccharimonadia	DALYDK01	DALYDK01 sp031973215	medium	FCE		plant,creek_downstream			0	2	1	0	0	0.0018	0.0415	0.0117	0.0	0.0
+SRR6231188.bin.7	Patescibacteriota	Saccharimonadia	Microsaccharimonas		high	FCE		plant			0	1	0	0	0	0.0013	0.0429	0.0	0.0	0.0129
+SRR6231188.bin.8	Pseudomonadota	Alphaproteobacteria	Caulobacter	Caulobacter sp937900395	high	FCE		plant,creek_downstream,creek_upstream,control			0	7	1	3	2	0.0263	0.1736	0.0341	0.0593	0.1156
+SRR6231188.bin.9	Pseudomonadota	Gammaproteobacteria	Aquabacterium		high	FCE		plant,creek_upstream,control			0	6	0	1	1	0.0274	0.1367	0.0322	0.0403	0.0906
+SRR6231189.bin.15	Actinomycetota	Actinomycetes	Planktophila		medium	downstream		creek_downstream,creek_upstream,control			0	0	14	14	1	0.0	0.0	0.3476	0.735	0.0511
+SRR6231189.bin.18	Bacteroidota	Bacteroidia	M0103	M0103 sp023262855	medium	downstream		creek_downstream,creek_upstream			0	0	5	1	0	0.0	0.0	0.0496	0.0235	0.0
+SRR6231189.bin.19	Pseudomonadota	Alphaproteobacteria	Gemmobacter_B	Gemmobacter_B sp039798885	medium	downstream		creek_downstream,creek_upstream			0	0	5	6	0	0.0112	0.0314	0.0606	0.0715	0.0717
+SRR6231189.bin.21	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp041180345	medium	downstream		creek_downstream,creek_upstream,control			0	0	5	6	2	0.0	0.0	0.1972	0.1317	0.2315
+SRR6231189.bin.3	Actinomycetota	Actinomycetes	Rhodoluna		high	downstream		creek_downstream,creek_upstream,control			0	0	11	9	2	0.0	0.0	0.238	0.2022	0.0728
+SRR6231189.bin.31	Bacteroidota	Bacteroidia	UBA952		medium	downstream		creek_downstream,creek_upstream			0	0	4	3	0	0.0	0.0	0.0468	0.0217	0.0
+SRR6231189.bin.32	Bacteroidota	Bacteroidia	Aquirufa		medium	downstream		creek_downstream,creek_upstream			0	0	7	5	0	0.0	0.0	0.0821	0.0626	0.0106
+SRR6231189.bin.34	Pseudomonadota	Gammaproteobacteria	Zwartia		medium	downstream		creek_downstream,creek_upstream			0	0	4	4	0	0.0	0.0	0.065	0.0561	0.0036
+SRR6231189.bin.36	Bacteroidota	Bacteroidia	Sediminibacterium		medium	downstream		creek_downstream,creek_upstream,control			0	0	8	11	1	0.0	0.0048	0.1137	0.1432	0.024
+SRR6231189.bin.44	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp041191465	medium	downstream		creek_downstream,creek_upstream			0	0	8	7	0	0.0	0.0	0.228	0.3755	0.0171
+SRR6231189.bin.45	Actinomycetota	Actinomycetes	ZLKRG08		medium	downstream		plant,creek_downstream,creek_upstream,control			0	2	4	3	1	0.0	0.0156	0.1337	0.1435	0.0376
+SRR6231189.bin.50	Bacteroidota	Bacteroidia	Aquirufa		medium	downstream		creek_downstream,creek_upstream,control			0	0	8	7	1	0.0	0.0	0.1617	0.1272	0.1149
+SRR6231190.bin.1	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter harbinensis	medium	HOSP		pre_treatment,plant			30	1	0	0	0	0.1347	0.0096	0.0	0.0	0.0
+SRR6231190.bin.10	Bacillota	Negativicutes	Mitsuokella	Mitsuokella multacida	high	HOSP		pre_treatment,plant			29	1	0	0	0	0.1758	0.0302	0.0049	0.0082	0.039
+SRR6231190.bin.33	Bacillota	Clostridia	Gemmiger	Gemmiger qucibialis	high	HOSP		pre_treatment,plant			36	1	0	0	0	0.3063	0.0148	0.0019	0.0016	0.014
+SRR6231190.bin.44	Bacillota	Clostridia	Fusicatenibacter	Fusicatenibacter saccharivorans	high	HOSP		pre_treatment,plant			36	1	0	0	0	0.3578	0.0226	0.0017	0.0018	0.0
+SRR6231190.bin.65	Bacillota	Clostridia	Agathobacter	Agathobacter faecis	medium	HOSP		pre_treatment,plant			36	1	0	0	0	0.314	0.007	0.0012	0.0011	0.0
+SRR6231191.bin.14	Pseudomonadota	Gammaproteobacteria	Neisseria	Neisseria suis	high	influent		pre_treatment,plant			36	1	0	0	0	0.3978	0.0274	0.0025	0.0016	0.0189
+SRR6231191.bin.37	Pseudomonadota	Gammaproteobacteria	CTSOIL-112		medium	influent		pre_treatment			15	0	0	0	0	0.1064	0.0041	0.0	0.0	0.0179
+SRR6231191.bin.52	Pseudomonadota	Gammaproteobacteria	Pseudomonas_E	Pseudomonas_E alcaligenes	medium	influent		pre_treatment,plant			34	6	0	0	0	0.1344	0.0876	0.0208	0.0207	0.0442
+SRR6231192.bin.11	Pseudomonadota	Gammaproteobacteria	Dokdonella	Dokdonella sp016712865	high	ATE		pre_treatment,plant			1	5	0	0	0	0.0131	0.229	0.0046	0.0091	0.0339
+SRR6231192.bin.13	Myxococcota	Polyangia	Nannocystis		medium	ATE		plant			0	10	0	0	0	0.0036	0.1852	0.0149	0.0156	0.0568
+SRR6231192.bin.15	Bacteroidota	Bacteroidia	OLB10	OLB10 sp016699635	high	ATE		plant			0	4	0	0	0	0.003	0.1185	0.0	0.0	0.0
+SRR6231192.bin.19	Bacteroidota	Bacteroidia	Ferruginibacter	Ferruginibacter sp937996595	high	ATE		plant			0	5	0	0	0	0.002	0.118	0.0005	0.0	0.0187
+SRR6231192.bin.2	Bacteroidota	Bacteroidia	JADKBO01	JADKBO01 sp937973565	high	ATE		plant			0	2	0	0	0	0.0022	0.0829	0.0	0.0	0.0
+SRR6231192.bin.31	Pseudomonadota	Alphaproteobacteria	Amaricoccus	Amaricoccus sp937891315	high	ATE		pre_treatment,plant,creek_downstream,control	yes		4	9	3	0	2	0.0369	0.3017	0.0444	0.0363	0.1302
+SRR6231192.bin.4	Bacteroidota	Bacteroidia	JJ008	JJ008 sp002069045	medium	ATE		plant			0	1	0	0	0	0.0016	0.0641	0.0059	0.0027	0.0183
+SRR6231192.bin.40	Bacteroidota	Bacteroidia	Parvibacillus	Parvibacillus sp018057925	high	ATE		plant			0	2	0	0	0	0.004	0.1034	0.0	0.0	0.0
+SRR6231192.bin.41	Actinomycetota	Actinomycetes	Phycicoccus_A	Phycicoccus_A elongatus	high	ATE		pre_treatment,plant,control			5	9	0	0	2	0.0399	0.3106	0.033	0.0243	0.1032
+SRR6231192.bin.44	Pseudomonadota	Gammaproteobacteria	Inhella		medium	ATE		plant,creek_downstream,creek_upstream,control			0	11	10	1	2	0.0288	0.1604	0.1424	0.0415	0.0892
+SRR6231192.bin.46	Pseudomonadota	Gammaproteobacteria	Casimicrobium	Casimicrobium huifangae	medium	ATE	bla	pre_treatment,plant			9	15	0	0	0	0.0292	0.532	0.0206	0.0158	0.058
+SRR6231192.bin.6	Actinomycetota	Actinomycetes	Gordonia	Gordonia sp020438995	high	ATE		pre_treatment,plant,creek_downstream	yes	yes	3	9	2	0	0	0.0427	0.7612	0.0203	0.0116	0.05
+SRR6231192.bin.7	Pseudomonadota	Gammaproteobacteria	Agitococcus	Agitococcus sp937920075	high	ATE		plant,creek_downstream			0	18	9	0	0	0.0065	1.0866	0.0549	0.0029	0.0
+SRR6231193.bin.22	Actinomycetota	Actinomycetes	Mycobacterium	Mycobacterium insubricum	high	FCE		pre_treatment,plant,creek_downstream,control	yes		2	16	2	0	2	0.0173	0.4182	0.0344	0.0203	0.0811
+SRR6231193.bin.24	Pseudomonadota	Gammaproteobacteria	Zoogloea	Zoogloea sp035335645	medium	FCE		plant,creek_downstream,creek_upstream			0	8	1	2	0	0.0253	0.2429	0.0333	0.0307	0.0647
+SRR6231193.bin.25	Actinomycetota	Actinomycetes	Mycobacterium		high	FCE		pre_treatment,plant,creek_downstream,control	yes		1	16	5	0	1	0.0134	0.6128	0.0451	0.0177	0.0749
+SRR6231193.bin.28	Actinomycetota	Actinomycetes	Mycobacterium		medium	FCE		plant,creek_downstream,control			0	12	3	0	1	0.0104	0.3699	0.0325	0.0172	0.0726
+SRR6231193.bin.3	Pseudomonadota	Gammaproteobacteria	Zoogloea	Zoogloea sp016790385	medium	FCE		pre_treatment,plant,creek_downstream	yes	yes	7	14	1	0	0	0.0362	0.3363	0.0172	0.0148	0.0365
+SRR6231193.bin.5	Pseudomonadota	Alphaproteobacteria	Novosphingobium		high	FCE		plant,creek_downstream,creek_upstream,control			0	8	4	1	3	0.0075	0.2359	0.0348	0.0387	0.1102
+SRR6231194.bin.15	Bacillota	Negativicutes	Selenomonas_A	Selenomonas_A sp018052705	medium	RES		pre_treatment,plant			34	1	0	0	0	0.1561	0.0093	0.0	0.0	0.0
+SRR6231195.bin.10	Bacteroidota	Bacteroidia	Cloacibacterium	Cloacibacterium caeni_B	medium	influent		pre_treatment,plant			36	5	0	0	0	0.7831	0.1263	0.0028	0.0013	0.0
+SRR6231195.bin.13	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas media	medium	influent	blaMOX-9,blaOXA,blaOXA-917	pre_treatment,plant			36	2	0	0	0	0.261	0.0445	0.0022	0.0008	0.0138
+SRR6231196.bin.20	Pseudomonadota	Alphaproteobacteria	Megaera		medium	ATE		plant,creek_downstream			0	13	1	0	0	0.0	0.283	0.0227	0.0062	0.0142
+SRR6231197.bin.1	Actinomycetota	Actinomycetes	Planktophila		medium	downstream		creek_downstream,creek_upstream,control			0	0	14	12	1	0.0	0.0	0.2861	0.6258	0.5744
+SRR6231197.bin.11	Pseudomonadota	Alphaproteobacteria	Sphingorhabdus_B	Sphingorhabdus_B sp937898535	medium	downstream		creek_downstream,creek_upstream			0	0	7	10	0	0.0	0.0	0.1069	0.1135	0.0232
+SRR6231197.bin.6	Verrucomicrobiota	Verrucomicrobiia	UBA956		medium	downstream		creek_downstream,creek_upstream			0	0	1	2	0	0.0	0.0	0.0518	0.0428	0.0
+SRR6231198.bin.10	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sp031537875	medium	upstream		creek_downstream,creek_upstream,control			0	0	12	12	2	0.0063	0.0064	0.734	0.8897	0.034
+SRR6231198.bin.22	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	13	11	3	0.0	0.0	0.4931	0.4958	0.1954
+SRR6231198.bin.23	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		creek_downstream,creek_upstream,control			0	0	12	16	2	0.0178	0.0239	0.2187	0.3017	0.5071
+SRR6231198.bin.30	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	upstream		creek_downstream,creek_upstream,control			0	0	13	14	2	0.0	0.0	0.2495	0.3158	0.1048
+SRR6231199.bin.31	Bacteroidota	Bacteroidia	Cloacibacterium	Cloacibacterium normanense	medium	RES	blaMCA,ere(D),mef(C),mph(G)	pre_treatment,plant			36	5	0	0	0	0.7548	0.1198	0.0028	0.0012	0.0
+SRR6231200.bin.23	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter bohemicus	medium	PCE	blaOXA	pre_treatment,plant,creek_upstream			36	3	0	1	0	0.2645	0.0532	0.0005	0.0061	0.0
+SRR6231201.bin.17	Bacillota	Bacilli	Streptococcus		high	HOSP		pre_treatment,plant			27	1	0	0	0	0.2979	0.0122	0.0009	0.0	0.0
+SRR6231201.bin.23	Bacillota	Bacilli	Trichococcus	Trichococcus flocculiformis	high	HOSP		pre_treatment			14	0	0	0	0	0.1504	0.016	0.001	0.0	0.0
+SRR6231201.bin.8	Campylobacterota	Campylobacteria	Aliarcobacter	Aliarcobacter cryaerophilus_A	high	HOSP		pre_treatment,plant,creek_downstream	yes	yes	36	17	2	0	0	5.0767	0.8455	0.0255	0.0099	0.0062
+SRR6231201.bin.9	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas media	medium	HOSP	blaOXA-917	pre_treatment,plant			36	1	0	0	0	0.2577	0.042	0.0015	0.0008	0.0135
+SRR6231202.bin.1	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		creek_downstream,creek_upstream,control			0	0	7	11	1	0.0	0.0	0.0798	0.1659	0.7399
+SRR6231202.bin.10	Verrucomicrobiota	Verrucomicrobiia	CAIZWU01	CAIZWU01 sp903936775	medium	upstream		creek_downstream,creek_upstream			0	0	1	5	0	0.0	0.0026	0.0193	0.128	0.0238
+SRR6231202.bin.11	Pseudomonadota	Alphaproteobacteria	Novosphingobium	Novosphingobium sp937897535	medium	upstream		plant,creek_downstream,creek_upstream,control			0	1	3	7	3	0.0032	0.0341	0.0583	0.1497	0.1197
+SRR6231202.bin.14	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	14	12	1	0.0	0.0	0.2464	0.5743	0.5156
+SRR6231203.bin.17	Actinomycetota	Actinomycetes	Mycobacterium		medium	UV		pre_treatment,plant,creek_downstream	yes	yes	7	12	3	0	0	0.0411	0.2704	0.0392	0.0136	0.0586
+SRR6231203.bin.20	Patescibacteriota	Minisyncoccia	C7867-001	C7867-001 sp938008595	high	UV		plant,creek_downstream			0	3	2	0	0	0.0	0.268	0.034	0.004	0.0
+SRR6231203.bin.23	Pseudomonadota	Alphaproteobacteria	CAITNM01		high	UV		plant,creek_downstream			0	5	2	0	0	0.0	0.1768	0.0153	0.0	0.0
+SRR6231203.bin.25	Patescibacteriota	Doudnabacteria	JAEUSE01		high	UV		plant,creek_downstream			0	6	4	0	0	0.0	0.1245	0.0229	0.0	0.0
+SRR6231203.bin.30	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium sp937967675	high	UV	mef(C),mph(G)	pre_treatment,plant,creek_downstream,control	yes		30	12	3	0	1	0.1002	1.3282	0.0349	0.0216	0.019
+SRR6231203.bin.33	Actinomycetota	Actinomycetes	Mycobacterium		high	UV		plant,creek_downstream			0	6	3	0	0	0.0113	0.2698	0.0243	0.0098	0.045
+SRR6231203.bin.37	Pseudomonadota	Gammaproteobacteria	Acinetobacter	Acinetobacter sp003987695	high	UV		pre_treatment,plant,creek_downstream,control	yes		36	14	1	0	1	0.4036	0.5258	0.0208	0.0014	0.052
+SRR6231203.bin.38	Pseudomonadota	Alphaproteobacteria	CAITNM01		high	UV		plant			0	2	0	0	0	0.0	0.0793	0.0032	0.0	0.0
+SRR6231203.bin.39	Pseudomonadota	Alphaproteobacteria	Finniella		medium	UV		plant			0	4	0	0	0	0.0	0.1178	0.0018	0.0	0.0
+SRR6231203.bin.41	Bdellovibrionota	Bdellovibrionia	CALCCV01	CALCCV01 sp937900305	medium	UV		plant			0	3	0	0	0	0.0	0.068	0.0008	0.0	0.0
+SRR6231203.bin.5	Babelota	Babeliae	Chromulinivorax		high	UV		plant,creek_downstream			0	2	1	0	0	0.0	0.0722	0.0118	0.0012	0.0
+SRR6231203.bin.8	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		high	UV		pre_treatment,plant,creek_downstream,creek_upstream,control			1	5	8	12	3	0.0351	0.3062	0.2324	0.1952	0.3025
+SRR6231204.bin.11	Pseudomonadota	Gammaproteobacteria	Azonexus	Azonexus sp937892345	high	FCE		pre_treatment,plant,creek_downstream	yes	yes	8	7	6	0	0	0.0804	0.4741	0.1424	0.0145	0.0283
+SRR6231204.bin.2	Bacteroidota	Bacteroidia	Daejeonella	Daejeonella sp938008555	high	FCE		plant,creek_downstream			0	4	2	0	0	0.0029	0.1015	0.0494	0.0015	0.0
+SRR6231204.bin.23	Pseudomonadota	Gammaproteobacteria	Aquabacterium		medium	FCE		plant,creek_upstream,control			0	4	0	1	1	0.031	0.1208	0.0321	0.0358	0.0803
+SRR6231204.bin.3	Pseudomonadota	Alphaproteobacteria	JAKBAR01	JAKBAR01 sp937896365	high	FCE		plant,creek_downstream			0	2	2	0	0	0.003	0.0782	0.0092	0.0	0.0
+SRR6231204.bin.7	Pseudomonadota	Alphaproteobacteria	CALKVD01	CALKVD01 sp937996615	medium	FCE		plant,creek_downstream			0	2	2	0	0	0.0033	0.0643	0.0139	0.0	0.0
+SRR6231205.bin.16	Actinomycetota	Actinomycetes	Rhodoluna		medium	downstream		creek_downstream,creek_upstream,control			0	0	9	10	1	0.0	0.0	0.1754	0.1584	0.0344
+SRR6231205.bin.20	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp937919125	medium	downstream		plant,creek_downstream			0	2	2	0	0	0.0005	0.0273	0.0615	0.0219	0.0
+SRR6231205.bin.8	Pseudomonadota	Gammaproteobacteria	Zoogloea	Zoogloea oryzae	high	downstream		pre_treatment,plant,creek_downstream,creek_upstream			36	17	8	1	0	0.727	6.9226	2.562	0.0321	0.0627
+SRR6231206.bin.17	Actinomycetota	Actinomycetes	Rhodoluna		medium	downstream		creek_downstream,creek_upstream,control			0	0	7	4	2	0.0	0.0	0.2002	0.0888	0.0653
+SRR6231206.bin.8	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	downstream		creek_downstream,creek_upstream,control			0	0	16	16	2	0.02	0.027	0.4651	0.5425	0.9028
+SRR6231206.bin.9	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	downstream		creek_downstream,creek_upstream,control			0	0	16	16	3	0.0	0.007	0.4693	0.5457	0.1661
+SRR6231207.bin.10	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		creek_downstream,creek_upstream,control			0	0	13	15	2	0.0075	0.0189	0.132	0.2682	0.1964
+SRR6231207.bin.6	Pseudomonadota	Gammaproteobacteria	Perlucidibaca	Perlucidibaca sp937928295	medium	upstream		creek_downstream,creek_upstream			0	0	1	5	0	0.0048	0.0148	0.0774	0.2573	0.037
+SRR6231208.bin.14	Bacteroidota	Bacteroidia	Cloacibacterium	Cloacibacterium caeni_B	medium	PCI	ere(D)	pre_treatment,plant			36	5	0	0	0	0.7811	0.1217	0.0034	0.0013	0.0
+SRR6231209.bin.41	Bacillota	Clostridia	Anaerostipes	Anaerostipes hadrus	medium	HOSP		pre_treatment,plant			36	1	0	0	0	0.3006	0.0103	0.0013	0.0009	0.0
+SRR6231209.bin.46	Bacillota	Negativicutes	Selenomonas_A	Selenomonas_A sp018052705	medium	HOSP		pre_treatment,plant			34	1	0	0	0	0.1566	0.009	0.0	0.0	0.0
+SRR6231210.bin.18	Nitrospirota	Nitrospiria	Nitrospira_A	Nitrospira_A sp009594855	high	ATE		pre_treatment,plant			1	7	0	0	0	0.0043	0.2808	0.0085	0.0	0.0162
+SRR6231210.bin.2	Bacteroidota	Bacteroidia	Sediminibacterium	Sediminibacterium sp017996795	medium	ATE		pre_treatment,plant			1	4	0	0	0	0.0082	0.1168	0.017	0.0156	0.0185
+SRR6231210.bin.34	Bacteroidota	Bacteroidia	OLB9	OLB9 sp937952155	medium	ATE		pre_treatment,plant			1	4	0	0	0	0.0051	0.0975	0.001	0.0	0.0
+SRR6231210.bin.4	Pseudomonadota	Gammaproteobacteria	RAM1		medium	ATE		pre_treatment,plant,creek_downstream,creek_upstream,control			31	19	8	10	4	0.0794	0.2599	0.0955	0.0726	0.1195
+SRR6231210.bin.5	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium lutivivi	medium	ATE	lnu(I)	plant,control			0	8	0	0	1	0.0127	0.1461	0.0165	0.0212	0.0283
+SRR6231210.bin.8	Bacteroidota	Bacteroidia	JADJSS01	JADJSS01 sp938008535	high	ATE		plant			0	3	0	0	0	0.0011	0.1343	0.0	0.0018	0.0068
+SRR6231211.bin.1	Desulfobacterota	Syntrophia	UBA8904	UBA8904 sp012797505	high	PCE		pre_treatment			8	0	0	0	0	0.0955	0.0083	0.0009	0.0005	0.0202
+SRR6231211.bin.19	Pseudomonadota	Gammaproteobacteria	Zoogloea	Zoogloea sp937871125	high	PCE		pre_treatment,plant,creek_downstream	yes	yes	13	16	9	0	0	0.532	4.3744	1.5375	0.0195	0.0483
+SRR6231211.bin.8	Pseudomonadota	Gammaproteobacteria	Moraxella_A	Moraxella_A sp002478835	high	PCE	icr-Mo	pre_treatment,plant			36	1	0	0	0	2.9028	0.1068	0.0073	0.0006	0.0073
+SRR6231211.bin.9	Pseudomonadota	Gammaproteobacteria	Rivihabitans	Rivihabitans pingtungensis	high	PCE		pre_treatment,plant,creek_downstream	yes	yes	36	18	1	0	0	2.0504	0.262	0.0398	0.0275	0.0559
+SRR6231212.bin.13	Actinomycetota	Actinomycetes	ZLKRG08		medium	downstream		creek_downstream,creek_upstream,control			0	0	4	3	1	0.0	0.0	0.1195	0.1264	0.0355
+SRR6231212.bin.17	Bacteroidota	Bacteroidia	CAMCTV01	CAMCTV01 sp937974555	high	downstream		creek_downstream,creek_upstream			0	0	4	4	0	0.0	0.0	0.1409	0.1622	0.0
+SRR6231212.bin.18	Bacteroidota	Bacteroidia	UBA952	UBA952 sp041158525	high	downstream		creek_downstream,creek_upstream			0	0	7	5	0	0.0	0.0005	0.1245	0.0322	0.0
+SRR6231212.bin.25	Bacteroidota	Bacteroidia	Flavobacterium	Flavobacterium ammoniigenes	high	downstream		creek_downstream,creek_upstream			0	0	13	10	0	0.0034	0.0025	1.0317	0.4917	0.0207
+SRR6231212.bin.3	Pseudomonadota	Gammaproteobacteria	Polynucleobacter		medium	downstream		creek_downstream,creek_upstream,control			0	0	4	7	2	0.0	0.0102	0.1225	0.1674	0.103
+SRR6231212.bin.4	Pseudomonadota	Alphaproteobacteria	Novosphingobium		medium	downstream		plant,creek_downstream,creek_upstream			0	2	3	4	0	0.0012	0.0233	0.0742	0.042	0.0581
+SRR6231213.bin.16	Pseudomonadota	Gammaproteobacteria	Pseudomonas_E	Pseudomonas_E alcaligenes	medium	HOSP		pre_treatment,plant			35	5	0	0	0	0.1392	0.0613	0.0145	0.0196	0.0401
+SRR6231213.bin.61	Pseudomonadota	Gammaproteobacteria	Moraxella_A	Moraxella_A sp937975585	medium	HOSP	blaCARB-16	pre_treatment,plant			32	1	0	0	0	0.1892	0.0044	0.0	0.0	0.0
+SRR6231214.bin.11	Pseudomonadota	Gammaproteobacteria	Propionivibrio		medium	RES	blaAER	pre_treatment,plant			36	2	0	0	0	0.322	0.0696	0.022	0.0188	0.0555
+SRR6231214.bin.21	Pseudomonadota	Gammaproteobacteria	Propionivibrio	Propionivibrio sp041441355	medium	RES	mph(F)	pre_treatment,plant			36	2	0	0	0	0.1747	0.062	0.0233	0.0206	0.0593
+SRR6231214.bin.24	Bacillota	Clostridia	Ruminococcoides	Ruminococcoides intestinale	high	RES		pre_treatment,plant			36	1	0	0	0	0.2635	0.0134	0.0	0.0015	0.0
+SRR6231214.bin.46	Bacillota	Clostridia	Blautia_A	Blautia_A obeum	medium	RES		pre_treatment,plant			36	1	0	0	0	0.2273	0.0078	0.0	0.0	0.0
+SRR6231214.bin.49	Pseudomonadota	Gammaproteobacteria	Laribacter	Laribacter hongkongensis	medium	RES	blaLHK	pre_treatment,plant			36	1	0	0	0	0.2244	0.0587	0.0156	0.0185	0.0478
+SRR6231215.bin.1	Pseudomonadota	Alphaproteobacteria	Novosphingobium		medium	downstream		plant,creek_downstream,creek_upstream			0	2	5	5	0	0.0003	0.0248	0.1661	0.0677	0.0606
+SRR6231215.bin.31	Pseudomonadota	Alphaproteobacteria	Novosphingobium		high	downstream		plant,creek_downstream,creek_upstream,control			0	2	4	5	2	0.0022	0.0682	0.2424	0.1299	0.0892
+SRR6231215.bin.33	Pseudomonadota	Gammaproteobacteria	Ramlibacter		medium	downstream		pre_treatment,plant,creek_downstream,creek_upstream,control			8	11	7	9	4	0.0412	0.1093	0.1469	0.1303	0.1445
+SRR6231215.bin.38	Actinomycetota	Actinomycetes	Aquiluna	Aquiluna sp041191965	high	downstream		creek_downstream,creek_upstream			0	0	4	2	0	0.0	0.0	0.1213	0.1813	0.0061
+SRR6231215.bin.49	Bacteroidota	Bacteroidia	UBA952		high	downstream		creek_downstream,creek_upstream			0	0	3	2	0	0.0	0.0	0.3252	0.0281	0.0
+SRR6231215.bin.5	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	downstream		plant,creek_downstream,creek_upstream,control			0	2	4	4	2	0.0182	0.0624	0.223	0.2217	0.2185
+SRR6231215.bin.59	Bacteroidota	Bacteroidia	UBA952	UBA952 sp002478565	high	downstream		creek_downstream,creek_upstream			0	0	2	1	0	0.0	0.0	0.1269	0.0066	0.0
+SRR6231216.bin.22	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp009923575	medium	downstream		creek_downstream,creek_upstream			0	0	4	4	0	0.0	0.0	0.1548	0.1927	0.006
+SRR6231216.bin.36	Actinomycetota	Actinomycetes	Planktophila		medium	downstream		creek_downstream,creek_upstream,control			0	0	7	11	1	0.0	0.0	0.1741	0.2594	0.0272
+SRR6231216.bin.41	Patescibacteriota	Patescibacteriia	DYFX01	DYFX01 sp937900255	high	downstream		plant,creek_downstream			0	3	2	0	0	0.0011	0.0626	0.0592	0.0091	0.0443
+SRR6231216.bin.42	Actinomycetota	Actinomycetes	Mycobacterium	Mycobacterium sp020438785	high	downstream		pre_treatment,plant,creek_downstream,control	yes		2	14	2	0	2	0.0253	0.3238	0.0847	0.03	0.1208
+SRR6231217.bin.19	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	14	3	0.0	0.0036	0.2681	0.2704	0.2057
+SRR6231217.bin.21	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp009928245	medium	upstream		creek_downstream,creek_upstream			0	0	4	5	0	0.0	0.0	0.052	0.0652	0.0
+SRR6231217.bin.27	Pseudomonadota	Gammaproteobacteria	Limnohabitans		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	14	3	0.0	0.0012	0.2021	0.1887	0.2095
+SRR6231217.bin.34	Actinomycetota	Actinomycetes	Planktophila	Planktophila sp041191845	medium	upstream		creek_downstream,creek_upstream,control			0	0	7	6	1	0.0	0.0	0.0758	0.0989	0.0204
+SRR6231217.bin.36	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	7	5	1	0.0	0.0	0.089	0.0932	0.0318
+SRR6231217.bin.38	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	upstream		plant,creek_downstream,creek_upstream,control			0	2	4	8	3	0.0294	0.0514	0.2054	0.2132	0.3389
+SRR6231217.bin.60	Actinomycetota	Actinomycetes	Rhodoluna		high	upstream		creek_downstream,creek_upstream,control			0	0	4	4	1	0.0	0.0	0.1017	0.1265	0.0456
+SRR6231217.bin.66	Actinomycetota	Actinomycetes	Planktophila	Planktophila sp029977785	medium	upstream		creek_downstream,creek_upstream,control			0	0	9	13	1	0.0	0.0	0.1167	0.2201	0.0467
+SRR6231217.bin.67	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	11	12	1	0.0	0.0	0.1481	0.2582	0.2241
+SRR6231217.bin.68	Pseudomonadota	Gammaproteobacteria	Methylopumilus_A		medium	upstream		creek_downstream,creek_upstream			0	0	7	10	0	0.0	0.0	0.087	0.1195	0.0219
+SRR6231217.bin.7	Actinomycetota	Actinomycetes	Planktophila	Planktophila sp937927965	medium	upstream		creek_downstream,creek_upstream,control			0	0	4	6	1	0.0	0.0	0.0678	0.1034	0.0141
+SRR6231217.bin.71	Pseudomonadota	Gammaproteobacteria	Polynucleobacter	Polynucleobacter sp027486235	medium	upstream		creek_downstream,creek_upstream,control			0	0	4	3	1	0.0	0.0	0.0428	0.0645	0.0108
+SRR6231218.bin.33	Actinomycetota	Actinomycetes	Planktophila		medium	upstream		creek_downstream,creek_upstream,control			0	0	12	13	1	0.0	0.0	0.209	0.2712	0.0232
+SRR6231218.bin.34	Actinomycetota	Actinomycetes	Rhodoluna		medium	upstream		creek_downstream,creek_upstream,control			0	0	7	7	1	0.0	0.0	0.4578	0.4856	0.0585
+SRR6231218.bin.35	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp041191585	medium	upstream		creek_downstream,creek_upstream,control			0	0	4	4	1	0.0	0.0	0.05	0.0679	0.0722
+SRR6231218.bin.43	Bacteroidota	Bacteroidia	Sediminibacterium	Sediminibacterium sp937900675	high	upstream		creek_downstream,creek_upstream,control			0	0	9	10	2	0.0	0.0032	0.1425	0.3958	0.6147
+SRR6231218.bin.5	Actinomycetota	Actinomycetes	Rhodoluna	Rhodoluna sp041169265	medium	upstream		creek_downstream,creek_upstream,control			0	0	5	5	1	0.0	0.0	0.4209	0.303	0.0446
+SRR6231218.bin.55	Pseudomonadota	Alphaproteobacteria	Novosphingobium		medium	upstream		plant,creek_downstream,creek_upstream,control			0	2	4	5	2	0.0029	0.0311	0.1151	0.083	0.0826
+SRR6231219.bin.28	Pseudomonadota	Gammaproteobacteria	Pseudomonas_E	Pseudomonas_E alcaligenes	medium	PCE		pre_treatment,plant,creek_downstream	yes	yes	33	4	1	0	0	0.1375	0.0584	0.0209	0.0197	0.0395
+SRR6231219.bin.38	Campylobacterota	Campylobacteria	Aliarcobacter		medium	PCE		pre_treatment,plant			33	1	0	0	0	0.4854	0.0906	0.0044	0.0044	0.0
+SRR6231219.bin.45	Actinomycetota	Coriobacteriia	Collinsella	Collinsella sp902491135	medium	PCE		pre_treatment,plant			36	4	0	0	0	0.5853	0.0837	0.0123	0.0175	0.0367
+SRR6231219.bin.51	Pseudomonadota	Gammaproteobacteria	Zoogloea		medium	PCE		pre_treatment,plant,creek_downstream	yes	yes	29	14	2	0	0	0.1397	0.1191	0.0342	0.019	0.055
+SRR6231219.bin.53	Pseudomonadota	Gammaproteobacteria	Aeromonas	Aeromonas hydrophila	medium	PCE	blaOXA	pre_treatment,plant,creek_downstream	yes	yes	34	2	2	0	0	0.1784	0.0578	0.0184	0.0142	0.038
+SRR6231220.bin.1	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_downstream,creek_upstream,control			0	0	4	3	1	0.0	0.0	0.0359	0.0284	0.5523
+SRR6231220.bin.14	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_downstream,control			0	0	1	0	1	0.0	0.0	0.008	0.006	0.7915
+SRR6231220.bin.16	Pseudomonadota	Alphaproteobacteria	Novosphingobium		medium	control		control			0	0	0	0	2	0.0011	0.0205	0.0172	0.0298	0.2018
+SRR6231220.bin.18	Actinomycetota	Actinomycetes	JAFMIT01	JAFMIT01 sp039800825	high	control		creek_downstream,creek_upstream,control			0	0	4	3	1	0.0	0.0	0.0426	0.0424	0.9313
+SRR6231220.bin.19	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_downstream,creek_upstream,control			0	0	2	2	1	0.0	0.0	0.0111	0.0109	1.1174
+SRR6231220.bin.23	Pseudomonadota	Gammaproteobacteria	Limnohabitans_A		medium	control		plant,creek_downstream,creek_upstream,control			0	2	8	11	3	0.0311	0.0517	0.1636	0.1643	0.886
+SRR6231220.bin.27	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		control			0	0	0	0	1	0.0	0.0	0.0035	0.0042	0.2432
+SRR6231220.bin.31	Pseudomonadota	Gammaproteobacteria	Aquirickettsiella		medium	control		creek_downstream,creek_upstream,control			0	0	7	10	2	0.0003	0.0016	0.0455	0.0609	0.2321
+SRR6231220.bin.33	Actinomycetota	Actinomycetes	MWH-TA3		medium	control		creek_downstream,creek_upstream,control			0	0	2	4	1	0.0016	0.0102	0.0267	0.0363	0.1278
+SRR6231220.bin.39	Actinomycetota	Actinomycetes	CAIOLM01		medium	control		creek_downstream,creek_upstream,control			0	0	4	4	1	0.0	0.0022	0.0215	0.0271	0.2201
+SRR6231220.bin.4	Pseudomonadota	Alphaproteobacteria	Novosphingobium	Novosphingobium sp937996535	high	control		plant,creek_downstream,creek_upstream,control			0	1	4	5	3	0.0073	0.0439	0.079	0.0609	0.3574
+SRR6231220.bin.45	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_downstream,creek_upstream,control			0	0	2	5	1	0.0	0.0	0.0333	0.0478	0.6503
+SRR6231220.bin.46	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		control			0	0	0	0	1	0.0	0.0	0.0078	0.0093	0.6275
+SRR6231220.bin.6	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		control			0	0	0	0	1	0.0	0.0	0.019	0.0177	0.2754
+SRR6231220.bin.8	Actinomycetota	Actinomycetes	Rhodoluna		medium	control		creek_downstream,creek_upstream,control			0	0	9	11	2	0.0	0.0	0.0613	0.0693	0.3204
+SRR6231221.bin.1	Pseudomonadota	Gammaproteobacteria	Rhodoferax_C	Rhodoferax_C sp041181325	medium	control		creek_downstream,creek_upstream,control			0	0	5	5	2	0.0082	0.0204	0.0552	0.079	0.3419
+SRR6231221.bin.2	Pseudomonadota	Gammaproteobacteria	JASGCK01		medium	control		control			0	0	0	0	2	0.0	0.0	0.0018	0.0092	2.108
+SRR6231221.bin.3	Pseudomonadota	Gammaproteobacteria	JASGCK01		medium	control		control			0	0	0	0	1	0.0	0.0	0.0044	0.0114	0.6219
