@@ -19,17 +19,17 @@ For the 4 pilot runs, the stage 2–3 tables equal the sbatch pilot exactly.
 
 | Group | Runs | Plasmid contigs (median per run) | Plasmid contigs with AMR genes (all runs) | Conjugative / mobilizable (all runs) | SCAPP circular plasmids | Assembled (median) | Reads in catalog MAGs (median) | Medium+ MAGs | Group MAGs (dRep) |
 |---|---|---|---|---|---|---|---|---|---|
-| upstream | 16 | 130 | 7 | 1 / 12 | 156 | 26.1% | 52.6% | 299 | 161 |
-| downstream | 16 | 146 | 14 | 2 / 14 | 239 | 51.7% | 54.2% | 258 | 117 |
-| HOSP | 8 | 1,668 | 191 | 21 / 738 | 310 | 48.5% | 54.9% | 204 | 58 |
+| upstream | 16 | 130.5 | 7 | 1 / 12 | 156 | 26.1% | 52.6% | 299 | 161 |
+| downstream | 16 | 145.5 | 14 | 2 / 14 | 239 | 51.7% | 54.2% | 258 | 117 |
+| HOSP | 8 | 1,667.5 | 191 | 21 / 738 | 310 | 48.5% | 54.9% | 204 | 58 |
 | RES | 8 | 1,597 | 177 | 20 / 629 | 254 | 46.8% | 55.7% | 207 | 67 |
 | influent | 8 | 1,820 | 190 | 27 / 729 | 315 | 48.1% | 57.1% | 201 | 61 |
-| PCI | 4 | 1,294 | 82 | 10 / 279 | 117 | 49.6% | 62.6% | 85 | 37 |
-| PCE | 8 | 1,580 | 182 | 27 / 674 | 276 | 51.8% | 60.2% | 193 | 65 |
-| ATE | 8 | 722 | 31 | 2 / 65 | 140 | 37.4% | 58.5% | 144 | 91 |
+| PCI | 4 | 1,293.5 | 82 | 10 / 279 | 117 | 49.6% | 62.6% | 85 | 37 |
+| PCE | 8 | 1,580.5 | 182 | 27 / 674 | 276 | 51.8% | 60.2% | 193 | 65 |
+| ATE | 8 | 721.5 | 31 | 2 / 65 | 140 | 37.4% | 58.5% | 144 | 91 |
 | FCE | 8 | 638 | 56 | 17 / 169 | 175 | 59.0% | 69.1% | 128 | 96 |
-| UV | 4 | 382 | 6 | 2 / 38 | 102 | 46.9% | 46.2% | 81 | 69 |
-| control | 4 | 150 | 0 | 0 / 0 | 30 | 27.9% | 46.1% | 48 | 48 |
+| UV | 4 | 381.5 | 6 | 2 / 38 | 102 | 46.9% | 46.2% | 81 | 69 |
+| control | 4 | 150.5 | 0 | 0 / 0 | 30 | 27.9% | 46.1% | 48 | 48 |
 
 (`tables/09_plasmid_summary.tsv`, `04_assembly.tsv`, `07_mags.tsv`, `07_group_mags.tsv`.)
 Pre-treatment sites (hospital and residential sewer, influent, PCI, PCE) carry ~10× the
