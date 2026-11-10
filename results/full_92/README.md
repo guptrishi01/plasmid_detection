@@ -76,20 +76,30 @@ Resistome: 175 AMR-type genes with reads across the 92 runs (`09_rollup/resistom
 22 runs have no reads on any AMR-type gene of their own assembly: 14 upstream, 4
 downstream and all 4 controls.
 
-- PERMANOVA (exploratory, Aitchison, 88 non-control runs): site group explains 40.5% of
-  resistome variation (p = 0.0001), time point 4.0% (p = 0.037), creek system 2.0% (p = 0.029).
-- ALDEx2 (BH): **no gene significant** in any comparison. Upstream vs downstream within
-  each creek (8 vs 8; 3–6 genes with reads) and within time points 2–4 (4 vs 4); time point 1
-  skipped (1 gene with reads). Influent vs plant within each creek (4 vs 16; 122–135 genes);
-  within time points skipped (2 influent runs each, minimum 3).
-- **Stats groups are provisional**: `params.stats.site_groups` still puts PCI and PCE in
-  "plant", though they are pre-treatment; the comparisons are to be confirmed with the PI.
-  Changing them needs only the statistics step re-run.
+Statistics groups (PI, 2026-11-10): creek upstream (UP_A/B), creek downstream (DS_A/B),
+**pre-treatment** (HOSP, RES, INF, PCI, PCE), **plant** steps (ATE, FCE, UV); controls are a
+reference, never tested.
+
+- PERMANOVA (exploratory, Aitchison, 88 non-control runs): site group explains 51.6% of
+  resistome variation (p = 0.0001), time point 4.0% (p = 0.008), creek system 1.6% (p = 0.030).
+- **Pre-treatment vs plant** (ALDEx2, BH < 0.05, all AMR-type genes): 31 genes within
+  Mallard Creek (20 vs 8 runs, 135 genes tested) and 38 within Sugar Creek (16 vs 12, 152);
+  29 and 33 of them higher before treatment. Within time points (9 vs 5 runs): 17, 14, 0
+  and 22 at T1–T4. 22 genes are significant in both creeks: aadA2, aadA27, aadE, blaMCA,
+  blaOXA, cblA, cfxA, cfxA6, erm(B), icr-Mo, lnu(AN2), lnu(C), mef(A), mef(En2), msr(D),
+  qnrS2, sul1, tet(40), tet(O), tet(Q), tet(W), tet(X1); all are higher before treatment
+  except sul1, which is higher in the plant. Mobile (plasmid + virus) genes only: 2
+  (Mallard) and 8 (Sugar) significant.
+- **Creek upstream vs downstream**: no gene significant. Within each creek (8 vs 8) and at
+  T2–T4 (4 vs 4) only 2–6 genes have reads; T1 skipped (1 gene with reads).
+
+`09_rollup/stats/{all,mobile}/` holds every test table (`*.aldex2.tsv`; `effect` < 0 =
+higher before treatment), the CLR matrix, group means, PERMANOVA and the log.
 
 The Nextflow STATS step of the 92-run run passed no comparisons to `stats.R` (fixed in
 33e1af4); the statistics here were produced by the same commands as a standalone job
-(`/scratch/.../stats_rerun/run_stats.sbatch`, job 27725774), after a `stats.R` fix for tests
-with fewer than 2 genes (325cc5a).
+(`/scratch/.../stats_rerun/run_stats.sbatch`; final run with the PI's groups: job 27725822),
+after a `stats.R` fix for tests with fewer than 2 genes (325cc5a).
 
 ## Audit
 
