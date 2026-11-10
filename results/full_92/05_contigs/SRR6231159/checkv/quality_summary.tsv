@@ -1,0 +1,669 @@
+contig_id	contig_length	provirus	proviral_length	gene_count	viral_genes	host_genes	checkv_quality	miuvig_quality	completeness	completeness_method	contamination	kmer_freq	warnings
+SRR6231159_k127_262469	1315	No	NA	2	1	0	Low-quality	Genome-fragment	2.37	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_59690	2561	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_100	1072	No	NA	2	2	0	Low-quality	Genome-fragment	1.6	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_286376	1616	No	NA	4	1	0	Low-quality	Genome-fragment	4.43	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_59738	3194	No	NA	5	2	0	Low-quality	Genome-fragment	6.07	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_262548	1504	No	NA	2	2	0	Low-quality	Genome-fragment	10.47	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_334117	1384	No	NA	2	1	0	Low-quality	Genome-fragment	3.81	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_226741	1006	No	NA	3	2	0	Low-quality	Genome-fragment	1.67	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_238708	1817	No	NA	2	1	0	Low-quality	Genome-fragment	4.79	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_83659	1367	No	NA	4	0	0	Low-quality	Genome-fragment	8.54	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_250600	3303	No	NA	5	1	0	Low-quality	Genome-fragment	1.75	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_167138	1455	No	NA	4	1	0	Low-quality	Genome-fragment	0.98	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_322236	1506	No	NA	2	2	0	Low-quality	Genome-fragment	4.99	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_226801	1065	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_322246	2122	No	NA	4	2	0	Low-quality	Genome-fragment	1.03	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_191063	2681	No	NA	3	2	0	Low-quality	Genome-fragment	0.72	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_107535	2625	No	NA	6	0	0	Low-quality	Genome-fragment	14.45	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_95618	2861	No	NA	6	2	0	Low-quality	Genome-fragment	4.27	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_47960	3081	No	NA	3	3	0	Low-quality	Genome-fragment	21.17	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_107537	14830	No	NA	23	2	1	Low-quality	Genome-fragment	10.66	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_250721	1041	No	NA	1	0	0	Low-quality	Genome-fragment	7.05	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_310412	4511	No	NA	9	3	0	Low-quality	Genome-fragment	6.23	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_24156	1871	No	NA	5	0	0	Low-quality	Genome-fragment	11.62	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_59921	1943	No	NA	3	1	0	Low-quality	Genome-fragment	4.61	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_107620	3349	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_83832	1223	No	NA	3	2	0	Low-quality	Genome-fragment	1.32	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_24197	1033	No	NA	3	1	0	Low-quality	Genome-fragment	2.27	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_131523	37082	No	NA	55	22	0	High-quality	High-quality	99.96	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_274683	1791	No	NA	4	0	0	Low-quality	Genome-fragment	11.16	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_59977	3098	No	NA	4	0	0	Low-quality	Genome-fragment	9.36	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_262779	14346	No	NA	16	5	0	Low-quality	Genome-fragment	1.92	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_119681	1222	No	NA	1	0	0	Low-quality	Genome-fragment	2.29	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_24257	1223	No	NA	3	0	0	Low-quality	Genome-fragment	7.63	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_191232	1190	No	NA	3	1	0	Low-quality	Genome-fragment	2.09	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_203145	1961	No	NA	2	2	0	Low-quality	Genome-fragment	12.34	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_119713	2058	No	NA	2	1	0	Low-quality	Genome-fragment	5.1	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_227063	1195	No	NA	2	1	0	Low-quality	Genome-fragment	3.05	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_12340	2573	No	NA	6	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_119764	5648	No	NA	6	1	0	Low-quality	Genome-fragment	15.12	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_36225	5209	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_370242	1110	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_95969	1212	No	NA	1	0	0	Low-quality	Genome-fragment	2.32	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_155493	5120	No	NA	4	1	0	Low-quality	Genome-fragment	1.77	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_12427	1508	No	NA	2	2	0	Low-quality	Genome-fragment	9.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_143637	1429	No	NA	2	1	0	Low-quality	Genome-fragment	3.83	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_274913	1010	No	NA	2	2	0	Low-quality	Genome-fragment	2.65	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_370312	3111	No	NA	5	0	1	Low-quality	Genome-fragment	7.57	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_179615	2748	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_72266	1884	No	NA	2	1	0	Low-quality	Genome-fragment	6.17	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_96106	1750	No	NA	2	1	0	Low-quality	Genome-fragment	0.45	HMM-based (lower-bound)	0.0	1.02	
+SRR6231159_k127_72306	2240	No	NA	3	2	0	Low-quality	Genome-fragment	1.85	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_191511	1073	No	NA	1	1	0	Low-quality	Genome-fragment	3.0	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_96204	1791	No	NA	3	1	0	Low-quality	Genome-fragment	4.07	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_251256	3060	No	NA	5	2	0	Low-quality	Genome-fragment	1.52	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_179825	1474	No	NA	2	2	0	Low-quality	Genome-fragment	2.53	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_96330	1610	No	NA	2	1	0	Low-quality	Genome-fragment	0.86	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_215604	2819	No	NA	9	3	0	Low-quality	Genome-fragment	7.91	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_299030	1893	No	NA	3	2	0	Low-quality	Genome-fragment	11.76	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_96394	2730	No	NA	6	0	0	Low-quality	Genome-fragment	18.47	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_311063	1474	No	NA	1	0	0	Low-quality	Genome-fragment	2.81	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_215683	1301	No	NA	6	1	0	Low-quality	Genome-fragment	8.19	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_155914	4128	No	NA	4	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_120278	2734	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_48708	2102	No	NA	4	3	0	Low-quality	Genome-fragment	2.49	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_334966	5888	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.01	no viral genes detected; low-confidence DTR
+SRR6231159_k127_263503	1011	No	NA	2	2	0	Low-quality	Genome-fragment	6.89	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_132275	1338	No	NA	3	1	0	Low-quality	Genome-fragment	3.84	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_72810	4785	No	NA	5	1	0	Low-quality	Genome-fragment	7.09	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_275504	1492	No	NA	2	0	0	Low-quality	Genome-fragment	3.62	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_168155	2185	No	NA	2	1	0	Low-quality	Genome-fragment	3.07	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_227804	1358	No	NA	5	0	0	Low-quality	Genome-fragment	3.66	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_203944	1286	No	NA	3	1	0	Low-quality	Genome-fragment	3.98	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_287515	9181	No	NA	16	6	0	Low-quality	Genome-fragment	18.54	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_203988	1522	No	NA	3	0	0	Low-quality	Genome-fragment	5.26	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_216060	2675	No	NA	3	0	0	Low-quality	Genome-fragment	7.64	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_311483	2554	No	NA	4	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_156244	1062	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_204069	3134	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_323433	1104	No	NA	2	0	1	Low-quality	Genome-fragment	1.44	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_25288	1209	No	NA	3	2	0	Low-quality	Genome-fragment	2.82	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_156351	2587	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_108815	8462	No	NA	20	4	0	Low-quality	Genome-fragment	14.93	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_251784	2040	No	NA	3	3	0	Low-quality	Genome-fragment	12.74	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_287741	2796	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_359328	1042	No	NA	4	0	0	Low-quality	Genome-fragment	3.06	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_108867	8679	No	NA	13	3	0	Low-quality	Genome-fragment	15.99	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_61154	2660	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_37209	4801	No	NA	7	3	0	Low-quality	Genome-fragment	8.72	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_144680	3803	No	NA	6	1	0	Low-quality	Genome-fragment	0.19	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_144698	1771	No	NA	2	2	0	Low-quality	Genome-fragment	12.19	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_299610	2569	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_156510	1038	No	NA	2	1	0	Low-quality	Genome-fragment	2.78	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_359452	2909	No	NA	3	3	0	Low-quality	Genome-fragment	6.89	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_371430	6711	No	NA	6	4	0	Low-quality	Genome-fragment	3.76	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_240416	11308	No	NA	13	3	1	Low-quality	Genome-fragment	3.46	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_49583	1266	No	NA	3	0	0	Low-quality	Genome-fragment	3.68	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_85268	7062	Yes	4055	5	1	1	Low-quality	Genome-fragment	2.3	HMM-based (lower-bound)	42.58	1.04	
+SRR6231159_k127_121165	1397	No	NA	3	1	0	Low-quality	Genome-fragment	2.93	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_25740	1401	No	NA	3	0	0	Low-quality	Genome-fragment	2.48	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_25772	8671	No	NA	10	2	0	Low-quality	Genome-fragment	1.67	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_323959	1210	No	NA	2	2	0	Low-quality	Genome-fragment	7.59	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_335845	1132	No	NA	2	1	0	Low-quality	Genome-fragment	1.86	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_85363	1020	No	NA	2	2	0	Low-quality	Genome-fragment	2.09	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_228455	4637	No	NA	8	0	0	Low-quality	Genome-fragment	6.84	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_240653	2560	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_288265	6927	No	NA	9	5	0	Low-quality	Genome-fragment	18.86	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_2028	4461	No	NA	12	7	0	Low-quality	Genome-fragment	13.07	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_156787	1033	No	NA	3	1	0	Low-quality	Genome-fragment	6.48	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_228529	1949	No	NA	5	1	0	Low-quality	Genome-fragment	4.42	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_276354	1428	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_288328	1820	No	NA	2	2	0	Low-quality	Genome-fragment	4.93	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_312382	1797	No	NA	1	1	0	Low-quality	Genome-fragment	2.82	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_359837	4861	No	NA	9	1	0	Low-quality	Genome-fragment	10.82	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_133228	3068	No	NA	7	4	0	Low-quality	Genome-fragment	8.83	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_193005	1519	No	NA	4	2	0	Low-quality	Genome-fragment	2.63	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_61720	1147	No	NA	1	1	0	Low-quality	Genome-fragment	7.59	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_73753	3127	No	NA	4	1	0	Low-quality	Genome-fragment	0.24	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_169105	1079	No	NA	2	0	0	Low-quality	Genome-fragment	7.57	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_240833	2542	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_204944	1284	No	NA	3	1	0	Low-quality	Genome-fragment	2.93	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_276496	2521	No	NA	3	0	0	Low-quality	Genome-fragment	4.25	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_181277	3594	No	NA	5	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_204973	5195	No	NA	8	3	0	Low-quality	Genome-fragment	13.56	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_26122	29267	No	NA	37	17	0	Low-quality	Genome-fragment	16.56	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_359959	3355	No	NA	4	2	0	Low-quality	Genome-fragment	9.2	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_240964	6513	No	NA	13	2	0	Low-quality	Genome-fragment	17.31	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_264797	1149	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_121650	3104	No	NA	4	1	0	Low-quality	Genome-fragment	12.58	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_38054	1093	No	NA	2	2	0	Low-quality	Genome-fragment	3.21	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_169349	3625	No	NA	5	1	0	Low-quality	Genome-fragment	5.7	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_276691	1103	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_169417	2080	No	NA	4	1	0	Low-quality	Genome-fragment	7.09	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_169429	3281	No	NA	5	0	0	Low-quality	Genome-fragment	2.88	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_276730	4538	No	NA	5	0	0	Low-quality	Genome-fragment	12.11	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_62041	1009	No	NA	1	1	0	Low-quality	Genome-fragment	2.8	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_145622	1597	No	NA	4	3	0	Low-quality	Genome-fragment	3.14	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_145636	4448	No	NA	4	3	0	Low-quality	Genome-fragment	0.67	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_228996	6584	No	NA	9	1	0	Low-quality	Genome-fragment	1.46	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_169508	5321	No	NA	7	0	1	Low-quality	Genome-fragment	9.03	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_86019	2173	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_372207	1135	No	NA	3	1	0	Low-quality	Genome-fragment	2.17	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_38288	6548	No	NA	6	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_157358	1440	No	NA	4	1	0	Low-quality	Genome-fragment	3.48	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_288861	1245	No	NA	1	0	0	Low-quality	Genome-fragment	3.09	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_50441	10480	No	NA	15	9	0	Low-quality	Genome-fragment	28.21	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_181749	4115	No	NA	3	3	0	Low-quality	Genome-fragment	25.86	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_181757	2170	No	NA	4	2	0	Low-quality	Genome-fragment	1.52	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_300542	3124	No	NA	5	1	0	Low-quality	Genome-fragment	4.88	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_372318	4741	No	NA	5	5	0	Low-quality	Genome-fragment	9.38	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_122048	3307	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_300577	1505	No	NA	2	2	0	Low-quality	Genome-fragment	9.48	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_276969	1003	No	NA	3	1	0	Low-quality	Genome-fragment	1.97	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_193609	24538	No	NA	35	16	0	Low-quality	Genome-fragment	14.12	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_336736	1549	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_372435	1886	No	NA	4	1	0	Low-quality	Genome-fragment	5.59	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_181896	2638	No	NA	3	2	0	Low-quality	Genome-fragment	8.01	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_193684	5502	No	NA	9	2	0	Low-quality	Genome-fragment	3.03	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_181917	4175	Yes	2861	7	1	1	Low-quality	Genome-fragment	8.69	AAI-based (high-confidence)	31.47	1.0	
+SRR6231159_k127_2934	1062	No	NA	2	2	0	Low-quality	Genome-fragment	3.58	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_205640	1635	No	NA	2	2	0	Low-quality	Genome-fragment	4.57	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_133940	1274	No	NA	2	1	0	Low-quality	Genome-fragment	7.8	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_14712	1392	No	NA	3	2	0	Low-quality	Genome-fragment	4.68	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_372538	1092	No	NA	3	2	0	Low-quality	Genome-fragment	2.97	AAI-based (high-confidence)	0.0	1.02	
+SRR6231159_k127_348821	8322	No	NA	8	3	0	Low-quality	Genome-fragment	4.68	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_86397	1234	No	NA	2	0	0	Low-quality	Genome-fragment	3.34	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_134003	1541	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.05	no viral genes detected
+SRR6231159_k127_157679	1334	No	NA	3	1	0	Low-quality	Genome-fragment	2.21	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_336910	24748	No	NA	19	8	0	Low-quality	Genome-fragment	6.09	AAI-based (medium-confidence)	0.0	1.01	
+SRR6231159_k127_50752	2631	No	NA	3	1	0	Low-quality	Genome-fragment	0.21	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_217673	1274	No	NA	3	2	0	Low-quality	Genome-fragment	2.48	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_38685	1080	No	NA	1	1	0	Low-quality	Genome-fragment	2.13	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_50788	6214	No	NA	8	1	0	Low-quality	Genome-fragment	25.19	AAI-based (high-confidence)	0.0	1.01	
+SRR6231159_k127_265461	1055	No	NA	3	1	0	Low-quality	Genome-fragment	1.89	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_170029	1133	No	NA	3	2	0	Low-quality	Genome-fragment	2.69	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_360719	2555	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_313375	1826	No	NA	2	1	0	Low-quality	Genome-fragment	5.55	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_193888	20180	No	NA	20	3	0	Low-quality	Genome-fragment	5.48	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_360758	1357	No	NA	2	2	0	Low-quality	Genome-fragment	4.66	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_229561	1370	No	NA	2	1	0	Low-quality	Genome-fragment	3.47	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_146236	9672	No	NA	13	4	0	Low-quality	Genome-fragment	2.19	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_27017	1850	No	NA	3	2	0	Low-quality	Genome-fragment	3.03	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_170110	1062	No	NA	1	0	0	Low-quality	Genome-fragment	1.16	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_337039	2923	No	NA	8	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_3217	2132	No	NA	3	2	0	Low-quality	Genome-fragment	6.07	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_360875	1162	No	NA	2	2	0	Low-quality	Genome-fragment	8.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_50991	1189	No	NA	1	1	0	Low-quality	Genome-fragment	3.07	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_360917	1316	No	NA	4	2	0	Low-quality	Genome-fragment	3.65	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_349155	1527	No	NA	2	1	0	Low-quality	Genome-fragment	4.08	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_86769	1014	No	NA	3	0	0	Low-quality	Genome-fragment	6.31	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_51062	1043	No	NA	1	1	0	Low-quality	Genome-fragment	0.28	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_98824	2794	No	NA	8	2	0	Low-quality	Genome-fragment	4.71	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_3381	31832	No	NA	22	9	0	Low-quality	Genome-fragment	7.8	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_39072	1986	No	NA	2	2	0	Low-quality	Genome-fragment	3.88	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_182538	9550	No	NA	2	0	1	Low-quality	Genome-fragment	2.03	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_75131	6249	No	NA	7	1	0	Low-quality	Genome-fragment	16.84	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_313754	3911	No	NA	4	3	0	Low-quality	Genome-fragment	7.87	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_98924	2383	No	NA	4	1	0	Low-quality	Genome-fragment	7.29	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_218210	1629	No	NA	2	2	0	Low-quality	Genome-fragment	2.95	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_110905	1039	No	NA	3	0	0	Low-quality	Genome-fragment	6.49	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_325695	2764	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_170492	5517	No	NA	10	5	0	Low-quality	Genome-fragment	11.07	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_289819	2583	No	NA	3	3	0	Low-quality	Genome-fragment	1.05	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_170535	1726	No	NA	2	1	0	Low-quality	Genome-fragment	0.87	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_194396	1486	No	NA	5	2	0	Low-quality	Genome-fragment	2.81	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_75305	2715	No	NA	6	0	0	Low-quality	Genome-fragment	1.68	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_15311	14522	No	NA	17	6	0	Low-quality	Genome-fragment	2.85	AAI-based (medium-confidence)	0.0	1.01	
+SRR6231159_k127_313979	6418	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.04	no viral genes detected
+SRR6231159_k127_63281	2625	No	NA	3	1	0	Low-quality	Genome-fragment	4.25	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_15386	3777	No	NA	6	1	0	Low-quality	Genome-fragment	25.36	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_111043	6941	No	NA	9	2	0	Low-quality	Genome-fragment	0.56	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_3700	1883	No	NA	4	2	0	Low-quality	Genome-fragment	11.72	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_170642	5026	No	NA	6	2	0	Low-quality	Genome-fragment	8.34	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_373260	5875	No	NA	7	2	0	Low-quality	Genome-fragment	11.63	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_277879	1319	No	NA	2	2	0	Low-quality	Genome-fragment	2.83	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_194605	1099	No	NA	3	0	0	Low-quality	Genome-fragment	6.85	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_325979	1433	No	NA	4	0	0	Low-quality	Genome-fragment	8.94	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_51564	1409	No	NA	2	2	0	Low-quality	Genome-fragment	8.79	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_373373	9269	No	NA	21	2	0	Low-quality	Genome-fragment	15.64	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_314246	1902	No	NA	3	2	0	Low-quality	Genome-fragment	6.28	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_111265	10624	No	NA	12	1	0	Low-quality	Genome-fragment	0.86	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_3927	4219	No	NA	11	3	0	Low-quality	Genome-fragment	12.03	AAI-based (medium-confidence)	0.0	1.01	
+SRR6231159_k127_99454	1416	No	NA	3	1	0	Low-quality	Genome-fragment	0.26	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_290174	1086	No	NA	2	2	0	Low-quality	Genome-fragment	2.05	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_326177	1213	No	NA	2	1	0	Low-quality	Genome-fragment	3.19	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_290219	3708	Yes	2145	4	1	1	Low-quality	Genome-fragment	0.42	AAI-based (medium-confidence)	42.15	1.0	
+SRR6231159_k127_15714	1288	No	NA	4	1	0	Low-quality	Genome-fragment	8.1	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_147147	1038	No	NA	2	0	0	Low-quality	Genome-fragment	2.98	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_4061	2833	No	NA	3	2	0	Low-quality	Genome-fragment	0.64	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_4073	1028	No	NA	5	0	0	Low-quality	Genome-fragment	6.39	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_171017	4275	No	NA	8	4	0	Low-quality	Genome-fragment	3.76	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_75817	1568	No	NA	3	1	0	Low-quality	Genome-fragment	3.47	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_361838	2055	No	NA	2	2	0	Low-quality	Genome-fragment	12.82	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_123450	1270	No	NA	4	2	0	Low-quality	Genome-fragment	3.62	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_338062	4559	No	NA	8	5	0	Low-quality	Genome-fragment	1.93	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_218917	1025	No	NA	4	1	0	Low-quality	Genome-fragment	2.59	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_326398	19101	No	NA	13	2	1	Low-quality	Genome-fragment	4.26	AAI-based (medium-confidence)	0.0	1.01	
+SRR6231159_k127_15936	1001	No	NA	2	2	0	Low-quality	Genome-fragment	2.58	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_266650	1067	No	NA	1	1	0	Low-quality	Genome-fragment	2.33	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_254422	3201	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_254459	1354	No	NA	2	1	0	Low-quality	Genome-fragment	8.65	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_147422	2721	No	NA	9	1	0	Low-quality	Genome-fragment	4.94	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_302019	1588	No	NA	4	0	0	Low-quality	Genome-fragment	5.5	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_230760	2867	No	NA	6	2	0	Low-quality	Genome-fragment	5.78	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_350383	1099	No	NA	2	1	0	Low-quality	Genome-fragment	1.49	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_40167	1289	No	NA	3	1	0	Low-quality	Genome-fragment	2.05	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_350400	1113	No	NA	2	2	0	Low-quality	Genome-fragment	2.15	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_278562	1194	No	NA	3	2	0	Low-quality	Genome-fragment	2.96	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_52248	6117	No	NA	7	5	0	Low-quality	Genome-fragment	10.15	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_135650	11501	No	NA	12	4	0	Low-quality	Genome-fragment	1.21	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_171411	1014	No	NA	1	1	0	Low-quality	Genome-fragment	2.19	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_243326	2897	No	NA	12	2	0	Low-quality	Genome-fragment	7.49	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_16269	8115	No	NA	10	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_254759	11088	No	NA	23	7	2	Low-quality	Genome-fragment	21.59	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_4624	1897	No	NA	2	2	0	Low-quality	Genome-fragment	11.75	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_88138	1218	No	NA	2	1	0	Low-quality	Genome-fragment	2.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_362261	7199	No	NA	10	4	0	Low-quality	Genome-fragment	19.95	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_267063	2669	No	NA	3	2	0	Low-quality	Genome-fragment	0.21	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_207425	2110	No	NA	3	1	0	Low-quality	Genome-fragment	0.32	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_315053	3547	No	NA	6	2	0	Low-quality	Genome-fragment	9.53	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_219477	1799	No	NA	2	1	0	Low-quality	Genome-fragment	4.82	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_147816	9722	No	NA	9	1	0	Low-quality	Genome-fragment	0.77	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_28723	1449	No	NA	2	1	0	Low-quality	Genome-fragment	2.67	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_159333	7194	No	NA	13	4	0	Low-quality	Genome-fragment	15.96	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_291120	1129	No	NA	1	1	0	Low-quality	Genome-fragment	3.17	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_76657	1115	No	NA	3	0	0	Low-quality	Genome-fragment	3.1	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_100483	1023	No	NA	3	1	0	Low-quality	Genome-fragment	1.85	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_40650	4976	No	NA	6	0	0	Low-quality	Genome-fragment	11.64	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_267332	1140	No	NA	1	1	0	Low-quality	Genome-fragment	7.1	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_124364	6133	No	NA	9	8	0	Low-quality	Genome-fragment	12.12	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_184110	1620	No	NA	5	3	0	Low-quality	Genome-fragment	2.5	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_16546	1032	No	NA	3	2	0	Low-quality	Genome-fragment	1.54	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_362554	1325	No	NA	2	1	0	Low-quality	Genome-fragment	0.22	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_52748	1052	No	NA	3	1	0	Low-quality	Genome-fragment	1.67	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_136180	1170	No	NA	3	2	0	Low-quality	Genome-fragment	3.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_219814	1817	No	NA	1	1	0	Low-quality	Genome-fragment	4.33	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_28910	15722	No	NA	13	3	0	Low-quality	Genome-fragment	4.0	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_267473	3558	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_255248	4254	No	NA	15	4	0	Low-quality	Genome-fragment	5.1	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_172052	1124	No	NA	2	1	0	Low-quality	Genome-fragment	3.07	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_207823	1852	No	NA	2	2	0	Low-quality	Genome-fragment	3.94	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_40867	4600	No	NA	6	2	0	Low-quality	Genome-fragment	18.75	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_302742	1175	No	NA	2	2	0	Low-quality	Genome-fragment	3.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_88676	1140	No	NA	2	1	0	Low-quality	Genome-fragment	0.09	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_231474	1233	No	NA	2	2	0	Low-quality	Genome-fragment	0.4	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_315502	1141	No	NA	1	1	0	Low-quality	Genome-fragment	1.61	HMM-based (lower-bound)	0.0	1.06	
+SRR6231159_k127_16744	4557	No	NA	5	3	0	Low-quality	Genome-fragment	10.67	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_148334	1882	No	NA	6	2	0	Low-quality	Genome-fragment	4.78	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_351181	24495	No	NA	23	4	2	Low-quality	Genome-fragment	4.83	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_100834	2619	No	NA	4	2	0	Low-quality	Genome-fragment	3.43	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_339159	1284	No	NA	1	1	0	Low-quality	Genome-fragment	3.65	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_41077	1756	No	NA	5	0	0	Low-quality	Genome-fragment	10.96	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_88885	1498	No	NA	1	1	0	Low-quality	Genome-fragment	4.99	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_339229	2684	No	NA	9	3	0	Low-quality	Genome-fragment	7.6	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_291595	3390	No	NA	3	1	0	Low-quality	Genome-fragment	3.2	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_112835	1038	No	NA	2	2	0	Low-quality	Genome-fragment	1.73	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_172367	2919	No	NA	4	2	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	
+SRR6231159_k127_196305	1001	No	NA	2	1	0	Low-quality	Genome-fragment	2.94	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_5424	3007	No	NA	1	0	0	Low-quality	Genome-fragment	0.3	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_53194	1158	No	NA	2	1	0	Low-quality	Genome-fragment	3.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_244166	1601	No	NA	3	1	0	Low-quality	Genome-fragment	4.48	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_231782	1248	No	NA	2	2	0	Low-quality	Genome-fragment	3.87	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_208187	1635	No	NA	2	1	0	Low-quality	Genome-fragment	0.13	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_279470	3782	No	NA	4	3	0	Low-quality	Genome-fragment	11.04	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_101181	1120	No	NA	3	0	0	Low-quality	Genome-fragment	6.99	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_184725	9023	Yes	7690	7	3	1	Low-quality	Genome-fragment	1.3	AAI-based (medium-confidence)	14.77	1.0	
+SRR6231159_k127_255742	2052	No	NA	4	1	0	Low-quality	Genome-fragment	0.91	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_316038	1101	No	NA	1	1	0	Low-quality	Genome-fragment	0.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_113118	1263	No	NA	3	1	0	Low-quality	Genome-fragment	3.39	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_196587	1254	No	NA	1	1	0	Low-quality	Genome-fragment	3.68	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_339596	3109	No	NA	3	1	0	Low-quality	Genome-fragment	8.14	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_148778	2516	No	NA	7	2	0	Low-quality	Genome-fragment	6.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_125166	1020	No	NA	3	0	0	Low-quality	Genome-fragment	2.64	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_113208	1303	No	NA	2	2	0	Low-quality	Genome-fragment	3.05	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_279739	1080	No	NA	1	1	0	Low-quality	Genome-fragment	0.27	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_291958	3695	No	NA	7	2	0	Low-quality	Genome-fragment	5.16	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_137069	1115	No	NA	2	0	0	Low-quality	Genome-fragment	0.22	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_101407	2951	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.01	no viral genes detected
+SRR6231159_k127_113304	1036	No	NA	2	1	0	Low-quality	Genome-fragment	6.45	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_65586	2985	No	NA	9	1	0	Low-quality	Genome-fragment	10.28	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_160306	1154	No	NA	4	0	0	Low-quality	Genome-fragment	6.76	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_113362	3469	No	NA	4	0	3	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_220697	20415	No	NA	16	6	0	Low-quality	Genome-fragment	5.86	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_328123	2083	No	NA	2	1	0	Low-quality	Genome-fragment	12.8	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_196802	1512	No	NA	3	0	0	Low-quality	Genome-fragment	2.56	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_148926	4678	No	NA	7	3	0	Low-quality	Genome-fragment	8.98	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_89500	1936	No	NA	2	2	0	Low-quality	Genome-fragment	5.13	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_172845	4548	No	NA	2	0	0	Low-quality	Genome-fragment	4.01	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_196820	1605	No	NA	2	0	0	Low-quality	Genome-fragment	3.41	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_196851	2698	No	NA	6	3	0	Low-quality	Genome-fragment	9.83	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_375389	2760	No	NA	4	1	0	Low-quality	Genome-fragment	12.66	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_220790	2227	No	NA	4	1	0	Low-quality	Genome-fragment	3.75	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_53774	12044	No	NA	13	3	0	Low-quality	Genome-fragment	2.39	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_279996	4445	No	NA	13	4	0	Low-quality	Genome-fragment	12.96	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_375476	2666	No	NA	5	1	0	Low-quality	Genome-fragment	1.54	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_280031	1203	No	NA	1	1	0	Low-quality	Genome-fragment	3.36	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_160484	2369	No	NA	3	2	0	Low-quality	Genome-fragment	16.15	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_137421	3214	No	NA	3	0	2	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_292301	1466	No	NA	2	1	0	Low-quality	Genome-fragment	3.59	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_65845	1112	No	NA	1	1	0	Low-quality	Genome-fragment	2.8	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_220926	1234	No	NA	2	0	1	Low-quality	Genome-fragment	2.49	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_220929	2854	No	NA	6	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_101767	4964	No	NA	7	1	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	
+SRR6231159_k127_185330	2913	No	NA	4	3	0	Low-quality	Genome-fragment	4.39	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_6186	3009	No	NA	10	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_316532	5948	No	NA	15	4	0	Low-quality	Genome-fragment	15.68	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_185428	1398	No	NA	4	1	0	Low-quality	Genome-fragment	4.28	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_113817	1309	No	NA	2	2	0	Low-quality	Genome-fragment	3.08	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_137632	1517	No	NA	1	0	0	Low-quality	Genome-fragment	2.32	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_352232	1667	No	NA	3	3	0	Low-quality	Genome-fragment	2.73	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_304006	1330	No	NA	2	2	0	Low-quality	Genome-fragment	3.04	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_280377	1105	No	NA	2	2	0	Low-quality	Genome-fragment	3.05	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_54205	1211	No	NA	2	1	0	Low-quality	Genome-fragment	0.1	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_316805	1476	No	NA	4	0	0	Low-quality	Genome-fragment	9.21	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_78269	1099	No	NA	3	1	0	Low-quality	Genome-fragment	1.18	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_102093	1032	No	NA	3	2	0	Low-quality	Genome-fragment	1.71	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_245205	1444	No	NA	3	1	0	Low-quality	Genome-fragment	1.37	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_54309	1736	No	NA	9	0	0	Low-quality	Genome-fragment	4.72	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_160935	3910	No	NA	6	1	0	Low-quality	Genome-fragment	6.71	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_78380	1062	No	NA	2	1	0	Low-quality	Genome-fragment	0.63	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_149544	8071	No	NA	15	2	0	Low-quality	Genome-fragment	20.98	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_185762	3411	No	NA	7	2	0	Low-quality	Genome-fragment	7.31	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_90173	2776	No	NA	2	1	0	Low-quality	Genome-fragment	5.83	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_256640	3085	No	NA	9	3	0	Low-quality	Genome-fragment	5.76	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_54391	1052	No	NA	4	0	0	Low-quality	Genome-fragment	6.62	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_185804	1929	No	NA	3	1	0	Low-quality	Genome-fragment	5.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_173583	1386	No	NA	1	1	0	Low-quality	Genome-fragment	9.52	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_280646	1184	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_328942	1275	No	NA	3	1	0	Low-quality	Genome-fragment	2.12	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_42570	1123	No	NA	3	0	0	Low-quality	Genome-fragment	2.97	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_352582	3186	No	NA	3	1	0	Low-quality	Genome-fragment	29.7	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_149684	1301	No	NA	2	1	0	Low-quality	Genome-fragment	3.9	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_340633	1585	No	NA	3	1	0	Low-quality	Genome-fragment	0.24	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_185930	3745	No	NA	9	2	0	Low-quality	Genome-fragment	8.86	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_197709	1291	No	NA	2	2	0	Low-quality	Genome-fragment	4.08	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_256843	1296	No	NA	2	1	0	Low-quality	Genome-fragment	2.38	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_149806	1124	No	NA	1	1	0	Low-quality	Genome-fragment	1.94	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_6888	5770	No	NA	6	2	0	Low-quality	Genome-fragment	5.63	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_364374	3041	No	NA	4	4	0	Low-quality	Genome-fragment	5.1	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_304542	2354	No	NA	6	5	0	Low-quality	Genome-fragment	3.97	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_352757	1346	No	NA	2	1	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	
+SRR6231159_k127_364395	4382	No	NA	4	0	2	Low-quality	Genome-fragment	1.38	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_138204	2750	No	NA	7	3	0	Low-quality	Genome-fragment	4.92	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_173849	1321	No	NA	4	2	0	Low-quality	Genome-fragment	3.1	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_364408	1633	No	NA	2	1	0	Low-quality	Genome-fragment	10.18	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_376249	1171	No	NA	4	2	0	Low-quality	Genome-fragment	2.65	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_293073	8406	No	NA	18	2	0	Low-quality	Genome-fragment	8.22	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_197867	2385	No	NA	5	1	0	Low-quality	Genome-fragment	2.69	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_54725	2365	No	NA	3	2	0	Low-quality	Genome-fragment	6.27	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_304591	1171	No	NA	2	1	0	Low-quality	Genome-fragment	3.73	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_269377	2696	No	NA	5	0	0	Low-quality	Genome-fragment	7.47	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_161294	1149	No	NA	2	2	0	Low-quality	Genome-fragment	0.16	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_78792	6086	No	NA	7	2	0	Low-quality	Genome-fragment	15.99	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_209755	2018	No	NA	5	3	0	Low-quality	Genome-fragment	3.35	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_78857	2097	No	NA	4	2	0	Low-quality	Genome-fragment	4.09	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_281019	1267	No	NA	2	1	0	Low-quality	Genome-fragment	7.91	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_257035	1138	No	NA	1	1	0	Low-quality	Genome-fragment	1.49	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_161418	1801	No	NA	1	1	0	Low-quality	Genome-fragment	5.16	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_174022	1148	No	NA	1	1	0	Low-quality	Genome-fragment	1.49	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_209873	2344	No	NA	2	1	0	Low-quality	Genome-fragment	3.54	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_78996	2629	No	NA	5	3	0	Low-quality	Genome-fragment	0.71	AAI-based (medium-confidence)	0.0	1.01	
+SRR6231159_k127_161484	5643	No	NA	5	0	0	Low-quality	Genome-fragment	14.84	AAI-based (medium-confidence)	0.0	1.01	no viral genes detected
+SRR6231159_k127_341086	1231	No	NA	1	1	0	Low-quality	Genome-fragment	2.71	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_186395	1450	No	NA	3	1	0	Low-quality	Genome-fragment	0.52	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_245908	4981	No	NA	7	2	0	Low-quality	Genome-fragment	8.22	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_198201	1140	No	NA	2	0	0	Low-quality	Genome-fragment	2.88	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_198219	4183	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.03	no viral genes detected; low-confidence DTR
+SRR6231159_k127_329514	1034	No	NA	3	1	0	Low-quality	Genome-fragment	3.5	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_102886	1605	No	NA	2	0	0	Low-quality	Genome-fragment	3.66	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_269757	1309	No	NA	3	1	0	Low-quality	Genome-fragment	4.15	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_341237	1516	No	NA	1	1	0	Low-quality	Genome-fragment	4.21	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_161688	1420	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_18915	1900	No	NA	3	2	0	Low-quality	Genome-fragment	6.93	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_150269	3546	No	NA	8	3	0	Low-quality	Genome-fragment	8.27	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_222197	2765	No	NA	1	1	0	Low-quality	Genome-fragment	0.39	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_90891	1592	No	NA	3	2	0	Low-quality	Genome-fragment	1.38	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_43288	1204	No	NA	2	1	0	Low-quality	Genome-fragment	2.0	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_138699	1220	No	NA	1	1	0	Low-quality	Genome-fragment	3.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_150302	1099	No	NA	3	1	0	Low-quality	Genome-fragment	1.89	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_353238	1024	No	NA	2	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_210176	1123	No	NA	2	1	0	Low-quality	Genome-fragment	1.72	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_150340	1076	No	NA	4	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_222285	3346	No	NA	5	4	0	Low-quality	Genome-fragment	7.84	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_198445	9131	No	NA	12	2	0	Low-quality	Genome-fragment	1.79	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_150414	5450	No	NA	8	5	0	Low-quality	Genome-fragment	3.66	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_79392	2766	No	NA	2	0	0	Low-quality	Genome-fragment	3.29	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_150442	1494	No	NA	2	1	0	Low-quality	Genome-fragment	1.33	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_341536	3359	Yes	1548	5	1	2	Low-quality	Genome-fragment	2.61	AAI-based (high-confidence)	53.91	1.0	
+SRR6231159_k127_293811	1232	No	NA	1	0	0	Low-quality	Genome-fragment	2.36	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_329966	1022	No	NA	2	2	0	Low-quality	Genome-fragment	1.24	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_43577	1959	No	NA	5	0	0	Low-quality	Genome-fragment	13.48	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_138982	2769	No	NA	6	1	0	Low-quality	Genome-fragment	3.82	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_91226	2573	No	NA	3	1	0	Low-quality	Genome-fragment	2.0	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_150575	5573	No	NA	6	4	0	Low-quality	Genome-fragment	9.89	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_31647	1103	No	NA	3	1	0	Low-quality	Genome-fragment	6.27	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_103308	33048	No	NA	44	19	0	Low-quality	Genome-fragment	19.0	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_246557	1120	No	NA	2	1	0	Low-quality	Genome-fragment	1.94	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_103363	1347	No	NA	3	2	0	Low-quality	Genome-fragment	1.77	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_7832	8234	No	NA	10	5	0	Low-quality	Genome-fragment	22.5	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_210622	3323	No	NA	2	2	0	Low-quality	Genome-fragment	6.63	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_293995	2967	No	NA	5	2	0	Low-quality	Genome-fragment	0.8	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_341766	1036	No	NA	3	1	0	Low-quality	Genome-fragment	2.58	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_31754	13726	No	NA	14	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_79730	1479	No	NA	2	1	0	Low-quality	Genome-fragment	3.11	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_246657	2744	No	NA	3	1	0	Low-quality	Genome-fragment	7.65	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_305566	1856	No	NA	5	2	0	Low-quality	Genome-fragment	11.59	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_19436	3115	No	NA	2	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_174964	2730	No	NA	6	0	0	Low-quality	Genome-fragment	1.53	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_67803	4137	No	NA	6	1	0	Low-quality	Genome-fragment	25.46	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_55787	1247	No	NA	2	1	0	Low-quality	Genome-fragment	2.26	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_365562	4160	No	NA	8	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_198999	2350	No	NA	4	2	0	Low-quality	Genome-fragment	1.13	AAI-based (medium-confidence)	0.0	1.01	
+SRR6231159_k127_187217	1103	No	NA	2	1	0	Low-quality	Genome-fragment	4.11	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_175077	5148	No	NA	6	3	0	Low-quality	Genome-fragment	14.27	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_115505	1794	No	NA	3	3	0	Low-quality	Genome-fragment	5.59	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_8085	3739	No	NA	3	0	0	Low-quality	Genome-fragment	10.83	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_103676	1043	No	NA	2	1	0	Low-quality	Genome-fragment	3.61	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_305783	1531	No	NA	2	1	0	Low-quality	Genome-fragment	1.38	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_55950	1613	No	NA	4	0	0	Low-quality	Genome-fragment	10.07	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_377408	1050	No	NA	4	3	0	Low-quality	Genome-fragment	1.82	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_32023	1156	No	NA	3	1	0	Low-quality	Genome-fragment	1.51	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_162485	2985	No	NA	3	0	0	Low-quality	Genome-fragment	10.01	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_330508	15043	No	NA	12	8	0	Low-quality	Genome-fragment	9.2	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_115635	21842	No	NA	20	2	0	Low-quality	Genome-fragment	4.96	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_199276	3139	No	NA	6	5	0	Low-quality	Genome-fragment	4.97	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_80190	1166	No	NA	3	2	0	Low-quality	Genome-fragment	3.13	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_258233	7258	No	NA	9	2	0	Low-quality	Genome-fragment	1.73	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_223141	2648	No	NA	6	3	0	Low-quality	Genome-fragment	1.35	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_354116	7033	No	NA	12	1	0	Low-quality	Genome-fragment	1.56	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_354122	1005	No	NA	3	1	0	Low-quality	Genome-fragment	1.48	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_377582	1135	No	NA	3	1	0	Low-quality	Genome-fragment	2.46	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_342346	1159	No	NA	2	1	0	Low-quality	Genome-fragment	2.17	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_56215	1424	No	NA	2	2	0	Low-quality	Genome-fragment	8.91	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_68237	7181	No	NA	9	2	0	Low-quality	Genome-fragment	10.06	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_234721	2600	No	NA	3	1	0	Low-quality	Genome-fragment	0.21	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_223265	1029	No	NA	3	0	0	Low-quality	Genome-fragment	2.65	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_247202	1734	No	NA	5	2	0	Low-quality	Genome-fragment	4.39	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_115852	1278	No	NA	4	2	0	Low-quality	Genome-fragment	3.04	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_175467	6101	No	NA	5	2	0	Low-quality	Genome-fragment	0.7	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_8465	1030	No	NA	2	1	0	Low-quality	Genome-fragment	1.35	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_80341	1606	Yes	1192	3	2	1	Low-quality	Genome-fragment	1.57	HMM-based (lower-bound)	25.78	1.0	
+SRR6231159_k127_366019	1189	No	NA	2	1	0	Low-quality	Genome-fragment	2.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_187676	1564	No	NA	1	1	0	Low-quality	Genome-fragment	4.32	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_162819	1349	No	NA	3	2	0	Low-quality	Genome-fragment	2.97	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_258431	2870	No	NA	3	1	0	Low-quality	Genome-fragment	6.74	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_80457	4502	No	NA	10	5	0	Low-quality	Genome-fragment	4.43	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_377854	1125	No	NA	2	2	0	Low-quality	Genome-fragment	2.76	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_318868	1065	No	NA	3	2	0	Low-quality	Genome-fragment	1.57	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_44583	1628	No	NA	2	1	0	Low-quality	Genome-fragment	4.53	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_128172	1496	No	NA	4	2	0	Low-quality	Genome-fragment	4.22	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_139970	3509	No	NA	9	3	0	Low-quality	Genome-fragment	3.15	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_318917	2037	No	NA	7	3	0	Low-quality	Genome-fragment	6.04	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_342649	8067	No	NA	7	1	0	Low-quality	Genome-fragment	0.66	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_175736	3462	No	NA	8	2	0	Low-quality	Genome-fragment	7.72	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_199755	1939	No	NA	2	1	0	Low-quality	Genome-fragment	1.68	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_32648	5278	No	NA	12	4	0	Low-quality	Genome-fragment	5.57	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_354576	1948	No	NA	5	0	0	Low-quality	Genome-fragment	13.54	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_151616	1221	No	NA	3	1	0	Low-quality	Genome-fragment	2.03	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_116237	6059	No	NA	9	3	0	Low-quality	Genome-fragment	1.2	AAI-based (medium-confidence)	0.0	1.02	
+SRR6231159_k127_151633	3575	No	NA	3	0	1	Low-quality	Genome-fragment	7.22	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_223669	2486	No	NA	4	1	0	Low-quality	Genome-fragment	6.68	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_188023	1408	No	NA	3	1	0	Low-quality	Genome-fragment	3.0	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_271324	2114	No	NA	6	2	0	Low-quality	Genome-fragment	5.8	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_128412	1058	No	NA	1	1	0	Low-quality	Genome-fragment	2.78	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_104484	1003	No	NA	2	1	0	Low-quality	Genome-fragment	2.7	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_258748	3725	No	NA	1	0	0	Low-quality	Genome-fragment	6.29	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_306534	1855	No	NA	3	3	0	Low-quality	Genome-fragment	3.51	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_140213	2520	No	NA	4	1	0	Low-quality	Genome-fragment	8.74	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_68760	2534	No	NA	4	1	0	Low-quality	Genome-fragment	4.1	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_342898	2933	No	NA	3	1	0	Low-quality	Genome-fragment	8.08	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_8951	1051	No	NA	4	3	0	Low-quality	Genome-fragment	2.08	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_68790	4992	No	NA	6	3	0	Low-quality	Genome-fragment	15.23	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_247781	2307	No	NA	3	1	0	Low-quality	Genome-fragment	6.45	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_151826	3249	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_20481	2711	No	NA	3	2	0	Low-quality	Genome-fragment	17.07	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_44984	1380	No	NA	1	1	0	Low-quality	Genome-fragment	8.61	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_116518	1039	No	NA	1	0	0	Low-quality	Genome-fragment	1.99	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_33050	1089	No	NA	2	1	0	Low-quality	Genome-fragment	2.92	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_343149	11064	No	NA	13	8	0	Low-quality	Genome-fragment	29.63	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_378418	1472	No	NA	2	1	0	Low-quality	Genome-fragment	4.67	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_116696	1256	No	NA	2	2	0	Low-quality	Genome-fragment	0.88	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_176344	1084	No	NA	3	2	0	Low-quality	Genome-fragment	2.69	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_81302	5658	No	NA	6	1	0	Not-determined	Genome-fragment	NA	NA	0.0	1.01	
+SRR6231159_k127_307020	6915	No	NA	11	4	0	Low-quality	Genome-fragment	7.48	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_188633	1012	No	NA	3	1	0	Low-quality	Genome-fragment	2.95	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_235686	5226	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.01	no viral genes detected
+SRR6231159_k127_343395	2520	No	NA	2	0	2	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_331724	2766	No	NA	9	2	0	Low-quality	Genome-fragment	2.7	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_331730	2501	No	NA	1	0	0	Low-quality	Genome-fragment	2.59	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_33352	2932	No	NA	3	2	0	Low-quality	Genome-fragment	4.83	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_105160	2598	No	NA	6	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.01	no viral genes detected
+SRR6231159_k127_355261	1188	No	NA	3	2	0	Low-quality	Genome-fragment	2.04	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_129087	2700	No	NA	5	1	0	Low-quality	Genome-fragment	7.15	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_259428	1074	No	NA	2	2	0	Low-quality	Genome-fragment	2.85	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_57388	2893	No	NA	2	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_367116	4248	No	NA	8	2	0	Low-quality	Genome-fragment	8.29	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_235833	1603	No	NA	1	1	0	Low-quality	Genome-fragment	10.88	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_259473	2512	No	NA	1	0	1	Low-quality	Genome-fragment	1.19	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_163792	1603	No	NA	5	1	0	Low-quality	Genome-fragment	4.26	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_163804	2144	No	NA	4	1	0	Low-quality	Genome-fragment	5.88	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_378769	1767	No	NA	2	1	0	Low-quality	Genome-fragment	0.14	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_105329	2739	No	NA	5	1	0	Low-quality	Genome-fragment	6.36	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_212546	1185	No	NA	2	0	0	Low-quality	Genome-fragment	0.23	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_331913	2037	No	NA	5	1	0	Low-quality	Genome-fragment	2.27	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_235986	3921	No	NA	7	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_367294	4346	No	NA	4	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_152466	2161	No	NA	9	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_319973	1378	No	NA	4	1	0	Low-quality	Genome-fragment	4.5	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_176850	3786	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_200857	1729	No	NA	3	3	0	Low-quality	Genome-fragment	10.8	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_45780	3962	No	NA	6	0	0	Low-quality	Genome-fragment	19.74	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_176884	2076	No	NA	3	2	0	Low-quality	Genome-fragment	4.9	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_117358	1067	No	NA	2	0	0	Low-quality	Genome-fragment	7.41	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_343811	1025	No	NA	3	2	0	Low-quality	Genome-fragment	3.15	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_93367	4639	No	NA	1	1	0	Low-quality	Genome-fragment	2.44	HMM-based (lower-bound)	0.0	1.04	
+SRR6231159_k127_9917	1269	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_355622	7432	No	NA	3	1	0	Low-quality	Genome-fragment	2.13	HMM-based (lower-bound)	0.0	1.02	
+SRR6231159_k127_200951	21753	No	NA	19	7	0	Low-quality	Genome-fragment	3.72	HMM-based (lower-bound)	0.0	1.01	
+SRR6231159_k127_379098	1240	No	NA	3	0	0	Low-quality	Genome-fragment	7.73	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_129593	1051	No	NA	2	1	0	Low-quality	Genome-fragment	2.15	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_117512	1514	No	NA	1	1	0	Low-quality	Genome-fragment	4.2	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_307617	1300	No	NA	3	1	0	Low-quality	Genome-fragment	8.11	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_367598	1215	No	NA	2	1	0	Low-quality	Genome-fragment	2.23	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_46034	1142	No	NA	2	1	0	Low-quality	Genome-fragment	3.02	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_272550	2783	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_259932	3643	No	NA	5	0	0	Low-quality	Genome-fragment	9.59	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_320231	3513	No	NA	5	2	0	Low-quality	Genome-fragment	8.13	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_189320	2836	No	NA	3	0	0	Low-quality	Genome-fragment	4.33	AAI-based (high-confidence)	0.0	1.02	no viral genes detected
+SRR6231159_k127_212954	3410	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.03	no viral genes detected
+SRR6231159_k127_93576	5478	No	NA	6	4	0	Low-quality	Genome-fragment	8.84	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_284190	1044	No	NA	2	2	0	Low-quality	Genome-fragment	0.14	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_46084	1024	No	NA	1	1	0	Low-quality	Genome-fragment	2.42	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_224968	1819	No	NA	5	1	0	Low-quality	Genome-fragment	4.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_332436	10356	No	NA	11	3	1	Low-quality	Genome-fragment	2.72	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_320349	1139	No	NA	4	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_379311	37305	No	NA	58	25	0	Complete	High-quality	100.0	DTR (high-confidence)	0.0	1.0	
+SRR6231159_k127_21619	9463	No	NA	18	7	0	Low-quality	Genome-fragment	23.56	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_117765	3191	No	NA	8	2	0	Low-quality	Genome-fragment	7.44	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_332519	2806	No	NA	8	2	0	Low-quality	Genome-fragment	5.97	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_105984	1820	No	NA	2	2	0	Low-quality	Genome-fragment	4.14	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_379400	5920	No	NA	2	1	0	Complete	High-quality	100.0	DTR (high-confidence)	0.0	1.02	
+SRR6231159_k127_344288	1141	No	NA	2	1	0	Low-quality	Genome-fragment	3.18	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_379481	5858	No	NA	3	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.02	no viral genes detected; low-confidence DTR
+SRR6231159_k127_58177	6634	No	NA	9	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_272866	1034	No	NA	2	1	0	Low-quality	Genome-fragment	2.01	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_164502	1274	No	NA	3	1	0	Low-quality	Genome-fragment	3.01	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_344407	1050	No	NA	3	2	0	Low-quality	Genome-fragment	2.2	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_249239	1296	No	NA	4	1	0	Low-quality	Genome-fragment	8.26	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_189733	1151	No	NA	1	0	0	Low-quality	Genome-fragment	2.6	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_46537	1228	No	NA	1	1	0	Low-quality	Genome-fragment	7.7	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_21815	1730	No	NA	4	2	0	Low-quality	Genome-fragment	3.9	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_273041	1161	No	NA	1	1	0	Low-quality	Genome-fragment	2.29	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_94095	1121	No	NA	2	0	0	Low-quality	Genome-fragment	0.66	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_82582	1081	No	NA	1	1	0	Low-quality	Genome-fragment	0.24	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_70453	2150	No	NA	2	2	0	Low-quality	Genome-fragment	13.38	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_189895	1561	No	NA	3	0	1	Low-quality	Genome-fragment	3.58	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_332897	2590	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_106412	1609	No	NA	2	2	0	Low-quality	Genome-fragment	3.69	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_189947	1050	No	NA	3	2	0	Low-quality	Genome-fragment	1.79	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_344682	5194	No	NA	9	1	0	Low-quality	Genome-fragment	32.43	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_273194	1423	No	NA	1	1	0	Low-quality	Genome-fragment	2.81	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_213583	1257	No	NA	3	1	0	Low-quality	Genome-fragment	8.7	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_46726	1296	No	NA	1	1	0	Low-quality	Genome-fragment	2.17	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_260511	1039	No	NA	2	1	0	Low-quality	Genome-fragment	0.37	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_118281	1476	No	NA	4	1	0	Low-quality	Genome-fragment	1.66	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_320872	1068	No	NA	2	0	1	Low-quality	Genome-fragment	0.94	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_332989	1981	No	NA	4	2	0	Low-quality	Genome-fragment	3.64	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_177786	1095	No	NA	2	1	0	Low-quality	Genome-fragment	0.3	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_273277	4272	No	NA	5	3	0	Low-quality	Genome-fragment	8.43	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_46813	1262	No	NA	2	2	0	Low-quality	Genome-fragment	3.57	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_333027	2709	No	NA	2	1	0	Low-quality	Genome-fragment	0.22	HMM-based (lower-bound)	0.0	1.03	
+SRR6231159_k127_82784	4049	No	NA	3	3	0	Low-quality	Genome-fragment	8.32	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_46824	1902	No	NA	2	2	0	Low-quality	Genome-fragment	3.83	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_260658	1832	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_153402	1080	No	NA	3	2	0	Low-quality	Genome-fragment	1.61	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_356480	2715	No	NA	4	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_106626	1881	No	NA	5	0	1	Low-quality	Genome-fragment	3.55	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_201877	4679	No	NA	1	1	0	Not-determined	Genome-fragment	NA	NA	0.0	1.14	
+SRR6231159_k127_249655	5885	No	NA	13	1	0	Low-quality	Genome-fragment	10.19	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_333139	2826	No	NA	4	2	0	Low-quality	Genome-fragment	2.66	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_308547	1260	No	NA	2	1	0	Low-quality	Genome-fragment	3.5	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_177911	1076	No	NA	2	0	0	Low-quality	Genome-fragment	0.75	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_308558	2118	No	NA	3	2	0	Low-quality	Genome-fragment	2.86	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_213785	1388	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_273455	3270	No	NA	6	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.01	no viral genes detected
+SRR6231159_k127_190256	13077	No	NA	18	7	0	Low-quality	Genome-fragment	1.45	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_345043	1997	No	NA	6	3	0	Low-quality	Genome-fragment	5.29	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_165082	2230	No	NA	4	1	0	Low-quality	Genome-fragment	5.71	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_118631	4312	No	NA	2	0	2	Low-quality	Genome-fragment	1.82	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_321188	3280	No	NA	8	2	0	Low-quality	Genome-fragment	9.55	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_153646	2990	No	NA	3	1	0	Low-quality	Genome-fragment	0.64	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_58972	2551	No	NA	3	2	0	Low-quality	Genome-fragment	1.71	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_130818	3052	No	NA	2	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_226124	6538	No	NA	5	2	0	Low-quality	Genome-fragment	14.52	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_130832	1052	No	NA	1	0	0	Low-quality	Genome-fragment	0.9	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_71098	1322	No	NA	1	1	0	Low-quality	Genome-fragment	2.18	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_333583	1130	No	NA	2	1	0	Low-quality	Genome-fragment	2.45	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_178451	1059	No	NA	3	2	0	Low-quality	Genome-fragment	3.05	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_153935	3765	No	NA	6	1	0	Low-quality	Genome-fragment	1.7	HMM-based (lower-bound)	0.0	1.02	
+SRR6231159_k127_165464	1543	No	NA	4	0	0	Low-quality	Genome-fragment	5.11	AAI-based (high-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_35302	3561	No	NA	4	0	0	Low-quality	Genome-fragment	11.34	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_297398	1064	No	NA	4	1	0	Low-quality	Genome-fragment	2.93	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_165511	1785	No	NA	2	1	0	Low-quality	Genome-fragment	1.25	HMM-based (lower-bound)	0.0	1.03	
+SRR6231159_k127_273947	1498	No	NA	4	1	0	Low-quality	Genome-fragment	4.04	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_226469	1075	No	NA	4	1	0	Low-quality	Genome-fragment	2.85	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_202524	1322	No	NA	1	1	0	Low-quality	Genome-fragment	3.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_345665	1069	No	NA	2	1	0	Low-quality	Genome-fragment	0.62	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_297483	15191	No	NA	26	3	0	Low-quality	Genome-fragment	7.61	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_237884	1517	No	NA	1	1	0	Low-quality	Genome-fragment	0.12	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_35518	1350	No	NA	1	1	0	Low-quality	Genome-fragment	8.41	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_202614	1304	No	NA	3	1	0	Low-quality	Genome-fragment	3.58	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_95224	1388	No	NA	3	2	0	Low-quality	Genome-fragment	2.96	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_297580	3027	No	NA	4	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_59600	1581	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_35683	1290	No	NA	2	1	0	Low-quality	Genome-fragment	0.51	HMM-based (lower-bound)	0.0	1.0	
+SRR6231159_k127_261583	10039	No	NA	6	1	0	Low-quality	Genome-fragment	3.1	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_35749	2843	No	NA	3	1	0	Low-quality	Genome-fragment	1.64	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_261608	1061	No	NA	2	2	0	Low-quality	Genome-fragment	6.84	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_154388	1373	No	NA	2	1	0	Low-quality	Genome-fragment	0.33	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_286016	2622	No	NA	9	3	0	Low-quality	Genome-fragment	6.22	AAI-based (medium-confidence)	0.0	1.0	
+SRR6231159_k127_238313	2731	No	NA	8	3	0	Low-quality	Genome-fragment	7.44	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_297930	1031	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_357685	2832	No	NA	2	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_238513	3183	No	NA	3	3	0	Low-quality	Genome-fragment	7.53	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_357822	4205	No	NA	7	0	0	Low-quality	Genome-fragment	9.93	AAI-based (medium-confidence)	0.0	1.0	no viral genes detected
+SRR6231159_k127_154830	2960	No	NA	1	0	0	Not-determined	Genome-fragment	NA	NA	0.0	1.0	no viral genes detected
+SRR6231159_k127_154834	1106	No	NA	2	2	0	Low-quality	Genome-fragment	1.23	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_262150	4965	No	NA	7	1	0	Low-quality	Genome-fragment	3.99	AAI-based (high-confidence)	0.0	1.0	
+SRR6231159_k127_166753	1718	No	NA	3	2	0	Low-quality	Genome-fragment	0.21	HMM-based (lower-bound)	0.0	1.0	

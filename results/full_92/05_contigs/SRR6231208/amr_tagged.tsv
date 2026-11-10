@@ -1,0 +1,182 @@
+hit_id	source	tag	run	contig	start	stop	gene	drug_class	detail
+SRR6231208_amrfinder_1	amrfinder	plasmid	SRR6231208	SRR6231208_k127_101326	1319	2503	tet(39)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_2	amrfinder	chromosome	SRR6231208	SRR6231208_k127_106274	912	1337	sul1	SULFONAMIDE	AMR
+SRR6231208_amrfinder_3	amrfinder	chromosome	SRR6231208	SRR6231208_k127_110311	3	395	trxLHR	NA	STRESS
+SRR6231208_amrfinder_4	amrfinder	plasmid	SRR6231208	SRR6231208_k127_115078	2	1045	pcoA	COPPER	STRESS
+SRR6231208_amrfinder_5	amrfinder	chromosome	SRR6231208	SRR6231208_k127_122148	449	1669	mef(C)	MACROLIDE	AMR
+SRR6231208_amrfinder_6	amrfinder	chromosome	SRR6231208	SRR6231208_k127_122148	1677	2558	mph(G)	MACROLIDE	AMR
+SRR6231208_amrfinder_7	amrfinder	chromosome	SRR6231208	SRR6231208_k127_122973	796	1950	tet(32)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_8	amrfinder	chromosome	SRR6231208	SRR6231208_k127_124011	504	932	silE	SILVER	STRESS
+SRR6231208_amrfinder_9	amrfinder	chromosome	SRR6231208	SRR6231208_k127_124011	1189	2217	silS	COPPER/SILVER	STRESS
+SRR6231208_amrfinder_10	amrfinder	chromosome	SRR6231208	SRR6231208_k127_124825	2878	3765	cblA	BETA-LACTAM	AMR
+SRR6231208_amrfinder_11	amrfinder	chromosome	SRR6231208	SRR6231208_k127_126654	2321	3325	aadT	EFFLUX	AMR
+SRR6231208_amrfinder_12	amrfinder	chromosome	SRR6231208	SRR6231208_k127_129535	734	1621	pcoB	COPPER	STRESS
+SRR6231208_amrfinder_13	amrfinder	chromosome	SRR6231208	SRR6231208_k127_129535	1664	2041	pcoC	COPPER	STRESS
+SRR6231208_amrfinder_14	amrfinder	chromosome	SRR6231208	SRR6231208_k127_133933	74	751	pcoR	COPPER	STRESS
+SRR6231208_amrfinder_15	amrfinder	chromosome	SRR6231208	SRR6231208_k127_133933	751	2148	pcoS	COPPER	STRESS
+SRR6231208_amrfinder_16	amrfinder	chromosome	SRR6231208	SRR6231208_k127_135378	3	362	dfrA14	TRIMETHOPRIM	AMR
+SRR6231208_amrfinder_17	amrfinder	chromosome	SRR6231208	SRR6231208_k127_135378	440	1228	aadA1	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_18	amrfinder	chromosome	SRR6231208	SRR6231208_k127_135378	1268	2092	blaOXA-2	BETA-LACTAM	AMR
+SRR6231208_amrfinder_19	amrfinder	chromosome	SRR6231208	SRR6231208_k127_135562	3	1028	blaMCA	BETA-LACTAM	AMR
+SRR6231208_amrfinder_20	amrfinder	plasmid	SRR6231208	SRR6231208_k127_142916	25	906	mph(E)	MACROLIDE	AMR
+SRR6231208_amrfinder_21	amrfinder	plasmid	SRR6231208	SRR6231208_k127_142916	965	2437	msr(E)	MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231208_amrfinder_22	amrfinder	chromosome	SRR6231208	SRR6231208_k127_143248	18	347	qacF	QUATERNARY AMMONIUM	STRESS
+SRR6231208_amrfinder_23	amrfinder	plasmid	SRR6231208	SRR6231208_k127_150388	1174	1605	merR	MERCURY	STRESS
+SRR6231208_amrfinder_24	amrfinder	plasmid	SRR6231208	SRR6231208_k127_150388	1677	2024	merT	MERCURY	STRESS
+SRR6231208_amrfinder_25	amrfinder	plasmid	SRR6231208	SRR6231208_k127_150388	2043	2315	merP	MERCURY	STRESS
+SRR6231208_amrfinder_26	amrfinder	plasmid	SRR6231208	SRR6231208_k127_150388	2321	2563	merF	MERCURY	STRESS
+SRR6231208_amrfinder_27	amrfinder	plasmid	SRR6231208	SRR6231208_k127_150388	4226	4588	merD	MERCURY	STRESS
+SRR6231208_amrfinder_28	amrfinder	plasmid	SRR6231208	SRR6231208_k127_150388	4588	4821	merE	MERCURY	STRESS
+SRR6231208_amrfinder_29	amrfinder	chromosome	SRR6231208	SRR6231208_k127_151172	402	1625	ere(D)	MACROLIDE	AMR
+SRR6231208_amrfinder_30	amrfinder	plasmid	SRR6231208	SRR6231208_k127_156018	8779	10695	tet(O)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_31	amrfinder	plasmid	SRR6231208	SRR6231208_k127_157791	1496	2698	mef(En2)	MACROLIDE	AMR
+SRR6231208_amrfinder_32	amrfinder	plasmid	SRR6231208	SRR6231208_k127_157791	2726	3235	lnu(AN2)	LINCOSAMIDE	AMR
+SRR6231208_amrfinder_33	amrfinder	chromosome	SRR6231208	SRR6231208_k127_157964	3	2141	silP	SILVER	STRESS
+SRR6231208_amrfinder_34	amrfinder	chromosome	SRR6231208	SRR6231208_k127_15902	313	804	dfrF	TRIMETHOPRIM	AMR
+SRR6231208_amrfinder_35	amrfinder	chromosome	SRR6231208	SRR6231208_k127_162145	122	853	erm(G)	LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231208_amrfinder_36	amrfinder	chromosome	SRR6231208	SRR6231208_k127_16285	148	498	silF	COPPER/SILVER	STRESS
+SRR6231208_amrfinder_37	amrfinder	chromosome	SRR6231208	SRR6231208_k127_16285	529	1539	silC	COPPER/SILVER	STRESS
+SRR6231208_amrfinder_38	amrfinder	chromosome	SRR6231208	SRR6231208_k127_164586	407	1270	aadE	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_39	amrfinder	plasmid	SRR6231208	SRR6231208_k127_165382	935	2851	tet(W)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_40	amrfinder	chromosome	SRR6231208	SRR6231208_k127_166876	722	1639	blaMOX	BETA-LACTAM	AMR
+SRR6231208_amrfinder_41	amrfinder	chromosome	SRR6231208	SRR6231208_k127_167004	4504	6426	tet(Q)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_42	amrfinder	chromosome	SRR6231208	SRR6231208_k127_167978	464	1642	tet(A)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_43	amrfinder	plasmid	SRR6231208	SRR6231208_k127_173292	1769	2230	aac(3)-I	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_44	amrfinder	chromosome	SRR6231208	SRR6231208_k127_173739	1	1080	mef(J)	MACROLIDE	AMR
+SRR6231208_amrfinder_45	amrfinder	chromosome	SRR6231208	SRR6231208_k127_180962	20	448	sul2	SULFONAMIDE	AMR
+SRR6231208_amrfinder_46	amrfinder	chromosome	SRR6231208	SRR6231208_k127_184960	451	1638	tet(C)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_47	amrfinder	plasmid	SRR6231208	SRR6231208_k127_185738	4374	5027	qnrS2	QUINOLONE	AMR
+SRR6231208_amrfinder_48	amrfinder	chromosome	SRR6231208	SRR6231208_k127_197079	1	927	kefB-GI	NA	STRESS
+SRR6231208_amrfinder_49	amrfinder	chromosome	SRR6231208	SRR6231208_k127_201843	86	1222	tet(X1)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_50	amrfinder	chromosome	SRR6231208	SRR6231208_k127_201843	1394	2557	tet(X2)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_51	amrfinder	chromosome	SRR6231208	SRR6231208_k127_206804	1223	1714	lnu(C)	LINCOSAMIDE	AMR
+SRR6231208_amrfinder_52	amrfinder	chromosome	SRR6231208	SRR6231208_k127_207538	56	853	erm(F)	LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231208_amrfinder_53	amrfinder	chromosome	SRR6231208	SRR6231208_k127_216483	1	660	silR	COPPER/SILVER	STRESS
+SRR6231208_amrfinder_54	amrfinder	chromosome	SRR6231208	SRR6231208_k127_21753	2317	3777	msr(D)	MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231208_amrfinder_55	amrfinder	chromosome	SRR6231208	SRR6231208_k127_21753	3894	4628	mef(A)	MACROLIDE	AMR
+SRR6231208_amrfinder_56	amrfinder	plasmid	SRR6231208	SRR6231208_k127_220380	813	1646	aph(6)-Id	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_57	amrfinder	plasmid	SRR6231208	SRR6231208_k127_220380	1649	2449	aph(3'')-Ib	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_58	amrfinder	plasmid	SRR6231208	SRR6231208_k127_225444	373	606	merE	MERCURY	STRESS
+SRR6231208_amrfinder_59	amrfinder	plasmid	SRR6231208	SRR6231208_k127_225444	606	968	merD	MERCURY	STRESS
+SRR6231208_amrfinder_60	amrfinder	plasmid	SRR6231208	SRR6231208_k127_225444	989	2671	merA	MERCURY	STRESS
+SRR6231208_amrfinder_61	amrfinder	plasmid	SRR6231208	SRR6231208_k127_225444	3457	3792	merT	MERCURY	STRESS
+SRR6231208_amrfinder_62	amrfinder	chromosome	SRR6231208	SRR6231208_k127_2294	1234	2193	cfxA6	BETA-LACTAM	AMR
+SRR6231208_amrfinder_63	amrfinder	chromosome	SRR6231208	SRR6231208_k127_229816	3	914	silB	COPPER/SILVER	STRESS
+SRR6231208_amrfinder_64	amrfinder	chromosome	SRR6231208	SRR6231208_k127_230409	5219	6937	icr-Mo	COLISTIN	AMR
+SRR6231208_amrfinder_65	amrfinder	plasmid	SRR6231208	SRR6231208_k127_245370	1388	1996	hdeD-GI	NA	STRESS
+SRR6231208_amrfinder_66	amrfinder	plasmid	SRR6231208	SRR6231208_k127_245370	2089	2928	yfdX2	NA	STRESS
+SRR6231208_amrfinder_67	amrfinder	plasmid	SRR6231208	SRR6231208_k127_247674	2274	2624	arsR	ARSENIC	STRESS
+SRR6231208_amrfinder_68	amrfinder	plasmid	SRR6231208	SRR6231208_k127_247674	2675	3034	arsD	ARSENIC	STRESS
+SRR6231208_amrfinder_69	amrfinder	plasmid	SRR6231208	SRR6231208_k127_247674	3055	4803	arsA	ARSENIC	STRESS
+SRR6231208_amrfinder_70	amrfinder	plasmid	SRR6231208	SRR6231208_k127_247674	4855	6141	arsB	ARSENIC	STRESS
+SRR6231208_amrfinder_71	amrfinder	plasmid	SRR6231208	SRR6231208_k127_247674	6157	6579	arsC	ARSENIC	STRESS
+SRR6231208_amrfinder_72	amrfinder	chromosome	SRR6231208	SRR6231208_k127_263061	36	896	aadS	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_73	amrfinder	chromosome	SRR6231208	SRR6231208_k127_265629	2	907	blaMCA	BETA-LACTAM	AMR
+SRR6231208_amrfinder_74	amrfinder	chromosome	SRR6231208	SRR6231208_k127_270703	305	1519	mef(A)	MACROLIDE	AMR
+SRR6231208_amrfinder_75	amrfinder	chromosome	SRR6231208	SRR6231208_k127_273541	2	1711	silA	COPPER/SILVER	STRESS
+SRR6231208_amrfinder_76	amrfinder	chromosome	SRR6231208	SRR6231208_k127_29335	1098	1553	shsP	NA	STRESS
+SRR6231208_amrfinder_77	amrfinder	chromosome	SRR6231208	SRR6231208_k127_29335	1579	2490	yfdX1	NA	STRESS
+SRR6231208_amrfinder_78	amrfinder	chromosome	SRR6231208	SRR6231208_k127_355	365	1150	aadA27	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_79	amrfinder	plasmid	SRR6231208	SRR6231208_k127_3617	1370	2170	blaOXA	BETA-LACTAM	AMR
+SRR6231208_amrfinder_80	amrfinder	chromosome	SRR6231208	SRR6231208_k127_44667	596	1501	blaMUN-1	BETA-LACTAM	AMR
+SRR6231208_amrfinder_81	amrfinder	chromosome	SRR6231208	SRR6231208_k127_48507	53	841	aadA2	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_82	amrfinder	plasmid	SRR6231208	SRR6231208_k127_55805	560	1438	bla	BETA-LACTAM	AMR
+SRR6231208_amrfinder_83	amrfinder	chromosome	SRR6231208	SRR6231208_k127_60569	3	494	aadA27	AMINOGLYCOSIDE	AMR
+SRR6231208_amrfinder_84	amrfinder	plasmid	SRR6231208	SRR6231208_k127_66937	2840	3574	erm(B)	LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231208_amrfinder_85	amrfinder	plasmid	SRR6231208	SRR6231208_k127_69596	940	1902	cfxA	BETA-LACTAM	AMR
+SRR6231208_amrfinder_86	amrfinder	chromosome	SRR6231208	SRR6231208_k127_80266	309	803	psi-GI	NA	STRESS
+SRR6231208_amrfinder_87	amrfinder	plasmid	SRR6231208	SRR6231208_k127_88689	5371	6588	tet(40)	TETRACYCLINE	AMR
+SRR6231208_amrfinder_88	amrfinder	chromosome	SRR6231208	SRR6231208_k127_94717	141	470	qacG2	QUATERNARY AMMONIUM	STRESS
+SRR6231208_amrfinder_89	amrfinder	plasmid	SRR6231208	SRR6231208_k127_96291	984	1781	blaOXA-17	BETA-LACTAM	AMR
+SRR6231208_amrfinder_90	amrfinder	chromosome	SRR6231208	SRR6231208_k127_9923	1	2256	clpK	NA	STRESS
+SRR6231208_rgi_91	rgi	plasmid	SRR6231208	SRR6231208_k127_157791	1496	2701	Mef(En2)	macrolide antibiotic; lincosamide antibiotic	Strict
+SRR6231208_rgi_92	rgi	chromosome	SRR6231208	SRR6231208_k127_263061	3	899	aadS	aminoglycoside antibiotic	Perfect
+SRR6231208_rgi_93	rgi	chromosome	SRR6231208	SRR6231208_k127_355	362	1150	aadA27	aminoglycoside antibiotic	Strict
+SRR6231208_rgi_94	rgi	chromosome	SRR6231208	SRR6231208_k127_122973	793	1950	tet(32)	tetracycline antibiotic	Strict
+SRR6231208_rgi_95	rgi	chromosome	SRR6231208	SRR6231208_k127_228155	620	952	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_96	rgi	chromosome	SRR6231208	SRR6231208_k127_201843	86	1225	tet(X1)	tetracycline antibiotic	Strict
+SRR6231208_rgi_97	rgi	chromosome	SRR6231208	SRR6231208_k127_201843	1394	2560	tet(X)	glycylcycline; tetracycline antibiotic	Strict
+SRR6231208_rgi_98	rgi	chromosome	SRR6231208	SRR6231208_k127_88023	82	888	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_99	rgi	chromosome	SRR6231208	SRR6231208_k127_166876	719	1639	MOX-25	cephalosporin; penicillin beta-lactam	Strict
+SRR6231208_rgi_100	rgi	chromosome	SRR6231208	SRR6231208_k127_272096	3408	3752	qacG	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_101	rgi	chromosome	SRR6231208	SRR6231208_k127_167004	4504	6429	tet(Q)	tetracycline antibiotic	Strict
+SRR6231208_rgi_102	rgi	chromosome	SRR6231208	SRR6231208_k127_245975	7695	8240	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_103	rgi	chromosome	SRR6231208	SRR6231208_k127_254604	1836	4301	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_104	rgi	chromosome	SRR6231208	SRR6231208_k127_237295	2398	5553	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231208_rgi_105	rgi	chromosome	SRR6231208	SRR6231208_k127_184960	451	1641	tet(C)	tetracycline antibiotic	Strict
+SRR6231208_rgi_106	rgi	chromosome	SRR6231208	SRR6231208_k127_132432	2	193	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_107	rgi	chromosome	SRR6231208	SRR6231208_k127_36304	1	1152	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_108	rgi	chromosome	SRR6231208	SRR6231208_k127_211654	1	1113	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_109	rgi	plasmid	SRR6231208	SRR6231208_k127_220380	810	1646	APH(6)-Id	aminoglycoside antibiotic	Strict
+SRR6231208_rgi_110	rgi	plasmid	SRR6231208	SRR6231208_k127_220380	1646	2449	APH(3'')-Ib	aminoglycoside antibiotic	Strict
+SRR6231208_rgi_111	rgi	chromosome	SRR6231208	SRR6231208_k127_220470	2	1087	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_112	rgi	chromosome	SRR6231208	SRR6231208_k127_89083	2	1264	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_113	rgi	chromosome	SRR6231208	SRR6231208_k127_229325	1	2052	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_114	rgi	chromosome	SRR6231208	SRR6231208_k127_167978	389	1654	tet(A)	tetracycline antibiotic	Strict
+SRR6231208_rgi_115	rgi	chromosome	SRR6231208	SRR6231208_k127_10382	1404	1736	qacG	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_116	rgi	plasmid	SRR6231208	SRR6231208_k127_185738	4374	5030	QnrS2	fluoroquinolone antibiotic	Perfect
+SRR6231208_rgi_117	rgi	chromosome	SRR6231208	SRR6231208_k127_28289	468	1160	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_118	rgi	chromosome	SRR6231208	SRR6231208_k127_264382	684	1016	qacG	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_119	rgi	chromosome	SRR6231208	SRR6231208_k127_19281	3642	4367	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_120	rgi	chromosome	SRR6231208	SRR6231208_k127_2294	1234	2196	CfxA6	cephalosporin	Strict
+SRR6231208_rgi_121	rgi	chromosome	SRR6231208	SRR6231208_k127_124825	2878	3768	CblA-1	cephalosporin	Strict
+SRR6231208_rgi_122	rgi	chromosome	SRR6231208	SRR6231208_k127_151172	399	1625	EreD	macrolide antibiotic	Strict
+SRR6231208_rgi_123	rgi	chromosome	SRR6231208	SRR6231208_k127_264688	7112	10228	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231208_rgi_124	rgi	chromosome	SRR6231208	SRR6231208_k127_230409	5249	6940	ICR-Mo	peptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_125	rgi	plasmid	SRR6231208	SRR6231208_k127_247737	1116	2099	MrmA	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic; oxazolidinone antibiotic; phenicol antibiotic	Perfect
+SRR6231208_rgi_126	rgi	plasmid	SRR6231208	SRR6231208_k127_142916	22	906	mphE	macrolide antibiotic	Perfect
+SRR6231208_rgi_127	rgi	plasmid	SRR6231208	SRR6231208_k127_142916	962	2437	msrE	macrolide antibiotic; streptogramin antibiotic	Perfect
+SRR6231208_rgi_128	rgi	chromosome	SRR6231208	SRR6231208_k127_20272	5815	6132	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_129	rgi	plasmid	SRR6231208	SRR6231208_k127_3617	1370	2173	OXA-129	penicillin beta-lactam	Strict
+SRR6231208_rgi_130	rgi	chromosome	SRR6231208	SRR6231208_k127_143248	15	347	qacL	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_131	rgi	chromosome	SRR6231208	SRR6231208_k127_239411	2186	2515	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_132	rgi	plasmid	SRR6231208	SRR6231208_k127_239575	327	671	qacG	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_133	rgi	chromosome	SRR6231208	SRR6231208_k127_47723	219	1037	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_134	rgi	chromosome	SRR6231208	SRR6231208_k127_126910	2595	3632	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_135	rgi	chromosome	SRR6231208	SRR6231208_k127_74549	3	863	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_136	rgi	chromosome	SRR6231208	SRR6231208_k127_4709	8149	8949	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_137	rgi	chromosome	SRR6231208	SRR6231208_k127_48507	65	844	aadA2	aminoglycoside antibiotic	Perfect
+SRR6231208_rgi_138	rgi	chromosome	SRR6231208	SRR6231208_k127_135378	437	1216	aadA	aminoglycoside antibiotic	Strict
+SRR6231208_rgi_139	rgi	chromosome	SRR6231208	SRR6231208_k127_135378	1265	2092	OXA-2	cephalosporin; penicillin beta-lactam	Perfect
+SRR6231208_rgi_140	rgi	chromosome	SRR6231208	SRR6231208_k127_249920	3	1118	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_141	rgi	chromosome	SRR6231208	SRR6231208_k127_162145	122	856	ErmG	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic	Strict
+SRR6231208_rgi_142	rgi	plasmid	SRR6231208	SRR6231208_k127_75247	2287	2610	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_143	rgi	plasmid	SRR6231208	SRR6231208_k127_101326	1319	2506	tet(39)	tetracycline antibiotic	Perfect
+SRR6231208_rgi_144	rgi	chromosome	SRR6231208	SRR6231208_k127_5897	5968	6162	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+SRR6231208_rgi_145	rgi	chromosome	SRR6231208	SRR6231208_k127_224801	20244	23363	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231208_rgi_146	rgi	chromosome	SRR6231208	SRR6231208_k127_206804	1223	1717	lnuC	lincosamide antibiotic	Strict
+SRR6231208_rgi_147	rgi	plasmid	SRR6231208	SRR6231208_k127_66937	2837	3574	ErmB	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic	Strict
+SRR6231208_rgi_148	rgi	chromosome	SRR6231208	SRR6231208_k127_225143	2304	3752	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_149	rgi	chromosome	SRR6231208	SRR6231208_k127_181296	1623	2753	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_150	rgi	chromosome	SRR6231208	SRR6231208_k127_50043	4259	6709	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_151	rgi	chromosome	SRR6231208	SRR6231208_k127_251892	124	1353	tet(M)	tetracycline antibiotic	Strict
+SRR6231208_rgi_152	rgi	chromosome	SRR6231208	SRR6231208_k127_129520	903	1088	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+SRR6231208_rgi_153	rgi	chromosome	SRR6231208	SRR6231208_k127_207538	53	853	ErmF	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic	Strict
+SRR6231208_rgi_154	rgi	chromosome	SRR6231208	SRR6231208_k127_225930	3	1592	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_155	rgi	chromosome	SRR6231208	SRR6231208_k127_76816	449	1573	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_156	rgi	chromosome	SRR6231208	SRR6231208_k127_94717	3	473	qacG	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_157	rgi	chromosome	SRR6231208	SRR6231208_k127_15902	313	807	dfrF	diaminopyrimidine antibiotic	Perfect
+SRR6231208_rgi_158	rgi	plasmid	SRR6231208	SRR6231208_k127_156018	8776	10695	tet(O)	tetracycline antibiotic	Strict
+SRR6231208_rgi_159	rgi	chromosome	SRR6231208	SRR6231208_k127_173739	1	1080	mef(J)	macrolide antibiotic	Strict
+SRR6231208_rgi_160	rgi	chromosome	SRR6231208	SRR6231208_k127_33228	10819	12444	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_161	rgi	chromosome	SRR6231208	SRR6231208_k127_113131	1082	3034	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_162	rgi	chromosome	SRR6231208	SRR6231208_k127_8349	76	1071	vanH gene in vanO cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_163	rgi	chromosome	SRR6231208	SRR6231208_k127_122148	1677	2561	mphG	macrolide antibiotic	Strict
+SRR6231208_rgi_164	rgi	chromosome	SRR6231208	SRR6231208_k127_85609	64	750	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231208_rgi_165	rgi	chromosome	SRR6231208	SRR6231208_k127_60569	3	497	ANT(3'')-IIb	aminoglycoside antibiotic	Strict
+SRR6231208_rgi_166	rgi	plasmid	SRR6231208	SRR6231208_k127_96291	984	1784	OXA-17	cephalosporin; penicillin beta-lactam	Perfect
+SRR6231208_rgi_167	rgi	plasmid	SRR6231208	SRR6231208_k127_69596	940	1905	CfxA2	cephalosporin	Perfect
+SRR6231208_rgi_168	rgi	chromosome	SRR6231208	SRR6231208_k127_78776	1703	4840	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231208_rgi_169	rgi	plasmid	SRR6231208	SRR6231208_k127_138846	3644	3970	qacG	disinfecting agents and antiseptics	Strict
+SRR6231208_rgi_170	rgi	plasmid	SRR6231208	SRR6231208_k127_165382	935	2854	tet(W)	tetracycline antibiotic	Perfect
+SRR6231208_rgi_171	rgi	chromosome	SRR6231208	SRR6231208_k127_106033	1254	4898	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+SRR6231208_rgi_172	rgi	chromosome	SRR6231208	SRR6231208_k127_9827	33355	34185	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231208_rgi_173	rgi	chromosome	SRR6231208	SRR6231208_k127_27342	2216	6172	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+SRR6231208_rgi_174	rgi	chromosome	SRR6231208	SRR6231208_k127_12178	235	1068	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231208_rgi_175	rgi	chromosome	SRR6231208	SRR6231208_k127_75033	8482	12330	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+SRR6231208_rgi_176	rgi	chromosome	SRR6231208	SRR6231208_k127_172004	589	1422	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231208_rgi_177	rgi	chromosome	SRR6231208	SRR6231208_k127_102448	1152	1997	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231208_rgi_178	rgi	chromosome	SRR6231208	SRR6231208_k127_190214	2	3751	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+SRR6231208_rgi_179	rgi	chromosome	SRR6231208	SRR6231208_k127_217162	124	975	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231208_rgi_180	rgi	chromosome	SRR6231208	SRR6231208_k127_183048	619	1803	Escherichia coli EF-Tu mutants conferring resistance to Pulvomycin	elfamycin antibiotic	Strict
+SRR6231208_rgi_181	rgi	chromosome	SRR6231208	SRR6231208_k127_208877	135	1004	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict

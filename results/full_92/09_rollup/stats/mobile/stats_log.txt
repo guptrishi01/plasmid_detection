@@ -1,0 +1,14 @@
+genes with reads: 85; runs: 92
+PERMANOVA (exploratory) on 88 runs: location + timepoint + site_group
+creek_upstream:creek_downstream within Mallard_Creek: skipped (1 gene(s) with reads in these 16 runs; need >= 2)
+creek_upstream:creek_downstream within Sugar_Creek: skipped (1 gene(s) with reads in these 16 runs; need >= 2)
+creek_upstream:creek_downstream within timepoint 2: skipped (1 gene(s) with reads in these 8 runs; need >= 2)
+creek_upstream:creek_downstream within timepoint 3: skipped (0 gene(s) with reads in these 8 runs; need >= 2)
+creek_upstream:creek_downstream within timepoint 1: skipped (1 gene(s) with reads in these 8 runs; need >= 2)
+creek_upstream:creek_downstream within timepoint 4: skipped (1 gene(s) with reads in these 8 runs; need >= 2)
+influent:plant within Mallard_Creek: aldex2 on 4 vs 16 runs, 56 genes -> influent_plant_within_Mallard_Creek.aldex2.tsv
+influent:plant within Sugar_Creek: aldex2 on 4 vs 16 runs, 62 genes -> influent_plant_within_Sugar_Creek.aldex2.tsv
+influent:plant within timepoint 2: skipped (n = 2 vs 8; need >= 3)
+influent:plant within timepoint 3: skipped (n = 2 vs 8; need >= 3)
+influent:plant within timepoint 1: skipped (n = 2 vs 8; need >= 3)
+influent:plant within timepoint 4: skipped (n = 2 vs 8; need >= 3)

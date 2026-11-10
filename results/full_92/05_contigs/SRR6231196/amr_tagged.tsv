@@ -1,0 +1,49 @@
+hit_id	source	tag	run	contig	start	stop	gene	drug_class	detail
+SRR6231196_amrfinder_1	amrfinder	chromosome	SRR6231196	SRR6231196_k127_112413	775	1119	qacEdelta1	QUATERNARY AMMONIUM	STRESS
+SRR6231196_amrfinder_2	amrfinder	chromosome	SRR6231196	SRR6231196_k127_112413	1116	1802	sul1	SULFONAMIDE	AMR
+SRR6231196_amrfinder_3	amrfinder	chromosome	SRR6231196	SRR6231196_k127_118265	3	797	tet(A)	TETRACYCLINE	AMR
+SRR6231196_amrfinder_4	amrfinder	chromosome	SRR6231196	SRR6231196_k127_141098	1	858	merA	MERCURY	STRESS
+SRR6231196_amrfinder_5	amrfinder	chromosome	SRR6231196	SRR6231196_k127_141098	933	1205	merP	MERCURY	STRESS
+SRR6231196_amrfinder_6	amrfinder	plasmid	SRR6231196	SRR6231196_k127_142877	82	324	merF	MERCURY	STRESS
+SRR6231196_amrfinder_7	amrfinder	plasmid	SRR6231196	SRR6231196_k127_142877	1987	2349	merD	MERCURY	STRESS
+SRR6231196_amrfinder_8	amrfinder	plasmid	SRR6231196	SRR6231196_k127_142877	2349	2582	merE	MERCURY	STRESS
+SRR6231196_amrfinder_9	amrfinder	plasmid	SRR6231196	SRR6231196_k127_238671	1853	2665	sul2	SULFONAMIDE	AMR
+SRR6231196_amrfinder_10	amrfinder	chromosome	SRR6231196	SRR6231196_k127_240641	543	1349	blaOXA	BETA-LACTAM	AMR
+SRR6231196_amrfinder_11	amrfinder	chromosome	SRR6231196	SRR6231196_k127_279538	1328	2209	mph(E)	MACROLIDE	AMR
+SRR6231196_amrfinder_12	amrfinder	chromosome	SRR6231196	SRR6231196_k127_279538	2268	3740	msr(E)	MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231196_amrfinder_13	amrfinder	chromosome	SRR6231196	SRR6231196_k127_282207	130	927	blaOXA-10	BETA-LACTAM	AMR
+SRR6231196_amrfinder_14	amrfinder	plasmid	SRR6231196	SRR6231196_k127_308890	280	1158	bla	BETA-LACTAM	AMR
+SRR6231196_amrfinder_15	amrfinder	chromosome	SRR6231196	SRR6231196_k127_329324	266	697	merR	MERCURY	STRESS
+SRR6231196_amrfinder_16	amrfinder	chromosome	SRR6231196	SRR6231196_k127_329324	769	1116	merT	MERCURY	STRESS
+SRR6231196_amrfinder_17	amrfinder	chromosome	SRR6231196	SRR6231196_k127_329324	1135	1407	merP	MERCURY	STRESS
+SRR6231196_amrfinder_18	amrfinder	chromosome	SRR6231196	SRR6231196_k127_33808	262	1116	mph(A)	MACROLIDE	AMR
+SRR6231196_rgi_19	rgi	chromosome	SRR6231196	SRR6231196_k127_11118	6194	6736	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_20	rgi	chromosome	SRR6231196	SRR6231196_k127_75239	543	2138	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_21	rgi	chromosome	SRR6231196	SRR6231196_k127_159981	483	1121	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_22	rgi	chromosome	SRR6231196	SRR6231196_k127_223863	2	337	RbpA	rifamycin antibiotic	Strict
+SRR6231196_rgi_23	rgi	chromosome	SRR6231196	SRR6231196_k127_54484	2868	3380	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_24	rgi	chromosome	SRR6231196	SRR6231196_k127_224309	518	724	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+SRR6231196_rgi_25	rgi	chromosome	SRR6231196	SRR6231196_k127_33808	259	1116	mphA	macrolide antibiotic	Strict
+SRR6231196_rgi_26	rgi	chromosome	SRR6231196	SRR6231196_k127_277793	561	1589	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_27	rgi	chromosome	SRR6231196	SRR6231196_k127_76830	1424	1762	RbpA	rifamycin antibiotic	Strict
+SRR6231196_rgi_28	rgi	chromosome	SRR6231196	SRR6231196_k127_194026	419	1096	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_29	rgi	chromosome	SRR6231196	SRR6231196_k127_279538	1325	2209	mphE	macrolide antibiotic	Perfect
+SRR6231196_rgi_30	rgi	chromosome	SRR6231196	SRR6231196_k127_279538	2265	3740	msrE	macrolide antibiotic; streptogramin antibiotic	Perfect
+SRR6231196_rgi_31	rgi	chromosome	SRR6231196	SRR6231196_k127_152149	642	980	RbpA	rifamycin antibiotic	Strict
+SRR6231196_rgi_32	rgi	chromosome	SRR6231196	SRR6231196_k127_332663	1231	1851	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_33	rgi	plasmid	SRR6231196	SRR6231196_k127_238671	1853	2668	sul2	sulfonamide antibiotic	Perfect
+SRR6231196_rgi_34	rgi	chromosome	SRR6231196	SRR6231196_k127_112413	775	1122	qacEdelta1	disinfecting agents and antiseptics	Perfect
+SRR6231196_rgi_35	rgi	chromosome	SRR6231196	SRR6231196_k127_281979	5180	5692	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_36	rgi	chromosome	SRR6231196	SRR6231196_k127_282207	1	930	OXA-10	cephalosporin; penicillin beta-lactam	Perfect
+SRR6231196_rgi_37	rgi	chromosome	SRR6231196	SRR6231196_k127_240641	417	1349	OXA-2	cephalosporin; penicillin beta-lactam	Strict
+SRR6231196_rgi_38	rgi	chromosome	SRR6231196	SRR6231196_k127_208709	204	1418	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_39	rgi	chromosome	SRR6231196	SRR6231196_k127_208958	285	767	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_40	rgi	chromosome	SRR6231196	SRR6231196_k127_251777	2467	2805	RbpA	rifamycin antibiotic	Strict
+SRR6231196_rgi_41	rgi	chromosome	SRR6231196	SRR6231196_k127_335894	232	576	qacG	disinfecting agents and antiseptics	Strict
+SRR6231196_rgi_42	rgi	chromosome	SRR6231196	SRR6231196_k127_61282	67702	69393	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_43	rgi	chromosome	SRR6231196	SRR6231196_k127_146353	1600	2601	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231196_rgi_44	rgi	chromosome	SRR6231196	SRR6231196_k127_315851	622	954	qacG	disinfecting agents and antiseptics	Strict
+SRR6231196_rgi_45	rgi	chromosome	SRR6231196	SRR6231196_k127_156791	302	628	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231196_rgi_46	rgi	chromosome	SRR6231196	SRR6231196_k127_13939	6282	7682	Mycobacterium tuberculosis folC with mutation conferring resistance to para-aminosalicylic acid	salicylic acid antibiotic	Strict
+SRR6231196_rgi_47	rgi	chromosome	SRR6231196	SRR6231196_k127_270215	9001	12957	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+SRR6231196_rgi_48	rgi	chromosome	SRR6231196	SRR6231196_k127_325551	10027	11970	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
