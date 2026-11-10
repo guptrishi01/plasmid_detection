@@ -445,7 +445,12 @@ stops with "missing input: … (run the earlier stage first)". Everything tunabl
   2500 binning), 184 FASTQ.gz read-only (252 GB), `.sra` temp files removed.
 - **Stages 2–9:** run on the 4-run pilot and audited; results in [results/](results/README.md).
 - **Side analysis:** odds of under-sequencing across all 92 runs (`scripts/side/`).
-- **Next:** full run of all 92 runs (point `paths.run_samples` at `metadata/srp121672_wgs_run_accessions.txt`), then a Nextflow version of the pipeline.
+- **Full run:** all 92 runs through stages 1–9 with the Nextflow pipeline and group binning
+  (2026-11-09; metaSPAdes skipped), audited; results in
+  [results/full_92/](results/full_92/README.md), copied from scratch with
+  `bash scripts/sync_results_nf.sh` (selective: tables and reports, ~130 MB).
+- **Next:** confirm the statistics groups with the PI (`params.stats.site_groups`), then
+  re-run only the statistics step.
 
 ## Known discrepancies / open items
 

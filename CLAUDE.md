@@ -183,8 +183,9 @@ by removing the extracted package dirs, keeping the archives). Clean `src/ tests
 
 `results/` in the repo is tracked on purpose (user decision 2026-09-29: shown in lab
 meetings). It is filled only by `scripts/sync_results.sh`, which copies reports/logs/tables
-from scratch and excludes sequence/alignment files and anything > 20 MB. Never copy
-assemblies, BAMs, or reads into it by hand.
+from scratch and excludes sequence/alignment files and anything > 20 MB; the Nextflow
+92-run outputs go to `results/full_92/` via `scripts/sync_results_nf.sh` (selective filter,
+`scripts/sync_results_nf.filter`, ~130 MB). Never copy assemblies, BAMs, or reads into it by hand.
 
 
 Remote: `git@github.com:guptrishi01/plasmid_detection.git` (SSH key `~/.ssh/id_rsa`).

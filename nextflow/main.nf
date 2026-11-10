@@ -16,6 +16,12 @@ def pairs(ch) {
     ch.map { t -> [t[0].id, t[1]] }.toSortedList { a, b -> a[0] <=> b[0] }
 }
 
+// On/off options: a command-line value arrives as a string ("--metaspades false" is the
+// non-empty, so truthy, String "false"); only true / "true" switch an option on
+def flag(v) {
+    v in [true, 'true']
+}
+
 // Binning group of a site (params.binning.groups, "group:SITE,SITE"), looked up where needed
 // rather than stored in meta: meta is part of every task's cache key, so adding a field would
 // re-run every finished task on -resume. A SampleName the regex
@@ -32,13 +38,14 @@ def binningGroup(site) {
     error "site ${site} is in no params.binning.groups entry (config/config.yaml)"
 }
 
-// [key, x] channel -> [key, [x, ...]] once every run of that key has arrived; nByKey is a
-// value channel with {key: expected count}
+// [key, [run, ...]] channel -> [key, [[run, ...], ...]] once every run of that key has
+// arrived (nByKey: value channel {key: expected count}), sorted by run: groupTuple keeps
+// arrival order, which changes between runs, and list order is part of the task cache key
 def groupByKey(ch, nByKey) {
     ch.combine(nByKey)
         .map { k, x, n -> [groupKey(k, n[k]), x] }
         .groupTuple()
-        .map { k, xs -> [k.toString(), xs] }
+        .map { k, xs -> [k.toString(), xs.sort(false) { x -> x[0] }] }
 }
 
 workflow {
@@ -73,7 +80,7 @@ workflow {
     MEGAHIT(hostfree)
     contigs = MEGAHIT.out.contigs
 
-    if (params.metaspades) {
+    if (flag(params.metaspades)) {
         pick = params.cfg.assembly.metaspades_run
         one = pick ? hostfree.filter { t -> t[0].id == pick }
                    : hostfree.toSortedList { a, b -> a[0].spots <=> b[0].spots }.map { l -> l[0] }
@@ -110,7 +117,8 @@ workflow {
 
     // ---- stage 7: dRep per binning group, then across groups (catalog) ---------------------
     GENOME_INFO(mimag)
-    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [binningGroup(meta.site), p] }, nPerGroup),
+    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [binningGroup(meta.site), [meta.id, p]] }, nPerGroup)
+                   .map { g, xs -> [g, xs.collect { x -> x[1] }] },
                GENOME_INFO.out)
     groupDreps = DREP_GROUP.out.drep.toSortedList { a, b -> a[0] <=> b[0] }
     DREP_CATALOG(groupDreps, GENOME_INFO.out)
@@ -133,7 +141,7 @@ workflow {
            pairs(SCAPP.out.scapp), pairs(RGI_BWT.out.genes))
     STATS(sheet, runs, ROLLUP.out.resistome)
 
-    if (params.depth_experiment) {
+    if (flag(params.depth_experiment)) {
         dRuns = [params.cfg.rollup.depth_samples].flatten()
         levels = channel.fromList([params.cfg.rollup.depth_levels_million_pairs].flatten())
         subs = hostfree

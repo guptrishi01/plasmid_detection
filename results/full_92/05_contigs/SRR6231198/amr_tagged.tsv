@@ -1,0 +1,42 @@
+hit_id	source	tag	run	contig	start	stop	gene	drug_class	detail
+SRR6231198_amrfinder_1	amrfinder	chromosome	SRR6231198	SRR6231198_k127_18369	2	355	merD	MERCURY	STRESS
+SRR6231198_amrfinder_2	amrfinder	plasmid	SRR6231198	SRR6231198_k127_225728	1159	1488	qacG2	QUATERNARY AMMONIUM	STRESS
+SRR6231198_amrfinder_3	amrfinder	plasmid	SRR6231198	SRR6231198_k127_225728	2023	2367	qacEdelta1	QUATERNARY AMMONIUM	STRESS
+SRR6231198_amrfinder_4	amrfinder	plasmid	SRR6231198	SRR6231198_k127_225728	2364	3200	sul1	SULFONAMIDE	AMR
+SRR6231198_amrfinder_5	amrfinder	chromosome	SRR6231198	SRR6231198_k127_227616	131	1012	mph(E)	MACROLIDE	AMR
+SRR6231198_amrfinder_6	amrfinder	chromosome	SRR6231198	SRR6231198_k127_227616	1071	2291	msr(E)	MACROLIDE/STREPTOGRAMIN	AMR
+SRR6231198_rgi_7	rgi	chromosome	SRR6231198	SRR6231198_k127_127559	759	1088	qacG	disinfecting agents and antiseptics	Strict
+SRR6231198_rgi_8	rgi	chromosome	SRR6231198	SRR6231198_k127_22752	1	822	tet(Q)	tetracycline antibiotic	Strict
+SRR6231198_rgi_9	rgi	plasmid	SRR6231198	SRR6231198_k127_225728	1159	1491	qacG	disinfecting agents and antiseptics	Strict
+SRR6231198_rgi_10	rgi	plasmid	SRR6231198	SRR6231198_k127_225728	2023	2370	qacEdelta1	disinfecting agents and antiseptics	Perfect
+SRR6231198_rgi_11	rgi	plasmid	SRR6231198	SRR6231198_k127_225728	2364	3203	sul1	sulfonamide antibiotic	Perfect
+SRR6231198_rgi_12	rgi	chromosome	SRR6231198	SRR6231198_k127_196030	1714	2595	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_13	rgi	chromosome	SRR6231198	SRR6231198_k127_234423	4603	5769	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_14	rgi	chromosome	SRR6231198	SRR6231198_k127_137375	1181	1510	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231198_rgi_15	rgi	chromosome	SRR6231198	SRR6231198_k127_227616	128	1012	mphE	macrolide antibiotic	Perfect
+SRR6231198_rgi_16	rgi	chromosome	SRR6231198	SRR6231198_k127_100388	1815	2924	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_17	rgi	chromosome	SRR6231198	SRR6231198_k127_70898	2060	5242	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231198_rgi_18	rgi	chromosome	SRR6231198	SRR6231198_k127_221498	299	631	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231198_rgi_19	rgi	chromosome	SRR6231198	SRR6231198_k127_146130	814	3945	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231198_rgi_20	rgi	chromosome	SRR6231198	SRR6231198_k127_64269	4423	5307	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_21	rgi	chromosome	SRR6231198	SRR6231198_k127_49670	1139	2032	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_22	rgi	chromosome	SRR6231198	SRR6231198_k127_20274	2309	3046	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_23	rgi	chromosome	SRR6231198	SRR6231198_k127_193238	3685	6129	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_24	rgi	chromosome	SRR6231198	SRR6231198_k127_104046	7437	10571	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231198_rgi_25	rgi	chromosome	SRR6231198	SRR6231198_k127_59305	66	1199	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231198_rgi_26	rgi	chromosome	SRR6231198	SRR6231198_k127_150278	476	1336	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_27	rgi	chromosome	SRR6231198	SRR6231198_k127_113094	1114	1938	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_28	rgi	chromosome	SRR6231198	SRR6231198_k127_60963	1410	2285	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_29	rgi	chromosome	SRR6231198	SRR6231198_k127_53545	1306	2130	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_30	rgi	chromosome	SRR6231198	SRR6231198_k127_53721	4906	5730	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_31	rgi	chromosome	SRR6231198	SRR6231198_k127_151342	585	1436	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_32	rgi	chromosome	SRR6231198	SRR6231198_k127_31574	134	958	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_33	rgi	chromosome	SRR6231198	SRR6231198_k127_151594	2293	3114	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_34	rgi	chromosome	SRR6231198	SRR6231198_k127_196494	1498	2367	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_35	rgi	chromosome	SRR6231198	SRR6231198_k127_190099	3	806	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_36	rgi	chromosome	SRR6231198	SRR6231198_k127_182799	2010	2834	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_37	rgi	chromosome	SRR6231198	SRR6231198_k127_153607	54	878	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_38	rgi	chromosome	SRR6231198	SRR6231198_k127_184090	3	761	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_39	rgi	chromosome	SRR6231198	SRR6231198_k127_86750	336	1187	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_40	rgi	chromosome	SRR6231198	SRR6231198_k127_12714	1897	2766	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231198_rgi_41	rgi	chromosome	SRR6231198	SRR6231198_k127_148311	3709	4530	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict

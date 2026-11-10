@@ -1,0 +1,47 @@
+# rsync filter for scripts/sync_results_nf.sh: the shareable part of a Nextflow --outdir.
+# First match wins: exclusions come first. Kept: tables, metadata, run reports, MultiQC
+# reports, per-run QUAST/Bowtie2/CheckV/MOB-typer/AMR tags, MIMAG + CheckM2 tables, dRep
+# tables (without the all-vs-all Mash table), GTDB-Tk, per-MAG AMR, resistome, stats, RGI
+# read-level gene tables. Sequences, BAMs, depth tables and raw tool dumps stay on scratch.
+- depth.txt
+- *.fa
+- *.parquet
+- llms-full.txt
+- multiqc_data.json
+- Mdb.csv
++ /tables/***
++ /metadata/***
++ /pipeline_info/***
++ /02_qc/
++ /02_qc/multiqc/***
++ /03_host/
++ /03_host/multiqc/***
++ /04_assembly/
++ /04_assembly/*/
++ /04_assembly/*/graph_k.txt
++ /04_assembly/*/quast/
++ /04_assembly/*/quast/report.tsv
++ /04_assembly/*/map/
++ /04_assembly/*/map/*.bowtie2.log
++ /05_contigs/
++ /05_contigs/*/
++ /05_contigs/*/mob_typer.tsv
++ /05_contigs/*/amr_tagged.tsv
++ /05_contigs/*/checkv/
++ /05_contigs/*/checkv/quality_summary.tsv
++ /06_binning/
++ /06_binning/*/
++ /06_binning/*/mimag.tsv
++ /06_binning/*/checkm2/
++ /06_binning/*/checkm2/quality_report.tsv
++ /07_mags/***
++ /08_mag_links/
++ /08_mag_links/amrfinder/***
++ /09_rollup/
++ /09_rollup/resistome_*.tsv
++ /09_rollup/stats/***
++ /09_rollup/rgi_bwt/
++ /09_rollup/rgi_bwt/*/
++ /09_rollup/rgi_bwt/*/*.gene_mapping_data.txt
++ /09_rollup/rgi_bwt/*/*.overall_mapping_stats.txt
+- *

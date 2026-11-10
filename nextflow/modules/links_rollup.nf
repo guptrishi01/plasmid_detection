@@ -178,6 +178,12 @@ process STATS {
     def s = params.cfg.stats
     def groups = [s.site_groups].flatten().collect { g -> "'${g}'" }.join(' ')
     """
+    # stats.R reads its tests from the environment, as exported by scripts/lib/common.sh in
+    # the sbatch version; without these it runs no comparison, only the PERMANOVA
+    export PARAMS_STATS_COMPARISONS='${[s.comparisons].flatten().join(' ')}'
+    export PARAMS_STATS_METHOD='${s.method}'
+    export PARAMS_STATS_MIN_GROUP_SIZE='${s.min_group_size}'
+    export PARAMS_STATS_ALPHA='${s.alpha}'
     ${runsFile(runs)}
     # BioSample antibiotic concentrations are fetched from NCBI by stats-samples
     ${PY()} stats-samples --samples runs.txt --sheet ${sheet} --site-groups ${groups} \\

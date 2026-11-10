@@ -1,0 +1,42 @@
+hit_id	source	tag	run	contig	start	stop	gene	drug_class	detail
+SRR6231205_amrfinder_1	amrfinder	chromosome	SRR6231205	SRR6231205_k127_158982	2	1360	merA	MERCURY	STRESS
+SRR6231205_amrfinder_2	amrfinder	chromosome	SRR6231205	SRR6231205_k127_17381	720	1259	aph(3'')-Ib	AMINOGLYCOSIDE	AMR
+SRR6231205_amrfinder_3	amrfinder	chromosome	SRR6231205	SRR6231205_k127_210352	3	344	merT	MERCURY	STRESS
+SRR6231205_amrfinder_4	amrfinder	chromosome	SRR6231205	SRR6231205_k127_210352	416	841	merR	MERCURY	STRESS
+SRR6231205_amrfinder_5	amrfinder	chromosome	SRR6231205	SRR6231205_k127_271269	1097	1339	merF	MERCURY	STRESS
+SRR6231205_amrfinder_6	amrfinder	chromosome	SRR6231205	SRR6231205_k127_271269	1345	1617	merP	MERCURY	STRESS
+SRR6231205_amrfinder_7	amrfinder	chromosome	SRR6231205	SRR6231205_k127_277932	120	764	blaOXA	BETA-LACTAM	AMR
+SRR6231205_amrfinder_8	amrfinder	chromosome	SRR6231205	SRR6231205_k127_279560	141	470	qacF	QUATERNARY AMMONIUM	STRESS
+SRR6231205_amrfinder_9	amrfinder	chromosome	SRR6231205	SRR6231205_k127_63988	1	738	mph(E)	MACROLIDE	AMR
+SRR6231205_rgi_10	rgi	chromosome	SRR6231205	SRR6231205_k127_35677	1723	2835	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_11	rgi	chromosome	SRR6231205	SRR6231205_k127_71182	3254	3973	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_12	rgi	chromosome	SRR6231205	SRR6231205_k127_36117	842	1357	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_13	rgi	chromosome	SRR6231205	SRR6231205_k127_62847	70	867	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_14	rgi	plasmid	SRR6231205	SRR6231205_k127_151669	876	2600	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_15	rgi	chromosome	SRR6231205	SRR6231205_k127_266727	20632	21507	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_16	rgi	chromosome	SRR6231205	SRR6231205_k127_19648	1525	3969	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_17	rgi	chromosome	SRR6231205	SRR6231205_k127_82094	172	504	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231205_rgi_18	rgi	chromosome	SRR6231205	SRR6231205_k127_197597	5173	6051	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_19	rgi	chromosome	SRR6231205	SRR6231205_k127_154091	3739	6183	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_20	rgi	chromosome	SRR6231205	SRR6231205_k127_154140	1155	1403	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_21	rgi	chromosome	SRR6231205	SRR6231205_k127_233997	2	664	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_22	rgi	chromosome	SRR6231205	SRR6231205_k127_225363	1113	2015	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_23	rgi	chromosome	SRR6231205	SRR6231205_k127_40139	1420	1785	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_24	rgi	chromosome	SRR6231205	SRR6231205_k127_67107	293	1057	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_25	rgi	chromosome	SRR6231205	SRR6231205_k127_235164	374	1483	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_26	rgi	chromosome	SRR6231205	SRR6231205_k127_67629	938	2056	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_27	rgi	chromosome	SRR6231205	SRR6231205_k127_155785	994	4122	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231205_rgi_28	rgi	chromosome	SRR6231205	SRR6231205_k127_279560	138	470	qacL	disinfecting agents and antiseptics	Strict
+SRR6231205_rgi_29	rgi	chromosome	SRR6231205	SRR6231205_k127_164969	2	454	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_30	rgi	chromosome	SRR6231205	SRR6231205_k127_68292	1	678	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_31	rgi	chromosome	SRR6231205	SRR6231205_k127_41858	492	1277	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_32	rgi	chromosome	SRR6231205	SRR6231205_k127_201375	14128	15294	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_33	rgi	chromosome	SRR6231205	SRR6231205_k127_157017	1369	1608	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_34	rgi	chromosome	SRR6231205	SRR6231205_k127_16132	1465	2361	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_35	rgi	chromosome	SRR6231205	SRR6231205_k127_201977	2966	4072	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231205_rgi_36	rgi	chromosome	SRR6231205	SRR6231205_k127_131334	20244	23363	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231205_rgi_37	rgi	chromosome	SRR6231205	SRR6231205_k127_271659	206	1030	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231205_rgi_38	rgi	chromosome	SRR6231205	SRR6231205_k127_50772	27747	28577	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231205_rgi_39	rgi	chromosome	SRR6231205	SRR6231205_k127_184677	1	657	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231205_rgi_40	rgi	chromosome	SRR6231205	SRR6231205_k127_212058	1164	2015	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231205_rgi_41	rgi	chromosome	SRR6231205	SRR6231205_k127_247461	434	1210	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict

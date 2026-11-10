@@ -182,11 +182,16 @@ params:
     amrfinder_types: "AMR"
   stats:
     # Controls are a reference: reported, never subtracted, never in a test group
-    site_groups: ["creek_upstream:UP_A,UP_B", "creek_downstream:DS_A,DS_B", "influent:INF",
-                  "plant:PCI,PCE,ATE,FCE,UV", "sewer:HOSP,RES", "control:MNT_A,MNT_B,UW_A,UW_B"]
+    # PI, 2026-11-10: HOSP, RES, INF, PCI and PCE are pre-treatment; ATE, FCE and UV are the
+    # plant (treatment) steps. (Until then: influent, sewer = HOSP+RES, plant = PCI..UV.)
+    # The side analysis (scripts/side/, us02) also reads these groups; its 2026-10-18
+    # results used the earlier ones.
+    site_groups: ["creek_upstream:UP_A,UP_B", "creek_downstream:DS_A,DS_B",
+                  "pre_treatment:HOSP,RES,INF,PCI,PCE", "plant:ATE,FCE,UV",
+                  "control:MNT_A,MNT_B,UW_A,UW_B"]
     # group_a:group_b, each tested within every system (time points as replicates) and
-    # within every time point (systems as replicates). PROPOSAL -- confirm before the full run.
-    comparisons: ["creek_upstream:creek_downstream", "influent:plant"]
+    # within every time point (systems as replicates)
+    comparisons: ["creek_upstream:creek_downstream", "pre_treatment:plant"]
     method: "aldex2"          # aldex2 | ancombc2
     min_group_size: 3
     alpha: 0.05

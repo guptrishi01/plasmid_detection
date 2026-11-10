@@ -1,0 +1,28 @@
+hit_id	source	tag	run	contig	start	stop	gene	drug_class	detail
+SRR6231138_amrfinder_1	amrfinder	plasmid	SRR6231138	SRR6231138_k127_149407	887	1120	merE	MERCURY	STRESS
+SRR6231138_amrfinder_2	amrfinder	plasmid	SRR6231138	SRR6231138_k127_149407	1120	1482	merD	MERCURY	STRESS
+SRR6231138_amrfinder_3	amrfinder	plasmid	SRR6231138	SRR6231138_k127_149407	3145	3387	merF	MERCURY	STRESS
+SRR6231138_amrfinder_4	amrfinder	plasmid	SRR6231138	SRR6231138_k127_149407	3393	3665	merP	MERCURY	STRESS
+SRR6231138_amrfinder_5	amrfinder	plasmid	SRR6231138	SRR6231138_k127_149407	3684	4031	merT	MERCURY	STRESS
+SRR6231138_amrfinder_6	amrfinder	plasmid	SRR6231138	SRR6231138_k127_149407	4103	4534	merR	MERCURY	STRESS
+SRR6231138_amrfinder_7	amrfinder	plasmid	SRR6231138	SRR6231138_k127_41763	8109	8933	blaOXA-2	BETA-LACTAM	AMR
+SRR6231138_amrfinder_8	amrfinder	plasmid	SRR6231138	SRR6231138_k127_82771	6306	6635	qacF	QUATERNARY AMMONIUM	STRESS
+SRR6231138_rgi_9	rgi	chromosome	SRR6231138	SRR6231138_k127_51957	71	400	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231138_rgi_10	rgi	chromosome	SRR6231138	SRR6231138_k127_51957	421	750	qacG	disinfecting agents and antiseptics	Strict
+SRR6231138_rgi_11	rgi	chromosome	SRR6231138	SRR6231138_k127_132752	4735	5628	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_12	rgi	chromosome	SRR6231138	SRR6231138_k127_75678	707	1489	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_13	rgi	chromosome	SRR6231138	SRR6231138_k127_104400	241	1359	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_14	rgi	chromosome	SRR6231138	SRR6231138_k127_24013	2868	5996	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231138_rgi_15	rgi	plasmid	SRR6231138	SRR6231138_k127_41763	8106	8933	OXA-2	cephalosporin; penicillin beta-lactam	Perfect
+SRR6231138_rgi_16	rgi	chromosome	SRR6231138	SRR6231138_k127_18604	20244	23363	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231138_rgi_17	rgi	chromosome	SRR6231138	SRR6231138_k127_162720	2	1798	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_18	rgi	plasmid	SRR6231138	SRR6231138_k127_82771	6306	6638	qacL	disinfecting agents and antiseptics	Strict
+SRR6231138_rgi_19	rgi	virus	SRR6231138	SRR6231138_k127_129460	50928	51737	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_20	rgi	chromosome	SRR6231138	SRR6231138_k127_129925	1698	4823	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+SRR6231138_rgi_21	rgi	chromosome	SRR6231138	SRR6231138_k127_169983	1	1467	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_22	rgi	chromosome	SRR6231138	SRR6231138_k127_176119	1	903	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_23	rgi	chromosome	SRR6231138	SRR6231138_k127_90663	486	1367	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+SRR6231138_rgi_24	rgi	chromosome	SRR6231138	SRR6231138_k127_176813	106	438	qacJ	disinfecting agents and antiseptics	Strict
+SRR6231138_rgi_25	rgi	chromosome	SRR6231138	SRR6231138_k127_100693	1	1014	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231138_rgi_26	rgi	chromosome	SRR6231138	SRR6231138_k127_163985	139	960	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+SRR6231138_rgi_27	rgi	chromosome	SRR6231138	SRR6231138_k127_106839	27747	28577	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict

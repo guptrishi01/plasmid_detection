@@ -1,5 +1,8 @@
 # Pilot results (stages 2–9) and side analyses
 
+**Full run (all 92 runs, Nextflow, 2026-11-09): see [full_92/README.md](full_92/README.md).**
+This page is the 4-run pilot used to tune the pipeline.
+
 Four runs at time point 4: Sugar Creek (SC) and Mallard Creek (MC), upstream B (UP) and
 influent (INF). Every number below comes from the files in this folder (tables in `tables/`, per-run
 outputs in `<stage>/<run>/`); reads, contigs, graphs and BAMs stay on scratch.

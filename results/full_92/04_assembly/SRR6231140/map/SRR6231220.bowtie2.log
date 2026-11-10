@@ -1,0 +1,17 @@
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+24284808 reads; of these:
+  24284808 (100.00%) were paired; of these:
+    23066594 (94.98%) aligned concordantly 0 times
+    639100 (2.63%) aligned concordantly exactly 1 time
+    579114 (2.38%) aligned concordantly >1 times
+    ----
+    23066594 pairs aligned concordantly 0 times; of these:
+      19677 (0.09%) aligned discordantly 1 time
+    ----
+    23046917 pairs aligned 0 times concordantly or discordantly; of these:
+      46093834 mates make up the pairs; of these:
+        45429542 (98.56%) aligned 0 times
+        408347 (0.89%) aligned exactly 1 time
+        255945 (0.56%) aligned >1 times
+6.47% overall alignment rate
