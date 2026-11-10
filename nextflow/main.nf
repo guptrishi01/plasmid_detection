@@ -38,13 +38,14 @@ def binningGroup(site) {
     error "site ${site} is in no params.binning.groups entry (config/config.yaml)"
 }
 
-// [key, x] channel -> [key, [x, ...]] once every run of that key has arrived; nByKey is a
-// value channel with {key: expected count}
+// [key, [run, ...]] channel -> [key, [[run, ...], ...]] once every run of that key has
+// arrived (nByKey: value channel {key: expected count}), sorted by run: groupTuple keeps
+// arrival order, which changes between runs, and list order is part of the task cache key
 def groupByKey(ch, nByKey) {
     ch.combine(nByKey)
         .map { k, x, n -> [groupKey(k, n[k]), x] }
         .groupTuple()
-        .map { k, xs -> [k.toString(), xs] }
+        .map { k, xs -> [k.toString(), xs.sort(false) { x -> x[0] }] }
 }
 
 workflow {
@@ -116,7 +117,8 @@ workflow {
 
     // ---- stage 7: dRep per binning group, then across groups (catalog) ---------------------
     GENOME_INFO(mimag)
-    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [binningGroup(meta.site), p] }, nPerGroup),
+    DREP_GROUP(groupByKey(CHECKM2_MIMAG.out.pass.map { meta, p -> [binningGroup(meta.site), [meta.id, p]] }, nPerGroup)
+                   .map { g, xs -> [g, xs.collect { x -> x[1] }] },
                GENOME_INFO.out)
     groupDreps = DREP_GROUP.out.drep.toSortedList { a, b -> a[0] <=> b[0] }
     DREP_CATALOG(groupDreps, GENOME_INFO.out)

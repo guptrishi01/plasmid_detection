@@ -118,7 +118,7 @@ cached, 27 run, 0 failed, 70 min) against the sbatch group-binning results:
 The differences come from the assemblies, as in the run below: these MEGAHIT assemblies are
 the 2026-10-20 ones, not the sbatch ones, so bins and MAGs differ slightly.
 
-Launch notes: keep the binning group out of `meta` (it is part of every task's cache key;
+Launch notes: group inputs are sorted by run before `MAP_GROUP` and `DREP_GROUP` (groupTuple keeps arrival order, which is part of the cache key: a resume of the 92-run run re-ran every `MAP_GROUP` until this was fixed, 2026-11-10). Keep the binning group out of `meta` (it is part of every task's cache key;
 adding it re-runs everything), and resume a specific session (`-resume <session id>` from
 `nextflow log`) when other runs, e.g. a `-stub` test, came after the one to resume.
 
