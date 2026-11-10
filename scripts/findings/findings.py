@@ -105,7 +105,8 @@ def main(argv=None):
                "species": rank(tax, "s"), "tier": m["tier"], "binning_group": m["group"],
                "resistance_genes": ",".join(sorted(mag_genes.get(g, ())))}
         for c in ORDER:
-            row[f"mean_relabund_{c}"] = round(statistics.mean(rel[g][r] for r in runs_in[c]), 4)
+            # 6 decimals: slides round again, and a 4-decimal value can flip their last digit
+            row[f"mean_relabund_{c}"] = round(statistics.mean(rel[g][r] for r in runs_in[c]), 6)
             row[f"runs_present_{c}"] = sum(cov[g][r] >= 1.0 for r in runs_in[c])
         row["present_in"] = ",".join(c for c in ORDER if c in p1)
         row["travels"] = "yes" if {"pre_treatment", "creek_downstream"} <= p1 and "creek_upstream" not in p1 else ""
