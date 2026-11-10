@@ -52,6 +52,13 @@ run_test <- function(label, a_runs, b_runs) {
     return(invisible(NULL))
   }
   x <- counts[, c(a_runs, b_runs), drop = FALSE]
+  # Only genes with reads in these runs: creek runs often have none on most genes, and a
+  # CLR-based test needs >= 2 genes (ALDEx2 fails inside rdirichlet with 1)
+  x <- x[rowSums(x) > 0, , drop = FALSE]
+  if (nrow(x) < 2) {
+    note(label, ": skipped (", nrow(x), " gene(s) with reads in these ", ncol(x), " runs; need >= 2)")
+    return(invisible(NULL))
+  }
   cond <- c(rep("a", length(a_runs)), rep("b", length(b_runs)))
   if (method == "aldex2") {
     suppressPackageStartupMessages(library(ALDEx2))
@@ -71,7 +78,7 @@ run_test <- function(label, a_runs, b_runs) {
   }
   f <- file.path(out, paste0(gsub("[^A-Za-z0-9_]+", "_", label), ".", method, ".tsv"))
   write.table(res, f, sep = "\t", quote = FALSE, row.names = FALSE)
-  note(label, ": ", method, " on ", length(a_runs), " vs ", length(b_runs), " -> ", basename(f))
+  note(label, ": ", method, " on ", length(a_runs), " vs ", length(b_runs), " runs, ", nrow(x), " genes -> ", basename(f))
 }
 
 for (cmp in comparisons) {
