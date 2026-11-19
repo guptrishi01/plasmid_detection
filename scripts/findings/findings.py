@@ -4,7 +4,7 @@ and which of them "travel" from pre-treatment water through the plant into the c
     python scripts/findings/findings.py <outdir> [--config config/config.yaml]
 
 Writes <outdir>/findings/. Site categories come from params.stats.site_groups (PI,
-2026-11-10): pre_treatment, plant, creek_downstream, creek_upstream, control.
+2026-11-19: PCE is a plant step): pre_treatment, plant, creek_downstream, creek_upstream, control.
 
 Definitions
 - A MAG is present in a run if its CoverM mean coverage there is >= the threshold

@@ -2,7 +2,7 @@
 # MAGs ordered by the category where they are most abundant (then by that abundance).
 # Usage: Rscript heatmap.R <outdir> <out.png>
 #   <outdir>: pipeline --outdir (07_mags/coverm_genome.tsv, metadata/samples.tsv,
-#             findings/mag_presence.tsv from scripts/findings/findings.py)
+#             findings/mag_presence.tsv and resistance_by_run.tsv from scripts/findings/findings.py)
 suppressPackageStartupMessages(library(ggplot2))
 args <- commandArgs(trailingOnly = TRUE)
 out <- args[1]
@@ -13,11 +13,14 @@ pres <- read.delim(file.path(out, "findings", "mag_presence.tsv"))
 cats <- c("pre_treatment", "plant", "creek_downstream", "creek_upstream", "control")
 labels <- c(pre_treatment = "Pre-treatment", plant = "Plant steps", creek_downstream = "Creek downstream",
             creek_upstream = "Creek upstream", control = "Ctrl")
-site_cat <- c(HOSP = "pre_treatment", RES = "pre_treatment", INF = "pre_treatment", PCI = "pre_treatment",
-              PCE = "pre_treatment", ATE = "plant", FCE = "plant", UV = "plant", DS_A = "creek_downstream",
-              DS_B = "creek_downstream", UP_A = "creek_upstream", UP_B = "creek_upstream", MNT_A = "control",
-              MNT_B = "control", UW_A = "control", UW_B = "control")
+# site categories as findings.py assigned them from params.stats.site_groups (config)
+byrun <- read.delim(file.path(out, "findings", "resistance_by_run.tsv"))
+site_cat <- setNames(byrun$category, byrun$site)[!duplicated(byrun$site)]
+pref <- c("HOSP", "RES", "INF", "PCI", "PCE", "ATE", "FCE", "UV", "DS_A", "DS_B", "UP_A", "UP_B",
+          "MNT_A", "MNT_B", "UW_A", "UW_B")   # display order within a category
+site_cat <- site_cat[order(match(site_cat, cats), match(names(site_cat), pref))]
 site_order <- names(site_cat)
+stopifnot(all(sheet$site %in% site_order), all(site_cat %in% cats))
 sheet$category <- factor(site_cat[sheet$site], levels = cats)
 sheet <- sheet[order(sheet$category, match(sheet$site, site_order), sheet$location, sheet$timepoint), ]
 
@@ -45,7 +48,8 @@ p <- ggplot(long, aes(run, mag, fill = value)) +
                        name = "Relative\nabundance (%)") +
   scale_y_discrete(labels = NULL, breaks = NULL) +
   scale_x_discrete(labels = NULL, breaks = NULL) +
-  labs(x = sprintf("%d runs (sites in order HOSP, RES, INF, PCI, PCE | ATE, FCE, UV | DS | UP | controls)", nrow(sheet)),
+  labs(x = sprintf("%d runs (sites in order %s)", nrow(sheet),
+                   paste(tapply(site_order, factor(site_cat, levels = cats), paste, collapse = ", "), collapse = " | ")),
        y = sprintf("%d catalog MAGs (grouped by where they are most abundant)", nrow(m))) +
   theme_minimal(base_size = 13) +
   theme(panel.spacing = unit(4, "pt"), strip.text = element_text(face = "bold", colour = "#0B4F5C"),

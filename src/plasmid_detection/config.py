@@ -66,10 +66,12 @@ def flatten(tree, prefix=""):
 
 
 def nextflow_params(cfg):
-    """The resolved config as a Nextflow -params-file: envs, db, reference and tool
-    parameters (config `params`, renamed `cfg` so it isn't params.params in Nextflow)."""
+    """The resolved config as a Nextflow -params-file: envs, db, reference, tool
+    parameters (config `params`, renamed `cfg` so it isn't params.params in Nextflow) and
+    the paths the co-assembly workflow reads (nextflow/coassembly.nf)."""
     return {
         "repo": cfg["paths"]["repo"],
+        "paths": {k: cfg["paths"][k] for k in ("nf_results", "coasm_inputs", "coasm_results")},
         "envs": cfg["envs"],
         "db": cfg["db"],
         "reference": cfg["reference"],
