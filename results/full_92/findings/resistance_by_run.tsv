@@ -19,8 +19,8 @@ SRR6231146	plant	FCE	Sugar_Creek	1	63	14	38
 SRR6231147	plant	FCE	Mallard_Creek	1	42	4	26
 SRR6231148	creek_downstream	DS_B	Sugar_Creek	1	11	0	7
 SRR6231149	creek_downstream	DS_B	Mallard_Creek	1	15	2	12
-SRR6231150	pre_treatment	PCE	Sugar_Creek	1	202	60	128
-SRR6231151	pre_treatment	PCE	Mallard_Creek	1	149	39	90
+SRR6231150	plant	PCE	Sugar_Creek	1	202	60	128
+SRR6231151	plant	PCE	Mallard_Creek	1	149	39	90
 SRR6231152	creek_upstream	UP_A	Sugar_Creek	1	16	0	6
 SRR6231153	pre_treatment	RES	Sugar_Creek	1	210	59	124
 SRR6231154	pre_treatment	RES	Mallard_Creek	1	167	27	93
@@ -32,12 +32,12 @@ SRR6231159	creek_upstream	UP_A	Mallard_Creek	1	26	0	8
 SRR6231160	plant	FCE	Sugar_Creek	3	201	60	128
 SRR6231161	creek_upstream	UP_A	Sugar_Creek	3	52	0	12
 SRR6231162	pre_treatment	HOSP	Mallard_Creek	3	181	48	116
-SRR6231163	pre_treatment	PCE	Mallard_Creek	3	150	35	94
+SRR6231163	plant	PCE	Mallard_Creek	3	150	35	94
 SRR6231164	creek_downstream	DS_B	Sugar_Creek	3	55	1	17
 SRR6231165	creek_upstream	UP_B	Sugar_Creek	3	65	0	9
 SRR6231166	creek_downstream	DS_A	Sugar_Creek	3	44	1	14
 SRR6231167	pre_treatment	INF	Mallard_Creek	3	191	41	119
-SRR6231168	pre_treatment	PCE	Sugar_Creek	3	184	41	119
+SRR6231168	plant	PCE	Sugar_Creek	3	184	41	119
 SRR6231169	pre_treatment	INF	Sugar_Creek	3	199	64	134
 SRR6231170	plant	UV	Sugar_Creek	3	48	5	31
 SRR6231171	plant	ATE	Sugar_Creek	3	66	12	31
@@ -56,7 +56,7 @@ SRR6231183	pre_treatment	PCI	Mallard_Creek	4	236	57	131
 SRR6231184	pre_treatment	INF	Sugar_Creek	4	261	50	161
 SRR6231185	pre_treatment	RES	Sugar_Creek	4	360	59	175
 SRR6231186	creek_upstream	UP_A	Sugar_Creek	4	45	2	12
-SRR6231187	pre_treatment	PCE	Sugar_Creek	4	317	58	187
+SRR6231187	plant	PCE	Sugar_Creek	4	317	58	187
 SRR6231188	plant	FCE	Mallard_Creek	4	90	7	65
 SRR6231189	creek_downstream	DS_B	Mallard_Creek	4	46	2	10
 SRR6231190	pre_treatment	HOSP	Sugar_Creek	4	309	43	157
@@ -69,7 +69,7 @@ SRR6231196	plant	ATE	Sugar_Creek	2	39	3	25
 SRR6231197	creek_downstream	DS_B	Sugar_Creek	2	12	0	6
 SRR6231198	creek_upstream	UP_A	Sugar_Creek	2	38	4	12
 SRR6231199	pre_treatment	RES	Mallard_Creek	2	183	42	102
-SRR6231200	pre_treatment	PCE	Sugar_Creek	2	169	48	120
+SRR6231200	plant	PCE	Sugar_Creek	2	169	48	120
 SRR6231201	pre_treatment	HOSP	Sugar_Creek	2	161	52	108
 SRR6231202	creek_upstream	UP_A	Mallard_Creek	2	11	0	7
 SRR6231203	plant	UV	Sugar_Creek	2	46	2	25
@@ -80,7 +80,7 @@ SRR6231207	creek_upstream	UP_B	Mallard_Creek	2	4	0	2
 SRR6231208	pre_treatment	PCI	Mallard_Creek	2	143	34	89
 SRR6231209	pre_treatment	HOSP	Mallard_Creek	2	238	47	133
 SRR6231210	plant	ATE	Mallard_Creek	2	59	5	33
-SRR6231211	pre_treatment	PCE	Mallard_Creek	2	169	38	104
+SRR6231211	plant	PCE	Mallard_Creek	2	169	38	104
 SRR6231212	creek_downstream	DS_A	Sugar_Creek	4	49	0	11
 SRR6231213	pre_treatment	HOSP	Mallard_Creek	4	256	52	147
 SRR6231214	pre_treatment	RES	Mallard_Creek	4	242	55	138
@@ -88,6 +88,6 @@ SRR6231215	creek_downstream	DS_B	Sugar_Creek	4	42	2	11
 SRR6231216	creek_downstream	DS_A	Mallard_Creek	4	40	1	18
 SRR6231217	creek_upstream	UP_B	Mallard_Creek	4	51	1	10
 SRR6231218	creek_upstream	UP_A	Mallard_Creek	4	41	1	10
-SRR6231219	pre_treatment	PCE	Mallard_Creek	4	257	43	147
+SRR6231219	plant	PCE	Mallard_Creek	4	257	43	147
 SRR6231220	control	UW_B	Uwharrie_Control	4	55	0	9
 SRR6231221	control	MNT_B	Mountain_Control	4	4	0	2

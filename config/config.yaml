@@ -211,6 +211,7 @@ params:
     method: "aldex2"          # aldex2 | ancombc2
     min_group_size: 3
     alpha: 0.05
+    seed: 1                   # ALDEx2 Monte-Carlo + PERMANOVA permutations (stats.R)
     # BioSample antibiotic values: "ND" (not detected) and "<LOQ" (below quantification)
     # -> na | zero | half_min (half the smallest detected value of that antibiotic)
     nd_encoding: "na"

@@ -5,10 +5,10 @@ Number of permutations: 9999
 
 adonis2(formula = as.formula(paste("d ~", paste(terms, collapse = " + "))), data = test_meta, permutations = 9999, by = "margin")
            Df SumOfSqs      R2       F Pr(>F)    
-location    1      627 0.01610  3.0360 0.0299 *  
-timepoint   3     1566 0.04023  2.5289 0.0079 ** 
-site_group  3    20092 0.51602 32.4378 0.0001 ***
-Residual   80    16517 0.42422                   
+location    1      636 0.01634  2.5379 0.0463 *  
+timepoint   3     1566 0.04023  2.0831 0.0273 *  
+site_group  3    16557 0.42524 22.0195 0.0001 ***
+Residual   80    20052 0.51499                   
 Total      87    38936 1.00000                   
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

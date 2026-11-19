@@ -4,11 +4,11 @@ Permutation: free
 Number of permutations: 9999
 
 adonis2(formula = as.formula(paste("d ~", paste(terms, collapse = " + "))), data = test_meta, permutations = 9999, by = "margin")
-           Df SumOfSqs      R2       F Pr(>F)    
-location    1    374.8 0.01704  2.0241 0.0351 *  
-timepoint   3    861.9 0.03919  1.5516 0.0371 *  
-site_group  3   5893.5 0.26796 10.6088 0.0001 ***
-Residual   80  14814.1 0.67354                   
-Total      87  21994.4 1.00000                   
+           Df SumOfSqs      R2      F Pr(>F)    
+location    1    378.3 0.01720 1.8822 0.0465 *  
+timepoint   3    861.9 0.03919 1.4296 0.0634 .  
+site_group  3   4629.3 0.21048 7.6779 0.0001 ***
+Residual   80  16078.3 0.73102                  
+Total      87  21994.4 1.00000                  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

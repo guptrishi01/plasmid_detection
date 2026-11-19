@@ -184,6 +184,7 @@ process STATS {
     export PARAMS_STATS_METHOD='${s.method}'
     export PARAMS_STATS_MIN_GROUP_SIZE='${s.min_group_size}'
     export PARAMS_STATS_ALPHA='${s.alpha}'
+    export PARAMS_STATS_SEED='${s.seed}'
     ${runsFile(runs)}
     # BioSample antibiotic concentrations are fetched from NCBI by stats-samples
     ${PY()} stats-samples --samples runs.txt --sheet ${sheet} --site-groups ${groups} \\
