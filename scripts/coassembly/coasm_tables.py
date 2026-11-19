@@ -150,14 +150,13 @@ def main(argv=None):
                 runs_of[g].append(run)
         for r in rows:
             for c, (run, k) in cols.items():
-                v = float(r[c])
                 if r["Genome"] == "unmapped":
-                    if k == "ra":
-                        unmapped[run] = v
+                    if k == "ra":   # CoverM writes NA for the unmapped row's mean coverage
+                        unmapped[run] = float(r[c])
                 elif k == "ra":
-                    ra[(run, r["Genome"])] = v
+                    ra[(run, r["Genome"])] = float(r[c])
                 else:
-                    cov[(run, r["Genome"])] = v
+                    cov[(run, r["Genome"])] = float(r[c])
     for g in runs_of:
         runs_of[g].sort()
 

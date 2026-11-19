@@ -34,9 +34,9 @@ def build(tmp):
     ra, mean = "Relative Abundance (%)", "Mean"
     w(tmp / "coverm/wet.tsv",
       ["Genome", f"R1_1.fastq.gz {ra}", f"R1_1.fastq.gz {mean}", f"R2_1.fastq.gz {ra}", f"R2_1.fastq.gz {mean}"],
-      [["unmapped", "60", "0", "90", "0"], ["wet.bin.1", "30", "5", "10", "0.5"], ["wet.bin.2", "10", "2", "0", "0"]])
+      [["unmapped", "60", "NA", "90", "NA"], ["wet.bin.1", "30", "5", "10", "0.5"], ["wet.bin.2", "10", "2", "0", "0"]])
     w(tmp / "coverm/dry.tsv", ["Genome", f"R3_1.fastq.gz {ra}", f"R3_1.fastq.gz {mean}"],
-      [["unmapped", "75", "0"], ["dry.bin.1", "25", "3"]])
+      [["unmapped", "75", "NA"], ["dry.bin.1", "25", "3"]])
     w(tmp / "group_mags.tsv", ["group", "mag"], [["wet", "wet.bin.1"], ["wet", "wet.bin.2"], ["dry", "dry.bin.1"]])
     w(tmp / "gtdbtk/gtdbtk.bac120.summary.tsv", ["user_genome", "classification"],
       [["wet.bin.1", "d__Bacteria;p__P;c__C;o__O;f__F;g__Aeromonas;s__Aeromonas hydrophila"],
