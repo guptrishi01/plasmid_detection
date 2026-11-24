@@ -1,6 +1,8 @@
 # Pilot results (stages 2–9) and side analyses
 
 **Full run (all 92 runs, Nextflow, 2026-11-09): see [full_92/README.md](full_92/README.md).**
+
+**Co-assembly MAGs per group (pre-treatment, plant, stream; 2026-11-24): see [coasm_92/README.md](coasm_92/README.md).**
 This page is the 4-run pilot used to tune the pipeline.
 
 Four runs at time point 4: Sugar Creek (SC) and Mallard Creek (MC), upstream B (UP) and

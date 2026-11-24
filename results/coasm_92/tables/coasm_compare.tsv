@@ -1,0 +1,4 @@
+group	runs	site_groups	group_mags	group_mags_high	group_species	site_mags	site_mags_high	site_species	shared_species	group_only_species	group_only_species_in_other_sites	site_only_species	matched_pairs	median_completeness_diff	median_contamination_diff	pairs_group_mag_better	resistance_site_mags	resistance_site_mags_recovered	median_pct_reads_on_group_mags
+pre_treatment	28	HOSP,PCI,RES,influent	190	44	190	223	71	101	49	141	5	52	49	-0.41	1.92	19	14	5	17.16
+plant	28	ATE,FCE,PCE,UV	507	155	507	321	122	234	185	322	19	49	185	1.25	0.69	93	12	4	22.16
+stream	36	control,downstream,upstream	369	65	369	326	59	248	151	218	12	97	151	-1.63	1.51	45	0	0	12.53

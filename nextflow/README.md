@@ -100,7 +100,9 @@ pre_treatment (HOSP, RES, INF, PCI; 28 runs), plant (PCE, ATE, FCE, UV; 28) and 
    the group in the place of a run: one MAG set per group, no cross-group catalog.
    `COASM_COLLECT` puts the three sets in one dRep-shaped dir (each genome its own cluster)
    for `GTDBTK`, `MAG_AMR` and `PLASMID_HOSTS`.
-4. `COASM_ABUNDANCE`: CoverM maps each run of a group separately to that group's MAGs.
+4. `COASM_ABUNDANCE`: CoverM maps each run of a group separately to that group's MAGs;
+   a read counts at ≥ 95% identity over ≥ 75% of its length
+   (`params.coassembly.coverm_read_filters`).
 5. `GENOMAD`, `CHECKV_MOBTYPER`, `AMR`, `TAG_AMR` on the co-assemblies feed the plasmid hosts.
 6. `COASM_COMPARE`: dRep compare (95% ANI) over the group MAGs and the per-site MAGs;
    `COASM_TABLES` (`scripts/coassembly/coasm_tables.py`) writes `tables/coasm_mags.tsv`,
@@ -111,7 +113,13 @@ pre_treatment (HOSP, RES, INF, PCI; 28 runs), plant (PCE, ATE, FCE, UV; 28) and 
 sbatch scripts/coassembly/prep_inputs.sbatch
 sbatch --export=ALL,PD_MAIN=coassembly.nf nextflow/submit.sbatch -profile slurm,coasm_test -resume  # 6-run dry run
 sbatch --export=ALL,PD_MAIN=coassembly.nf nextflow/submit.sbatch -profile slurm,coasm -resume       # all 92
+bash scripts/sync_results_nf.sh /scratch/rgupta25/plasmid_detection/results_nf_coasm results/coasm_92
 ```
+
+Resources (`coasm` profile) are sized from the 92-run run: MEGAHIT 35–72 h at 160–231 GB
+per group, AMR (AMRFinderPlus tblastn on a whole co-assembly) up to 605 GB, MOB-typer on
+~24k plasmid contigs up to 210 GB. AMR asks for 768 GB on its first attempt because
+`-resume` does not reuse a task that only succeeded on a retry.
 
 ## Notes
 
