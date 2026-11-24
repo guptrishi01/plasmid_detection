@@ -46,6 +46,10 @@ paths:
   mag_links: ${paths.results}/08_mag_links
   rollup: ${paths.results}/09_rollup
   tables: ${paths.results}/tables
+  # Nextflow outputs: the 92-run pipeline (11 site groups) and the co-assembly exploration
+  nf_results: ${paths.data_root}/results_nf
+  coasm_inputs: ${paths.data_root}/coasm_inputs     # hard links: host-free reads, per-site MAGs
+  coasm_results: ${paths.data_root}/results_nf_coasm
   # Side analysis (not in the spec): odds of under-sequencing across all 92 runs
   undersequencing: ${paths.results}/side_undersequencing
   versions: ${paths.repo}/versions.txt
@@ -168,6 +172,20 @@ params:
     drep_ani: 0.95
     gtdbtk_args: ""
     coverm_genome_methods: "relative_abundance mean"
+  coassembly:
+    # PI, 2026-11-19 (exploration next to the 11-group results): pool each group's host-free
+    # reads into one MEGAHIT co-assembly, bin it with every run of the group as a coverage
+    # sample, dRep within the group (one MAG set per group, no cross-group catalog), compare
+    # with the per-site MAGs of the group's sites, then map each run independently to its
+    # own group's MAGs. "group:SITE,SITE"; every site in exactly one group.
+    groups: ["pre_treatment:HOSP,RES,INF,PCI", "plant:PCE,ATE,FCE,UV",
+             "stream:UP_A,UP_B,DS_A,DS_B,MNT_A,MNT_B,UW_A,UW_B"]
+    megahit_args: "--presets meta-large"
+    compare_ani: 0.95             # same species = dRep secondary cluster at this ANI
+    present_min_coverage: 1       # a run "hits" a MAG at CoverM mean coverage >= this
+    # per-run CoverM on the group MAGs: count only real hits (CoverM default counts any partial
+    # alignment; distant runs then look like they hit MAGs; 2026-11-24)
+    coverm_read_filters: "--min-read-percent-identity 95 --min-read-aligned-percent 75"
   mag_links:
     threads: 16
     # Coverage correlation needs enough samples to mean anything; below this it is NA
@@ -182,12 +200,13 @@ params:
     amrfinder_types: "AMR"
   stats:
     # Controls are a reference: reported, never subtracted, never in a test group
-    # PI, 2026-11-10: HOSP, RES, INF, PCI and PCE are pre-treatment; ATE, FCE and UV are the
-    # plant (treatment) steps. (Until then: influent, sewer = HOSP+RES, plant = PCI..UV.)
+    # PI, 2026-11-19: HOSP, RES, INF and PCI are pre-treatment; PCE, ATE, FCE and UV are the
+    # plant (treatment) steps. (2026-11-10 to 11-19 PCE was pre-treatment; before that:
+    # influent, sewer = HOSP+RES, plant = PCI..UV.)
     # The side analysis (scripts/side/, us02) also reads these groups; its 2026-10-18
     # results used the earlier ones.
     site_groups: ["creek_upstream:UP_A,UP_B", "creek_downstream:DS_A,DS_B",
-                  "pre_treatment:HOSP,RES,INF,PCI,PCE", "plant:ATE,FCE,UV",
+                  "pre_treatment:HOSP,RES,INF,PCI", "plant:PCE,ATE,FCE,UV",
                   "control:MNT_A,MNT_B,UW_A,UW_B"]
     # group_a:group_b, each tested within every system (time points as replicates) and
     # within every time point (systems as replicates)
@@ -195,6 +214,7 @@ params:
     method: "aldex2"          # aldex2 | ancombc2
     min_group_size: 3
     alpha: 0.05
+    seed: 1                   # ALDEx2 Monte-Carlo + PERMANOVA permutations (stats.R)
     # BioSample antibiotic values: "ND" (not detected) and "<LOQ" (below quantification)
     # -> na | zero | half_min (half the smallest detected value of that antibiotic)
     nd_encoding: "na"

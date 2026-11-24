@@ -2,7 +2,8 @@
 # Usage: Rscript stats.R <stats_samples.tsv> <resistome counts tsv> <output dir>
 # Parameters come from the environment (config/config.yaml via scripts/lib/common.sh):
 #   PARAMS_STATS_COMPARISONS  "groupA:groupB ..."   PARAMS_STATS_METHOD  aldex2 | ancombc2
-#   PARAMS_STATS_MIN_GROUP_SIZE, PARAMS_STATS_ALPHA
+#   PARAMS_STATS_MIN_GROUP_SIZE, PARAMS_STATS_ALPHA, PARAMS_STATS_SEED (ALDEx2 Monte-Carlo
+#   instances and PERMANOVA permutations are random: seeded so a re-run gives the same tables)
 # Controls (site_group == "control") are a reference: summarised, never tested or subtracted.
 suppressPackageStartupMessages({ library(vegan) })
 args <- commandArgs(trailingOnly = TRUE)
@@ -14,6 +15,7 @@ comparisons <- strsplit(Sys.getenv("PARAMS_STATS_COMPARISONS"), " ")[[1]]
 method <- Sys.getenv("PARAMS_STATS_METHOD", "aldex2")
 min_n <- as.integer(Sys.getenv("PARAMS_STATS_MIN_GROUP_SIZE", "3"))
 alpha <- as.numeric(Sys.getenv("PARAMS_STATS_ALPHA", "0.05"))
+seed <- as.integer(Sys.getenv("PARAMS_STATS_SEED", "1"))
 log_lines <- character()
 note <- function(...) { msg <- paste0(...); message(msg); log_lines <<- c(log_lines, msg) }
 
@@ -39,6 +41,7 @@ if (nrow(test_meta) >= 4 && nrow(counts) >= 2) {
   terms <- terms[sapply(terms, function(t) length(unique(test_meta[[t]])) > 1)]
   if (length(terms)) {
     test_meta$timepoint <- factor(test_meta$timepoint)
+    set.seed(seed)
     fit <- adonis2(as.formula(paste("d ~", paste(terms, collapse = " + "))),
                    data = test_meta, by = "margin", permutations = 9999)
     capture.output(fit, file = file.path(out, "permanova.txt"))
@@ -62,6 +65,7 @@ run_test <- function(label, a_runs, b_runs) {
   cond <- c(rep("a", length(a_runs)), rep("b", length(b_runs)))
   if (method == "aldex2") {
     suppressPackageStartupMessages(library(ALDEx2))
+    set.seed(seed)   # per test, so a result doesn't depend on which tests ran before it
     res <- aldex(x, cond, mc.samples = 128, test = "t", effect = TRUE, denom = "all")
     res$gene <- rownames(res)
     res$significant_BH <- res$wi.eBH < alpha   # ALDEx2's eBH columns are BH-adjusted

@@ -32,10 +32,10 @@ For the 4 pilot runs, the stage 2–3 tables equal the sbatch pilot exactly.
 | control | 4 | 150.5 | 0 | 0 / 0 | 30 | 27.9% | 46.1% | 48 | 48 |
 
 (`tables/09_plasmid_summary.tsv`, `04_assembly.tsv`, `07_mags.tsv`, `07_group_mags.tsv`.)
-Pre-treatment sites (hospital and residential sewer, influent, PCI, PCE) carry ~10× the
+Pre-treatment sites (hospital and residential sewer, influent, PCI) carry ~10× the
 plasmid contigs of creek water and ~35× the plasmid contigs with AMR-type genes per run
-(22.8 vs 0.66); both fall
-through the plant steps (ATE → FCE → UV). Plasmid contigs with AMR genes = contigs carrying
+(22.9 vs 0.66); both fall
+through the plant steps (PCE → ATE → FCE → UV). Plasmid contigs with AMR genes = contigs carrying
 an AMRFinderPlus AMR-type or RGI hit (`params.rollup.amrfinder_types`).
 
 ## Stage 7: MAG catalog
@@ -76,20 +76,24 @@ Resistome: 175 AMR-type genes with reads across the 92 runs (`09_rollup/resistom
 22 runs have no reads on any AMR-type gene of their own assembly: 14 upstream, 4
 downstream and all 4 controls.
 
-Statistics groups (PI, 2026-11-10): creek upstream (UP_A/B), creek downstream (DS_A/B),
-**pre-treatment** (HOSP, RES, INF, PCI, PCE), **plant** steps (ATE, FCE, UV); controls are a
-reference, never tested.
+Statistics groups (PI, 2026-11-19): creek upstream (UP_A/B), creek downstream (DS_A/B),
+**pre-treatment** (HOSP, RES, INF, PCI), **plant** steps (PCE, ATE, FCE, UV); controls are a
+reference, never tested. (From 2026-11-10 to 11-19 PCE was pre-treatment; those results are
+kept on scratch in `stats_rerun/pce_pre_treatment_20261110/`: 31 and 38 genes significant
+within Mallard and Sugar Creek, 22 in both, PERMANOVA site group 51.6%.)
 
-- PERMANOVA (exploratory, Aitchison, 88 non-control runs): site group explains 51.6% of
-  resistome variation (p = 0.0001), time point 4.0% (p = 0.008), creek system 1.6% (p = 0.030).
-- **Pre-treatment vs plant** (ALDEx2, BH < 0.05, all AMR-type genes): 31 genes within
-  Mallard Creek (20 vs 8 runs, 135 genes tested) and 38 within Sugar Creek (16 vs 12, 152);
-  29 and 33 of them higher before treatment. Within time points (9 vs 5 runs): 17, 14, 0
-  and 22 at T1–T4. 22 genes are significant in both creeks: aadA2, aadA27, aadE, blaMCA,
-  blaOXA, cblA, cfxA, cfxA6, erm(B), icr-Mo, lnu(AN2), lnu(C), mef(A), mef(En2), msr(D),
-  qnrS2, sul1, tet(40), tet(O), tet(Q), tet(W), tet(X1); all are higher before treatment
-  except sul1, which is higher in the plant. Mobile (plasmid + virus) genes only: 2
-  (Mallard) and 8 (Sugar) significant.
+- PERMANOVA (exploratory, Aitchison, 88 non-control runs): site group explains 42.5% of
+  resistome variation (p = 0.0001), time point 4.0% (p = 0.027), creek system 1.6% (p = 0.046).
+- **Pre-treatment vs plant** (ALDEx2, BH < 0.05, all AMR-type genes, seed 1): 10 genes
+  within Mallard Creek (16 vs 12 runs, 135 genes tested) and 15 within Sugar Creek (12 vs 16,
+  152); 8 and 14 of them higher before treatment. Within time points (7 vs 7 runs): 0, 0, 0
+  and 3 at T1–T4. 6 genes are significant in both creeks: icr-Mo, lnu(C), mef(A), tet(40),
+  tet(W) (higher before treatment) and sul1 (higher in the plant). Mobile (plasmid + virus)
+  genes only: 1 (Mallard) and 4 (Sugar) significant. ALDEx2's Monte-Carlo step is random:
+  over seeds 1–5 Sugar Creek gives 15 every time and Mallard Creek 9–14, and icr-Mo, lnu(C),
+  mef(A), tet(40) and sul1 are significant in both creeks every time (tet(W) in 4 of 5).
+  Counting PCE as a plant step weakens the contrast, consistent with PCE (primary clarifier
+  effluent) still resembling the sewage before it.
 - **Creek upstream vs downstream**: no gene significant. Within each creek (8 vs 8) and at
   T2–T4 (4 vs 4) only 2–6 genes have reads; T1 skipped (1 gene with reads).
 
@@ -98,8 +102,10 @@ higher before treatment), the CLR matrix, group means, PERMANOVA and the log.
 
 The Nextflow STATS step of the 92-run run passed no comparisons to `stats.R` (fixed in
 33e1af4); the statistics here were produced by the same commands as a standalone job
-(`/scratch/.../stats_rerun/run_stats.sbatch`; final run with the PI's groups: job 27725822),
-after a `stats.R` fix for tests with fewer than 2 genes (325cc5a).
+(`/scratch/.../stats_rerun/run_stats.sbatch`, job 27725822), after a `stats.R` fix for tests
+with fewer than 2 genes (325cc5a). With PCE moved to plant (2026-11-19) and `stats.R` seeded
+(`params.stats.seed`), they were re-run the same way (`run_stats_pce_plant.sbatch`, then
+`run_stats_seeds.sbatch`, jobs 27866030 and 27866403); `findings/` was regenerated then too.
 
 ## Audit
 

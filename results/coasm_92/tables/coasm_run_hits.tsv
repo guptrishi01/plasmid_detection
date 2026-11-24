@@ -1,0 +1,93 @@
+run	group	site	location	timepoint	pct_reads_on_group_mags	group_mags	mags_hit	mags_hit_high	mags_hit_with_resistance	resistance_genes_in_hit_mags	top_mag	top_mag_label	top_mag_relabund_pct
+SRR6231130	pre_treatment	INF	Mallard_Creek	2	17.7412	190	76	19	8	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.473	Cloacibacterium sp.	1.0721
+SRR6231142	pre_treatment	INF	Mallard_Creek	1	18.5627	190	55	11	4	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.11	Flavobacterium sp017997335	1.5968
+SRR6231143	pre_treatment	INF	Sugar_Creek	1	17.7996	190	88	20	6	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.442	Lactococcus_A raffinolactis	2.0128
+SRR6231144	pre_treatment	HOSP	Sugar_Creek	1	19.4567	190	89	19	6	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB,vanG,vanXY	pre_treatment.bin.52	Phocaeicola vulgatus	2.0777
+SRR6231145	pre_treatment	HOSP	Mallard_Creek	1	21.1830	190	74	16	5	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.52	Phocaeicola vulgatus	2.0866
+SRR6231153	pre_treatment	RES	Sugar_Creek	1	19.1421	190	93	25	7	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB,vanG,vanXY	pre_treatment.bin.52	Phocaeicola vulgatus	1.4585
+SRR6231154	pre_treatment	RES	Mallard_Creek	1	19.8875	190	64	14	4	blaLHK,blaMOX,blaOXA,cblA,erm(52)	pre_treatment.bin.52	Phocaeicola vulgatus	2.1032
+SRR6231155	pre_treatment	PCI	Mallard_Creek	1	24.3681	190	43	9	2	blaMOX,blaOXA,cblA	pre_treatment.bin.196	Zoogloea sp937871125	5.3888
+SRR6231162	pre_treatment	HOSP	Mallard_Creek	3	15.4361	190	62	11	8	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.473	Cloacibacterium sp.	2.4526
+SRR6231167	pre_treatment	INF	Mallard_Creek	3	15.1295	190	76	17	9	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.473	Cloacibacterium sp.	2.1451
+SRR6231169	pre_treatment	INF	Sugar_Creek	3	13.6847	190	67	11	8	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),oqxA,oqxB,tet(36)	pre_treatment.bin.473	Cloacibacterium sp.	2.6964
+SRR6231176	pre_treatment	HOSP	Sugar_Creek	3	15.0920	190	78	18	8	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),oqxA,oqxB,tet(36)	pre_treatment.bin.473	Cloacibacterium sp.	1.3898
+SRR6231177	pre_treatment	PCI	Mallard_Creek	3	16.6340	190	74	17	8	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.473	Cloacibacterium sp.	1.9691
+SRR6231178	pre_treatment	RES	Sugar_Creek	3	17.2986	190	82	21	8	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,oqxA,oqxB,tet(36)	pre_treatment.bin.473	Cloacibacterium sp.	1.4457
+SRR6231179	pre_treatment	RES	Mallard_Creek	3	14.8398	190	69	12	8	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),tet(36)	pre_treatment.bin.473	Cloacibacterium sp.	2.1541
+SRR6231183	pre_treatment	PCI	Mallard_Creek	4	16.0184	190	87	22	8	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),oqxA,oqxB,tet(36)	pre_treatment.bin.473	Cloacibacterium sp.	2.0559
+SRR6231184	pre_treatment	INF	Sugar_Creek	4	15.2482	190	73	15	8	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.473	Cloacibacterium sp.	1.3943
+SRR6231185	pre_treatment	RES	Sugar_Creek	4	18.2512	190	114	28	6	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.3	Streptococcus suis_AA	1.3082
+SRR6231190	pre_treatment	HOSP	Sugar_Creek	4	17.4846	190	107	27	7	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB	pre_treatment.bin.3	Streptococcus suis_AA	2.6453
+SRR6231191	pre_treatment	INF	Mallard_Creek	4	15.8640	190	96	24	8	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),oqxA,oqxB,tet(36)	pre_treatment.bin.473	Cloacibacterium sp.	1.4469
+SRR6231194	pre_treatment	RES	Sugar_Creek	2	19.2281	190	56	15	5	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.52	Phocaeicola vulgatus	1.0521
+SRR6231195	pre_treatment	INF	Sugar_Creek	2	17.0241	190	56	13	6	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.485	Rivihabitans sp937871815	1.1342
+SRR6231199	pre_treatment	RES	Mallard_Creek	2	17.0002	190	72	16	6	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,cblA,erm(52)	pre_treatment.bin.473	Cloacibacterium sp.	0.8279
+SRR6231201	pre_treatment	HOSP	Sugar_Creek	2	16.6635	190	51	11	5	blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.3	Streptococcus suis_AA	1.7320
+SRR6231208	pre_treatment	PCI	Mallard_Creek	2	18.7784	190	55	16	5	blaEBR,blaLHK,blaMOX,blaOXA,cblA,oqxA,oqxB	pre_treatment.bin.473	Cloacibacterium sp.	1.2386
+SRR6231209	pre_treatment	HOSP	Mallard_Creek	2	20.1846	190	100	23	10	ant(3'')-IIa,blaEBR,blaLHK,blaMOX,blaOXA,cblA,erm(52),oqxA,oqxB,vanG,vanXY	pre_treatment.bin.52	Phocaeicola vulgatus	1.0890
+SRR6231213	pre_treatment	HOSP	Mallard_Creek	4	16.1395	190	102	26	9	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),oqxA,oqxB,tet(36),vanG,vanXY	pre_treatment.bin.473	Cloacibacterium sp.	1.5593
+SRR6231214	pre_treatment	RES	Mallard_Creek	4	16.7736	190	95	17	7	ant(3'')-IIa,blaLHK,blaMOX,blaOXA,blaRSD2,cblA,erm(52),tet(36)	pre_treatment.bin.3	Streptococcus suis_AA	1.5106
+SRR6231132	plant	ATE	Mallard_Creek	1	27.9401	507	78	30	1	aadA7	plant.bin.773	Aquella sp003538525	7.3906
+SRR6231133	plant	ATE	Sugar_Creek	1	30.8251	507	96	39	2	blaMOX,blaOXA,blaVIM	plant.bin.872	Thiolinea sp937876535	3.0003
+SRR6231146	plant	FCE	Sugar_Creek	1	36.1087	507	84	33	2	blaVIM,erm(G),lnu(AN2),mef(En2),msr(D)	plant.bin.872	Thiolinea sp937876535	8.5157
+SRR6231147	plant	FCE	Mallard_Creek	1	21.9299	507	45	19	2	aadA7,erm(G),lnu(AN2),mef(En2),msr(D)	plant.bin.773	Aquella sp003538525	9.4713
+SRR6231150	plant	PCE	Sugar_Creek	1	18.6599	507	66	16	11	ant(3'')-IIa,blaCTX-M,blaLHK,blaMOX,blaMUN-1,blaOXA,cblA,cfr,erm(G),lnu(AN2),lnu(C),mef(En2),msr(D),oqxB,qnrD1	plant.bin.319	Rivihabitans sp937871815	2.2122
+SRR6231151	plant	PCE	Mallard_Creek	1	17.8193	507	52	13	3	blaMOX,blaMUN-1,blaOXA,cblA,erm(G),lnu(AN2),mef(En2),msr(D)	plant.bin.414	Flavobacterium sp017997335	1.7478
+SRR6231156	plant	UV	Sugar_Creek	1	17.8500	507	48	20	2	blaVIM,erm(G),lnu(AN2),mef(En2),msr(D)	plant.bin.879	AWTP1-31 sp937903325	2.8541
+SRR6231160	plant	FCE	Sugar_Creek	3	14.7374	507	73	16	10	ant(3'')-IIa,blaCTX-M,blaLHK,blaMOX,blaMUN-1,blaOXA,blaTLA,catA16,cblA,erm(G),lnu(AN2),mef(En2),msr(D),oqxB	plant.bin.383	Acinetobacter sp002296655	0.8375
+SRR6231163	plant	PCE	Mallard_Creek	3	14.6705	507	70	16	8	ant(3'')-IIa,blaLHK,blaMOX,blaMUN-1,blaOXA,blaTLA,cblA,erm(G),lnu(AN2),lnu(C),mef(En2),msr(D)	plant.bin.549	Phocaeicola vulgatus	0.8760
+SRR6231168	plant	PCE	Sugar_Creek	3	14.7227	507	72	16	9	ant(3'')-IIa,blaCTX-M,blaLHK,blaMOX,blaMUN-1,blaOXA,blaTLA,catA16,cblA,erm(G),lnu(AN2),mef(En2),msr(D)	plant.bin.383	Acinetobacter sp002296655	0.8253
+SRR6231170	plant	UV	Sugar_Creek	3	31.0845	507	59	23	0		plant.bin.949	Aquella sp.	7.9333
+SRR6231171	plant	ATE	Sugar_Creek	3	34.4932	507	121	35	0		plant.bin.872	Thiolinea sp937876535	2.6320
+SRR6231172	plant	ATE	Sugar_Creek	4	37.3192	507	120	38	1	aph(9)-Ia,blaM	plant.bin.872	Thiolinea sp937876535	5.5155
+SRR6231173	plant	FCE	Sugar_Creek	4	40.7008	507	122	39	1	aph(9)-Ia,blaM	plant.bin.872	Thiolinea sp937876535	7.0286
+SRR6231175	plant	FCE	Mallard_Creek	3	13.2379	507	39	13	2	aadA7,blaIND	plant.bin.934	Flavobacterium celericrescens	1.3147
+SRR6231180	plant	UV	Sugar_Creek	4	25.4647	507	80	28	1	aph(9)-Ia,blaM	plant.bin.768	Aquella sp008017155	7.3143
+SRR6231182	plant	ATE	Mallard_Creek	4	36.8592	507	87	26	0		plant.bin.694	Gordonia sp002477755	7.1796
+SRR6231187	plant	PCE	Sugar_Creek	4	13.8384	507	72	15	10	ant(3'')-IIa,blaLHK,blaMOX,blaMUN-1,blaOXA,catA16,cblA,cfr(C),erm(G),lnu(AN2),lnu(C),mef(En2),msr(D),qnrD1	plant.bin.788	Streptococcus suis_AA	1.5017
+SRR6231188	plant	FCE	Mallard_Creek	4	17.3568	507	55	21	0		plant.bin.934	Flavobacterium celericrescens	2.3121
+SRR6231192	plant	ATE	Mallard_Creek	3	33.9592	507	111	45	1	aadA7	plant.bin.259	Gordonia sp020438995	3.9075
+SRR6231193	plant	FCE	Sugar_Creek	2	36.2096	507	59	18	1	blaIND	plant.bin.791	Flavobacterium sp937967675	9.1449
+SRR6231196	plant	ATE	Sugar_Creek	2	32.6854	507	82	27	1	blaIND	plant.bin.694	Gordonia sp002477755	1.8060
+SRR6231200	plant	PCE	Sugar_Creek	2	16.4654	507	55	13	8	ant(3'')-IIa,blaCTX-M,blaLHK,blaMOX,blaMUN-1,blaOXA,cblA,cfr,erm(G),lnu(AN2),mef(En2),msr(D)	plant.bin.319	Rivihabitans sp937871815	1.3561
+SRR6231203	plant	UV	Sugar_Creek	2	22.3918	507	67	22	1	blaIND	plant.bin.1082	C7867-001 sp938008595	2.3130
+SRR6231204	plant	FCE	Mallard_Creek	2	11.0833	507	45	18	1	aadA7	plant.bin.870	Azonexus sp937892345	0.8422
+SRR6231210	plant	ATE	Mallard_Creek	2	34.8509	507	112	50	1	aadA7	plant.bin.259	Gordonia sp020438995	4.7513
+SRR6231211	plant	PCE	Mallard_Creek	2	18.0102	507	74	17	8	ant(3'')-IIa,blaLHK,blaMOX,blaMUN-1,blaOXA,cblA,erm(G),lnu(AN2),lnu(C),mef(En2),msr(D),oqxB,qnrD1	plant.bin.549	Phocaeicola vulgatus	0.9146
+SRR6231219	plant	PCE	Mallard_Creek	4	14.8921	507	94	19	11	ant(3'')-IIa,blaLHK,blaMOX,blaMUN-1,blaOXA,blaTLA,catA16,cblA,cfr(C),erm(G),lnu(AN2),lnu(C),mef(En2),msr(D),oqxB,qnrD1	plant.bin.788	Streptococcus suis_AA	0.9032
+SRR6231131	stream	UP_B	Mallard_Creek	3	19.6223	369	77	10	0		stream.bin.1030	Planktophila sp.	1.2083
+SRR6231134	stream	DS_A	Sugar_Creek	2	11.1558	369	51	4	0		stream.bin.431	Limnohabitans sp.	1.4876
+SRR6231135	stream	DS_A	Mallard_Creek	3	10.5170	369	53	8	0		stream.bin.220	Zoogloea sp937871125	1.1018
+SRR6231136	stream	UP_B	Sugar_Creek	2	9.2569	369	49	3	0		stream.bin.133	Perlucidibaca sp.	0.4880
+SRR6231137	stream	UP_A	Mallard_Creek	3	19.3816	369	78	9	0		stream.bin.1030	Planktophila sp.	1.1418
+SRR6231138	stream	DS_A	Mallard_Creek	1	13.1701	369	28	4	0		stream.bin.220	Zoogloea sp937871125	4.7739
+SRR6231139	stream	DS_A	Sugar_Creek	1	4.8511	369	28	13	0		stream.bin.878	Aquella sp035438765	0.6929
+SRR6231140	stream	MNT_A	Mountain_Control	4	17.5580	369	43	10	0		stream.bin.567	Limnohabitans_A sp.	1.3932
+SRR6231141	stream	UW_A	Uwharrie_Control	4	1.3402	369	12	0	0		stream.bin.515	Rhodoluna sp.	0.3917
+SRR6231148	stream	DS_B	Sugar_Creek	1	5.8061	369	31	13	0		stream.bin.878	Aquella sp035438765	0.6845
+SRR6231149	stream	DS_B	Mallard_Creek	1	16.4577	369	19	3	0		stream.bin.220	Zoogloea sp937871125	7.5936
+SRR6231152	stream	UP_A	Sugar_Creek	1	3.9568	369	20	1	0		stream.bin.550	Polynucleobacter sp000342265	0.8378
+SRR6231157	stream	UP_B	Mallard_Creek	1	11.5944	369	61	5	0		stream.bin.711	Luteolibacter sp913063525	1.0542
+SRR6231158	stream	UP_B	Sugar_Creek	1	3.9805	369	36	1	0		stream.bin.778	Flavobacterium sp.	0.2857
+SRR6231159	stream	UP_A	Mallard_Creek	1	11.8898	369	60	5	0		stream.bin.711	Luteolibacter sp913063525	1.2846
+SRR6231161	stream	UP_A	Sugar_Creek	3	13.7951	369	70	8	1	iri	stream.bin.292	Rhodoluna sp.	1.2781
+SRR6231164	stream	DS_B	Sugar_Creek	3	17.3357	369	74	11	0		stream.bin.659	Fluviicola sp937973685	2.6551
+SRR6231165	stream	UP_B	Sugar_Creek	3	16.8272	369	91	6	0		stream.bin.659	Fluviicola sp937973685	1.8916
+SRR6231166	stream	DS_A	Sugar_Creek	3	13.6644	369	65	11	0		stream.bin.659	Fluviicola sp937973685	1.3235
+SRR6231174	stream	DS_B	Mallard_Creek	3	14.7376	369	81	12	0		stream.bin.1030	Planktophila sp.	0.7274
+SRR6231181	stream	UP_B	Sugar_Creek	4	14.5374	369	87	12	0		stream.bin.640	Planktophila sp.	0.7293
+SRR6231186	stream	UP_A	Sugar_Creek	4	20.5429	369	63	12	0		stream.bin.1019	Aquiluna sp041191965	1.8731
+SRR6231189	stream	DS_B	Mallard_Creek	4	14.1890	369	122	20	1	iri	stream.bin.799	Rhodoluna sp041180345	0.8275
+SRR6231197	stream	DS_B	Sugar_Creek	2	10.0672	369	35	0	0		stream.bin.240	Prosthecobacter sp.	0.7060
+SRR6231198	stream	UP_A	Sugar_Creek	2	11.4081	369	39	4	0		stream.bin.431	Limnohabitans sp.	2.3852
+SRR6231202	stream	UP_A	Mallard_Creek	2	9.0127	369	44	3	1	iri	stream.bin.803	Novosphingobium sp937897535	0.4527
+SRR6231205	stream	DS_B	Mallard_Creek	2	8.1635	369	58	6	0		stream.bin.292	Rhodoluna sp.	0.9718
+SRR6231206	stream	DS_A	Mallard_Creek	2	8.2148	369	42	4	0		stream.bin.292	Rhodoluna sp.	1.4154
+SRR6231207	stream	UP_B	Mallard_Creek	2	6.8421	369	33	3	1	iri	stream.bin.314	Perlucidibaca sp937928295	0.4613
+SRR6231212	stream	DS_A	Sugar_Creek	4	19.6096	369	112	19	0		stream.bin.792	UBA952 sp.	1.5541
+SRR6231215	stream	DS_B	Sugar_Creek	4	22.2426	369	110	19	0		stream.bin.792	UBA952 sp.	2.0711
+SRR6231216	stream	DS_A	Mallard_Creek	4	13.5531	369	107	15	1	iri	stream.bin.278	Planktophila sp937975715	0.7526
+SRR6231217	stream	UP_B	Mallard_Creek	4	14.0962	369	129	16	1	iri	stream.bin.278	Planktophila sp937975715	0.7816
+SRR6231218	stream	UP_A	Mallard_Creek	4	11.4870	369	109	15	1	iri	stream.bin.278	Planktophila sp937975715	0.7909
+SRR6231220	stream	UW_B	Uwharrie_Control	4	19.7413	369	57	6	0		stream.bin.776	JAFMIT01 sp039800825	2.1212
+SRR6231221	stream	MNT_B	Mountain_Control	4	1.6793	369	2	0	0		stream.bin.397	JASGCK01 sp947372005	1.4947

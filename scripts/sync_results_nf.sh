@@ -14,5 +14,5 @@ mkdir -p "$DEST"
 rsync -a --delete --prune-empty-dirs --max-size=20M --filter="merge $PD_REPO/scripts/sync_results_nf.filter" \
     "$SRC/" "$DEST/"
 echo "$DEST: $(find "$DEST" -type f | wc -l) files, $(du -sh "$DEST" | cut -f1)"
-big=$(find "$SRC/tables" "$SRC/09_rollup" -maxdepth 1 -type f -size +20M | wc -l)
+big=$(find "$SRC/tables" $([[ -d "$SRC/09_rollup" ]] && echo "$SRC/09_rollup") -maxdepth 1 -type f -size +20M | wc -l)
 (( big == 0 )) || echo "note: $big table(s) > 20 MB not copied" >&2

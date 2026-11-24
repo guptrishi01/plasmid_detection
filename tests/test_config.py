@@ -54,7 +54,8 @@ def test_nextflow_params_has_resolved_sections():
     from plasmid_detection import config
 
     p = config.nextflow_params(config.load())
-    assert set(p) == {"repo", "envs", "db", "reference", "cfg"}
+    assert set(p) == {"repo", "paths", "envs", "db", "reference", "cfg"}
+    assert set(p["paths"]) == {"nf_results", "coasm_inputs", "coasm_results"}
     assert "${" not in json_dump(p)
     assert isinstance(p["cfg"]["rollup"]["depth_levels_million_pairs"], list)
 

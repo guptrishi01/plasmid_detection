@@ -6,9 +6,9 @@ creek_upstream:creek_downstream within timepoint 2: skipped (1 gene(s) with read
 creek_upstream:creek_downstream within timepoint 3: skipped (0 gene(s) with reads in these 8 runs; need >= 2)
 creek_upstream:creek_downstream within timepoint 1: skipped (1 gene(s) with reads in these 8 runs; need >= 2)
 creek_upstream:creek_downstream within timepoint 4: skipped (1 gene(s) with reads in these 8 runs; need >= 2)
-pre_treatment:plant within Mallard_Creek: aldex2 on 20 vs 8 runs, 63 genes -> pre_treatment_plant_within_Mallard_Creek.aldex2.tsv
-pre_treatment:plant within Sugar_Creek: aldex2 on 16 vs 12 runs, 75 genes -> pre_treatment_plant_within_Sugar_Creek.aldex2.tsv
-pre_treatment:plant within timepoint 2: aldex2 on 9 vs 5 runs, 50 genes -> pre_treatment_plant_within_timepoint_2.aldex2.tsv
-pre_treatment:plant within timepoint 3: aldex2 on 9 vs 5 runs, 56 genes -> pre_treatment_plant_within_timepoint_3.aldex2.tsv
-pre_treatment:plant within timepoint 1: aldex2 on 9 vs 5 runs, 55 genes -> pre_treatment_plant_within_timepoint_1.aldex2.tsv
-pre_treatment:plant within timepoint 4: aldex2 on 9 vs 5 runs, 63 genes -> pre_treatment_plant_within_timepoint_4.aldex2.tsv
+pre_treatment:plant within Mallard_Creek: aldex2 on 16 vs 12 runs, 63 genes -> pre_treatment_plant_within_Mallard_Creek.aldex2.tsv
+pre_treatment:plant within Sugar_Creek: aldex2 on 12 vs 16 runs, 75 genes -> pre_treatment_plant_within_Sugar_Creek.aldex2.tsv
+pre_treatment:plant within timepoint 2: aldex2 on 7 vs 7 runs, 50 genes -> pre_treatment_plant_within_timepoint_2.aldex2.tsv
+pre_treatment:plant within timepoint 3: aldex2 on 7 vs 7 runs, 56 genes -> pre_treatment_plant_within_timepoint_3.aldex2.tsv
+pre_treatment:plant within timepoint 1: aldex2 on 7 vs 7 runs, 55 genes -> pre_treatment_plant_within_timepoint_1.aldex2.tsv
+pre_treatment:plant within timepoint 4: aldex2 on 7 vs 7 runs, 63 genes -> pre_treatment_plant_within_timepoint_4.aldex2.tsv

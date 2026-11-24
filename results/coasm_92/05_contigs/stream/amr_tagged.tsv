@@ -1,0 +1,980 @@
+hit_id	source	tag	run	contig	start	stop	gene	drug_class	detail
+stream_amrfinder_1	amrfinder	plasmid	stream	stream_k127_10100816	1538	2362	blaOXA-2	BETA-LACTAM	AMR
+stream_amrfinder_2	amrfinder	chromosome	stream	stream_k127_10357322	682	1335	qnrS2	QUINOLONE	AMR
+stream_amrfinder_3	amrfinder	chromosome	stream	stream_k127_10410687	368	1531	tet(X2)	TETRACYCLINE	AMR
+stream_amrfinder_4	amrfinder	chromosome	stream	stream_k127_1063631	3	1163	merA	MERCURY	STRESS
+stream_amrfinder_5	amrfinder	plasmid	stream	stream_k127_10657040	5152	5952	aph(3'')-Ib	AMINOGLYCOSIDE	AMR
+stream_amrfinder_6	amrfinder	plasmid	stream	stream_k127_10657040	5955	6788	aph(6)-Id	AMINOGLYCOSIDE	AMR
+stream_amrfinder_7	amrfinder	chromosome	stream	stream_k127_10767725	1	300	aac(6')-Ib	AMINOGLYCOSIDE	AMR
+stream_amrfinder_8	amrfinder	chromosome	stream	stream_k127_10767725	518	1669	cmlA1	PHENICOL	AMR
+stream_amrfinder_9	amrfinder	chromosome	stream	stream_k127_10866648	329	1723	silP	SILVER	STRESS
+stream_amrfinder_10	amrfinder	chromosome	stream	stream_k127_1141215	495	845	silF	COPPER/SILVER	STRESS
+stream_amrfinder_11	amrfinder	chromosome	stream	stream_k127_2138056	1	1794	tet(W)	TETRACYCLINE	AMR
+stream_amrfinder_12	amrfinder	chromosome	stream	stream_k127_2140302	670	1518	silS	COPPER/SILVER	STRESS
+stream_amrfinder_13	amrfinder	chromosome	stream	stream_k127_2646101	3	353	merR	MERCURY	STRESS
+stream_amrfinder_14	amrfinder	chromosome	stream	stream_k127_267981	554	883	qacE	QUATERNARY AMMONIUM	STRESS
+stream_amrfinder_15	amrfinder	chromosome	stream	stream_k127_2980764	212	1072	mef(C)	MACROLIDE	AMR
+stream_amrfinder_16	amrfinder	chromosome	stream	stream_k127_3214543	2156	4078	tet(Q)	TETRACYCLINE	AMR
+stream_amrfinder_17	amrfinder	plasmid	stream	stream_k127_345476	25	906	mph(E)	MACROLIDE	AMR
+stream_amrfinder_18	amrfinder	plasmid	stream	stream_k127_345476	965	2437	msr(E)	MACROLIDE/STREPTOGRAMIN	AMR
+stream_amrfinder_19	amrfinder	plasmid	stream	stream_k127_3487646	4251	5099	sul1	SULFONAMIDE	AMR
+stream_amrfinder_20	amrfinder	chromosome	stream	stream_k127_3491544	1	921	mef(A)	MACROLIDE	AMR
+stream_amrfinder_21	amrfinder	chromosome	stream	stream_k127_379839	168	965	erm(F)	LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN	AMR
+stream_amrfinder_22	amrfinder	chromosome	stream	stream_k127_3901644	164	595	merR	MERCURY	STRESS
+stream_amrfinder_23	amrfinder	chromosome	stream	stream_k127_3901644	667	1014	merT	MERCURY	STRESS
+stream_amrfinder_24	amrfinder	chromosome	stream	stream_k127_3901644	1030	1302	merP	MERCURY	STRESS
+stream_amrfinder_25	amrfinder	chromosome	stream	stream_k127_432903	759	992	merE	MERCURY	STRESS
+stream_amrfinder_26	amrfinder	chromosome	stream	stream_k127_4618530	13412	13654	merF	MERCURY	STRESS
+stream_amrfinder_27	amrfinder	chromosome	stream	stream_k127_4618530	13660	13932	merP	MERCURY	STRESS
+stream_amrfinder_28	amrfinder	chromosome	stream	stream_k127_4618530	13951	14298	merT	MERCURY	STRESS
+stream_amrfinder_29	amrfinder	chromosome	stream	stream_k127_4743811	402	1214	sul2	SULFONAMIDE	AMR
+stream_amrfinder_30	amrfinder	chromosome	stream	stream_k127_4948177	383	802	merC	MERCURY	STRESS
+stream_amrfinder_31	amrfinder	chromosome	stream	stream_k127_4948177	841	1113	merP	MERCURY	STRESS
+stream_amrfinder_32	amrfinder	chromosome	stream	stream_k127_495818	1	516	aadS	AMINOGLYCOSIDE	AMR
+stream_amrfinder_33	amrfinder	chromosome	stream	stream_k127_4970192	137	1018	mph(G)	MACROLIDE	AMR
+stream_amrfinder_34	amrfinder	chromosome	stream	stream_k127_5370393	62476	63897	iri	RIFAMYCIN	AMR
+stream_amrfinder_35	amrfinder	chromosome	stream	stream_k127_5510750	3	1085	tet(O)	TETRACYCLINE	AMR
+stream_amrfinder_36	amrfinder	plasmid	stream	stream_k127_5515598	1499	2686	tet(C)	TETRACYCLINE	AMR
+stream_amrfinder_37	amrfinder	chromosome	stream	stream_k127_5653185	1016	1561	mph(A)	MACROLIDE	AMR
+stream_amrfinder_38	amrfinder	chromosome	stream	stream_k127_5718710	1	651	merG	MERCURY	STRESS
+stream_amrfinder_39	amrfinder	plasmid	stream	stream_k127_5833062	160	507	merT	MERCURY	STRESS
+stream_amrfinder_40	amrfinder	plasmid	stream	stream_k127_5833062	526	798	merP	MERCURY	STRESS
+stream_amrfinder_41	amrfinder	plasmid	stream	stream_k127_5833062	873	2555	merA	MERCURY	STRESS
+stream_amrfinder_42	amrfinder	plasmid	stream	stream_k127_5833062	2576	2938	merD	MERCURY	STRESS
+stream_amrfinder_43	amrfinder	chromosome	stream	stream_k127_5922680	781	1110	qacL	QUATERNARY AMMONIUM	STRESS
+stream_amrfinder_44	amrfinder	plasmid	stream	stream_k127_601543	99	446	merT	MERCURY	STRESS
+stream_amrfinder_45	amrfinder	plasmid	stream	stream_k127_601543	465	737	merP	MERCURY	STRESS
+stream_amrfinder_46	amrfinder	plasmid	stream	stream_k127_601543	2915	3172	merD	MERCURY	STRESS
+stream_amrfinder_47	amrfinder	chromosome	stream	stream_k127_6358348	1629	1940	merT	MERCURY	STRESS
+stream_amrfinder_48	amrfinder	chromosome	stream	stream_k127_6458025	2	1945	clpK	NA	STRESS
+stream_amrfinder_49	amrfinder	plasmid	stream	stream_k127_7026990	2798	3676	bla	BETA-LACTAM	AMR
+stream_amrfinder_50	amrfinder	chromosome	stream	stream_k127_7765915	231	560	qacG2	QUATERNARY AMMONIUM	STRESS
+stream_amrfinder_51	amrfinder	chromosome	stream	stream_k127_7783750	290	925	merB	MERCURY	STRESS
+stream_amrfinder_52	amrfinder	chromosome	stream	stream_k127_7790629	121	918	blaOXA-10	BETA-LACTAM	AMR
+stream_amrfinder_53	amrfinder	chromosome	stream	stream_k127_7790629	1096	1809	ere(A)	MACROLIDE	AMR
+stream_amrfinder_54	amrfinder	chromosome	stream	stream_k127_7801998	243	1031	aadA1	AMINOGLYCOSIDE	AMR
+stream_amrfinder_55	amrfinder	chromosome	stream	stream_k127_7865712	926	1660	erm(B)	LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN	AMR
+stream_amrfinder_56	amrfinder	chromosome	stream	stream_k127_7998108	475	1059	mph(A)	MACROLIDE	AMR
+stream_amrfinder_57	amrfinder	chromosome	stream	stream_k127_8470898	59	1237	tet(A)	TETRACYCLINE	AMR
+stream_amrfinder_58	amrfinder	chromosome	stream	stream_k127_8553015	4	318	lnu(AN2)	LINCOSAMIDE	AMR
+stream_amrfinder_59	amrfinder	chromosome	stream	stream_k127_8553015	346	1110	mef(En2)	MACROLIDE	AMR
+stream_amrfinder_60	amrfinder	plasmid	stream	stream_k127_906570	176	1018	aadA11	AMINOGLYCOSIDE	AMR
+stream_amrfinder_61	amrfinder	plasmid	stream	stream_k127_906570	1536	2363	blaOXA-1	BETA-LACTAM	AMR
+stream_amrfinder_62	amrfinder	plasmid	stream	stream_k127_9235113	1136	2320	tet(39)	TETRACYCLINE	AMR
+stream_amrfinder_63	amrfinder	chromosome	stream	stream_k127_9297836	129	770	qnrB19	QUINOLONE	AMR
+stream_amrfinder_64	amrfinder	chromosome	stream	stream_k127_940726	217	546	qacF	QUATERNARY AMMONIUM	STRESS
+stream_amrfinder_65	amrfinder	chromosome	stream	stream_k127_9704829	128	1717	merA	MERCURY	STRESS
+stream_amrfinder_66	amrfinder	chromosome	stream	stream_k127_9719048	74	859	aadA5	AMINOGLYCOSIDE	AMR
+stream_amrfinder_67	amrfinder	plasmid	stream	stream_k127_9968583	71	502	merR	MERCURY	STRESS
+stream_amrfinder_68	amrfinder	plasmid	stream	stream_k127_9968583	574	921	merT	MERCURY	STRESS
+stream_amrfinder_69	amrfinder	plasmid	stream	stream_k127_9968583	940	1212	merP	MERCURY	STRESS
+stream_amrfinder_70	amrfinder	plasmid	stream	stream_k127_9968583	1218	1460	merF	MERCURY	STRESS
+stream_amrfinder_71	amrfinder	plasmid	stream	stream_k127_9968583	3123	3485	merD	MERCURY	STRESS
+stream_amrfinder_72	amrfinder	plasmid	stream	stream_k127_9968583	3485	3718	merE	MERCURY	STRESS
+stream_rgi_73	rgi	chromosome	stream	stream_k127_6941417	1970	2644	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_74	rgi	chromosome	stream	stream_k127_9718057	94	426	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_75	rgi	chromosome	stream	stream_k127_5553731	13337	13936	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_76	rgi	chromosome	stream	stream_k127_9024848	3408	3983	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_77	rgi	chromosome	stream	stream_k127_695303	920	1390	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_78	rgi	chromosome	stream	stream_k127_926748	2541	3707	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_79	rgi	chromosome	stream	stream_k127_926806	409	921	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_80	rgi	chromosome	stream	stream_k127_9719048	2	862	aadA5	aminoglycoside antibiotic	Perfect
+stream_rgi_81	rgi	chromosome	stream	stream_k127_9719196	82	417	RbpA	rifamycin antibiotic	Strict
+stream_rgi_82	rgi	chromosome	stream	stream_k127_9720233	1545	2693	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_83	rgi	chromosome	stream	stream_k127_465684	858	1571	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_84	rgi	chromosome	stream	stream_k127_465686	1838	2551	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_85	rgi	chromosome	stream	stream_k127_8100993	1181	1753	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_86	rgi	chromosome	stream	stream_k127_4399432	1744	2352	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_87	rgi	chromosome	stream	stream_k127_3242622	748	1491	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_88	rgi	chromosome	stream	stream_k127_5325590	105382	106158	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_89	rgi	chromosome	stream	stream_k127_3243534	135	932	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_90	rgi	chromosome	stream	stream_k127_10417159	1941	2276	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_91	rgi	chromosome	stream	stream_k127_6252553	943	1734	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_92	rgi	chromosome	stream	stream_k127_6252990	4655	5464	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_93	rgi	plasmid	stream	stream_k127_8798659	11804	14989	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_94	rgi	chromosome	stream	stream_k127_7873433	675	1886	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_95	rgi	chromosome	stream	stream_k127_700302	2	2395	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_96	rgi	chromosome	stream	stream_k127_6947874	1301	3757	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_97	rgi	chromosome	stream	stream_k127_7642725	256	2202	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_98	rgi	chromosome	stream	stream_k127_10650329	3	872	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_99	rgi	chromosome	stream	stream_k127_933092	372	1511	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_100	rgi	chromosome	stream	stream_k127_10188850	11980	12810	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_101	rgi	chromosome	stream	stream_k127_5560963	337	1110	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_102	rgi	chromosome	stream	stream_k127_3709393	3542	3742	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+stream_rgi_103	rgi	chromosome	stream	stream_k127_471620	9078	12203	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_104	rgi	chromosome	stream	stream_k127_10651576	304	972	vanX gene in vanP cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_105	rgi	chromosome	stream	stream_k127_702547	1	627	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_106	rgi	chromosome	stream	stream_k127_8341258	22679	25816	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_107	rgi	chromosome	stream	stream_k127_474618	4381	4710	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_108	rgi	chromosome	stream	stream_k127_474618	4731	5060	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_109	rgi	chromosome	stream	stream_k127_6953152	7686	8483	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_110	rgi	chromosome	stream	stream_k127_6953245	1091	2191	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_111	rgi	chromosome	stream	stream_k127_475975	4600	7716	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_112	rgi	chromosome	stream	stream_k127_5103501	7353	7676	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_113	rgi	chromosome	stream	stream_k127_4409566	909	2021	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_114	rgi	chromosome	stream	stream_k127_4178315	14543	17659	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_115	rgi	plasmid	stream	stream_k127_10657040	5152	5955	APH(3'')-Ib	aminoglycoside antibiotic	Strict
+stream_rgi_116	rgi	plasmid	stream	stream_k127_10657040	5955	6791	APH(6)-Id	aminoglycoside antibiotic	Strict
+stream_rgi_117	rgi	chromosome	stream	stream_k127_10196163	536	1231	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_118	rgi	chromosome	stream	stream_k127_8112303	819	1625	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_119	rgi	chromosome	stream	stream_k127_7419359	520	1668	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_120	rgi	chromosome	stream	stream_k127_708377	2640	3386	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_121	rgi	chromosome	stream	stream_k127_6031492	1	534	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_122	rgi	chromosome	stream	stream_k127_7882606	4736	5482	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_123	rgi	chromosome	stream	stream_k127_7420250	930	1670	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_124	rgi	chromosome	stream	stream_k127_9732756	3297	3842	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_125	rgi	chromosome	stream	stream_k127_940726	214	546	qacL	disinfecting agents and antiseptics	Strict
+stream_rgi_126	rgi	chromosome	stream	stream_k127_6264021	77	931	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_127	rgi	chromosome	stream	stream_k127_3487250	1984	2763	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_128	rgi	chromosome	stream	stream_k127_1172495	68	814	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_129	rgi	chromosome	stream	stream_k127_247771	1044	1574	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_130	rgi	plasmid	stream	stream_k127_3487646	4248	5099	sul1	sulfonamide antibiotic	Strict
+stream_rgi_131	rgi	chromosome	stream	stream_k127_6495207	751	1428	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_132	rgi	chromosome	stream	stream_k127_3717237	1325	3805	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_133	rgi	chromosome	stream	stream_k127_1636204	138	752	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_134	rgi	chromosome	stream	stream_k127_9502588	194	1309	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_135	rgi	chromosome	stream	stream_k127_9502624	1	2193	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_136	rgi	chromosome	stream	stream_k127_6958038	28121	30421	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_137	rgi	chromosome	stream	stream_k127_710677	2719	3375	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_138	rgi	chromosome	stream	stream_k127_2563025	346	1143	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_139	rgi	chromosome	stream	stream_k127_3951627	2	688	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_140	rgi	chromosome	stream	stream_k127_9274065	7394	8002	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_141	rgi	chromosome	stream	stream_k127_2794201	8580	9167	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_142	rgi	chromosome	stream	stream_k127_10893305	9082	11526	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_143	rgi	chromosome	stream	stream_k127_1405952	3808	4470	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_144	rgi	chromosome	stream	stream_k127_8811409	1	2532	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_145	rgi	chromosome	stream	stream_k127_7886505	45552	46301	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_146	rgi	chromosome	stream	stream_k127_944137	2	1543	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_147	rgi	chromosome	stream	stream_k127_3719952	7178	7789	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_148	rgi	chromosome	stream	stream_k127_7887222	150	737	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_149	rgi	chromosome	stream	stream_k127_9505656	1178	3061	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_150	rgi	chromosome	stream	stream_k127_5804305	1	369	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_151	rgi	chromosome	stream	stream_k127_483229	4333	7473	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_152	rgi	chromosome	stream	stream_k127_7193737	1340	2212	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_153	rgi	chromosome	stream	stream_k127_2335902	1388	1693	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_154	rgi	chromosome	stream	stream_k127_5343022	149	895	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_155	rgi	chromosome	stream	stream_k127_5343030	149	862	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_156	rgi	chromosome	stream	stream_k127_9971565	102	1268	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_157	rgi	chromosome	stream	stream_k127_1410049	1724	2854	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_158	rgi	plasmid	stream	stream_k127_5113454	2625	2954	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_159	rgi	chromosome	stream	stream_k127_10204655	3	527	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_160	rgi	chromosome	stream	stream_k127_2568238	58367	59458	vanG	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_161	rgi	chromosome	stream	stream_k127_5344419	45624	46463	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_162	rgi	chromosome	stream	stream_k127_2338304	15772	16290	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_163	rgi	chromosome	stream	stream_k127_10436371	4941	7385	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_164	rgi	chromosome	stream	stream_k127_2800118	182	1036	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_165	rgi	chromosome	stream	stream_k127_2569491	2	1693	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_166	rgi	chromosome	stream	stream_k127_2108019	485	811	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_167	rgi	chromosome	stream	stream_k127_7660671	887	1600	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_168	rgi	chromosome	stream	stream_k127_4421316	2	265	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_169	rgi	chromosome	stream	stream_k127_4421335	878	1573	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_170	rgi	chromosome	stream	stream_k127_7893480	1101	4217	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_171	rgi	chromosome	stream	stream_k127_2339849	597	2192	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_172	rgi	chromosome	stream	stream_k127_3496772	992	2893	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_173	rgi	chromosome	stream	stream_k127_7198303	329	1270	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_174	rgi	chromosome	stream	stream_k127_10208663	3914	6244	vanT gene in vanC cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_175	rgi	chromosome	stream	stream_k127_952250	487	1599	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_176	rgi	chromosome	stream	stream_k127_3727724	4018	4662	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_177	rgi	chromosome	stream	stream_k127_7896677	15278	16180	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_178	rgi	chromosome	stream	stream_k127_492530	1095	1943	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_179	rgi	chromosome	stream	stream_k127_9286234	1326	2072	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_180	rgi	chromosome	stream	stream_k127_7665293	1	441	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_181	rgi	chromosome	stream	stream_k127_2344146	1924	4170	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_182	rgi	chromosome	stream	stream_k127_1879442	3884	4678	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_183	rgi	chromosome	stream	stream_k127_5122142	175	954	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_184	rgi	chromosome	stream	stream_k127_724517	2	529	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_185	rgi	chromosome	stream	stream_k127_6280094	828	1547	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_186	rgi	chromosome	stream	stream_k127_3732204	1544	4714	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_187	rgi	chromosome	stream	stream_k127_9750382	684	1802	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_188	rgi	chromosome	stream	stream_k127_2347180	784	3231	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_189	rgi	chromosome	stream	stream_k127_2347600	784	3231	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_190	rgi	chromosome	stream	stream_k127_1189206	59	385	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_191	rgi	chromosome	stream	stream_k127_9290142	840	1484	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_192	rgi	chromosome	stream	stream_k127_9519950	1147	1476	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_193	rgi	chromosome	stream	stream_k127_10907134	14308	15417	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_194	rgi	chromosome	stream	stream_k127_10215259	3291	3623	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_195	rgi	chromosome	stream	stream_k127_10907320	2103	3251	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_196	rgi	chromosome	stream	stream_k127_1190356	3701	4342	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_197	rgi	chromosome	stream	stream_k127_6512655	2	3019	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_198	rgi	chromosome	stream	stream_k127_3505867	2	337	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_199	rgi	chromosome	stream	stream_k127_959436	5870	6316	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_200	rgi	chromosome	stream	stream_k127_1884051	1927	2703	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_201	rgi	chromosome	stream	stream_k127_4198556	5666	6778	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_202	rgi	chromosome	stream	stream_k127_36311	707	1489	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_203	rgi	chromosome	stream	stream_k127_2350075	172	1056	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_204	rgi	chromosome	stream	stream_k127_7671648	494	1009	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_205	rgi	chromosome	stream	stream_k127_267981	554	886	qacE	disinfecting agents and antiseptics	Strict
+stream_rgi_206	rgi	chromosome	stream	stream_k127_9061282	3	317	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_207	rgi	chromosome	stream	stream_k127_8132891	3842	4699	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_208	rgi	chromosome	stream	stream_k127_1654678	2670	2993	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_209	rgi	chromosome	stream	stream_k127_9985229	4448	5314	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_210	rgi	chromosome	stream	stream_k127_2351497	3	905	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_211	rgi	chromosome	stream	stream_k127_1192939	21391	22512	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_212	rgi	chromosome	stream	stream_k127_3042580	10555	11262	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_213	rgi	chromosome	stream	stream_k127_39395	1984	2763	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_214	rgi	chromosome	stream	stream_k127_1888475	1	1053	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_215	rgi	chromosome	stream	stream_k127_6980685	1880	2392	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_216	rgi	chromosome	stream	stream_k127_9988314	4931	5599	vanX gene in vanP cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_217	rgi	chromosome	stream	stream_k127_2816189	1947	2729	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_218	rgi	chromosome	stream	stream_k127_272632	745	1563	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_219	rgi	chromosome	stream	stream_k127_3974951	2	658	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_220	rgi	chromosome	stream	stream_k127_965274	14634	15464	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_221	rgi	chromosome	stream	stream_k127_6057516	253	900	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_222	rgi	chromosome	stream	stream_k127_2817241	3944	5053	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_223	rgi	chromosome	stream	stream_k127_6288972	12763	13530	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_224	rgi	chromosome	stream	stream_k127_4437243	1197	1796	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_225	rgi	chromosome	stream	stream_k127_5825307	4693	5514	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_226	rgi	chromosome	stream	stream_k127_10454293	3327	5783	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_227	rgi	chromosome	stream	stream_k127_1660223	2018	2608	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_228	rgi	chromosome	stream	stream_k127_2585990	3503	5956	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_229	rgi	chromosome	stream	stream_k127_10914576	15598	16701	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_230	rgi	chromosome	stream	stream_k127_1198217	3	2861	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_231	rgi	chromosome	stream	stream_k127_6752219	152	490	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_232	rgi	chromosome	stream	stream_k127_4206093	947	1774	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_233	rgi	chromosome	stream	stream_k127_9761527	7724	8140	FosA8	phosphonic acid antibiotic	Strict
+stream_rgi_234	rgi	chromosome	stream	stream_k127_46426	10795	11190	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_235	rgi	chromosome	stream	stream_k127_3979128	6346	6930	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_236	rgi	chromosome	stream	stream_k127_6986113	2	3214	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_237	rgi	chromosome	stream	stream_k127_4670793	599	1114	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_238	rgi	chromosome	stream	stream_k127_2128379	626	1255	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_239	rgi	chromosome	stream	stream_k127_10458464	7241	9652	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_240	rgi	chromosome	stream	stream_k127_10918420	29	781	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_241	rgi	chromosome	stream	stream_k127_1434779	653	976	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_242	rgi	chromosome	stream	stream_k127_7453800	1305	4433	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_243	rgi	chromosome	stream	stream_k127_5601046	3	317	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_244	rgi	chromosome	stream	stream_k127_8840672	30649	31413	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_245	rgi	chromosome	stream	stream_k127_51086	1232	3553	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_246	rgi	chromosome	stream	stream_k127_6527929	1	660	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_247	rgi	chromosome	stream	stream_k127_10231423	3	1985	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_248	rgi	chromosome	stream	stream_k127_2133226	1232	3538	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_249	rgi	chromosome	stream	stream_k127_5370393	62476	63912	Streptomyces venezuelae rox	rifamycin antibiotic	Strict
+stream_rgi_250	rgi	chromosome	stream	stream_k127_3056368	1826	2527	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_251	rgi	chromosome	stream	stream_k127_1439002	7747	10980	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_252	rgi	chromosome	stream	stream_k127_3056504	136	552	FosA8	phosphonic acid antibiotic	Strict
+stream_rgi_253	rgi	chromosome	stream	stream_k127_3751000	1118	1948	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_254	rgi	chromosome	stream	stream_k127_1207655	40364	42646	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_255	rgi	chromosome	stream	stream_k127_9078008	619	3771	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_256	rgi	chromosome	stream	stream_k127_10465008	5839	8112	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_257	rgi	chromosome	stream	stream_k127_10693368	488	808	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_258	rgi	chromosome	stream	stream_k127_6300864	375	947	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_259	rgi	chromosome	stream	stream_k127_7689556	1918	2343	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_260	rgi	chromosome	stream	stream_k127_9078919	311	2266	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_261	rgi	chromosome	stream	stream_k127_1209377	2988	5432	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_262	rgi	chromosome	stream	stream_k127_4216851	1	849	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_263	rgi	chromosome	stream	stream_k127_9538962	2	1066	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_264	rgi	chromosome	stream	stream_k127_3060081	257	904	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_265	rgi	chromosome	stream	stream_k127_2138056	1	1794	tet(W)	tetracycline antibiotic	Strict
+stream_rgi_266	rgi	chromosome	stream	stream_k127_2598586	2	502	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_267	rgi	chromosome	stream	stream_k127_10468240	1039	1944	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_268	rgi	chromosome	stream	stream_k127_7692207	1425	1748	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_269	rgi	chromosome	stream	stream_k127_3755342	293	940	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_270	rgi	chromosome	stream	stream_k127_1443425	1	1116	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_271	rgi	plasmid	stream	stream_k127_5148195	1123	2928	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_272	rgi	chromosome	stream	stream_k127_9773596	9690	10019	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_273	rgi	chromosome	stream	stream_k127_1212072	996	1514	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_274	rgi	chromosome	stream	stream_k127_9314542	766	1518	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_275	rgi	chromosome	stream	stream_k127_3294413	570	1700	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_276	rgi	chromosome	stream	stream_k127_981736	1	675	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_277	rgi	chromosome	stream	stream_k127_1676842	1482	2366	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_278	rgi	chromosome	stream	stream_k127_9776581	202	531	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_279	rgi	chromosome	stream	stream_k127_2603036	1829	2575	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_280	rgi	chromosome	stream	stream_k127_523726	2398	4128	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_281	rgi	chromosome	stream	stream_k127_7695597	973	3417	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_282	rgi	chromosome	stream	stream_k127_4456336	529	1359	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_283	rgi	chromosome	stream	stream_k127_5380029	142	1005	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_284	rgi	chromosome	stream	stream_k127_65259	1464	2591	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_285	rgi	chromosome	stream	stream_k127_4918681	2172	4676	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_286	rgi	chromosome	stream	stream_k127_4919421	4990	7494	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_287	rgi	chromosome	stream	stream_k127_5382757	1	501	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_288	rgi	chromosome	stream	stream_k127_8623319	481	1614	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_289	rgi	chromosome	stream	stream_k127_1451374	229	969	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_290	rgi	chromosome	stream	stream_k127_3071717	726	1058	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_291	rgi	chromosome	stream	stream_k127_6083269	50746	51465	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_292	rgi	chromosome	stream	stream_k127_3072813	8642	9544	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_293	rgi	chromosome	stream	stream_k127_8858850	1	957	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_294	rgi	chromosome	stream	stream_k127_4229225	854	1660	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_295	rgi	chromosome	stream	stream_k127_7702506	6102	9230	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_296	rgi	chromosome	stream	stream_k127_5159684	10757	13906	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_297	rgi	chromosome	stream	stream_k127_7008541	4256	4465	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+stream_rgi_298	rgi	chromosome	stream	stream_k127_5851504	15619	16323	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_299	rgi	chromosome	stream	stream_k127_3540254	5906	6709	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_300	rgi	chromosome	stream	stream_k127_70426	1690	2832	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_301	rgi	chromosome	stream	stream_k127_3076039	3	1418	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_302	rgi	chromosome	stream	stream_k127_9785868	17967	18296	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_303	rgi	chromosome	stream	stream_k127_8861212	1235	1567	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_304	rgi	chromosome	stream	stream_k127_300580	956	1297	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_305	rgi	chromosome	stream	stream_k127_6779058	1	1059	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_306	rgi	chromosome	stream	stream_k127_6086879	250	1413	tet(56)	tetracycline antibiotic	Strict
+stream_rgi_307	rgi	chromosome	stream	stream_k127_10709930	10441	11409	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_308	rgi	chromosome	stream	stream_k127_3769537	384	998	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_309	rgi	chromosome	stream	stream_k127_9097428	229	1008	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_310	rgi	chromosome	stream	stream_k127_5390157	111	953	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_311	rgi	chromosome	stream	stream_k127_10019159	1395	1715	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_312	rgi	chromosome	stream	stream_k127_8400852	478	1350	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_313	rgi	chromosome	stream	stream_k127_74664	976	2085	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_314	rgi	chromosome	stream	stream_k127_4697651	7878	8708	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_315	rgi	chromosome	stream	stream_k127_995681	1259	2425	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_316	rgi	chromosome	stream	stream_k127_4235649	1282	1506	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_317	rgi	chromosome	stream	stream_k127_763707	159	2615	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_318	rgi	chromosome	stream	stream_k127_3546038	218	1048	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_319	rgi	chromosome	stream	stream_k127_3546120	415	1179	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_320	rgi	chromosome	stream	stream_k127_10487123	225	1043	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_321	rgi	chromosome	stream	stream_k127_2388561	10109	13246	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_322	rgi	chromosome	stream	stream_k127_8865810	19119	19442	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_323	rgi	chromosome	stream	stream_k127_5857692	35530	36225	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_324	rgi	chromosome	stream	stream_k127_5166578	3	581	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_325	rgi	chromosome	stream	stream_k127_8172079	666	989	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_326	rgi	chromosome	stream	stream_k127_7482916	3367	6501	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_327	rgi	chromosome	stream	stream_k127_10947313	1	735	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_328	rgi	chromosome	stream	stream_k127_8634035	8645	9553	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_329	rgi	chromosome	stream	stream_k127_7943903	1331	1900	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_330	rgi	chromosome	stream	stream_k127_7246571	2	298	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_331	rgi	chromosome	stream	stream_k127_8868698	2793	4400	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_332	rgi	chromosome	stream	stream_k127_4703908	883	1476	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_333	rgi	chromosome	stream	stream_k127_1002788	6273	6860	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_334	rgi	chromosome	stream	stream_k127_3552221	15703	16464	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_335	rgi	virus	stream	stream_k127_10262729	6042	9527	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_336	rgi	chromosome	stream	stream_k127_7716087	102	1268	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_337	rgi	chromosome	stream	stream_k127_3553944	50	745	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_338	rgi	chromosome	stream	stream_k127_3554001	133	957	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_339	rgi	chromosome	stream	stream_k127_771934	11298	12083	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_340	rgi	chromosome	stream	stream_k127_7717199	3	1910	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_341	rgi	chromosome	stream	stream_k127_772702	880	1689	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_342	rgi	chromosome	stream	stream_k127_4245010	4094	5242	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_343	rgi	chromosome	stream	stream_k127_6331046	14096	14743	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_344	rgi	chromosome	stream	stream_k127_7493054	480	1151	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_345	rgi	chromosome	stream	stream_k127_4709280	1083	1850	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_346	rgi	virus	stream	stream_k127_776096	3986	4561	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_347	rgi	chromosome	stream	stream_k127_10500763	729	1559	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_348	rgi	chromosome	stream	stream_k127_6794852	320	907	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_349	rgi	chromosome	stream	stream_k127_550050	830	1867	vanH gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_350	rgi	chromosome	stream	stream_k127_1936058	909	1733	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_351	rgi	chromosome	stream	stream_k127_4943073	1921	2724	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_352	rgi	chromosome	stream	stream_k127_3787463	1922	5104	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_353	rgi	chromosome	stream	stream_k127_778336	3	650	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_354	rgi	chromosome	stream	stream_k127_5181086	103	870	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_355	rgi	chromosome	stream	stream_k127_7030718	3	734	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_356	rgi	chromosome	stream	stream_k127_5408713	876	1907	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_357	rgi	chromosome	stream	stream_k127_6105552	3356	5812	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_358	rgi	plasmid	stream	stream_k127_3561854	3651	3971	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_359	rgi	chromosome	stream	stream_k127_553181	2205	2411	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_360	rgi	chromosome	stream	stream_k127_2866689	3	317	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_361	rgi	chromosome	stream	stream_k127_8648478	2554	5010	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_362	rgi	chromosome	stream	stream_k127_6798982	659	3103	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_363	rgi	chromosome	stream	stream_k127_3790053	2205	3323	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_364	rgi	chromosome	stream	stream_k127_321467	3	812	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_365	rgi	chromosome	stream	stream_k127_6337940	38607	40829	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_366	rgi	chromosome	stream	stream_k127_2407878	903	2015	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_367	rgi	chromosome	stream	stream_k127_1941309	8239	10692	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_368	rgi	chromosome	stream	stream_k127_2634632	23454	26585	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_369	rgi	chromosome	stream	stream_k127_9352511	73423	75726	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_370	rgi	chromosome	stream	stream_k127_9810160	85738	87669	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_371	rgi	chromosome	stream	stream_k127_7503648	787	1365	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_372	rgi	chromosome	stream	stream_k127_7264269	216	548	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_373	rgi	chromosome	stream	stream_k127_10967942	427	1221	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_374	rgi	chromosome	stream	stream_k127_558970	62476	63627	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_375	rgi	chromosome	stream	stream_k127_4720716	3	3071	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_376	rgi	chromosome	stream	stream_k127_560583	488	1048	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_377	rgi	chromosome	stream	stream_k127_1253716	3	893	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_378	rgi	chromosome	stream	stream_k127_5417048	56	241	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+stream_rgi_379	rgi	chromosome	stream	stream_k127_9813959	734	1513	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_380	rgi	chromosome	stream	stream_k127_2413517	1251	2141	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_381	rgi	chromosome	stream	stream_k127_8890283	2	271	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_382	rgi	chromosome	stream	stream_k127_9357022	540	875	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_383	rgi	chromosome	stream	stream_k127_561893	1966	3036	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_384	rgi	chromosome	stream	stream_k127_7967974	638	3091	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_385	rgi	chromosome	stream	stream_k127_5653476	797	1543	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_386	rgi	chromosome	stream	stream_k127_788737	532	855	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_387	rgi	chromosome	stream	stream_k127_2876926	136	552	FosA8	phosphonic acid antibiotic	Strict
+stream_rgi_388	rgi	chromosome	stream	stream_k127_1717426	894	1223	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_389	rgi	chromosome	stream	stream_k127_1257440	306	944	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_390	rgi	chromosome	stream	stream_k127_3337686	1308	1637	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_391	rgi	chromosome	stream	stream_k127_5421929	344	1162	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_392	rgi	chromosome	stream	stream_k127_2418894	5036	6097	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_393	rgi	chromosome	stream	stream_k127_10743372	2	532	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_394	rgi	chromosome	stream	stream_k127_10518381	948	1379	FosA8	phosphonic acid antibiotic	Strict
+stream_rgi_395	rgi	chromosome	stream	stream_k127_3802908	864	2012	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_396	rgi	chromosome	stream	stream_k127_10744587	2102	3250	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_397	rgi	chromosome	stream	stream_k127_4267710	93	1298	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_398	rgi	chromosome	stream	stream_k127_1029022	732	1076	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_399	rgi	chromosome	stream	stream_k127_6122526	61020	63269	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_400	rgi	chromosome	stream	stream_k127_10052326	1134	2252	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_401	rgi	chromosome	stream	stream_k127_4269403	883	1623	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_402	rgi	chromosome	stream	stream_k127_4962769	874	1731	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_403	rgi	chromosome	stream	stream_k127_3580294	152	1807	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_404	rgi	chromosome	stream	stream_k127_797782	24723	25574	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_405	rgi	chromosome	stream	stream_k127_3115941	4400	5530	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_406	rgi	chromosome	stream	stream_k127_4502125	2	2068	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_407	rgi	chromosome	stream	stream_k127_2191521	688	1017	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_408	rgi	plasmid	stream	stream_k127_7050752	82	414	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_409	rgi	chromosome	stream	stream_k127_2192523	397	1311	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_410	rgi	chromosome	stream	stream_k127_9369248	177	2057	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_411	rgi	chromosome	stream	stream_k127_8901960	310	1074	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_412	rgi	chromosome	stream	stream_k127_9137971	2	1762	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_413	rgi	chromosome	stream	stream_k127_8669176	3	2234	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_414	rgi	chromosome	stream	stream_k127_801052	3	1283	tet(O)	tetracycline antibiotic	Strict
+stream_rgi_415	rgi	chromosome	stream	stream_k127_10750626	497	1870	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_416	rgi	chromosome	stream	stream_k127_573561	318	2756	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_417	rgi	chromosome	stream	stream_k127_3583906	559	1554	vanH gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_418	rgi	chromosome	stream	stream_k127_4735307	1222	2067	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_419	rgi	chromosome	stream	stream_k127_117042	5440	7860	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_420	rgi	chromosome	stream	stream_k127_7281275	2471	3472	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_421	rgi	chromosome	stream	stream_k127_117621	599	1123	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_422	rgi	chromosome	stream	stream_k127_803027	8541	8879	RbpA	rifamycin antibiotic	Strict
+stream_rgi_423	rgi	chromosome	stream	stream_k127_3586050	298	621	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_424	rgi	chromosome	stream	stream_k127_8443318	3145	5589	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_425	rgi	chromosome	stream	stream_k127_4276128	723	1139	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_426	rgi	chromosome	stream	stream_k127_5208633	2	3163	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_427	rgi	chromosome	stream	stream_k127_5898959	2338	3090	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_428	rgi	chromosome	stream	stream_k127_1502678	2	364	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_429	rgi	chromosome	stream	stream_k127_7748813	1595	1948	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_430	rgi	chromosome	stream	stream_k127_4970192	134	1018	mphG	macrolide antibiotic	Strict
+stream_rgi_431	rgi	plasmid	stream	stream_k127_345476	22	906	mphE	macrolide antibiotic	Perfect
+stream_rgi_432	rgi	plasmid	stream	stream_k127_345476	962	2437	msrE	macrolide antibiotic; streptogramin antibiotic	Perfect
+stream_rgi_433	rgi	chromosome	stream	stream_k127_1272878	3858	4556	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_434	rgi	chromosome	stream	stream_k127_3589208	3	2357	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_435	rgi	chromosome	stream	stream_k127_10531078	2	625	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_436	rgi	chromosome	stream	stream_k127_3590918	130	852	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_437	rgi	chromosome	stream	stream_k127_7753032	5473	6603	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_438	rgi	chromosome	stream	stream_k127_7988242	2	1045	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_439	rgi	chromosome	stream	stream_k127_9380777	1497	3941	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_440	rgi	chromosome	stream	stream_k127_4282098	15863	19003	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_441	rgi	chromosome	stream	stream_k127_4743811	402	1217	sul2	sulfonamide antibiotic	Perfect
+stream_rgi_442	rgi	chromosome	stream	stream_k127_4282663	4019	5155	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_443	rgi	chromosome	stream	stream_k127_4514455	933	1559	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_444	rgi	chromosome	stream	stream_k127_2663860	3110	5560	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_445	rgi	chromosome	stream	stream_k127_2438119	1679	1909	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_446	rgi	chromosome	stream	stream_k127_10068132	461	1024	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_447	rgi	chromosome	stream	stream_k127_6369887	919	1248	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_448	rgi	chromosome	stream	stream_k127_7993169	300	1196	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_449	rgi	chromosome	stream	stream_k127_9152697	4473	5714	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_450	rgi	chromosome	stream	stream_k127_10070183	1	375	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_451	rgi	chromosome	stream	stream_k127_9385946	2	631	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_452	rgi	chromosome	stream	stream_k127_7067826	1029	2810	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_453	rgi	chromosome	stream	stream_k127_4518680	5	700	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_454	rgi	chromosome	stream	stream_k127_1282873	67	723	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_455	rgi	chromosome	stream	stream_k127_5445293	2608	2940	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_456	rgi	chromosome	stream	stream_k127_817343	2664	3815	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_457	rgi	chromosome	stream	stream_k127_2904562	2952	3629	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_458	rgi	chromosome	stream	stream_k127_4290564	743	1201	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_459	rgi	chromosome	stream	stream_k127_590462	578	1252	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_460	rgi	chromosome	stream	stream_k127_5914763	1	2010	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_461	rgi	chromosome	stream	stream_k127_6147160	2	1243	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_462	rgi	chromosome	stream	stream_k127_9158870	3132	5531	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_463	rgi	chromosome	stream	stream_k127_1748626	3	1130	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_464	rgi	chromosome	stream	stream_k127_1748687	3	1259	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_465	rgi	chromosome	stream	stream_k127_592534	602	1435	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_466	rgi	chromosome	stream	stream_k127_7765915	228	560	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_467	rgi	chromosome	stream	stream_k127_3366988	917	1231	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_468	rgi	chromosome	stream	stream_k127_593704	61426	61764	RbpA	rifamycin antibiotic	Strict
+stream_rgi_469	rgi	chromosome	stream	stream_k127_6839812	1892	2629	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_470	rgi	chromosome	stream	stream_k127_10772163	8803	9957	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_471	rgi	chromosome	stream	stream_k127_4295637	3	1181	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_472	rgi	chromosome	stream	stream_k127_365245	2217	2954	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_473	rgi	chromosome	stream	stream_k127_3369273	2	1870	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_474	rgi	chromosome	stream	stream_k127_1982830	1872	2441	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_475	rgi	chromosome	stream	stream_k127_5920114	78	401	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_476	rgi	chromosome	stream	stream_k127_10082248	3	1793	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_477	rgi	chromosome	stream	stream_k127_7770028	1058	1798	vanY gene in vanF cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_478	rgi	chromosome	stream	stream_k127_597796	147	1829	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_479	rgi	chromosome	stream	stream_k127_2678482	474	794	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_480	rgi	chromosome	stream	stream_k127_3835260	2	3118	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_481	rgi	chromosome	stream	stream_k127_5922680	778	1233	qacL	disinfecting agents and antiseptics	Strict
+stream_rgi_482	rgi	chromosome	stream	stream_k127_2681623	360	2816	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_483	rgi	chromosome	stream	stream_k127_1757357	3	1226	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_484	rgi	chromosome	stream	stream_k127_10323449	2107	2613	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_485	rgi	chromosome	stream	stream_k127_10323747	2	745	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_486	rgi	chromosome	stream	stream_k127_5697803	467	1060	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_487	rgi	chromosome	stream	stream_k127_1529116	4377	5147	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_488	rgi	chromosome	stream	stream_k127_3614852	169545	171305	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_489	rgi	chromosome	stream	stream_k127_4076648	973	1410	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_490	rgi	chromosome	stream	stream_k127_3150525	265	588	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_491	rgi	chromosome	stream	stream_k127_8933701	3	275	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_492	rgi	chromosome	stream	stream_k127_602746	617	940	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_493	rgi	chromosome	stream	stream_k127_8470898	2	1249	tet(A)	tetracycline antibiotic	Strict
+stream_rgi_494	rgi	chromosome	stream	stream_k127_3151232	1297	2427	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_495	rgi	plasmid	stream	stream_k127_5702053	1710	2039	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_496	rgi	chromosome	stream	stream_k127_7778576	1	1995	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_497	rgi	chromosome	stream	stream_k127_8239948	1006	1623	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_498	rgi	virus	stream	stream_k127_10091195	47735	50131	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_499	rgi	chromosome	stream	stream_k127_7782125	10243	10557	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_500	rgi	chromosome	stream	stream_k127_10332725	2292	2987	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_501	rgi	chromosome	stream	stream_k127_379839	165	965	ErmF	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic	Strict
+stream_rgi_502	rgi	chromosome	stream	stream_k127_5003868	56	913	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_503	rgi	chromosome	stream	stream_k127_7560463	1332	2072	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_504	rgi	chromosome	stream	stream_k127_8019227	151	918	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_505	rgi	chromosome	stream	stream_k127_5934757	982	1290	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_506	rgi	chromosome	stream	stream_k127_8478450	1041	1865	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_507	rgi	chromosome	stream	stream_k127_1538230	32795	35044	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_508	rgi	chromosome	stream	stream_k127_1307933	5671	6312	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_509	rgi	chromosome	stream	stream_k127_9411995	614	1102	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_510	rgi	chromosome	stream	stream_k127_5708131	1425	2093	vanX gene in vanP cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_511	rgi	chromosome	stream	stream_k127_5708473	156	995	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_512	rgi	chromosome	stream	stream_k127_3627776	5314	6390	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_513	rgi	chromosome	stream	stream_k127_9181616	491	1153	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_514	rgi	plasmid	stream	stream_k127_10100816	1538	2365	OXA-2	cephalosporin; penicillin beta-lactam	Perfect
+stream_rgi_515	rgi	chromosome	stream	stream_k127_8249936	1310	1882	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_516	rgi	chromosome	stream	stream_k127_4093060	20244	23363	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_517	rgi	chromosome	stream	stream_k127_7790629	1	921	OXA-10	cephalosporin; penicillin beta-lactam	Perfect
+stream_rgi_518	rgi	chromosome	stream	stream_k127_1081528	226	2661	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_519	rgi	chromosome	stream	stream_k127_2474123	2	475	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_520	rgi	chromosome	stream	stream_k127_5478097	35584	36057	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_521	rgi	chromosome	stream	stream_k127_7102639	423	746	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_522	rgi	chromosome	stream	stream_k127_392289	2048	2743	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_523	rgi	chromosome	stream	stream_k127_2476089	1483	2220	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_524	rgi	chromosome	stream	stream_k127_9189543	3625	4143	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_525	rgi	plasmid	stream	stream_k127_2245752	7742	8071	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_526	rgi	chromosome	stream	stream_k127_4784193	148	1308	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_527	rgi	chromosome	stream	stream_k127_2937127	4056	6020	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_528	rgi	chromosome	stream	stream_k127_3637556	213	2693	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_529	rgi	chromosome	stream	stream_k127_9648576	1	456	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_530	rgi	chromosome	stream	stream_k127_3637726	4402	5001	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_531	rgi	chromosome	stream	stream_k127_3637833	1918	4398	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_532	rgi	chromosome	stream	stream_k127_622186	3241	3981	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_533	rgi	chromosome	stream	stream_k127_5481775	2667	3347	vanX gene in vanP cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_534	rgi	chromosome	stream	stream_k127_7106357	623	1267	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_535	rgi	chromosome	stream	stream_k127_4785658	11379	12086	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_536	rgi	chromosome	stream	stream_k127_8493970	1542	2525	MrmA	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic; oxazolidinone antibiotic; phenicol antibiotic	Perfect
+stream_rgi_537	rgi	chromosome	stream	stream_k127_9650098	820	1629	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_538	rgi	chromosome	stream	stream_k127_624467	110094	112340	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_539	rgi	chromosome	stream	stream_k127_1088911	1983	2729	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_540	rgi	chromosome	stream	stream_k127_8959219	1039	2940	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_541	rgi	chromosome	stream	stream_k127_8496089	22522	25644	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_542	rgi	chromosome	stream	stream_k127_3177642	113344	116379	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_543	rgi	chromosome	stream	stream_k127_7801998	243	1034	aadA	aminoglycoside antibiotic	Perfect
+stream_rgi_544	rgi	chromosome	stream	stream_k127_5265279	2	496	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_545	rgi	chromosome	stream	stream_k127_8500391	930	1790	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_546	rgi	chromosome	stream	stream_k127_9657429	1060	1773	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_547	rgi	chromosome	stream	stream_k127_3646998	2	811	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_548	rgi	chromosome	stream	stream_k127_1791975	122	1963	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_549	rgi	chromosome	stream	stream_k127_10812595	416	1516	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_550	rgi	chromosome	stream	stream_k127_6419631	2762	5920	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_551	rgi	chromosome	stream	stream_k127_8268767	443	2899	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_552	rgi	chromosome	stream	stream_k127_10357322	682	1338	QnrS2	fluoroquinolone antibiotic	Perfect
+stream_rgi_553	rgi	chromosome	stream	stream_k127_6420492	990	1607	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_554	rgi	chromosome	stream	stream_k127_7117376	837	1505	vanX gene in vanP cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_555	rgi	chromosome	stream	stream_k127_10358336	250	579	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_556	rgi	chromosome	stream	stream_k127_10359157	2	1819	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_557	rgi	chromosome	stream	stream_k127_8970342	4972	5802	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_558	rgi	chromosome	stream	stream_k127_3188508	201	914	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_559	rgi	chromosome	stream	stream_k127_5033220	3	2147	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_560	rgi	chromosome	stream	stream_k127_9892431	9197	10921	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_561	rgi	chromosome	stream	stream_k127_4570455	702	1013	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_562	rgi	chromosome	stream	stream_k127_6883872	919	2097	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_563	rgi	chromosome	stream	stream_k127_7121809	418	2148	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_564	rgi	chromosome	stream	stream_k127_8508863	491	2947	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_565	rgi	chromosome	stream	stream_k127_7812176	2	2275	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_566	rgi	chromosome	stream	stream_k127_5034564	69082	70848	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_567	rgi	chromosome	stream	stream_k127_5738126	7455	8594	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_568	rgi	chromosome	stream	stream_k127_6426517	3	977	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_569	rgi	chromosome	stream	stream_k127_7123711	1313	1675	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_570	rgi	chromosome	stream	stream_k127_9209461	612	1733	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_571	rgi	chromosome	stream	stream_k127_639652	822	1034	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_572	rgi	chromosome	stream	stream_k127_3417028	214	1020	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_573	rgi	chromosome	stream	stream_k127_9897534	2923	3738	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_574	rgi	chromosome	stream	stream_k127_3880058	511	1641	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_575	rgi	plasmid	stream	stream_k127_7815952	2640	3602	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_576	rgi	chromosome	stream	stream_k127_8055652	3	527	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_577	rgi	chromosome	stream	stream_k127_8056189	1032	1355	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_578	rgi	chromosome	stream	stream_k127_11055073	275	598	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_579	rgi	chromosome	stream	stream_k127_9213554	857	1447	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_580	rgi	chromosome	stream	stream_k127_9899831	673	1050	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_581	rgi	chromosome	stream	stream_k127_6892350	685	891	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+stream_rgi_582	rgi	chromosome	stream	stream_k127_9451493	2949	3485	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_583	rgi	chromosome	stream	stream_k127_4810241	6008	6655	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_584	rgi	virus	stream	stream_k127_5284239	4259	4417	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_585	rgi	chromosome	stream	stream_k127_2272758	8749	10680	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_586	rgi	chromosome	stream	stream_k127_6435727	401	1396	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_587	rgi	chromosome	stream	stream_k127_194558	1787	2404	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_588	rgi	chromosome	stream	stream_k127_3424632	465	1475	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_589	rgi	chromosome	stream	stream_k127_4811669	422893	424035	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_590	rgi	chromosome	stream	stream_k127_6666599	2	2422	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_591	rgi	chromosome	stream	stream_k127_1579835	8171	8500	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_592	rgi	chromosome	stream	stream_k127_5510750	3	1088	tet(O)	tetracycline antibiotic	Strict
+stream_rgi_593	rgi	chromosome	stream	stream_k127_10832233	721	1044	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_594	rgi	chromosome	stream	stream_k127_8985947	577	1320	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_595	rgi	chromosome	stream	stream_k127_10138831	1	894	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_596	rgi	chromosome	stream	stream_k127_1811653	397	729	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_597	rgi	chromosome	stream	stream_k127_9223276	35	2455	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_598	rgi	chromosome	stream	stream_k127_5289782	144	947	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_599	rgi	chromosome	stream	stream_k127_5980559	88	1452	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_600	rgi	chromosome	stream	stream_k127_2041352	2447	4177	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_601	rgi	chromosome	stream	stream_k127_5981139	220	543	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_602	rgi	chromosome	stream	stream_k127_7827647	1	1917	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_603	rgi	chromosome	stream	stream_k127_3205788	1	1161	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_604	rgi	chromosome	stream	stream_k127_5755415	4197	5033	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_605	rgi	chromosome	stream	stream_k127_5514185	2222	2797	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_606	rgi	chromosome	stream	stream_k127_1814185	2	2071	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_607	rgi	chromosome	stream	stream_k127_1583113	34897	35829	vanY gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_608	rgi	chromosome	stream	stream_k127_4817311	1	594	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_609	rgi	chromosome	stream	stream_k127_1583907	4411	6867	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_610	rgi	chromosome	stream	stream_k127_654758	4778	5884	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_611	rgi	plasmid	stream	stream_k127_5515598	1496	2686	tet(C)	tetracycline antibiotic	Strict
+stream_rgi_612	rgi	chromosome	stream	stream_k127_8070578	1554	2219	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_613	rgi	chromosome	stream	stream_k127_887438	248	571	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_614	rgi	chromosome	stream	stream_k127_7832391	510	833	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_615	rgi	chromosome	stream	stream_k127_7144210	13246	13578	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_616	rgi	chromosome	stream	stream_k127_6906957	67041	67370	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_617	rgi	chromosome	stream	stream_k127_2976311	1	810	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_618	rgi	virus	stream	stream_k127_11073465	6132	6941	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_619	rgi	chromosome	stream	stream_k127_3214543	2156	4081	tet(Q)	tetracycline antibiotic	Strict
+stream_rgi_620	rgi	plasmid	stream	stream_k127_9235113	1133	2320	tet(39)	tetracycline antibiotic	Perfect
+stream_rgi_621	rgi	chromosome	stream	stream_k127_5303296	2154	3848	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_622	rgi	chromosome	stream	stream_k127_6911341	5794	6567	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_623	rgi	chromosome	stream	stream_k127_4368719	856	2073	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_624	rgi	chromosome	stream	stream_k127_6454947	3016	6147	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_625	rgi	chromosome	stream	stream_k127_1826728	2	610	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_626	rgi	chromosome	stream	stream_k127_897595	4179	5060	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_627	rgi	chromosome	stream	stream_k127_2525156	1	1728	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_628	rgi	chromosome	stream	stream_k127_7842622	1	666	vanW gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_629	rgi	chromosome	stream	stream_k127_1367607	775	1242	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_630	rgi	chromosome	stream	stream_k127_7383436	290	619	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_631	rgi	chromosome	stream	stream_k127_4605292	606	1160	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_632	rgi	chromosome	stream	stream_k127_2059860	3718	3933	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_633	rgi	chromosome	stream	stream_k127_1136530	2	526	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_634	rgi	chromosome	stream	stream_k127_1371107	19177	19698	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_635	rgi	chromosome	stream	stream_k127_7627796	534	1592	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_636	rgi	chromosome	stream	stream_k127_7156682	555	3026	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_637	rgi	chromosome	stream	stream_k127_6461582	1831	2274	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_638	rgi	chromosome	stream	stream_k127_9701777	687	1406	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_639	rgi	chromosome	stream	stream_k127_9702165	3	539	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_640	rgi	chromosome	stream	stream_k127_8091015	3	608	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_641	rgi	plasmid	stream	stream_k127_906570	173	1018	aadA11	aminoglycoside antibiotic	Perfect
+stream_rgi_642	rgi	plasmid	stream	stream_k127_906570	1533	2363	OXA-1	cephalosporin; penicillin beta-lactam	Perfect
+stream_rgi_643	rgi	chromosome	stream	stream_k127_8548115	4220	6811	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_644	rgi	chromosome	stream	stream_k127_2532672	59726	60538	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_645	rgi	chromosome	stream	stream_k127_5536829	6587	7525	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_646	rgi	chromosome	stream	stream_k127_1837454	91245	93752	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_647	rgi	chromosome	stream	stream_k127_1142560	7149	8228	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_648	rgi	chromosome	stream	stream_k127_9483177	387	1175	vanY gene in vanB cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_649	rgi	chromosome	stream	stream_k127_2303037	1	300	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_650	rgi	chromosome	stream	stream_k127_8775315	7418	8422	vanH gene in vanO cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_651	rgi	chromosome	stream	stream_k127_2993731	546	2786	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_652	rgi	chromosome	stream	stream_k127_9484884	478	801	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_653	rgi	chromosome	stream	stream_k127_3232012	2	910	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_654	rgi	chromosome	stream	stream_k127_8317284	1854	3116	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_655	rgi	chromosome	stream	stream_k127_227483	1642	2508	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_656	rgi	chromosome	stream	stream_k127_1609342	953	1288	RbpA	rifamycin antibiotic	Strict
+stream_rgi_657	rgi	chromosome	stream	stream_k127_10862819	2318	3430	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_658	rgi	chromosome	stream	stream_k127_2538318	673	1011	RbpA	rifamycin antibiotic	Strict
+stream_rgi_659	rgi	chromosome	stream	stream_k127_9017359	586	909	qacG	disinfecting agents and antiseptics	Strict
+stream_rgi_660	rgi	chromosome	stream	stream_k127_3698733	19663	20502	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_661	rgi	chromosome	stream	stream_k127_4616674	228	560	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_662	rgi	chromosome	stream	stream_k127_8555162	78	2063	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_663	rgi	chromosome	stream	stream_k127_6928627	1303	1509	rsmA	fluoroquinolone antibiotic; diaminopyrimidine antibiotic; phenicol antibiotic	Strict
+stream_rgi_664	rgi	chromosome	stream	stream_k127_7167938	10604	13792	adeF	fluoroquinolone antibiotic; tetracycline antibiotic	Strict
+stream_rgi_665	rgi	chromosome	stream	stream_k127_4163216	17499	18788	vanW gene in vanI cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_666	rgi	chromosome	stream	stream_k127_7398036	5739	6074	qacJ	disinfecting agents and antiseptics	Strict
+stream_rgi_667	rgi	chromosome	stream	stream_k127_10410687	368	1534	tet(X)	glycylcycline; tetracycline antibiotic	Strict
+stream_rgi_668	rgi	chromosome	stream	stream_k127_6476719	4353	6797	vanT gene in vanG cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_669	rgi	chromosome	stream	stream_k127_5085424	1755	2576	vanY gene in vanA cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_670	rgi	chromosome	stream	stream_k127_7400610	9186	10544	vanY gene in vanM cluster	peptide antibiotic; glycopeptide antibiotic; nonribosomal peptide antibiotics	Strict
+stream_rgi_671	rgi	chromosome	stream	stream_k127_7865712	926	1663	ErmB	macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic	Strict
+stream_rgi_672	rgi	chromosome	stream	stream_k127_463676	67	954	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_673	rgi	chromosome	stream	stream_k127_8099115	503	1333	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_674	rgi	chromosome	stream	stream_k127_1158492	1318	2142	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_675	rgi	chromosome	stream	stream_k127_2315311	2	787	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_676	rgi	chromosome	stream	stream_k127_5323477	268	1122	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_677	rgi	chromosome	stream	stream_k127_6712026	712	1536	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_678	rgi	chromosome	stream	stream_k127_10182948	374	1198	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_679	rgi	chromosome	stream	stream_k127_4398815	226	600	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_680	rgi	chromosome	stream	stream_k127_8100538	862	1728	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_681	rgi	chromosome	stream	stream_k127_8333049	4519	5376	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_682	rgi	chromosome	stream	stream_k127_8796013	1156	1968	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_683	rgi	chromosome	stream	stream_k127_6251161	2061	2936	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_684	rgi	chromosome	stream	stream_k127_6944965	2032	2856	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_685	rgi	chromosome	stream	stream_k127_2549012	280	1140	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_686	rgi	chromosome	stream	stream_k127_8796408	22	846	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_687	rgi	chromosome	stream	stream_k127_4168940	932	1675	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_688	rgi	chromosome	stream	stream_k127_1855988	3	770	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_689	rgi	chromosome	stream	stream_k127_10880581	412	1275	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_690	rgi	chromosome	stream	stream_k127_4171821	2535	2906	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_691	rgi	chromosome	stream	stream_k127_3246276	366	4544	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+stream_rgi_692	rgi	chromosome	stream	stream_k127_6023856	2	928	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_693	rgi	chromosome	stream	stream_k127_10189001	1648	2508	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_694	rgi	chromosome	stream	stream_k127_2553619	915	1736	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_695	rgi	chromosome	stream	stream_k127_239799	1931	2779	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_696	rgi	chromosome	stream	stream_k127_1628018	1974	2831	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_697	rgi	chromosome	stream	stream_k127_6718782	621	1466	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_698	rgi	chromosome	stream	stream_k127_2091706	206	1045	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_699	rgi	chromosome	stream	stream_k127_6950291	134	1000	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_700	rgi	chromosome	stream	stream_k127_5330665	4494	5315	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_701	rgi	chromosome	stream	stream_k127_4637352	317	1162	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_702	rgi	chromosome	stream	stream_k127_1860866	2075	2869	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_703	rgi	chromosome	stream	stream_k127_2555926	618	1442	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_704	rgi	plasmid	stream	stream_k127_242203	2053	2826	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_705	rgi	chromosome	stream	stream_k127_7646443	5608	6447	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_706	rgi	chromosome	stream	stream_k127_2094140	10499	11344	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_707	rgi	chromosome	stream	stream_k127_9036286	193	1017	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_708	rgi	chromosome	stream	stream_k127_5333411	2020	2811	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_709	rgi	chromosome	stream	stream_k127_8109924	1	618	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_710	rgi	chromosome	stream	stream_k127_1400025	3021	3869	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_711	rgi	chromosome	stream	stream_k127_2790090	662	1507	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_712	rgi	chromosome	stream	stream_k127_8111490	5581	6450	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_713	rgi	chromosome	stream	stream_k127_2327596	459	1310	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_714	rgi	chromosome	stream	stream_k127_9039342	582	1361	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_715	rgi	chromosome	stream	stream_k127_5336306	621	1466	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_716	rgi	chromosome	stream	stream_k127_17124	3	827	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_717	rgi	chromosome	stream	stream_k127_10198889	32	871	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_718	rgi	chromosome	stream	stream_k127_10892696	173	1042	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_719	rgi	chromosome	stream	stream_k127_6496477	528	1397	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_720	rgi	chromosome	stream	stream_k127_1637032	2449	3306	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_721	rgi	chromosome	stream	stream_k127_1175066	2807	3625	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_722	rgi	chromosome	stream	stream_k127_3718819	1752	2612	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_723	rgi	chromosome	stream	stream_k127_4876941	594	1397	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_724	rgi	chromosome	stream	stream_k127_8579901	161	1009	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_725	rgi	chromosome	stream	stream_k127_8580108	2799	3644	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_726	rgi	chromosome	stream	stream_k127_10894515	838	1611	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_727	rgi	chromosome	stream	stream_k127_20468	216	1040	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_728	rgi	chromosome	stream	stream_k127_9969305	4975	5847	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_729	rgi	chromosome	stream	stream_k127_6498772	1277	2101	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_730	rgi	chromosome	stream	stream_k127_3491120	998	1732	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_731	rgi	chromosome	stream	stream_k127_6036717	1002	1790	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_732	rgi	chromosome	stream	stream_k127_1176906	5900	6748	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_733	rgi	chromosome	stream	stream_k127_10662869	1613	2455	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_734	rgi	chromosome	stream	stream_k127_3491921	5155	6063	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_735	rgi	chromosome	stream	stream_k127_6270215	2	781	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_736	rgi	chromosome	stream	stream_k127_8120939	2483	3328	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_737	rgi	chromosome	stream	stream_k127_24157	973	1845	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_738	rgi	chromosome	stream	stream_k127_9280732	78739	79584	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_739	rgi	chromosome	stream	stream_k127_7196801	2195	3196	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_740	rgi	chromosome	stream	stream_k127_8353473	3085	3906	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_741	rgi	chromosome	stream	stream_k127_5346300	4562	5386	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_742	rgi	chromosome	stream	stream_k127_26811	27747	28577	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_743	rgi	chromosome	stream	stream_k127_718851	721	1506	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_744	rgi	chromosome	stream	stream_k127_1182660	2866	3717	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_745	rgi	chromosome	stream	stream_k127_10670398	2494	3372	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_746	rgi	chromosome	stream	stream_k127_10441393	1110	1970	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_747	rgi	chromosome	stream	stream_k127_1416787	848	1672	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_748	rgi	chromosome	stream	stream_k127_9055019	153	947	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_749	rgi	chromosome	stream	stream_k127_10903929	3	815	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_750	rgi	chromosome	stream	stream_k127_1418367	356	1222	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_751	rgi	chromosome	stream	stream_k127_32255	1538	2329	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_752	rgi	chromosome	stream	stream_k127_1187433	52841	53689	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_753	rgi	chromosome	stream	stream_k127_3966452	1	684	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_754	rgi	chromosome	stream	stream_k127_9982750	27227	28072	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_755	rgi	chromosome	stream	stream_k127_958937	1042	1899	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_756	rgi	chromosome	stream	stream_k127_5817956	223	1047	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_757	rgi	chromosome	stream	stream_k127_4660469	270	1094	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_758	rgi	chromosome	stream	stream_k127_3506919	13651	14493	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_759	rgi	chromosome	stream	stream_k127_9985116	1345	2310	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_760	rgi	chromosome	stream	stream_k127_4662338	761	1132	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_761	rgi	chromosome	stream	stream_k127_2580723	461	1321	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_762	rgi	plasmid	stream	stream_k127_3972110	613	1473	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_763	rgi	chromosome	stream	stream_k127_5130291	2852	3709	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_764	rgi	chromosome	stream	stream_k127_39930	314	1093	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_765	rgi	chromosome	stream	stream_k127_6748773	2	712	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_766	rgi	chromosome	stream	stream_k127_40875	360	1169	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_767	rgi	chromosome	stream	stream_k127_10680622	1070	1921	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_768	rgi	chromosome	stream	stream_k127_10681742	1868	2647	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_769	rgi	chromosome	stream	stream_k127_3046127	1749	2591	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_770	rgi	chromosome	stream	stream_k127_1429525	881	1735	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_771	rgi	chromosome	stream	stream_k127_9759133	264	638	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_772	rgi	chromosome	stream	stream_k127_2586030	250	1074	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_773	rgi	chromosome	stream	stream_k127_1660849	7654	8517	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_774	rgi	chromosome	stream	stream_k127_5595986	102	947	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_775	rgi	chromosome	stream	stream_k127_5827933	4748	5569	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_776	rgi	chromosome	stream	stream_k127_4901563	311	1129	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_777	rgi	chromosome	stream	stream_k127_508823	8397	9173	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_778	rgi	chromosome	stream	stream_k127_9762814	513	1337	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_779	rgi	chromosome	stream	stream_k127_5138977	1213	2088	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_780	rgi	chromosome	stream	stream_k127_6757433	60	884	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_781	rgi	chromosome	stream	stream_k127_7219840	1875	2714	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_782	rgi	chromosome	stream	stream_k127_5601602	266	1102	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_783	rgi	chromosome	stream	stream_k127_7455908	451	822	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_784	rgi	chromosome	stream	stream_k127_5141815	6863	7651	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_785	rgi	chromosome	stream	stream_k127_1439707	292443	293882	Mycobacterium tuberculosis folC with mutation conferring resistance to para-aminosalicylic acid	salicylic acid antibiotic	Strict
+stream_rgi_786	rgi	chromosome	stream	stream_k127_2366796	3	815	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_787	rgi	chromosome	stream	stream_k127_976557	1584	2444	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_788	rgi	chromosome	stream	stream_k127_516026	142	966	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_789	rgi	chromosome	stream	stream_k127_6762411	545	1444	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_790	rgi	chromosome	stream	stream_k127_10926690	830	1675	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_791	rgi	chromosome	stream	stream_k127_5146459	1328	2200	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_792	rgi	chromosome	stream	stream_k127_7922751	305	1117	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_793	rgi	chromosome	stream	stream_k127_1673437	176	1015	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_794	rgi	chromosome	stream	stream_k127_3991589	1463	2332	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_795	rgi	chromosome	stream	stream_k127_3530088	25387	29421	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+stream_rgi_796	rgi	chromosome	stream	stream_k127_6767529	11998	12822	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_797	rgi	chromosome	stream	stream_k127_7000335	21898	22764	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_798	rgi	chromosome	stream	stream_k127_6537326	487	1272	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_799	rgi	chromosome	stream	stream_k127_1677933	2876	3721	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_800	rgi	chromosome	stream	stream_k127_983702	589	1479	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_801	rgi	chromosome	stream	stream_k127_8619885	8694	9554	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_802	rgi	chromosome	stream	stream_k127_8620149	3647	4471	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_803	rgi	chromosome	stream	stream_k127_7233575	1720	2544	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_804	rgi	chromosome	stream	stream_k127_1912927	660	1505	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_805	rgi	chromosome	stream	stream_k127_8161328	3	722	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_806	rgi	chromosome	stream	stream_k127_7475004	1009	1935	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_807	rgi	chromosome	stream	stream_k127_8626528	4478	5302	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_808	rgi	chromosome	stream	stream_k127_8626892	4855	5679	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_809	rgi	chromosome	stream	stream_k127_9326487	779	1648	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_810	rgi	chromosome	stream	stream_k127_2384768	829	1695	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_811	rgi	chromosome	stream	stream_k127_7938975	1311	2156	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_812	rgi	chromosome	stream	stream_k127_6320550	2781	3602	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_813	rgi	chromosome	stream	stream_k127_5856690	5181	6005	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_814	rgi	chromosome	stream	stream_k127_1460518	2	790	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_815	rgi	chromosome	stream	stream_k127_10713418	562	1395	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_816	rgi	chromosome	stream	stream_k127_9099834	797	4387	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+stream_rgi_817	rgi	chromosome	stream	stream_k127_7243747	622	1476	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_818	rgi	chromosome	stream	stream_k127_3081125	226	597	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_819	rgi	chromosome	stream	stream_k127_7482919	279	1103	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_820	rgi	chromosome	stream	stream_k127_7943217	502	1344	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_821	rgi	chromosome	stream	stream_k127_7483960	145	984	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_822	rgi	chromosome	stream	stream_k127_6092517	1	789	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_823	rgi	chromosome	stream	stream_k127_5632592	1135	1974	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_824	rgi	chromosome	stream	stream_k127_9564158	1950	2795	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_825	rgi	chromosome	stream	stream_k127_8638666	1570	2394	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_826	rgi	chromosome	stream	stream_k127_4936048	2772	3590	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_827	rgi	chromosome	stream	stream_k127_5637212	1751	2545	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_828	rgi	chromosome	stream	stream_k127_6330136	593	1417	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_829	rgi	chromosome	stream	stream_k127_9110775	2262	3068	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_830	rgi	chromosome	stream	stream_k127_7953323	3	806	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_831	rgi	chromosome	stream	stream_k127_10267802	216	1013	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_832	rgi	chromosome	stream	stream_k127_10957835	1851	2678	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_833	rgi	chromosome	stream	stream_k127_10725032	778	1581	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_834	rgi	chromosome	stream	stream_k127_3321790	494	1318	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_835	rgi	chromosome	stream	stream_k127_6333388	4999	5823	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_836	rgi	chromosome	stream	stream_k127_2629305	496	1284	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_837	rgi	chromosome	stream	stream_k127_1010373	627	1508	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_838	rgi	chromosome	stream	stream_k127_2171458	282	1049	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_839	rgi	chromosome	stream	stream_k127_9116937	674	1522	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_840	rgi	chromosome	stream	stream_k127_7499601	2	772	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_841	rgi	chromosome	stream	stream_k127_3790152	163	948	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_842	rgi	chromosome	stream	stream_k127_10038998	192	1079	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_843	rgi	chromosome	stream	stream_k127_7965414	3987	4832	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_844	rgi	chromosome	stream	stream_k127_1946262	5189	6049	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_845	rgi	chromosome	stream	stream_k127_4491710	234	1139	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_846	rgi	chromosome	stream	stream_k127_2640202	399	1253	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_847	rgi	chromosome	stream	stream_k127_4955492	2	826	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_848	rgi	chromosome	stream	stream_k127_8430066	35	892	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_849	rgi	chromosome	stream	stream_k127_10048169	24152	25003	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_850	rgi	chromosome	stream	stream_k127_1025347	2524	3387	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_851	rgi	chromosome	stream	stream_k127_8433393	561	1271	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_852	rgi	chromosome	stream	stream_k127_6352982	6225	7064	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_853	rgi	chromosome	stream	stream_k127_1725773	4900	5724	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_854	rgi	chromosome	stream	stream_k127_9136709	795	1640	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_855	rgi	chromosome	stream	stream_k127_113790	1691	2560	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_856	rgi	chromosome	stream	stream_k127_2887739	1453	2346	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_857	rgi	chromosome	stream	stream_k127_8670329	218	1051	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_858	rgi	chromosome	stream	stream_k127_5206612	9921	10766	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_859	rgi	chromosome	stream	stream_k127_1270368	657	1490	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_860	rgi	chromosome	stream	stream_k127_4275831	2901	3272	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_861	rgi	chromosome	stream	stream_k127_4050542	87	983	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_862	rgi	chromosome	stream	stream_k127_8445389	2975	3754	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_863	rgi	chromosome	stream	stream_k127_8675138	1257	2096	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_864	rgi	chromosome	stream	stream_k127_3351913	884	1732	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_865	rgi	chromosome	stream	stream_k127_807578	557	1435	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_866	rgi	chromosome	stream	stream_k127_580068	3375	4235	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_867	rgi	chromosome	stream	stream_k127_8911753	553	1338	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_868	rgi	chromosome	stream	stream_k127_4975553	1747	2718	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_869	rgi	chromosome	stream	stream_k127_10305540	1285	2184	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_870	rgi	chromosome	stream	stream_k127_7291151	337	1194	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_871	rgi	chromosome	stream	stream_k127_3824560	666	1523	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_872	rgi	chromosome	stream	stream_k127_2209899	199	1062	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_873	rgi	chromosome	stream	stream_k127_4293796	10305	11135	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_874	rgi	chromosome	stream	stream_k127_4988654	179	958	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_875	rgi	chromosome	stream	stream_k127_8463001	904	1746	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_876	rgi	chromosome	stream	stream_k127_1981504	2	877	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_877	rgi	chromosome	stream	stream_k127_5229462	1235	2059	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_878	rgi	chromosome	stream	stream_k127_7304272	215	1039	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_879	rgi	chromosome	stream	stream_k127_6612800	1061	1900	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_880	rgi	chromosome	stream	stream_k127_4072143	17640	18416	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_881	rgi	chromosome	stream	stream_k127_4991529	2	769	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_882	rgi	chromosome	stream	stream_k127_3612316	972	1844	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_883	rgi	chromosome	stream	stream_k127_8930400	24	884	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_884	rgi	chromosome	stream	stream_k127_8931559	330	1154	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_885	rgi	chromosome	stream	stream_k127_2223135	513	1322	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_886	rgi	chromosome	stream	stream_k127_9402350	2808	3632	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_887	rgi	chromosome	stream	stream_k127_9627496	1494	2339	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_888	rgi	chromosome	stream	stream_k127_4998241	761	1735	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_889	rgi	chromosome	stream	stream_k127_1066658	3	731	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_890	rgi	chromosome	stream	stream_k127_4080196	707	1570	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_891	rgi	chromosome	stream	stream_k127_4999788	7214	8080	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_892	rgi	chromosome	stream	stream_k127_10783754	432	1304	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_893	rgi	chromosome	stream	stream_k127_10560041	276	1187	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_894	rgi	chromosome	stream	stream_k127_4082974	1975	2766	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_895	rgi	chromosome	stream	stream_k127_10332410	2012	2884	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_896	rgi	chromosome	stream	stream_k127_4308700	1213	1986	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_897	rgi	chromosome	stream	stream_k127_381626	2024	2869	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_898	rgi	chromosome	stream	stream_k127_5470711	487	1272	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_899	rgi	chromosome	stream	stream_k127_1309884	2632	3471	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_900	rgi	chromosome	stream	stream_k127_11023407	91	915	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_901	rgi	chromosome	stream	stream_k127_7787844	921	1829	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_902	rgi	chromosome	stream	stream_k127_3165399	3	779	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_903	rgi	chromosome	stream	stream_k127_9184419	1089	1913	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_904	rgi	chromosome	stream	stream_k127_3631241	89	958	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_905	rgi	chromosome	stream	stream_k127_10571988	177	1001	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_906	rgi	chromosome	stream	stream_k127_3167123	5005	5829	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_907	rgi	chromosome	stream	stream_k127_845680	8937	9764	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_908	rgi	chromosome	stream	stream_k127_2700386	634	1008	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_909	rgi	chromosome	stream	stream_k127_617493	2178	3029	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_910	rgi	chromosome	stream	stream_k127_11029276	7501	8292	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_911	rgi	chromosome	stream	stream_k127_6405435	66	929	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_912	rgi	chromosome	stream	stream_k127_6177661	1911	2750	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_913	rgi	chromosome	stream	stream_k127_852183	477	1322	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_914	rgi	chromosome	stream	stream_k127_168324	1706	2617	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_915	rgi	chromosome	stream	stream_k127_5260172	499	1419	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_916	rgi	chromosome	stream	stream_k127_3640924	756	1619	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_917	rgi	chromosome	stream	stream_k127_9880400	214	1077	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_918	rgi	chromosome	stream	stream_k127_5262861	268	1107	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_919	rgi	chromosome	stream	stream_k127_6414423	461	1321	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_920	rgi	chromosome	stream	stream_k127_8264282	382	1251	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_921	rgi	chromosome	stream	stream_k127_3645925	950	1780	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_922	rgi	chromosome	stream	stream_k127_3646873	1	834	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_923	rgi	chromosome	stream	stream_k127_8044014	1009	1383	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_924	rgi	chromosome	stream	stream_k127_4334303	7753	8622	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_925	rgi	chromosome	stream	stream_k127_7116824	7075	7929	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_926	rgi	chromosome	stream	stream_k127_8968158	3765	4505	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_927	rgi	chromosome	stream	stream_k127_6421831	3170	4021	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_928	rgi	chromosome	stream	stream_k127_5032587	2218	3108	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_929	rgi	chromosome	stream	stream_k127_10361850	1940	2833	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_930	rgi	chromosome	stream	stream_k127_4118017	1345	2169	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_931	rgi	chromosome	stream	stream_k127_3878196	615	1445	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_932	rgi	chromosome	stream	stream_k127_1801347	1	762	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_933	rgi	chromosome	stream	stream_k127_9668615	1443	2324	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_934	rgi	chromosome	stream	stream_k127_4575234	960	1802	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_935	rgi	chromosome	stream	stream_k127_8976101	103162	104103	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_936	rgi	chromosome	stream	stream_k127_2725624	2	2152	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+stream_rgi_937	rgi	chromosome	stream	stream_k127_1342149	103	948	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_938	rgi	chromosome	stream	stream_k127_11056118	16673	17530	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_939	rgi	chromosome	stream	stream_k127_10133984	8151	8996	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_940	rgi	chromosome	stream	stream_k127_6205941	1425	2249	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_941	rgi	chromosome	stream	stream_k127_3425138	479	1360	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_942	rgi	chromosome	stream	stream_k127_5509106	634	1476	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_943	rgi	chromosome	stream	stream_k127_6208315	1809	2678	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_944	rgi	chromosome	stream	stream_k127_2039627	2009	2833	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_945	rgi	chromosome	stream	stream_k127_5048916	486	1331	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_946	rgi	chromosome	stream	stream_k127_1581503	3499	4323	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_947	rgi	chromosome	stream	stream_k127_7365598	505	1335	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_948	rgi	chromosome	stream	stream_k127_5755425	1279	2103	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_949	rgi	chromosome	stream	stream_k127_8527469	1821	2681	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_950	rgi	chromosome	stream	stream_k127_1584798	870	1715	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_951	rgi	chromosome	stream	stream_k127_2972816	164	988	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_952	rgi	chromosome	stream	stream_k127_7611969	518	1399	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_953	rgi	chromosome	stream	stream_k127_3676177	2	805	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_954	rgi	chromosome	stream	stream_k127_8296344	2	769	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_955	rgi	chromosome	stream	stream_k127_208783	3	2594	Mycobacterium tuberculosis rpoC mutations confer resistance to rifampicin	rifamycin antibiotic	Strict
+stream_rgi_956	rgi	chromosome	stream	stream_k127_2288065	197	970	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_957	rgi	chromosome	stream	stream_k127_1828030	1206	2081	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_958	rgi	chromosome	stream	stream_k127_3906264	536	1399	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_959	rgi	chromosome	stream	stream_k127_5307407	392	1216	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_960	rgi	chromosome	stream	stream_k127_216330	367	1227	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_961	rgi	chromosome	stream	stream_k127_5529640	220	1215	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_962	rgi	chromosome	stream	stream_k127_670808	681	1541	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_963	rgi	chromosome	stream	stream_k127_3910448	1554	2402	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_964	rgi	chromosome	stream	stream_k127_7848240	1350	2195	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_965	rgi	chromosome	stream	stream_k127_1374404	1	768	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_966	rgi	chromosome	stream	stream_k127_5777932	1643	2476	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_967	rgi	chromosome	stream	stream_k127_10162897	679	1542	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_968	rgi	chromosome	stream	stream_k127_6694506	145	984	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_969	rgi	chromosome	stream	stream_k127_1839500	272	1123	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_970	rgi	chromosome	stream	stream_k127_3456552	375	743	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_971	rgi	chromosome	stream	stream_k127_9937886	565	1389	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_972	rgi	chromosome	stream	stream_k127_457461	490	1335	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_973	rgi	chromosome	stream	stream_k127_4387116	962	1708	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_974	rgi	chromosome	stream	stream_k127_3922152	1264	2139	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_975	rgi	chromosome	stream	stream_k127_4163373	1716	2555	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_976	rgi	chromosome	stream	stream_k127_3001477	470	1315	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_977	rgi	chromosome	stream	stream_k127_1848489	488	1357	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
+stream_rgi_978	rgi	chromosome	stream	stream_k127_9946483	575	949	Mycobacterium tuberculosis rpsL mutations conferring resistance to streptomycin	aminoglycoside antibiotic	Strict
+stream_rgi_979	rgi	chromosome	stream	stream_k127_3469173	1255	2124	Neisseria gonorrhoeae folP with mutation conferring resistance to sulfonamides	sulfonamide antibiotic	Strict
