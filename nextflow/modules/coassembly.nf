@@ -178,7 +178,8 @@ process COASM_ABUNDANCE {
     def coupled = ids.sort(false).collect { r -> "reads/${r}_1.fastq.gz reads/${r}_2.fastq.gz" }.join(' ')
     """
     coverm genome --coupled ${coupled} --genome-fasta-directory ${drep}/dereplicated_genomes -x fa \\
-        --methods ${params.cfg.mags.coverm_genome_methods} --threads ${task.cpus} --output-file coverm_genome.tsv
+        --methods ${params.cfg.mags.coverm_genome_methods} ${params.cfg.coassembly.coverm_read_filters} \\
+        --threads ${task.cpus} --output-file coverm_genome.tsv
     """
 
     stub:

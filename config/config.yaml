@@ -183,6 +183,9 @@ params:
     megahit_args: "--presets meta-large"
     compare_ani: 0.95             # same species = dRep secondary cluster at this ANI
     present_min_coverage: 1       # a run "hits" a MAG at CoverM mean coverage >= this
+    # per-run CoverM on the group MAGs: count only real hits (CoverM default counts any partial
+    # alignment; distant runs then look like they hit MAGs; 2026-11-24)
+    coverm_read_filters: "--min-read-percent-identity 95 --min-read-aligned-percent 75"
   mag_links:
     threads: 16
     # Coverage correlation needs enough samples to mean anything; below this it is NA
